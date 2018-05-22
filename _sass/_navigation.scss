@@ -1,7 +1,157 @@
 // Navigation Elements
 // ========================================================================== */
 
+.navbar {
+  min-height: 64px;
+  padding: 1.875rem 2.5rem;
+
+  .logo-active {
+    display: none;
+    transition: $global-transition;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    //font-size: $type-size-10;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+
+    .nav-item {
+      color: $white;
+
+      &.active {
+        .nav-link {
+          &::after {
+            width: 100%;
+            background-color: $white;
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      @include media-breakpoint-up(xl) {
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+      }
+      position: relative;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      padding-right: 0;
+      padding-left: 0;
+      color: $white;
+      text-align: center;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        margin: 0 auto;
+        content: '';
+        background-color: $white;
+        transition: $global-transition;
+      }
+
+      &:hover {
+        color: $white;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .booknow {
+    margin-left: 1.25rem;
+  }
+
+  &.nav-active {
+    padding: 0;
+    background-color: $white;
+    opacity: 0;
+    transition: $global-transition;
+
+    .logo-active {
+      @include media-breakpoint-down(sm) {
+        padding-left: 1rem;
+      }
+      display: inherit;
+      padding-left: 2rem;
+      @media(max-width: 370px) {
+        width: 135px;
+      }
+    }
+
+    .main-logo {
+      display: none;
+    }
+
+    .booknow {
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 21px 22px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 21px 14px;
+      }
+      padding: 21px 42px;
+    }
+
+    .nav-item {
+      color: $white;
+
+      &.active {
+        .nav-link {
+          &::after {
+            width: 100%;
+            //background-color: $tertiary-color;
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      @include media-breakpoint-down(md) {
+        padding: .6rem 0;
+      }
+      padding: 1.41rem 0;
+      color: $primary-color;
+
+      &:hover {
+        color: $primary-color;
+
+        &::after {
+          width: 100%;
+          //background-color: $tertiary-color;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    @include media-breakpoint-down(sm) {
+      margin-right: 120px;
+    }
+    width: 45px;
+    height: 64px;
+    margin-right: 130px;
+    padding: 0;
+    outline: 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
 // Removes margins, padding, and bullet points from navigation lists
+
 nav {
   ul {
     margin: 0;
@@ -15,9 +165,7 @@ nav {
   a {
     text-decoration: none;
   }
-
   // Override white-space for nested lists
-
   ol li,
   ul li {
     margin-bottom: 0;
@@ -27,4 +175,31 @@ nav {
   li ul {
     margin-top: 0;
   }
+}
+
+.dropdown-menu {
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    text-align: center;
+    //background-color: $background-color;
+    border: 0;
+  }
+  padding: 0;
+  border-radius: 0;
+  a {
+    @include media-breakpoint-down(md) {
+      //font-size: $type-size-11;
+    }
+    //font-size: $type-size-10;
+    transition: $global-transition;
+    &:hover {
+      color: $white;
+      //background-color: $highlighter-color;
+    }
+  }
+}
+
+.dropdown-item {
+  padding: .7rem;
 }

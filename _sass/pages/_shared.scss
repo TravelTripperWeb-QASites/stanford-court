@@ -1,2 +1,59 @@
 // Shared Page Elements
 // ==========================================================================
+
+.hero-banner {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-color: $black;
+
+  .banner-detail {
+    //@include container-fixed-width;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      margin-top: 15%;  // apply to all ie from 10 and below
+    }
+    margin-top: 100px\9; // apply to all ie from 8 and below
+    _margin-top: 100px; // apply to ie 6 and below
+    text-align: center;
+    letter-spacing: .05rem;
+    color: $white;
+    h1 {
+      padding-bottom: 1rem;
+      @include media-breakpoint-down(md) {
+        font-size: $type-size-2;
+      }
+    }
+
+    p {
+      @include media-breakpoint-up(xl) {
+        font-size: $type-size-6;
+      }
+      color: $white;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba($black, .25);
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 250px;
+    content: '';
+    background: linear-gradient(to bottom, rgba(0,0,0,.65) 0%,rgba(73,73,73,.26) 51%,rgba(73,73,73,0) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00494949',GradientType=0 );
+  }
+}
