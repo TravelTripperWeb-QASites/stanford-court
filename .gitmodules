@@ -1,6 +1,0 @@
-[submodule "_plugins-core"]
-	path = _plugins-core
-	url = https://github.com/TravelTripperWeb/cms-jekyll-plugins.git
-[submodule "_ttio_templates/bedrock"]
-	path = _ttio_templates/bedrock
-	url = https://github.com/TravelTripperWeb-Sites/_ttio_templates-bedrock.git

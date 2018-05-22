@@ -13,7 +13,6 @@ bower_components/
 
 ### Travel Tripper ###
 media.json
-old_media.json
 models.json
 sitemap.json
 vendor/
@@ -94,9 +93,3 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
-
-sitemap.json
-media.json
-old_media.json
-models.json
-_site/*

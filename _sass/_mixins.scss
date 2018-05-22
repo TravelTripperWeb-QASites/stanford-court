@@ -10,3 +10,43 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+// Text Formate
+
+@mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $font-color, $text-transform, $letter-spacing) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $font-color;
+  text-transform: $text-transform;
+  letter-spacing: $letter-spacing;
+}
+
+// Text Gradient
+@mixin text-gradient($dir, $from, $to) {
+	background: -webkit-linear-gradient($dir, $from, $to);
+	background: -moz-linear-gradient($dir, $from, $to);
+	background: -o-linear-gradient($dir, $from, $to);
+	background: -ms-linear-gradient($dir, $from, $to);
+	background: linear-gradient($dir, $from, $to);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+// Background Gradient
+@mixin background-gradient($dir, $from, $to) {
+    background:    -webkit-linear-gradient($dir, $from, $to);
+    background:    -moz-linear-gradient($dir, $from, $to);
+    background:    -o-linear-gradient($dir, $from, $to);
+    background:    -ms-linear-gradient($dir, $from, $to);
+    background:    linear-gradient($dir, $from, $to);
+}
+
+// Transition
+@mixin global-transition($transition) {
+  -webkit-transition: all $transition;
+  transition:         all $transition;
+  -moz-transition:    all $transition;
+  -o-transition:      all $transition;
+}
