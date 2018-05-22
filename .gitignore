@@ -16,7 +16,6 @@ media.json
 models.json
 sitemap.json
 vendor/
-assets/fonts
 !assets/js/vendor/
 
 
