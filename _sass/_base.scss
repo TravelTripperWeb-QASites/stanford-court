@@ -20,6 +20,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 h1 {
   @include text-formatting($title-font, $type-size-0, 700, 12.75rem, $secondary-light, uppercase, -40px);
@@ -57,29 +58,40 @@ a {
 .primary-btn {
   position: relative;
   display: inline-block;
-  padding: 21px;
+  padding-right: 24px;
   text-decoration: none;
   cursor: pointer;
+  background-image: url('/assets/images/black-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
   @include text-formatting($global-font, $type-size-5, 700,  normal, $black, none, 1.2px);
   @include global-transition(.3s);
   &:hover {
     color: $white;
+    background-image: url('/assets/images/white-arrow.png');
   }
 }
-
 
 .primary-btn-inverse {
   @extend .primary-btn;
   color: $white;
+  background-image: url('/assets/images/white-arrow.png');
+  &:hover {
+    color: $black;
+    background-image: url('/assets/images/black-arrow.png');
+  }
 }
+
 .secondary-btn {
   @extend .primary-btn;
   padding: 20px 40px;
+  background-image: none;
   border: 1px solid $secondary-color;
   border-radius: 40px;
   &:hover {
     color: $white;
     background: $secondary-color;
+    background-image: none;
   }
 }
 
