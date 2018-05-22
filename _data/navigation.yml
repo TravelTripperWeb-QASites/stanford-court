@@ -1,23 +1,38 @@
 main:
-  - title: About
-    url: /about/
-  - title: Amenities
-    url: /amenities/
-  - title: Attractions
-    url: /attractions/
-  - title: Rooms
+  - title: Rooms & Suites
     url: /rooms/
-  - title: Offers
+  - title: Special Offers
     url: /offers/
   - title: Location
     url: /location/
-  - title: Dining
-    url: /dining/
+  - title: Explore
+    url: /activities/
+    dropdown:
+      - title: Outdoor Adventures
+        url: /activities/outdoor-adventures/
+      - title: Cultural Activities
+        url: /activities/cultural-activities/
+      - title: Shopping
+        url: /activities/shopping/
+      - title: Entertainment
+        url: /activities/entertainment/
+
   - title: Events
     url: /events/
+    dropdown:
+      - title: Weddings
+        url: /weddings/
+  - title: Dining
+    url: /dining/
   - title: Gallery
     url: /gallery/
-  - title: Blog
-    url: /blog/
   - title: Contact
     url: /contact/
+
+footer:
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Terms & Conditions
+    url: /terms/
+  #- title: Reservation Policy
+    #url: /reservation-policy/
