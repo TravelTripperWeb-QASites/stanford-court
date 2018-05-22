@@ -49,4 +49,11 @@
   transition:         all $transition;
   -moz-transition:    all $transition;
   -o-transition:      all $transition;
+
+}
+
+// fix container
+@mixin container-fix() {
+  @include make-container();
+  max-width: 1196px;
 }

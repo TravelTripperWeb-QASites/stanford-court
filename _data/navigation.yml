@@ -30,9 +30,12 @@ main:
     url: /contact/
 
 footer:
+  - title: Lost Items
+  - title: Press
+  - title: FAQs
+  - title: Contact
   - title: Privacy Policy
     url: /privacy-policy/
-  - title: Terms & Conditions
-    url: /terms/
+  - title: Blog
   #- title: Reservation Policy
     #url: /reservation-policy/
