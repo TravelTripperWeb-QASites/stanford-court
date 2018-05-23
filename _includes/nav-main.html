@@ -2,8 +2,10 @@
 
 <nav class="navbar navbar-expand-lg fixed-top nav-active">
   <a class="navbar-brand" href="/" title="{{site.name}}"><img class="logo-active" src="/assets/images/logo.png" alt="{{site.name}}"><img class="main-logo" src="/assets/images/logo.png" alt="{{site.name}}"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <img src="/assets/images/hamburger-icon.png" alt="toggle menu">
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <div class="line"></div>
+	  <div class="line"></div>
+	  <div class="line"></div>
 	</button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
@@ -22,7 +24,7 @@
       {% endfor %}
     </ul>
   </div>
-  <a href="javascript:void();" class="button booknow" show-booking-widget>
+  <a href="javascript:void(0);" class="booknow" show-booking-widget>
      Book Now
   </a>
 </nav>
