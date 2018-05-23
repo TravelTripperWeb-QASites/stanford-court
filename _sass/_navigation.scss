@@ -28,7 +28,7 @@
   .navbar-nav {
     margin-top: 0;
     margin-left: auto;
-    font-family: $global-font;
+    font-family: $global-font-bold;
     font-size: $type-size-4;
     font-weight: 600;
     letter-spacing: .7px;
@@ -88,7 +88,7 @@
     top: 32px;
     right: 16px;
     padding: 12px;
-    font-family: $global-font;
+    font-family: $global-font-bold;
     font-size: 14px;
     font-weight: 600;
     color: $white;
