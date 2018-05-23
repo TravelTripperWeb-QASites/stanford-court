@@ -53,7 +53,17 @@
 }
 
 // fix container
-@mixin container-fix() {
-  @include make-container();
+@mixin container-fix {
+  @include make-container;
   max-width: 1196px;
+}
+
+@mixin container-fix-2 {
+  @include make-container;
+  max-width: 1240px;
+}
+
+@mixin container-fix-3 {
+  @include make-container;
+  max-width: 1070px;
 }
