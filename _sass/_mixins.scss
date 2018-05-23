@@ -56,6 +56,10 @@
 @mixin container-fix() {
   @include make-container();
   max-width: 1196px;
+  @include media-breakpoint-down(sm) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 //placeholder
