@@ -250,10 +250,10 @@ nav {
 
 .dropdown-menu {
   top: 40px;
-  display: block;
   padding: 0;
   border-radius: 0;
   @include media-breakpoint-down(md) {
+    display: block;
     margin: 0;
     text-align: center;
     background-color: $white;
