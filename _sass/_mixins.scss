@@ -55,7 +55,7 @@
 // fix container
 @mixin container-fix() {
   @include make-container();
-  max-width: 1196px;
+  max-width: 1242px;
   @include media-breakpoint-down(sm) {
     padding-right: 30px;
     padding-left: 30px;
