@@ -1,12 +1,12 @@
 main:
-  - title: Rooms & Suites
+  - title: Hotel
+    url: /hotel/
+  - title: Rooms
     url: /rooms/
   - title: Special Offers
     url: /offers/
-  - title: Location
-    url: /location/
-  - title: Explore
-    url: /activities/
+  - title: Dining
+    url: /dining/
     dropdown:
       - title: Outdoor Adventures
         url: /activities/outdoor-adventures/
@@ -17,22 +17,19 @@ main:
       - title: Entertainment
         url: /activities/entertainment/
 
-  - title: Events
-    url: /events/
-    dropdown:
-      - title: Weddings
-        url: /weddings/
-  - title: Dining
-    url: /dining/
+  - title: Meetings
+    url: /meetings/
+  - title: Neighborhood
+    url: /neighborhood/
   - title: Gallery
     url: /gallery/
   - title: Contact
     url: /contact/
 
 footer:
-  - title: Privacy Policy
-    url: /privacy-policy/
-  - title: Terms & Conditions
-    url: /terms/
+  # - title: Privacy Policy
+  #   url: /privacy-policy/
+  # - title: Terms & Conditions
+  #   url: /terms/
   #- title: Reservation Policy
     #url: /reservation-policy/
