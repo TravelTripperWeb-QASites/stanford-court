@@ -64,7 +64,7 @@ a {
   background-image: url('/assets/images/black-arrow.png');
   background-repeat: no-repeat;
   background-position: right center;
-  @include text-formatting($global-font, $type-size-5, 700,  normal, $black, none, 1.2px);
+  @include text-formatting($global-font-bold, $type-size-5, 700,  normal, $black, none, 1.2px);
   @include global-transition(.3s);
   &:hover {
     color: $white;
@@ -84,10 +84,10 @@ a {
 
 .secondary-btn {
   @extend .primary-btn;
-  padding: 20px 40px;
+  padding: 17px 40px;
   background-image: none;
   border: 1px solid $secondary-color;
-  border-radius: 40px;
+  border-radius: 27px;
   &:hover {
     color: $white;
     background: $secondary-color;
