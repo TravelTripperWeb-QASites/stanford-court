@@ -122,3 +122,13 @@ a {
   background-position: center;
   background-size: cover;
 }
+
+.vertical-line {
+  position: absolute;
+  bottom: 8px;
+  left: -10px;
+  width: 71px;
+  height: 1px;
+  content: '';
+  background: $white;
+}
