@@ -49,7 +49,7 @@ h4 {
 }
 
 p {
-  @include text-formatting($global-font, $font-size-base, 400, 1.375rem, $secondary-light, none, .5px);
+  @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
 a {
