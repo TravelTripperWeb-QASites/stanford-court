@@ -1,6 +1,51 @@
 // Temporary Styles
 // ==========================================================================
+//stay stanford court
+.stay-sfc {
 
+  margin: 97px auto 104px;
+  background: $gray-dark;
+  background-image: url('/assets/images/home/stay-sfc.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  .stay-wrapper {
+    @include container-fix-2;
+    position: relative;
+    min-height: 409px;
+
+    .stay-row {
+      @include make-row ;
+    }
+    .header-title {
+      padding-top: 93px;
+      padding-bottom: 30px;
+      @include media-breakpoint-up(md) {
+        @include make-col(5);
+      }
+      h4 {
+        color: $white;
+      }
+      h3 {
+        padding-top: 18px;
+        padding-bottom: 53px;
+      }
+      .secondary-btn-inverse {
+        padding-right: 60px;
+        padding-left: 60px;
+      }
+    }
+    .logo {
+      position: absolute;
+      right: 19px;
+      bottom: 72px;
+    }
+  }
+}
+
+//blog section
 
 .home-blog {
   @include container-fix-2;
@@ -63,7 +108,7 @@
     margin-top: -40px;
     margin-right: 0;
     margin-bottom: 130px;
-    margin-left: 30px;
+    margin-left: 50px;
     @include media-breakpoint-up(md) {
       margin-top: -112px;
 
