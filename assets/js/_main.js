@@ -44,3 +44,13 @@ $(window).on("load", function () {
       }
     ]
   });
+
+
+  $(document).ready(function(){
+
+    $(".gallery-carousel-inner .item").hover(function(){
+      $(".item").removeClass("active");
+      $(this).addClass("active");
+    });
+
+  });

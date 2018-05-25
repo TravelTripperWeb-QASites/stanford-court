@@ -282,3 +282,30 @@
     }
   }
 }
+
+.gallery-carousel {
+  margin-bottom: 95px;
+  .gallery-carousel-inner {
+    .item {
+      position: relative;
+      display: inline-block;
+      float: left;
+      width: 16.66%;
+      overflow: hidden;
+      @include global-transition(.3s);
+      &.active {
+        width: 50%;
+      }
+      h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 700px;
+        padding: 40px;
+        color: $white;
+        transform: rotate(-90deg) translateY(100%);
+        transform-origin: left bottom;
+      }
+    }
+  }
+}
