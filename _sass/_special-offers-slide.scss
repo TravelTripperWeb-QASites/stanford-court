@@ -1,0 +1,26 @@
+//Special Offers
+
+.special-offers {
+  @include container-fix-2;
+  margin-bottom: 95px;
+  p {
+    max-width: 516px;
+    margin: auto;
+    padding-top: 18px;
+    text-align: center;
+  }
+
+  .item {
+    padding: 23px 33px;
+    h3 {
+      font-family: $global-font-bold;
+      font-size: $type-size-5;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1.76px;
+    }
+    figure {
+      height: 486px;
+    }
+  }
+}

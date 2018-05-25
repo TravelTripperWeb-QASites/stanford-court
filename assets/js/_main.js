@@ -17,3 +17,30 @@ $(window).on("load", function () {
        });
    }
 });
+
+
+//home offers slick
+
+  $('#special-offers').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
