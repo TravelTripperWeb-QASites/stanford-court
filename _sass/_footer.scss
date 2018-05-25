@@ -61,8 +61,35 @@
       img {
         width: 100%;
       }
-    }
+      a {
+        display: block;
 
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 88%;
+          margin: auto;
+          content: '';
+          background-color: rgba($black,.5);
+          background-image: url('/assets/images/insta-icon.png');
+          background-repeat: no-repeat;
+          background-position: left 15px bottom 15px;
+          opacity: 0;
+          @include global-transition(.3s);
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+          }
+        }
+        &:hover {
+          &:after {
+            opacity: 1;
+           }
+         }
+      }
+    }
   }
 }
 
