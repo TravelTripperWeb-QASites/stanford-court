@@ -286,6 +286,12 @@
 .gallery-carousel {
   margin-bottom: 95px;
   .gallery-carousel-inner {
+    position: relative;
+    .carousel-nav {
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
     .item {
       position: relative;
       display: inline-block;
