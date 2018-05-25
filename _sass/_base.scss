@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: $global-font;
-  color: $font-size-base;
 }
 
 h1,
@@ -113,12 +112,12 @@ a {
 .black-btn {
   @extend .secondary-btn;
   color: $white;
-  background: $secondary-color;
-  border: 0;
+  background: $black;
+  border: 1px solid $black;
   &:hover {
     color: $black;
     background: $white;
-    border: 0;
+    border: 1px solid $black;
   }
 }
 
