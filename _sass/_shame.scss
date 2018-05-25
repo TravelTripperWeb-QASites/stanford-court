@@ -228,7 +228,7 @@
   bottom: -60px;
   width: 131px;
   height: 60px;
-  background: #000;
+  background: $black;
   .carousel-control-prev {
     &:after {
       position: absolute;
@@ -249,5 +249,24 @@
   .carousel-control-next:focus,
   .carousel-control-next:hover {
     color: $primary-color;
+  }
+  &.white {
+    background: $white;
+    .carousel-control-prev {
+      &:after {
+        background: $black;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      color: $black;
+      opacity: inherit;
+    }
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover,
+    .carousel-control-next:focus,
+    .carousel-control-next:hover {
+      color: $primary-color;
+    }
   }
 }
