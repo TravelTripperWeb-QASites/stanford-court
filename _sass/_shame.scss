@@ -204,19 +204,19 @@
   }
 
   li {
-    width: 9px;
-    height: 9px;
-    margin: 0 2px;
-    line-height: 9px;
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+    line-height: 6px;
     background-color: $gray;
     border: 0;
     border-radius: 100%;
     @include global-transition(.3s);
     &.active,
     &:hover {
-      width: 9px;
-      height: 9px;
-      margin: 0 2px;
+      width: 6px;
+      height: 6px;
+      margin-right: 12px;
       cursor: pointer;
       background-color: $secondary-light;
     }
@@ -241,7 +241,7 @@
   }
   .carousel-control-prev,
   .carousel-control-next {
-    padding: 34px;
+    padding: 30px 32px;
     opacity: inherit;
   }
   .carousel-control-prev:focus,
