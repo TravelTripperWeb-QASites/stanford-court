@@ -25,6 +25,10 @@ p {
 h1 {
   @include text-formatting($title-font, $type-size-0, 700, 12.75rem, $secondary-light, uppercase, -40px);
   @include text-gradient(to right, $gradient-1, $gradient-2 60%);
+  @include media-breakpoint-down(sm) {
+    font-size: $type-size-1;
+    letter-spacing: -28px;
+  }
 }
 
 h2 {
@@ -45,7 +49,7 @@ h4 {
 }
 
 p {
-  @include text-formatting($global-font, $font-size-base, 400, 1.375rem, $secondary-light, none, .5px);
+  @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
 a {
@@ -63,12 +67,13 @@ a {
   cursor: pointer;
   background-image: url('/assets/images/black-arrow.png');
   background-repeat: no-repeat;
-  background-position: right center;
-  @include text-formatting($global-font, $type-size-5, 700,  normal, $black, none, 1.2px);
+  background-position: right 4px bottom 0;
+  @include text-formatting($global-font-bold, $type-size-5, 700,  normal, $black, none, 1.2px);
   @include global-transition(.3s);
   &:hover {
-    color: $white;
-    background-image: url('/assets/images/white-arrow.png');
+    color: $black;
+    background-image: url('/assets/images/black-arrow.png');
+    background-position: right 0 bottom 0;
   }
 }
 
@@ -77,17 +82,17 @@ a {
   color: $white;
   background-image: url('/assets/images/white-arrow.png');
   &:hover {
-    color: $black;
-    background-image: url('/assets/images/black-arrow.png');
+    color: $white;
+    background-image: url('/assets/images/white-arrow.png');
   }
 }
 
 .secondary-btn {
   @extend .primary-btn;
-  padding: 20px 40px;
+  padding: 17px 40px;
   background-image: none;
   border: 1px solid $secondary-color;
-  border-radius: 40px;
+  border-radius: 27px;
   &:hover {
     color: $white;
     background: $secondary-color;
@@ -121,4 +126,14 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.vertical-line {
+  position: absolute;
+  bottom: 8px;
+  left: -10px;
+  width: 71px;
+  height: 1px;
+  content: '';
+  background: $white;
 }

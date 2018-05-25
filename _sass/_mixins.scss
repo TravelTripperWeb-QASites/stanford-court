@@ -52,15 +52,6 @@
 
 }
 
-// fix container
-@mixin container-fix() {
-  @include make-container();
-  max-width: 1242px;
-  @include media-breakpoint-down(sm) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
 
 //placeholder
 
@@ -86,4 +77,25 @@
   @include optional-at-root(':-ms-input-placeholder') {
     @content;
   }
+}
+
+// fix container
+@mixin container-fix {
+  @include make-container;
+  max-width: 1196px;
+
+}
+
+@mixin container-fix-2 {
+  @include make-container;
+  max-width: 1240px;
+  @include media-breakpoint-down(sm) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@mixin container-fix-3 {
+  @include make-container;
+  max-width: 1070px;
 }
