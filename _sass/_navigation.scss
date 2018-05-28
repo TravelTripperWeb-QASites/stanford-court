@@ -139,9 +139,9 @@
         }
       }
     }
-    @include media-breakpoint-down(md) {
-      background-color: $black;
-    }
+    // @include media-breakpoint-down(md) {
+    //   background-color: $black;
+    // }
   }
   .navbar-toggler {
     position: absolute;
@@ -191,18 +191,16 @@
       }
     }
   }
-  @include media-breakpoint-up(lg) {
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: 0;
-      height: 250px;
-      content: '';
-      background: linear-gradient(to bottom, rgba(0,0,0,.65) 0%,rgba(73,73,73,.26) 51%,rgba(73,73,73,0) 85%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00494949',GradientType=0 );
-    }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 250px;
+    content: '';
+    background: linear-gradient(to bottom, rgba(0,0,0,.65) 0%,rgba(73,73,73,.26) 51%,rgba(73,73,73,0) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00494949',GradientType=0 );
   }
 }
 

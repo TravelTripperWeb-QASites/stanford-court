@@ -244,7 +244,10 @@
     }
     &.indicators {
       position: absolute;
-      top: 870px;
+      top: 840px;
+      @include media-breakpoint-up(sm) {
+        top: 750px;
+      }
       @include media-breakpoint-up(md) {
         top: 340px;
       }
@@ -284,7 +287,11 @@
 }
 
 .gallery-carousel {
+  display: none;
   margin-bottom: 95px;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
   .gallery-carousel-inner {
     position: relative;
     .carousel-nav {
