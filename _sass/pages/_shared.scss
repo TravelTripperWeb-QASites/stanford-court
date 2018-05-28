@@ -31,6 +31,9 @@
     width: 100%;
     text-align: center;
     transform: translateY(-60%);
+    @include media-breakpoint-down(sm) {
+      transform: translateY(-90%);
+    }
     h1 {
       @include media-breakpoint-down(sm) {
         font-size: $type-size-7;
@@ -44,7 +47,7 @@
   @include container-fix-4;
   position: relative;
   z-index: 9;
-  margin-top: -200px;
+  margin-top: -196px;
   margin-bottom: 60px;
   @include media-breakpoint-up(md) {
     margin-top: -145px;
@@ -53,7 +56,7 @@
   .inner-intro-row {
     @include make-row;
     position: relative;
-    padding: 20px;
+    padding: 22px;
     background-color: $black;
     @include media-breakpoint-up(md) {
       padding: 85px;
@@ -78,6 +81,9 @@
       }
       p {
         color: $white;
+        @include media-breakpoint-down(sm) {
+          margin-top: 14px;
+        }
       }
     }
     &:after {
