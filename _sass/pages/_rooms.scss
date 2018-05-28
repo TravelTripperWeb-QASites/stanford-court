@@ -4,16 +4,18 @@
 
 .room-single {
   @include  container-fix-2;
+
   .room-row {
     @include make-row();
+    padding: 90px 15px;
     @include media-breakpoint-down(sm) {
-      padding: 0 30px;
+      padding: 50px 40px;
     }
   }
   .room-image {
     @include make-col-ready();
     min-height: 468px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     @include media-breakpoint-up(md) {
       @include make-col(4.3);
       min-height: 540px;
@@ -51,25 +53,32 @@
 
 // Room Feature
 .room-features {
-  margin: 88px auto;
+  margin: 0 auto;
+  @include media-breakpoint-up(md) {
+    margin: 88px auto;
+  }
   .feature-list {
+    order: 2;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(6);
+      order: 1;
     }
     .list {
       position: relative;
-
       right: inherit;
       z-index: 2;
       width: 100%;
-      padding: 40px 20px 70px;
+      margin-top: -70px;
+      padding: 13px 0 13px;
       background: $black;
       @include media-breakpoint-up(md) {
         position: absolute;
         top: 39px;
         right: -109px;
         width: 647px;
+        margin: inherit;
+        padding: 40px 20px 70px;
       }
       @include media-breakpoint-up(lg) {
         top: 78px;
@@ -109,8 +118,13 @@
   }
   .feature-image {
     @include make-col-ready();
+    min-height: 380px;
+    order: 1;
     @include media-breakpoint-up(md) {
       @include make-col(6);
+      min-height: 527px;
+      order: 2;
+
     }
   }
 }
