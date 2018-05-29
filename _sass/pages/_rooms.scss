@@ -260,7 +260,8 @@
     right: auto;
     left: -28px;
     z-index: 1;
-    line-height: 7.25rem;
+    width: 100%;
+    line-height: 7.65rem;
     text-align: left;
     @include media-breakpoint-up(md) {
       top: 0;
@@ -296,7 +297,7 @@
       height: 280px;
       overflow-y: scroll;
       @include media-breakpoint-up(md) {
-          max-width: 318px;
+        max-width: 318px;
       }
 
       ul {
@@ -345,4 +346,11 @@
       }
     }
   }
+}
+
+
+.rooms-search {
+  margin: 85px;
+  padding: 80px 0 55px;
+  background: url('/assets/images/rooms/search_bg.jpg');
 }
