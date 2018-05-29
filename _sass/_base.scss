@@ -22,12 +22,17 @@ p {
   padding: 0;
 }
 h1 {
-  @include text-formatting($title-font, $type-size-0, 700, 12.75rem, $secondary-light, uppercase, -40px);
+  @include text-formatting($title-font, $type-size-1, 700, 12.75rem, $secondary-light, uppercase, -28px);
   @include text-gradient(to right, $gradient-1, $gradient-2 100%);
-  @include media-breakpoint-down(sm) {
-    font-size: $type-size-1;
-    letter-spacing: -28px;
+  @include media-breakpoint-up(md) {
+    font-size: 12rem;
+    letter-spacing: -34px;
   }
+  @include media-breakpoint-up(xl) {
+    font-size: $type-size-0;
+    letter-spacing: -40px;
+  }
+
 }
 
 h2 {
