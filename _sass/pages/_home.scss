@@ -33,6 +33,9 @@
     }
     padding: 23px 35px;
     background-color: $white;
+    @media (min-width: 1440px) {
+      padding: 80px 200px;
+    }
     h4 {
       padding-bottom: 10px;
     }

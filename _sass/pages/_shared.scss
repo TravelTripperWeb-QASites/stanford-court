@@ -41,6 +41,11 @@
       }
     }
   }
+  &.without-text {
+    @include media-breakpoint-down(sm) {
+      height: 544px;
+    }
+  }
 }
 
 .inner-intro {
