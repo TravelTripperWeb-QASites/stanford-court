@@ -133,7 +133,10 @@
 .details-wrapper {
   @include make-row() ;
   position: relative;
-  margin: 0;
+  margin: 0 0 55px;
+  @include media-breakpoint-up(md) {
+    margin: 0 0 155px;
+  }
 
   .details {
     @include make-col-ready();
@@ -148,9 +151,12 @@
       @include media-breakpoint-up(md) {
         max-width: 430px;
         margin: auto;
+        padding-right: inherit;
         padding-left: 60px;
       }
       .back-btn {
+        display: inline-block;
+        margin-bottom: 33px;
         font-family: $global-font;
         font-weight: 500;
         color: $secondary-light;
@@ -160,7 +166,7 @@
         }
       }
       h4 {
-        padding-top: 33px;
+        padding-bottom: 33px;
         color: $primary-color;
         span {
           margin-left: 22px;
@@ -169,10 +175,10 @@
         }
       }
       h3 {
-        padding-top: 33px;
+        padding-bottom: 33px;
       }
       .area {
-        margin: 40px 0;
+        margin-bottom: 30px;
         ul {
           padding: 0;
           li {
@@ -192,14 +198,22 @@
       p {
         padding-bottom: 27px;
       }
-      .secondary-btn {
-        margin-top: 35px;
+      .primary-btn {
+        margin-bottom: 35px;
       }
     }
   }
   .tag-line-text {
     position: absolute;
     bottom: 250px;
+    left: -80;
+    @include media-breakpoint-up(xl) {
+      left: 150px;
+    }
+    @include media-breakpoint-up(lg) {
+      left: 80px;
+    }
+
     p {
       position: relative;
       padding-left: 80px;
@@ -228,6 +242,107 @@
       top: 0;
       right: inherit;
       z-index: 1;
+    }
+  }
+}
+
+// UNIQUE ROOM FEATURES
+.room-amenites {
+  position: relative;
+  padding-top: 159px;
+  @include media-breakpoint-up(md) {
+    padding-top: 139px;
+  }
+
+  h2 {
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: -28px;
+    z-index: 1;
+    line-height: 7.25rem;
+    text-align: left;
+    @include media-breakpoint-up(md) {
+      top: 0;
+      right: 0;
+      left: auto;
+      line-height: 12.75rem;
+      text-align: right;
+    }
+  }
+
+  .wrapper {
+    @include container-fix-4;
+    width: 95%;
+    padding: 32px 16px;
+    background: $black;
+    background-image: none;
+    @include media-breakpoint-up(md) {
+      padding: 64px;
+      background-image: url('/assets/images/footer-map.png');
+      background-repeat: no-repeat;
+      background-position: top -83px right -341px;
+    }
+    h4 {
+      padding-bottom: 30px;
+      color: $white;
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+    }
+
+    .amenites-list {
+      width: 100%;
+      height: 280px;
+      overflow-y: scroll;
+      @include media-breakpoint-up(md) {
+          max-width: 318px;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          position: relative;
+          float: left;
+          width: 49%;
+          padding-bottom: 29px;
+          padding-left: 30px;
+          color: $white;
+          list-style: none;
+          @include media-breakpoint-up(md) {
+            float: inherit;
+            width: 80%;
+            padding-bottom: 29px;
+            padding-left: 30px;
+          }
+          &:before {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            content: '';
+            border: 1px solid $white;
+            border-radius: 14px;
+          }
+        }
+      }
+      .force-overflow {
+        min-height: 250px;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+        background: transparent;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $white;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 4px;
+      }
     }
   }
 }
