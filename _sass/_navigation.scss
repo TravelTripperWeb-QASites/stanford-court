@@ -55,10 +55,23 @@
       padding: 0;
       color: $white;
       text-align: left;
+      transition: $global-transition;
       @include media-breakpoint-up(lg) {
         margin-right: 1rem;
         margin-left: 1rem;
         text-align: center;
+      }
+      @include media-breakpoint-down(md) {
+        padding: .6rem 50px;
+        font-size: $type-size-4;
+        font-weight: 700;
+        color: $white;
+        border-bottom: 1px solid $secondary-light;
+        transition: $global-transition;
+        &:hover {
+          color: $black;
+          background-color: $nav-hover-bg;
+        }
       }
       &::after {
         position: absolute;
@@ -77,7 +90,6 @@
         }
       }
       &:hover {
-        color: $white;
         &::after {
           width: 100%;
         }
@@ -86,7 +98,7 @@
   }
   .booknow {
     position: absolute;
-    top: 32px;
+    top: 28px;
     right: 16px;
     padding: 12px;
     font-family: $global-font-bold;
@@ -112,40 +124,39 @@
   }
   &.nav-active {
     padding: 0;
-    background-color: transparent;
+    background-color: $black;
     opacity: 0;
     transition: $global-transition;
-    .logo-active {
-      display: inherit;
-      @media(max-width: 370px) {
-        width: 135px;
-      }
-    }
-    .main-logo {
-      display: none;
-    }
-    .nav-link {
-      transition: $global-transition;
-      @include media-breakpoint-down(md) {
-        padding: .6rem 50px;
-        font-size: $type-size-4;
-        font-weight: 700;
-        color: $white;
-        border-bottom: 1px solid $secondary-light;
-        transition: $global-transition;
-        &:hover {
-          color: $black;
-          background-color: $nav-hover-bg;
+    .navbar-brand {
+      padding: 30px 0 30px 25px;
+      .logo-active {
+        display: inherit;
+        width: 200px;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+        @media(max-width: 370px) {
+          width: 135px;
         }
       }
+      .main-logo {
+        display: none;
+      }
     }
-    // @include media-breakpoint-down(md) {
-    //   background-color: $black;
-    // }
+    .booknow {
+      @include media-breakpoint-up(lg) {
+        top: 63px;
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+    }
+    .navbar-nav {
+      margin-top: -40px;
+    }
   }
   .navbar-toggler {
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 165px;
     width: 40px;
     height: 40px;
