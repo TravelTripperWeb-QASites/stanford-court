@@ -98,7 +98,7 @@
 .newsletter {
   @include container-fix;
   max-width: 1100px;
-  margin: 72px auto 97px auto;
+  margin: 72px auto 97px;
 
   .newsletter-row {
     @include make-row;
@@ -208,8 +208,8 @@ footer {
         margin-right: 10px;
         color: $white;
         vertical-align: top;
+        
         &.fa-phone {
-          -webkit-transform: rotate(140deg); // Safari
           transform: rotate(140deg);
         }
       }
