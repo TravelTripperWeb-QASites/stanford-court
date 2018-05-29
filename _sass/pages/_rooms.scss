@@ -70,7 +70,7 @@
       z-index: 2;
       width: 100%;
       margin-top: -70px;
-      padding: 13px 0 13px;
+      padding: 13px 0;
       background: $black;
       @include media-breakpoint-up(md) {
         position: absolute;
@@ -125,6 +125,109 @@
       min-height: 527px;
       order: 2;
 
+    }
+  }
+}
+
+// Details scss
+.details-wrapper {
+  @include make-row() ;
+  position: relative;
+  margin: 0;
+
+  .details {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    .room-info {
+      width: 100%;
+      margin: 50px auto;
+      padding-right: 40px;
+      padding-left: 40px;
+      @include media-breakpoint-up(md) {
+        max-width: 430px;
+        margin: auto;
+        padding-left: 60px;
+      }
+      .back-btn {
+        font-family: $global-font;
+        font-weight: 500;
+        color: $secondary-light;
+        .svg-inline--fa {
+          margin-right: 10px;
+          font-size: $type-size-5;
+        }
+      }
+      h4 {
+        padding-top: 33px;
+        color: $primary-color;
+        span {
+          margin-left: 22px;
+          font-family: $global-font-bold;
+          font-weight: 700;
+        }
+      }
+      h3 {
+        padding-top: 33px;
+      }
+      .area {
+        margin: 40px 0;
+        ul {
+          padding: 0;
+          li {
+            display: inline-block;
+            padding-right: 20px;
+            text-align: center;
+            img {
+              margin-bottom: 10px;
+            }
+            span {
+              display: block;
+              border-bottom: 1px solid $secondary-light;
+            }
+          }
+        }
+      }
+      p {
+        padding-bottom: 27px;
+      }
+      .secondary-btn {
+        margin-top: 35px;
+      }
+    }
+  }
+  .tag-line-text {
+    position: absolute;
+    bottom: 250px;
+    p {
+      position: relative;
+      padding-left: 80px;
+      font-size: $type-size-4;
+      color: $vertical-line-bg;
+      transform: rotate(270deg);
+      &:before {
+        @extend .vertical-line;
+        background: $vertical-line-bg;
+      }
+    }
+  }
+  .image-slider {
+    @include make-col-ready();
+    padding: 0;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    .carousel-item {
+      min-height: 500px;
+      @include media-breakpoint-up(md) {
+        min-height: 700px;
+      }
+    }
+    .carousel-nav {
+      top: 0;
+      right: inherit;
+      z-index: 1;
     }
   }
 }
