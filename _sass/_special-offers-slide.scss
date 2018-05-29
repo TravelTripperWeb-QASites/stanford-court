@@ -31,7 +31,11 @@
       height: 486px;
       margin-bottom: 23px;
     }
-
-
+  }
+  .slick-arrow {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none !important;
+    }
   }
 }
