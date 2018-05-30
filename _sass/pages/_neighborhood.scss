@@ -42,6 +42,9 @@
         }
       }
     }
+    &.solid-bg {
+      background: $nav-hover-bg;
+    }
   }
   .content {
     @include make-col-ready();

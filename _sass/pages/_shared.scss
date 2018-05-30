@@ -46,6 +46,23 @@
       height: 544px;
     }
   }
+  .banner-nav {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    a {
+      padding: 10px;
+      font-family: $headings-font;
+      font-size: 20px;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
+  }
 }
 
 .inner-intro {
