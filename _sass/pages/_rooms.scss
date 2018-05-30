@@ -1,9 +1,8 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
 
-
 .room-single {
-  @include  container-fix-2;
+  @include container-fix-2;
 
   .room-row {
     @include make-row();
@@ -12,6 +11,7 @@
       padding: 50px 40px;
     }
   }
+
   .room-image {
     @include make-col-ready();
     min-height: 468px;
@@ -21,12 +21,14 @@
       min-height: 540px;
     }
   }
+
   .room-info {
     @include make-col-ready();
     padding: 0 !important;
     @include media-breakpoint-up(md) {
       @include make-col(7.7);
     }
+
     .info {
       max-width: 100%;
       margin: auto;
@@ -36,27 +38,30 @@
       @include media-breakpoint-up(lg) {
         max-width: 486px;
       }
+
       h3 {
         margin-bottom: 24px;
         color: $white;
       }
+
       p {
         padding-top: 25px;
         color: $white;
       }
+
       .secondary-btn-inverse {
         margin-top: 35px;
       }
     }
   }
 }
-
 // Room Feature
 .room-features {
   margin: 0 auto;
   @include media-breakpoint-up(md) {
     margin: 88px auto;
   }
+
   .feature-list {
     order: 2;
     @include make-col-ready();
@@ -64,6 +69,7 @@
       @include make-col(6);
       order: 1;
     }
+
     .list {
       position: relative;
       right: inherit;
@@ -85,10 +91,12 @@
         right: -229px;
         width: 847px;
       }
+
       h4 {
         padding: 30px;
         color: $white;
       }
+
       ul {
         li {
           position: relative;
@@ -102,6 +110,7 @@
             float: left;
             width: 33.3%;
           }
+
           &:before {
             position: absolute;
             top: 5px;
@@ -116,6 +125,7 @@
       }
     }
   }
+
   .feature-image {
     @include make-col-ready();
     min-height: 380px;
@@ -124,14 +134,12 @@
       @include make-col(6);
       min-height: 527px;
       order: 2;
-
     }
   }
 }
-
 // Details scss
 .details-wrapper {
-  @include make-row() ;
+  @include make-row();
   position: relative;
   margin: 0 0 55px;
   @include media-breakpoint-up(md) {
@@ -143,51 +151,73 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     .room-info {
       width: 100%;
-      margin: 50px auto;
+      margin: 40px auto 18px;
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 35px;
       @include media-breakpoint-up(md) {
         max-width: 430px;
-        margin: auto;
+        margin: 50px auto;
         padding-right: inherit;
         padding-left: 60px;
       }
+
       .back-btn {
         display: inline-block;
         margin-bottom: 33px;
         font-family: $global-font;
         font-weight: 500;
         color: $secondary-light;
+
         .svg-inline--fa {
           margin-right: 10px;
           font-size: $type-size-5;
         }
       }
+
       h4 {
-        padding-bottom: 33px;
+        padding-bottom: 23px;
         color: $primary-color;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 33px;
+        }
         span {
           margin-left: 22px;
           font-family: $global-font-bold;
           font-weight: 700;
         }
       }
+
       h3 {
-        padding-bottom: 33px;
+        padding-bottom: 28px;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 33px;
+        }
       }
+
       .area {
         margin-bottom: 30px;
+
         ul {
           padding: 0;
+
           li {
             display: inline-block;
-            padding-right: 20px;
+            padding-right: 50px;
             text-align: center;
-            img {
-              margin-bottom: 10px;
+            @include media-breakpoint-up(md) {
+              padding-right: 20px;
             }
+
+            img {
+              margin-bottom: 18px;
+              @include media-breakpoint-up(md) {
+                margin-bottom: 10px;
+              }
+            }
+
             span {
               display: block;
               border-bottom: 1px solid $secondary-light;
@@ -195,14 +225,20 @@
           }
         }
       }
+
       p {
-        padding-bottom: 27px;
+        padding-bottom: 21px;
+        @include media-breakpoint-up(md) {
+          margin-bottom: 27px;
+        }
       }
+
       .primary-btn {
         margin-bottom: 35px;
       }
     }
   }
+
   .tag-line-text {
     position: absolute;
     bottom: 250px;
@@ -220,24 +256,28 @@
       font-size: $type-size-4;
       color: $vertical-line-bg;
       transform: rotate(270deg);
+
       &:before {
         @extend .vertical-line;
         background: $vertical-line-bg;
       }
     }
   }
+
   .image-slider {
     @include make-col-ready();
     padding: 0;
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     .carousel-item {
       min-height: 500px;
       @include media-breakpoint-up(md) {
         min-height: 700px;
       }
     }
+
     .carousel-nav {
       top: 0;
       right: inherit;
@@ -284,6 +324,7 @@
       background-repeat: no-repeat;
       background-position: top -83px right -341px;
     }
+
     h4 {
       padding-bottom: 30px;
       color: $white;
@@ -317,6 +358,7 @@
             padding-bottom: 29px;
             padding-left: 30px;
           }
+
           &:before {
             position: absolute;
             top: 5px;
@@ -329,17 +371,21 @@
           }
         }
       }
+
       .force-overflow {
         min-height: 250px;
       }
+
       &::-webkit-scrollbar {
         width: 5px;
         background: transparent;
         border-radius: 4px;
       }
+
       &::-webkit-scrollbar-thumb {
         background-color: $white;
       }
+
       &::-webkit-scrollbar-track {
         background-color: transparent;
         border-radius: 4px;
@@ -347,10 +393,163 @@
     }
   }
 }
-
-
+// rooms search
 .rooms-search {
-  margin: 85px;
+  margin: 85px auto;
   padding: 80px 0 55px;
   background: url('/assets/images/rooms/search_bg.jpg');
+  @include  media-breakpoint-down(sm) {
+    display: none;
+  }
+  .search-form {
+    @include container-fix-4;
+    max-width: 1018px;
+    ul {
+      margin-bottom: 55px;
+      padding: 0;
+      li {
+        display: inline-flex;
+        flex-direction: column;
+        width: 125px;
+        list-style: none;
+        border-right: 1px solid $black;
+        @include  media-breakpoint-down(md) {
+          width: 100px;
+        }
+        &:nth-child(1) {
+          width: 250px;
+          @include  media-breakpoint-down(md) {
+            width: 220px;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 250px;
+          @include  media-breakpoint-down(md) {
+            width: 220px;
+          }
+
+        }
+
+        &:nth-last-child(1) {
+          border-right: 0;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      font-size: 3rem;
+      color: $black;
+      text-align: center;
+      background: none;
+      border: 0;
+      @include  media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+      &.date-pic {
+        background: url('/assets/images/rooms/angle-up.png');
+        background-repeat: no-repeat;
+        background-position: right 20px bottom 22px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      font-size: 3rem;
+      color: $black;
+      @include  media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    ::-moz-placeholder {
+      font-size: 3rem;
+      color: $black;
+      @include  media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    :-ms-input-placeholder {
+      font-size: 3rem;
+      color: $black;
+      @include  media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    :-moz-placeholder {
+      font-size: 3rem;
+      color: $black;
+      @include  media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+    }
+
+    input[type='number'] {
+      -moz-appearance: textfield;
+      -webkit-appearance: textfield;
+      appearance: textfield;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    .number-input {
+      display: inline-flex;
+      padding: 0 10px;
+    }
+
+    .number-input,
+    .number-input * {
+      box-sizing: border-box;
+    }
+
+    .number-input a {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      margin: 0;
+      cursor: pointer;
+      -webkit-appearance: none;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+    }
+
+    .number-input a:after,
+    .number-input a:before {
+      position: absolute;
+      top: 49px;
+      left: 10px;
+      display: inline-block;
+      width: 1rem;
+      height: 2px;
+      content: '';
+      background-color: #212121;
+      transform: translate(-50%, -50%);
+    }
+
+    .number-input a.plus:after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .number-input input [type=number] {
+      max-width: 5rem;
+      text-align: center;
+    }
+  }
 }

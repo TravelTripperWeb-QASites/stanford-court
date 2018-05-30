@@ -97,9 +97,14 @@ a {
   padding: 17px 34px;
   background-image: none;
   border: 1px solid $secondary-color;
-  border-radius: 27px;
+  border-radius: 34px;
   @include media-breakpoint-up(md) {
+    padding: 17px 39px;
+    border-radius: 39px;
+  }
+  @include media-breakpoint-up(lg) {
     padding: 17px 55px;
+    border-radius: 55px;
   }
   &:hover {
     color: $white;

@@ -3,7 +3,12 @@
 .special-offers {
   @include container-fix-2;
   max-width: 1330px;
-  margin-bottom: 95px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(sm) {
+    margin-top: inherit;
+    margin-bottom: 95px;
+  }
   p {
     max-width: 516px;
     margin: auto;
@@ -12,7 +17,7 @@
   }
 
   .item {
-    padding: 63px 0 55px;
+    padding: 28px 0 0;
     @include media-breakpoint-up(sm) {
       padding: 63px 30px 55px;
     }
@@ -33,9 +38,16 @@
     }
   }
   .slick-arrow {
+    top: 110px !important;
     display: block;
     @include media-breakpoint-up(md) {
       display: none !important;
+    }
+    &.slick-next {
+      right: 0 !important;
+    }
+    &.slick-prev {
+      right: 64px !important;
     }
   }
   &.text {
