@@ -151,7 +151,10 @@
       }
     }
     .navbar-nav {
-      margin-top: -50px;
+      margin-top: 0;
+      @include media-breakpoint-up(lg) {
+        margin-top: -50px;
+      }
     }
   }
   .navbar-toggler {

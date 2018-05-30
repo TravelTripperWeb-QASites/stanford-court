@@ -45,6 +45,30 @@ $(window).on("load", function () {
     ]
   });
 
+  $('#eventsCarousel').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
 
   $(document).ready(function(){
     $("#input_15").datepicker();
