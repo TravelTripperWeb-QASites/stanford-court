@@ -7,23 +7,28 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
+</div>
 
-  Name:
+{% assign categories = site.data._galleries %}
+<section class="inner-nav mb-5">
+  <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
+  {% for category in categories %} {% assign catname = category[0] %}
+  <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
+    {% endfor %}
+</section>
 
-    Gallery Page
-
-  Description:
-
-    Display gallery images from the media library.
-
-  Usage:
-
-    Create a new gallery from the 'manage galleries' tab, then display the
-    images by looping over the gallery items, referenced by the gallery name.
-
-    eg. {% for photo in site.data._galleries.GALLERY_NAME.photos %}
-          <img src="{{ photo.url }}" alt="{{ photo.description }}">
-        {% endfor %}
-
-{% endcomment %}
+<section class="gallery-bg">
+<div class="gallery-listing mb-100" data-offergallery="true">
+	<div class="card-columns">
+		 {% for category in categories %}
+		    {% assign catname = category[0] %}
+		  	  {% for photo in site.data._galleries[catname].photos %}
+		  	   <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
+		    	<img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{photo.alt}}">
+		  	   </div>
+		  	{% endfor %}
+		{% endfor %}
+	</div>
+</div>
+</section>
