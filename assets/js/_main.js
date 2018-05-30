@@ -47,6 +47,8 @@ $(window).on("load", function () {
 
 
   $(document).ready(function(){
+    $("#input_15").datepicker();
+    $("#input_16").datepicker();
 
     $(".gallery-carousel-inner .item").hover(function(){
       $(".item").removeClass("active");
