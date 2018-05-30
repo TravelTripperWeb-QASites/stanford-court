@@ -99,7 +99,10 @@
   @include container-fix;
   max-width: 1100px;
   margin: 72px auto 97px;
-
+  @include media-breakpoint-down(md) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
   .newsletter-row {
     @include make-row;
   }
@@ -167,6 +170,9 @@ footer {
   background-image: none;
   background-repeat: no-repeat;
   background-position: -353px -232px;
+  @include media-breakpoint-down(sm) {
+    padding: 0 36px;
+  }
   @include media-breakpoint-up(md) {
     background-image: url('/assets/images/footer-map.png');
   }
@@ -208,7 +214,7 @@ footer {
         margin-right: 10px;
         color: $white;
         vertical-align: top;
-        
+
         &.fa-phone {
           transform: rotate(140deg);
         }
@@ -222,13 +228,14 @@ footer {
       }
     }
     .links {
-      @include make-col-ready();
-      @include media-breakpoint-down(md) {
-        @include make-col(4);
-      }
-      @include media-breakpoint-up(md) {
-        @include make-col(4);
-      }
+      // @include make-col-ready();
+      // @include media-breakpoint-down(md) {
+      //   @include make-col(4);
+      // }
+      // @include media-breakpoint-up(md) {
+      //   @include make-col(4);
+      // }
+      @include make-col(4);
       ul {
         margin: 0;
         padding: 0;

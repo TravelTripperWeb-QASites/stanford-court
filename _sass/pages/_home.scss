@@ -364,3 +364,221 @@
     }
   }
 }
+
+
+
+//stay stanford court
+.stay-sfc {
+  margin: 97px auto 102px;
+  background: $gray-dark;
+  background-image: url('/assets/images/home/stay-sfc.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  .stay-wrapper {
+    @include container-fix-2;
+    position: relative;
+    min-height: 409px;
+
+    .stay-row {
+      @include make-row ;
+    }
+    .header-title {
+      padding-top: 93px;
+      padding-bottom: 30px;
+      @include media-breakpoint-up(md) {
+        @include make-col(5);
+      }
+      h4 {
+        color: $white;
+      }
+      h3 {
+        padding-top: 18px;
+        padding-bottom: 53px;
+      }
+      .secondary-btn-inverse {
+        padding-right: 60px;
+        padding-left: 60px;
+      }
+    }
+    .logo {
+      position: absolute;
+      right: 19px;
+      bottom: 72px;
+    }
+  }
+}
+
+//blog section
+
+.home-blog {
+  @include container-fix-2;
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    border-bottom: 1px solid  $vertical-line-bg;
+  }
+  .home-blog-row {
+    @include make-row();
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+  }
+
+  .blog-top {
+    @include make-col-ready();
+    padding: 0 30px;
+    background: $black;
+    @include media-breakpoint-up(md) {
+      @include make-col(9);
+      padding-top: 70px;
+    }
+
+    .info {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(8);
+        padding-bottom: 93px;
+        padding-left: 107px;
+      }
+      h3 {
+        padding-top: 45px;
+        br {
+          @include media-breakpoint-down(sm) {
+            display: none;
+          }
+        }
+        @include media-breakpoint-up(md) {
+          padding-top: 18px;
+        }
+      }
+      p {
+        max-width: 436px;
+        padding-top: 20px;
+        color: $white;
+      }
+    }
+
+    .link {
+      @include make-col-ready();
+      margin: 18px auto 100px;
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+        margin: 40px auto 80px;
+        text-align: center;
+      }
+    }
+  }
+
+  .blog-carousel {
+    @include make-row();
+    position: relative;
+    margin-top: -40px;
+    margin-right: 0;
+    margin-bottom: 130px;
+    margin-left: 50px;
+    @include media-breakpoint-up(md) {
+      margin-top: -112px;
+    }
+    .carousel {
+      width: 100%;
+      .carouse-row {
+        @include make-row();
+      }
+      .carousel-text {
+        order: 2;
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+          @include make-col(6);
+          order: 1;
+        }
+        .info {
+          max-width: 100%;
+          @include media-breakpoint-up(md) {
+            max-width: 440px;
+            margin: auto;
+          }
+          h3 {
+            padding-bottom: 10px;
+          }
+          span {
+            font-family: $global-font-bold;
+            font-size: $type-size-5;
+            font-weight: 700;
+            letter-spacing: 1.22px;
+          }
+          p {
+            padding-top: 20px;
+
+          }
+        }
+      }
+      .carousel-image {
+        @include make-col-ready();
+        min-height: 337px;
+        margin-bottom: 40px;
+        order: 1;
+        @include media-breakpoint-up(md) {
+          @include make-col(5);
+          min-height: 395px;
+          margin-bottom: inherit;
+          order: 2;
+        }
+
+      }
+      .blog-controls {
+        @include make-row();
+      }
+      .blog-indicators {
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+          @include make-col(6);
+        }
+        .carousel-indicators {
+          left: 0;
+          width: 440px;
+          margin: auto;
+
+          @include media-breakpoint-down(md) {
+            width: 100%;
+            padding: 15px;
+          }
+        }
+      }
+      .blog-nav {
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+          @include make-col(5);
+        }
+      }
+    }
+    .tag-line-text {
+      position: absolute;
+      top: -105px;
+      display: none;
+      @include media-breakpoint-up(md) {
+        right: 0;
+        display: block;
+      }
+      p {
+        position: relative;
+        padding-left: 80px;
+        font-size: $type-size-4;
+        color: $black;
+        transform: rotate(270deg);
+        transform-origin: right bottom 0;
+        &:before {
+          @extend .vertical-line;
+          background: $black;
+        }
+      }
+    }
+
+    .carousel-nav {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+}
