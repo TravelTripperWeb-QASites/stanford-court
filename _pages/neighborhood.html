@@ -14,25 +14,29 @@ meta_tags:
   <div class="page-intro-inner m-0 d-flex align-items-center">
     <div class="gradient-bg">
       <div class="gradient-bg-inner">
-        <h4>San francisco</h4>
-        <h3>THE PERFECT<br>LOCATION </h3>
+        <div class="text-inner">
+          <h4>San francisco</h4>
+          <h3>THE PERFECT<br>LOCATION </h3>
+          <p class="d-block d-lg-none">It’s cool. We’ll point you in the right direction. Stanford Court overlooks the city from Nob Hill, one of San Francisco’s most sought-after neighborhoods. It's a great spot with some spectacular views, all just blocks away from Union Square. Whether you’re headed to the Financial District, looking for the best dim sum in Chinatown, or meeting up at the Moscone center, everything you need is easily within walking distance.</p>
+        </div>
         <div class="image background-cover" style="background-image: url('/assets/images/neighborhood/intro.jpg');"></div>
       </div>
     </div>
-    <div class="content">
+    <div class="content d-none d-lg-block">
       <p>It’s cool. We’ll point you in the right direction. Stanford Court overlooks the city from Nob Hill, one of San Francisco’s most sought-after neighborhoods. It’s a great spot with some spectacular views, all just blocks away from Union Square. Whether you’re headed to the Financial District, looking for the best dim sum in Chinatown, or meeting up at the Moscone center, everything you need is easily within walking distance.</p>
     </div>
   </div>
 </section>
 
-<div class="map">
+<div class="map d-none d-md-block">
   <img src="/assets/images/neighborhood/map.jpg" alt="Map">
 </div>
 
-<section class="details-wrapper">
+<section class="attractions-wrapper">
   <div class="details pt-5">
-    <div class="room-info">
-      <h3>Golden Gate <br>Bridge</h3>
+    <div class="attraction-info">
+      <h4 class="d-block d-md-none">Local attractions</h4>
+      <h3>Golden Gate<br class="d-none d-md-block">Bridge</h3>
       <h4>insert address here <span>(20min)</span></h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita. </p>
       <div>
@@ -40,7 +44,7 @@ meta_tags:
       </div>
     </div>
   </div>
-  <div class="image-slider two">
+  <div class="image-slider">
   <div class="carousel-nav white">
     <a class="carousel-control-prev" href="#attractionsCarousel" role="button" data-slide="prev">
     <i class="fas fa-caret-left"></i>
@@ -59,6 +63,51 @@ meta_tags:
   </div>
 </section>
 
+<section class="events-carousel-wrapper">
+  <h2>Events</h2>
+  <div class="events-carousel">
+    <div class="events-carousel-inner">
+      <div id="eventsCarousel" class="slick-controls">
+        <div class="item">
+          <div class="image background-cover" style="background-image:url('/assets/images/neighborhood/event-1.jpg');">
+          </div>
+          <div class="content">
+            <h3>Happy hour @ 721 Lounge</h3>
+            <a href="/" class="primary-btn-inverse">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image background-cover" style="background-image:url('/assets/images/neighborhood/event-2.jpg');">
+          </div>
+          <div class="content">
+            <h3>Sourdough Starter Workshops 2018</h3>
+            <a href="/" class="primary-btn-inverse">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image background-cover" style="background-image:url('/assets/images/neighborhood/event-3.jpg');">
+          </div>
+          <div class="content">
+            <h3>Old Potrero Rye Whiskey Wednesday</h3>
+            <a href="/" class="primary-btn-inverse">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image background-cover" style="background-image:url('/assets/images/neighborhood/event-2.jpg');">
+          </div>
+          <div class="content">
+            <h3>Sourdough Starter Workshops 2018</h3>
+            <a href="/" class="primary-btn-inverse">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="/events/" class="secondary-btn-inverse">See all Events</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% include special-offers-text.html %}
 
 <section class="find-your-way">
@@ -66,13 +115,15 @@ meta_tags:
     <div class="image-part background-cover" style="background-image: url('/assets/images/neighborhood/find-way.jpg');">
     </div>
     <div class="content">
-      <h4 class="mb">Find Your Way</h4>
-      <h4>Directions 01</h4>
-      <h3>San Francisco International Airport - SFO</h3>
-      <h4>Directions 02</h4>
-      <h3>Oakland International Airport - OAK</h3>
-      <h4>Directions 03</h4>
-      <h3>san Jose International Airport - SJC</h3>
+      <div class="content-inner">
+        <h4 class="mb">Find Your Way</h4>
+        <h4>Directions 01</h4>
+        <h3>San Francisco International Airport - SFO</h3>
+        <h4>Directions 02</h4>
+        <h3>Oakland International Airport - OAK</h3>
+        <h4>Directions 03</h4>
+        <h3>san Jose International Airport - SJC</h3>
+      </div>
     </div>
   </div>
 </section>

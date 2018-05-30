@@ -243,14 +243,6 @@
       right: inherit;
       z-index: 1;
     }
-    &.two {
-      .carousel-item {
-        min-height: 500px;
-        @include media-breakpoint-up(md) {
-          min-height: 395px;
-        }
-      }
-    }
   }
 }
 

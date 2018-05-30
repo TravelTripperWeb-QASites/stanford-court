@@ -270,3 +270,47 @@
     }
   }
 }
+
+// slick arrows
+
+.slick-controls {
+  .slick-arrow {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    bottom: auto;
+    left: auto;
+    z-index: 9;
+    padding: 30px 32px;
+    opacity: 1;
+    &:before {
+      content: none;
+      opacity: 1;
+    }
+    &:hover, &:focus {
+      background-color: $white;
+    }
+    &.slick-prev {
+      right: 74px;
+      background: $white url('/assets/images/neighborhood/slick-prev.png') no-repeat center center;
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-prev.png');
+      }
+      &:after {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 1px;
+        height: 20px;
+        content: '';
+        background: $black;
+      }
+    }
+    &.slick-next {
+      background: $white url('/assets/images/neighborhood/slick-next.png') no-repeat center center;
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-next.png');
+      }
+    }
+  }
+}
