@@ -1,2 +1,126 @@
 // About Page Elements
 // ==========================================================================
+
+
+.history {
+  min-height: 770px;
+  background: url('/assets/images/hotel/history.jpg');
+}
+
+
+
+.hotel-amenities-wrap {
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+    padding: 73px 0;
+  }
+  margin-bottom: 40px;
+  padding: 46px 33px;
+  background: $black;
+  background-image: url('/assets/images/hotel/map.png');
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  @include media-breakpoint-down(md) {
+    background-image: none;
+  }
+  .hotel-amenities-inner {
+    @include container-fix-2;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+    .hotel-amenities-row {
+      @include make-row;
+    }
+    .text {
+      @include make-col-ready();
+      @include media-breakpoint-up(lg) {
+        @include make-col(5.5);
+      }
+      padding: 0;
+      p {
+        padding-right: 0;
+        padding-bottom: 30px;
+        padding-left: 0;
+        color: $white;
+        @include media-breakpoint-up(lg) {
+          padding-right: 18px;
+          padding-left: 116px;
+        }
+
+      }
+      h3 {
+        margin: 0 auto;
+        padding: 0 0 25px;
+        @include media-breakpoint-up(lg) {
+          padding: 0;
+        }
+      }
+    }
+    .images {
+      @include make-col-ready();
+      @include media-breakpoint-up(lg) {
+        @include make-col(5.5);
+      }
+      .images-inner {
+        padding: 0 0 45px;
+        @include make-row;
+        @include media-breakpoint-up(lg) {
+          padding: 0;
+        }
+      }
+      .one {
+        @include make-col-ready();
+        @media (min-width: 480px) {
+          @include make-col(6.5);
+        }
+        @include media-breakpoint-up(md) {
+          min-height: 315px;
+        }
+        height: 194px;
+      }
+      .two {
+        @include make-col-ready();
+        @media (min-width: 480px) {
+          @include make-col(5.5);
+        }
+        @include media-breakpoint-up(md) {
+          min-height: 315px;
+        }
+        height: 194px;
+      }
+      .full {
+        @include make-col-ready();
+        @media (min-width: 480px) {
+          @include make-col(12);
+        }
+        @include media-breakpoint-up(md) {
+          min-height: 315px;
+        }
+        height: 194px;
+      }
+    }
+    .tag-line-text {
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      @include media-breakpoint-up(xl) {
+        left: -30px;
+      }
+      p {
+        position: relative;
+        padding-left: 80px;
+        font-size: $type-size-4;
+        color: $white;
+        transform: rotate(270deg);
+        transform-origin: bottom left;
+        &:before {
+          @extend .vertical-line;
+          background: $vertical-line-bg;
+        }
+      }
+    }
+  }
+}
