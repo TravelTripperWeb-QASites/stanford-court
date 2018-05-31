@@ -80,3 +80,43 @@ $(window).on("load", function () {
     });
 
   });
+
+// Gallery 
+  $(document).ready(function () {
+  //light gallery filter
+  $(".filter").on("click", function () {
+    var $this = $(this);
+    // if we click the active tab, do nothing
+    if (!$this.hasClass("active")) {
+      $(".filter").removeClass("active");
+      $this.addClass("active"); // set the active tab
+      var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
+      $filter == 'all' ? // if we select "view all", return to initial settings and show all
+        $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn() : // otherwise
+        $(".fancybox").fadeOut(0).filter(function () {
+          return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+        }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+      //reset lightgallery after filtering
+      setTimeout(function () {
+        var lightgallery = $('[data-offergallery]');
+        if (lightgallery.length > 0) {
+          lightgallery.data('lightGallery').destroy(true);
+          $('[data-offergallery]').lightGallery({
+            selector: ".item:visible",
+            counter: false,
+            share: false
+
+          });
+        }
+
+      }, 1000);
+    } // if
+  }); // on
+  $('[data-offergallery]').lightGallery({
+    selector: '.item',
+    counter: false,
+    download: false,
+    fullScreen: false
+  });
+
+});
