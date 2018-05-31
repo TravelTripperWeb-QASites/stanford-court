@@ -1,0 +1,25 @@
+{
+  "title": {
+    "required": true
+  },
+  "category":{
+  	"label": "Category",
+  	"type": "select",
+  	"options": ["attractions","shops","eat-drink","transportation"],
+  	"required": true
+  },
+  "address":{
+    "required": true
+  },
+  "Lattitude":{
+     "required": true,
+     "type": "float"
+  },
+  "Longitude":{
+     "required": true,
+     "type": "float"
+  },  
+  "order":{
+    "type": "integer"
+  }
+}
