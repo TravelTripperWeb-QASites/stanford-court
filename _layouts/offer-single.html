@@ -1,39 +1,33 @@
 ---
 layout: default
 ---
-
-<section class="inner-banner without-text background-cover" style="background-image: url('/assets/images/offers/offer-hero.jpg');">
+<div class="loading" style="display:block">Loading&#8230;</div>
+<section rt3-special-rates="offers" ng-controller="offerDetail">
+<section class="inner-banner without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
 </section>
 
 <div class="inner-nav">
-  <a class="active" href="" title="Standard">Advanced Purchase</a>
-  <a href="">Bed & Breakfast</a>
-  <a href="">Parking</a>
-  <a href="">California Resident</a>
-  <a href="">Night Owl</a>
-  <a href="">Government Rate</a>
-  <a href="">AAA/AARP</a>
-  <a href="">Casual Unwind</a>
+  <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates"><span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span></a>
 </div>
 
 <section class="details-wrapper align-items-center">
   <div class="tag-line-text">
-    <p>01 Premier View Queen</p>
+    <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
   </div>
   <div class="details">
     <div class="room-info">
-      <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back To Offers</a>
-      <h4>Save Up To <span>15% Off</span></h4>
-      <h3>ADVANCED PURCHASE RATE 15%</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+      <a class="back-btn" href="/offers/"><i class="fas fa-arrow-left"></i> Back To Offers</a>
+      <!-- <h4>Save Up To <span>15% Off</span></h4> -->
+      <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
+      <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
       <div>
         <a class="primary-btn" href="/contact/">Contact Us</a>
       </div>
-      <a class="secondary-btn" href="/">Book This Offer</a>
+      <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
     </div>
   </div>
   <div class="image-slider">
-  <div class="carousel-nav white">
+  <div class="carousel-nav white" ng-show="offers.sRdetail.images.length > 0">
     <a class="carousel-control-prev" href="#offersCarousel" role="button" data-slide="prev">
     <i class="fas fa-caret-left"></i>
     <span class="sr-only">Previous</span>
@@ -45,8 +39,7 @@ layout: default
   </div>
   <div id="offersCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active background-cover" style="background-image:url('/assets/images/rooms/slide.jpg'); "></div>
-      <div class="carousel-item background-cover" style="background-image:url('/assets/images/rooms/slide.jpg');"></div>
+      <div class="carousel-item background-cover" ng-class="{'active': $index ==0 }" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images"></div>
     </div>
   </div>
 </section>
@@ -64,4 +57,5 @@ layout: default
       <p>Our Gallery</p>
     </div>
   </div>
+</section>
 </section>
