@@ -2,22 +2,23 @@
   "name": "Hotel",
   "photos": [
     {
-      "name": "swimming-pool",
-      "file_name": "swimming-pool.jpg",
-      "file_type": "image/jpeg",
-      "url": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/swimming-pool.jpg",
+      "name": "lobby-seating",
+      "file_name": "lobby-seating.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/lobby-seating.jpg",
       "tags": "",
-      "file_size": 100019,
-      "width": 600,
-      "height": 459,
       "description": "",
-      "date_added": "2018-04-06-045753",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/large_swimming-pool.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/medium_swimming-pool.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/small_swimming-pool.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/xsmall_swimming-pool.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/thumb_swimming-pool.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/32_884_14255/media/2018-04-06-045753/swimming-pool.jpg"
+      "date_added": "2018-05-31-025758",
+      "file_type": "image/jpeg",
+      "width": 1080,
+      "height": 1600,
+      "file_size": 230976,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/large_lobby-seating.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/medium_lobby-seating.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/small_lobby-seating.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/xsmall_lobby-seating.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/thumb_lobby-seating.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/lobby-seating.jpg",
+      "alt": "Lobby Seating"
     }
   ],
   "description": ""
