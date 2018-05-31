@@ -21,5 +21,26 @@
     "alt": "standard",
     "caption": "standard",
     "description": "standard"
+  },
+  "roombackgroundimage": {
+    "name": "standard_bg",
+    "file_name": "standard_bg.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/standard_bg.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-05-31-073326",
+    "file_type": "image/jpeg",
+    "width": 2880,
+    "height": 1438,
+    "file_size": 93902,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/large_standard_bg.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/medium_standard_bg.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/small_standard_bg.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/xsmall_standard_bg.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/thumb_standard_bg.jpg",
+    "git_file_name": "_assets/image_data/standard-bg.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073326/standard_bg.jpg",
+    "alt": "Standard rooms",
+    "caption": ""
   }
 }
