@@ -27,35 +27,19 @@ meta_tags:
 
 <section class="attractions-listing">
   <div class="attractions-listing-row m-0">
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
-      </div>
+    {% assign attractions = site.data._models.attractions | sort: 'sort_order' %}
+    {% for attraction in attractions %}
+    <div class="attraction-block">
+      <a href="{{ attraction.url_friendly_name }}/">
+        <div class="image d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
+        </div>
+      </a>
       <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
+        <h3>{{ attraction.title }}</h3>
+        <p>{{ attraction.description }} </p>
+        <a href="{{ attraction.url_friendly_name }}/" class="primary-btn">View Attraction</a>
       </div>
     </div>
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
-      </div>
-      <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
-      </div>
-      <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>

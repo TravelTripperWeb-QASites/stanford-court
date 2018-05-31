@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="inner-banner without-text background-cover" style="background-image: url('/assets/images/offers/offer-hero.jpg');">
+<section class="inner-banner without-text background-cover" style="background-image: url('{{ page.banner_image.url_large }}');">
 </section>
 
 <!-- <div class="inner-nav">
@@ -17,19 +17,15 @@ layout: default
 </div> -->
 
 <section class="details-wrapper align-items-center">
-  <div class="tag-line-text">
-    <p>01 Premier View Queen</p>
-  </div>
   <div class="details">
     <div class="room-info">
-      <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back To Offers</a>
-      <h4>Save Up To <span>15% Off</span></h4>
-      <h3>ADVANCED PURCHASE RATE 15%</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+      <a class="back-btn" href="/attractions/"><i class="fas fa-arrow-left"></i> Back To Attractions</a>
+      <h4>{{ page.address }} <span>{{ page.time }}</span></h4>
+      <h3>{{ page.title }}</h3>
+      <p>{{ page.description }}</p>
       <div>
-        <a class="primary-btn" href="/contact/">Contact Us</a>
+        <a class="primary-btn" href="{{ page.website }}" target="_blank">Website</a>
       </div>
-      <a class="secondary-btn" href="/">Book This Offer</a>
     </div>
   </div>
   <div class="image-slider">
@@ -45,8 +41,9 @@ layout: default
   </div>
   <div id="offersCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
+      {% for image in page.gallery %}
       <div class="carousel-item active background-cover" style="background-image:url('/assets/images/rooms/slide.jpg'); "></div>
-      <div class="carousel-item background-cover" style="background-image:url('/assets/images/rooms/slide.jpg');"></div>
+      {% endfor %}
     </div>
   </div>
 </section>

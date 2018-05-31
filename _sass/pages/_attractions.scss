@@ -6,7 +6,7 @@
   .attractions-listing-row {
     @include make-row;
   }
-  .offer-block {
+  .attraction-block {
     margin-bottom: 50px;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
@@ -51,9 +51,6 @@
       }
       a {
         margin-bottom: 50px;
-        // &:last-child {
-        //   margin-bottom: 0;
-        // }
         @include media-breakpoint-up(md) {
           margin-bottom: 0;
         }
