@@ -323,6 +323,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030537/thumb_lounge-and-bar1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030537/lounge-and-bar1.jpg",
       "alt": "Lounge and bar"
+    },
+    {
+      "name": "map-room",
+      "file_name": "map-room.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030558",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 569903,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/large_map-room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/medium_map-room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/small_map-room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/xsmall_map-room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/thumb_map-room.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
+      "alt": "Map Room"
     }
   ],
   "description": ""
