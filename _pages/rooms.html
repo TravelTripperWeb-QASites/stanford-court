@@ -24,72 +24,25 @@ meta_tags:
     </div>
   </div>
 </section>
-
-<section class="background-cover" style="background-image:url(/assets/images/rooms/standard_bg.jpg);">
+{% assign rooms = site.data._models.rooms %}
+{% for room in rooms %}
+<section class="background-cover" style="background-image:url(/assets/images/rooms/{{ room.title | downcase }}_bg.jpg);">
   <div class="room-single">
     <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/standard.jpg);"></div>
+      <div class="room-image  background-cover" style="background-image:url({{room.roomimage.url}});"></div>
       <div class="room-info">
         <div class="info">
-        <h3 class="text-white">Standard</h3>
+        <h3 class="text-white">{{room.title}}</h3>
         <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>Standard Rooms are up to 210 sq feet. These are our interior facing rooms,compact, quiet, and perfect for that quick trip. Feature fast and reliable WiFi, writing desk, coffee/tea maker, premium cable, in room safe, and windows that can open. Connecting rooms are not available. Accessible Rooms available.Max occupancy is two persons.</p>
-        <a class="secondary-btn-inverse" href="/">BookRoom</a>
+        <p>{{room.long_description}}</p>
+        <a class="secondary-btn-inverse" href="{{room.book_this_room}}">Book Room</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<section class="background-cover" style="background-image:url(/assets/images/rooms/deluxe_bg.jpg);">
-  <div class="room-single">
-    <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/deluxe.jpg);"></div>
-      <div class="room-info">
-        <div class="info">
-        <h3 class="text-white">Deluxe</h3>
-        <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>Deluxe rooms up to 240 sq feet and include a King or Queen Bed. Situated on the exterior side and just the right size, these are our most popular rooms. Accessible Rooms available. Max occupancy is two persons.</p>
-        <a class="secondary-btn-inverse" href="/">BookRoom</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="background-cover" style="background-image:url(/assets/images/rooms/premier_bg.jpg);">
-  <div class="room-single">
-    <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/premier.jpg);"></div>
-      <div class="room-info">
-        <div class="info">
-        <h3 class="text-white">PREMIER</h3>
-        <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>Premier View rooms are up to 256 sq ft and include a King or Queen Bed. With views of the city skyline or bay, these rooms offer that special Nob Hill experience! Max occupancy is three persons.<br>Premier Interior rooms are up to 270 sq ft. Spacious rooms with two Queen Beds, located on the interior side. Max occupancy is four persons.</p>
-        <a class="secondary-btn-inverse" href="/">BookRoom</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="background-cover" style="background-image:url(/assets/images/rooms/suites_bg.jpg);">
-  <div class="room-single">
-    <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/suites.jpg);"></div>
-      <div class="room-info">
-        <div class="info">
-        <h3 class="text-white">SUITES</h3>
-        <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>Standard Rooms are up to 210 sq feet. These are our interior facing rooms,compact, quiet, and perfect for that quick trip. Feature fast and reliable WiFi, writing desk, coffee/tea maker, premium cable, in room safe, and windows that can open. Connecting rooms are not available. Accessible Rooms available.Max occupancy is two persons.</p>
-        <a class="secondary-btn-inverse" href="/">BookRoom</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="background-cover" style="background-image:url(/assets/images/rooms/skyline_bg.jpg);">
+{% endfor %}
+<!-- <section class="background-cover" style="background-image:url(/assets/images/rooms/skyline_bg.jpg);">
   <div class="room-single">
     <div class="room-row align-items-center">
       <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/skyline.jpg);"></div>
@@ -103,7 +56,7 @@ meta_tags:
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <section class="room-features">
 
   <div class="row m-0">

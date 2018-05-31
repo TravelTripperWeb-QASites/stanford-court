@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% assign page = page.data %}
+<section class="inner-banner without-text background-cover" style="background-image: url('{{ page.banner_image.url_large }}');">
+</section>
+
+<section class="details-wrapper align-items-center">
+  <div class="details">
+    <div class="room-info">
+      <a class="back-btn" href="/attractions/"><i class="fas fa-arrow-left"></i> Back To Attractions</a>
+      <h4>{{ page.address }} <span>{{ page.time }}</span></h4>
+      <h3>{{ page.title }}</h3>
+      <p>{{ page.description }}</p>
+      <div>
+        <a class="primary-btn" href="{{ page.website }}" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+  <div class="image-slider">
+    <div class="carousel-nav white">
+      <a class="carousel-control-prev" href="#attractionCarousel" role="button" data-slide="prev">
+      <i class="fas fa-caret-left"></i>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#attractionCarousel" role="button" data-slide="next">
+      <i class="fas fa-caret-right"></i>
+      <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="attractionCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        {% for image in page.gallery %}
+        <div class="carousel-item background-cover{% if forloop.first %} active {% endif %}" style="background-image: url('{{ image.url_medium }}');"></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-sec">
+  <div class="gallery-sec-inner">
+    <div class="img-sec background-cover" style="background-image: url('/assets/images/offers/gallery.jpg');">
+    </div>
+    <div class="content">
+      <h3>Gallery</h3>
+      <a href="/gallery" class="primary-btn-inverse">See More</a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    </div>
+    <div class="tag-line-text">
+      <p>Our Gallery</p>
+    </div>
+  </div>
+</section>
