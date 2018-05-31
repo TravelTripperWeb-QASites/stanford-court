@@ -171,6 +171,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031200/thumb_stanford-court.JPG",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031200/stanford-court.JPG",
       "alt": "Stanford Court"
+    },
+    {
+      "name": "amenities",
+      "file_name": "amenities.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/amenities.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-031226",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1219,
+      "file_size": 214526,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/large_amenities.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/medium_amenities.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/small_amenities.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/xsmall_amenities.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/thumb_amenities.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-031226/amenities.jpg",
+      "alt": "Stanford Court"
     }
   ],
   "description": ""
