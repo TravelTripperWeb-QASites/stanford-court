@@ -76,6 +76,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/thumb_audio-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/audio-room.jpg",
       "alt": "Audio Room"
+    },
+    {
+      "name": "breakfast-cafe",
+      "file_name": "breakfast-cafe.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/breakfast-cafe.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030143",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 177239,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/large_breakfast-cafe.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/medium_breakfast-cafe.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/small_breakfast-cafe.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/xsmall_breakfast-cafe.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/thumb_breakfast-cafe.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/breakfast-cafe.jpg",
+      "alt": "Breakfast Cafe"
     }
   ],
   "description": ""
