@@ -285,6 +285,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/thumb_lobby.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/lobby.jpg",
       "alt": "Lobby"
+    },
+    {
+      "name": "lounge-and-bar",
+      "file_name": "lounge-and-bar.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/lounge-and-bar.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030516",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 218942,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/large_lounge-and-bar.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/medium_lounge-and-bar.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/small_lounge-and-bar.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/xsmall_lounge-and-bar.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/thumb_lounge-and-bar.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/lounge-and-bar.jpg",
+      "alt": "Lounge and bar"
     }
   ],
   "description": ""
