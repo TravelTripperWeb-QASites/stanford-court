@@ -361,6 +361,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/thumb_audio-room1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
       "alt": "Audio Room"
+    },
+    {
+      "name": "discover-the-hotel",
+      "file_name": "discover-the-hotel.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/discover-the-hotel.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030632",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 482509,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/large_discover-the-hotel.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/medium_discover-the-hotel.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/small_discover-the-hotel.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/xsmall_discover-the-hotel.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/thumb_discover-the-hotel.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/discover-the-hotel.jpg",
+      "alt": "Discover the hotel"
     }
   ],
   "description": ""
