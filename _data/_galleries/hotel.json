@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/thumb_lobby-seating.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/lobby-seating.jpg",
       "alt": "Lobby Seating"
+    },
+    {
+      "name": "fitness-center",
+      "file_name": "fitness-center.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/fitness-center.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030048",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 305052,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/large_fitness-center.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/medium_fitness-center.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/small_fitness-center.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/xsmall_fitness-center.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/thumb_fitness-center.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/fitness-center.jpg",
+      "alt": "Fitness Center"
     }
   ],
   "description": ""
