@@ -190,6 +190,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/thumb_breakfast-buffet.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
       "alt": "Breakfast Buffet"
+    },
+    {
+      "name": "music-room1",
+      "file_name": "music-room1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/music-room1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030330",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 688142,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/large_music-room1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/medium_music-room1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/small_music-room1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/xsmall_music-room1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/thumb_music-room1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/music-room1.jpg",
+      "alt": "Music Room"
     }
   ],
   "description": ""
