@@ -21,5 +21,26 @@
   "long_description": "<p>Studio Suites are up to 336 sqft and include a King, Queen, or two Double Beds. A bit of extra space can do wonders during special events, extended stays and staycactions. Studio Suites include a living/sitting area and oversized chair with with ottoman. Some rooms include views. Parlor Suites are up to 416 sq ft and inlude a sofa and coffee table. Max occupancy for single suites is three persons, for double suites is four persons.</p>\n<p>&nbsp;</p>",
   "book_this_room": "https://stanfordcourt.reztrip.com/classic/en/searches/5979890da16e0729e35a7539/hotels/SFOSTF/rooms?_ga=2.41743402.981907577.1500874845-408165587.1493100699&action=show&controller=landings&selected_room=SS1Q&selected_room_category=Suites&starting_page=search",
   "more_info": "/room/#studio-suite-queen",
-  "sort_order": 4
+  "sort_order": 4,
+  "roombackgroundimage": {
+    "name": "suites_bg",
+    "file_name": "suites_bg.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/suites_bg.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-05-31-073328",
+    "file_type": "image/jpeg",
+    "width": 2880,
+    "height": 1438,
+    "file_size": 133242,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/large_suites_bg.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/medium_suites_bg.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/small_suites_bg.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/xsmall_suites_bg.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/thumb_suites_bg.jpg",
+    "git_file_name": "_assets/image_data/suites-bg.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_16281/media/2018-05-31-073328/suites_bg.jpg",
+    "alt": "suites",
+    "caption": ""
+  }
 }
