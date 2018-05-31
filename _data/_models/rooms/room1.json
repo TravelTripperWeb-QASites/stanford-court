@@ -1,0 +1,25 @@
+{
+  "title": "STANDARD",
+  "long_description": "<p>Standard Rooms are up to 210 sq feet. These are our interior facing rooms, compact, quiet, and perfect for that quick trip.&nbsp;Feature fast and reliable WiFi, writing desk, coffee/tea maker, premium cable, in room safe, and windows that can open. Connecting rooms are not available.&nbsp;Accessible Rooms available. Max occupancy is two persons.&nbsp;</p>",
+  "book_this_room": "https://stanfordcourt.reztrip.com/classic/en/searches/59798810a16e077ef15bb8e6/hotels/SFOSTF/rooms?_ga=2.28573620.981907577.1500874845-408165587.1493100699&action=show&controller=landings&selected_room=ST1Q&selected_room_category=Standard&starting_page=search",
+  "more_info": "/room/#standard-queen",
+  "sort_order": 1,
+  "roomimage": {
+    "url": "https://cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/standard.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/standard.jpg",
+    "file_type": "image/jpeg",
+    "name": "standard",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/large_standard.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/thumb_standard.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/medium_standard.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/small_standard.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022732/xsmall_standard.jpg",
+    "width": 800,
+    "height": 600,
+    "file_size": 46101,
+    "alt": "standard",
+    "caption": "standard",
+    "description": "standard"
+  }
+}
