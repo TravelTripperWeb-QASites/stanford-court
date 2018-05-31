@@ -152,6 +152,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/thumb_benny-bufano.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
       "alt": "Benny Bufano"
+    },
+    {
+      "name": "library",
+      "file_name": "library.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/library.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030257",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 248700,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/large_library.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/medium_library.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/small_library.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/xsmall_library.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/thumb_library.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/library.jpg",
+      "alt": "Library"
     }
   ],
   "description": ""
