@@ -9,16 +9,24 @@ meta_tags:
 
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/meetings/hero.jpg');">
   <div class="banner-text">
-    <h1>Dining</h1>
+    {% regionblock meetings-title, type: header %}
+    <h1>Meetings</h1>
+    {% endregionblock %}
   </div>
 </section>
 
 <section class="seven-stills-dining align-items-center">
   <div class="details">
     <div class="seven-stills-info">
+      {% regionblock meetings-header, type: header %}
       <h3>MEETINGS & EVENTS</h3>
+      {% endregionblock %}
+      {% regionblock meetings-text, type: text %}
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita. </p>
+      {% endregionblock %}
+      {% regionblock meetings-link, type: heatextder %}
       <a href="/rfp/" class="black-btn">Request For Proposale</a>
+      {% endregionblock %}
     </div>
   </div>
   <div class="image-slider">
@@ -47,7 +55,10 @@ meta_tags:
     <div class="content">
       <div class="content-inner">
         <div class="scroll">
+          {% regionblock meetings_list_header, type: header %}
           <h4>Lorem ipsum dolor sit amet, consectetur adipisicing</h4>
+          {% endregionblock %}
+          {% regionblock meetings_list, type: text %}
           <ul>
             <li>Plug & Play Audio Visual Technology</li>
             <li>Catering Services</li>
@@ -58,6 +69,7 @@ meta_tags:
             <li>Lorem Ipsum Dolor</li>
             <li>Lorem Ipsum Dolor</li>
           </ul>
+            {% endregionblock %}
         </div>
       </div>
     </div>
