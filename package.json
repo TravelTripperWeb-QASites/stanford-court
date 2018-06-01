@@ -25,7 +25,7 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "js:uglify": "uglifyjs assets/js/vendor/angular.min.js assets/js/functions.js  assets/js/gmap.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-share.js assets/js/lg-thumbnail.js assets/js/slick.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/_main.js assets/js/utm-tracking.js -c  -o assets/js/main.min.js",
+    "js:uglify": "uglifyjs assets/js/vendor/angular.min.js assets/js/functions.js  assets/js/gmap.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-share.js assets/js/lg-thumbnail.js assets/js/lg-video.js assets/js/slick.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/_main.js assets/js/utm-tracking.js -c  -o assets/js/main.min.js",
     "js:watch": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run js:uglify",
     "browsersync": "browser-sync start --server --files 'assets/css/main.css' 'assets/js/main.min.js' '**/*.html'",
     "browsersync:jekyll": "browser-sync start --server '_site' --files '_site'",
