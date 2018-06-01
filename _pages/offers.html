@@ -6,7 +6,7 @@ permalink: /offers/
 meta_tags:
   robots:
 ---
-
+<section rt3-special-rates= "offers">
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
   <div class="banner-text">
     <h1>Specials</h1>
@@ -27,35 +27,16 @@ meta_tags:
 
 <section class="offers-listing">
   <div class="offers-listing-row m-0">
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
+    <div class="offer-block" ng-repeat="offer in offers.special_rates">
+      <div class="image d-flex justify-content-center" ng-style="{'background-image':'url([[offer.lead_photo_url.large]])'}">
+        <a ng-href="[[ offer.promo_url ]]" class="black-btn" target="_blank">Book Offer</a>
       </div>
       <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
-      </div>
-      <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
-      </div>
-    </div>
-    <div class="offer-block">
-      <div class="image d-flex justify-content-center" style="background-image: url('/assets/images/offers/offer-thumb.jpg');">
-        <a href="/" class="black-btn">Book Offer</a>
-      </div>
-      <div class="content">
-        <h3>California Resident Special 12%</h3>
-        <p>California Resident Special Rates - Save 12%. Must present Valid CA Driver's License upon arrival (expanding the neighborhood discount)</p>
-        <a href="/" class="primary-btn">View Offer</a>
+        <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+        <div ng-bind-html="offer.short_description | renderHTMLCorrectly" class="offer-desc"></div>
+        <a ng-href="/offer/#[[offer.rate_plan_name | formatNameForLink ]]" class="primary-btn">View Offer</a>
       </div>
     </div>
   </div>
+</section>
 </section>
