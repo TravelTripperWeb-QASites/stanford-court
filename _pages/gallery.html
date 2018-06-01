@@ -16,6 +16,7 @@ meta_tags:
   {% for category in categories %} {% assign catname = category[0] %}
   <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
     {% endfor %}
+  <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
 </section>
 
 <section class="gallery-bg">
@@ -29,6 +30,24 @@ meta_tags:
 		  	   </div>
 		  	{% endfor %}
 		{% endfor %}
+    <div class="card item video-player-param fancybox" data-filter="videos">
+      <a href="https://www.youtube.com/watch?v=FmiE9i-lI3k">
+         <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div>
+     </a>
+    </div>
+    <div class="card item video-player-param fancybox" data-filter="videos">
+      <a href="https://www.youtube.com/watch?v=g_TXVVhpcOQ">
+         <img src="/assets/images/gallery/video2_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div>
+     </a>
+    </div>
+    <div class="card item video-player-param fancybox" data-filter="videos">
+      <a href="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
+         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div>
+     </a>
+    </div>
 	</div>
 </div>
 </section>
