@@ -6,23 +6,37 @@ permalink: /page-not-found/
 meta_tags:
   robots:
 ---
+{% assign links = site.data.navigation.main %} {% assign footer_links = site.data.navigation.footer %}
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
+  <div class="banner-text">
+    <h1>404 Error</h1>
+  </div>
+</section>
 
-{% comment %}
+<section class="static-content text-center">
+  <h4 class="w-70">We're sorry but it looks like that page doesn't exist anymore.
+Please view the Sitemap below or go back to the <a href="/">Homepage.</a></h4>
 
-  Name:
+  <div class="sitemap mb-5">
+    <h3 class="p-5">SITEMAP</h3>
 
-    404 (Page Not Found)
+    <ul>
+      {% for link in links %}
+      <li>
+        <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a> {% if link.dropdown %}
+        <ul>
+          {% for sublink in link.dropdown %}
+          <li>
+            <a href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %} {% for footer_link in footer_links %}
+      <li><a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a></li>
+      {% endfor %}
+    </ul>
 
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:text %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+  </div>
+</section>

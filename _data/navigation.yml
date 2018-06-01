@@ -19,6 +19,9 @@ main:
 
   - title: Meetings
     url: /meetings/
+    dropdown:
+        - title: Business Travel
+          url: /businesstravel/
   - title: Neighborhood
     url: /neighborhood/
   - title: Gallery
@@ -28,9 +31,14 @@ main:
 
 footer:
   - title: Lost Items
+    url: https://www.chargerback.com/ReportLostItemCBEmbed.asp?CustomerID=2880&
   - title: Press
+    url: /press/
   - title: FAQs
+    url: /faq/
   - title: Contact
+    url: /contact/
   - title: Privacy Policy
     url: /privacy-policy/
   - title: Blog
+    url: /blog/
