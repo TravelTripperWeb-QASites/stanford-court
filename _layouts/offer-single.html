@@ -49,12 +49,20 @@ layout: default
     <div class="img-sec background-cover" style="background-image: url('/assets/images/offers/gallery.jpg');">
     </div>
     <div class="content">
+      {% regionblock offer_gallery_title, type: header %}
       <h3>Gallery</h3>
+      {% endregionblock %}
+      {% regionblock offer_gallery_link, type: text %}
       <a href="/gallery/" class="primary-btn-inverse">See More</a>
+      {% endregionblock %}
+      {% regionblock offer_gallery_text, type: text %}
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      {% endregionblock %}
     </div>
     <div class="tag-line-text">
+      {% regionblock tagline_text type: text %}
       <p>Our Gallery</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>

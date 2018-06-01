@@ -14,15 +14,23 @@ meta_tags:
   <div class="home-intro-inner m-0 d-flex align-items-center">
     <div class="image background-cover" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
     <div class="content">
+      {% regionblock intro_subheader, type: header %}
       <h4>About us</h4>
+      {% endregionblock %}
+      {% regionblock intro_header, type: header %}
       <h3>Welcome to Stanford court</h3>
+      {% endregionblock %}
+      {% regionblock intro_text, type: text %}
       <p>At the crest of Nob Hill it’s easy to see what makes
       San Francisco special.  While the views are  amazing,
       it’s the city’s energy, restless spirit of transformation and
       maverick innovation that quickens your heartbeat and
       gets your mind spinning.  Come play (stay) with us.
       </p>
+      {% endregionblock %}
+      {% regionblock intro_link, type: text %}
       <a href="/hotel/" class="primary-btn">Discover More</a>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -31,7 +39,9 @@ meta_tags:
   <div class="home-amenities-inner">
     <div class="home-amenities-row m-0 d-flex align-items-center">
       <div class="text d-none d-lg-block">
+        {% regionblock do-so-like_header, type: header %}
         <h3 class="txt-white">DO SF LIKE <br>A DENIZEN </h3>
+        {% endregionblock %}
       </div>
       <div class="images p-0 d-none d-lg-block">
         <div class="images-inner m-0">
@@ -48,39 +58,59 @@ meta_tags:
         </div>
       </div>
       <div class="text">
+        {% regionblock mobile_dosolike_header, type: header %}
         <h3 class="txt-white d-lg-none .d-xl-block">DO SF LIKE A DENIZEN </h3>
+        {% endregionblock %}
+        {% regionblock dosolike_text, type: text %}
         <p>There’s no better place to un-lock the real San Francisco.   Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do.   We love to share and can’t wait to help you explore.</p>
+        {% endregionblock %}
+        {% regionblock dosolike_link, type: text %}
         <a href="/" class="primary-btn-inverse">Discover More</a>
+        {% endregionblock %}
       </div>
     </div>
     <div class="tag-line-text d-none d-lg-block">
+      {% regionblock vline_link, type: text %}
       <p>A city that honors independence, innovation, and inclusion. innovation, and inclusion.</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
 
 <section class="rooms-wrapper">
+  {% regionblock rooms-title, type: header %}
   <h2>Rooms</h2>
+  {% endregionblock %}
   <div class="rooms-inner">
     <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms-img.jpg');">
       <!-- <img src="/assets/images/home/rooms-img.jpg" alt="Room"> -->
+      {% regionblock rooms-link, type: text %}
       <a href="/rooms/" class="primary-btn">View Rooms</a>
+      {% endregionblock %}
     </div>
     <div class="content">
       <span class="plus-icon">
         <a href="/gallery/"><img src="/assets/images/home/camera-icon.png" alt="Add"></a>
       </span>
-      <h3 class="">COMFY DOESN’T MEAN CONFINING</h3>
+      {% regionblock rooms-header, type: header %}
+      <h3 >COMFY DOESN’T MEAN CONFINING</h3>
+      {% endregionblock %}
+      {% regionblock rooms-text, type: text %}
       <p class="txt-white">Our newly redesigned rooms are the perfect blend of edgy
         expression and creature comforts.   The views inspire, the art
         intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
+      {% endregionblock %}
+      {% regionblock rooms-link, type: text %}
       <a href="/" class="secondary-btn-inverse">Book Your Room</a>
+      {% endregionblock %}
     </div>
   </div>
 </section>
 
 <section class="discover-sec">
+  {% regionblock discover, type: header %}
   <h2>Discov<br class="d-block d-md-none">er</h2>
+  {% endregionblock %}
     <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner indicators">
         <div class="carousel-block m-0">
