@@ -1,0 +1,67 @@
+<div class="blog-box-search">
+  <div class="right-col">
+    <div class="widget-box">
+      <h5>Search</h5>
+      <form action="/blog/search/" method="get">
+        <input type="text" id="search-box" class="input-grey" name="query" placeholder="Type Here...">
+      </form>
+    </div>
+    <div class="widget-box">
+      <h5>Categories</h5>
+      <ul class="categories">
+        {% assign categories = site.data._models.category %}
+        {% for categorylist in categories %}
+        <li><a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}"><i class="fa  fa-caret-right" aria-hidden="true"></i> {{categorylist.title}}
+          {% assign count = 0 %}
+          {% for postcount in site.data._models.blog %}
+          {% if postcount.category.title == categorylist.title%}
+          {% capture count  %}{{ count  | plus: '1' }}{% endcapture %}
+          {%endif%}
+          {%endfor%}
+          <span>({{count}})</span></a>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+    <div class="widget-box">
+      <h5>Latest Tweets</h5>
+      <div id="tweets">
+        <ul class="tweets">
+          <li>
+            <p class="tweet">Best sundowner spots.
+              <a href="" title="http://t.co/L1mGsTovtdZ">http://t.co/L1mGsTovtdZ</a>  <br>
+              #nyhotel#timessquare#travel #spring
+            </p>
+            <p class="timePosted">
+              <a href="https://twitter.com/MTSHotel/status/869701216162283520">A day ago</a>
+            </p>
+          </li>
+          <li>
+            <p class="tweet">Best sundowner spots.
+              <a href="" title="http://t.co/L1mGsTovtdZ">http://t.co/L1mGsTovtdZ</a>  <br>
+              #nyhotel#timessquare#travel #spring
+            </p>
+            <p class="timePosted">
+              <a href="https://twitter.com/MTSHotel/status/869701216162283520">two days ago</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h6><a href="" target="_blank" title="view all tweets">view all tweets</a></h6>
+    </div>
+    <div class="widget-box">
+      <h5>Recent Posts</h5>
+      <ul class="recent-posts">
+        {% for recentpost in site.data._models.blog | limit: 3%}
+        <li>
+          <div class="thumb" style="background-image: url({{recentpost.blogimage.url}});"></div>
+          <a href="/blog/{{recentpost.url_friendly_name }}">{{recentpost.title}} <br><span>{% assign d = recentpost.date | date: "%-d" %}
+          {{ recentpost.date | date: "%B" }}
+          {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}<sup>th</sup>{% endcase %},
+          {{ recentpost.date | date: "%Y" }} </span></a>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+  </div>
+</div>
