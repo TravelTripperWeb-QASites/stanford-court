@@ -77,8 +77,16 @@ a {
   @include global-transition(.3s);
   &:hover {
     color: $black;
-    background-image: url('/assets/images/black-arrow.png');
     background-position: right 0 bottom 0;
+  }
+}
+
+.link-button {
+  @extend .primary-btn;
+  padding-right: 0;
+  background-image: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 

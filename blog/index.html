@@ -18,7 +18,6 @@ include_in_nav_localized:
 
 <div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/blog/hero.jpg');"></div>
 
-{% assign categories = site.data._galleries %}
 <section class="inner-nav mb-80">
   <a href="/blog/" class="active" >All</a>
   {% assign categories = site.data._models.category | sort: 'order' | descending %}
@@ -31,44 +30,46 @@ include_in_nav_localized:
   <div class="blog-row">
     <div class="blog-col">
       {% for post in data_paginator.posts %}
-      <div class="post">
-        <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title mt-4">
-          <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}">
-        </a>
-        <div class="blog-item-text">
-          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title mt-4">
-            <h2> {{post.title}} </h2>
+        <div class="post">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
+            <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}">
           </a>
-          <div class="info">
-            <p>
-              <span class="date">{% assign d = post.date | date: "%-d" %}
+          <div class="blog-item-text">
+
+            <h4 class="date">{% assign d = post.date | date: "%-d" %}
               {{ post.date | date: "%B" }}
-              {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}<sup>th</sup>{% endcase %},
-              {{ post.date | date: "%Y" }} </span>
+              {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+              {{ post.date | date: "%Y" }}
+            </h4>
+
+            <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title">
+              <h3> {{post.title}} </h3>
+            </a>
+
+            <p class="extra-links">
               {% if post.category.url_friendly_name %}
-              | <span class="categories"><a href="/blog/category/{{post.category.url_friendly_name}}/" >{{post.category.title}}</a></span>
-              {% endif %}
+              <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" > {{post.category.title}} </a>
+              {% endif %} | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
             </p>
+
+            <div class="short-description">
+              {{post.short_description}}
+            </div>
+
           </div>
-          <div class="short-description">
-            {{post.short_description}}
-          </div>
-          <a class="link-text black mb-4" href="/blog/{{ post.url_friendly_name }}/"> Read more </a>
         </div>
-      </div>
       <div class="clearfix"></div>
-      <hr>
       {% endfor %}
       {% if data_paginator.total_pages > 1 %}
       <div class="pagination">
         {% if data_paginator.previous_page %}
         {% if data_paginator.page %}
-        <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow btn-outline-black" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> PREV </a>
+        <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow btn-outline-black" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> <img src="/assets/images/black-arrow.png" alt="Previous Page"> </a>
         {% else %}
         <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
         {% endif %}
         {% else %}
-        <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled btn-outline-black">PREV</a>
+        <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled btn-outline-black"><img src="/assets/images/black-arrow.png" alt="Previous Page"></a>
         {% endif %}
         <div class="pagnum">
           {% for page in (1..data_paginator.total_pages) %}
@@ -82,9 +83,11 @@ include_in_nav_localized:
           {% endfor %}
         </div>
         {% if data_paginator.next_page %}
-        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow btn-outline-black" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> NEXT </a>
+        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow btn-outline-black" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          <img src="/assets/images/black-arrow.png" alt="next page">
+        </a>
         {% else %}
-        <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled btn-outline-black"> NEXT </a>
+        <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled btn-outline-black"> <img src="/assets/images/black-arrow.png" alt="next page"> </a>
         {% endif %}
       </div>
       {% endif %}

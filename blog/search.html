@@ -2,45 +2,49 @@
 title_localized:
   en: Blog | The Royalton Hotel in New York City
 label_localized:
-  en: 
+  en:
 layout_localized:
   en: default
 meta_description_localized:
   en: Blog.
 meta_keywords_localized:
-  en: 
+  en:
 published_localized:
   en: true
 include_in_nav_localized:
   en: true
 
 ---
-<div class="blog-banner" style="background-image: url('/assets/images/blog/blog-banner.jpg');">
-  {% regionblock blog_search_banner_heading, type:header %}
-     <h1>Blog</h1>
-     {% endregionblock %}
-</div>
+<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/blog/hero.jpg');"></div>
+
+<section class="inner-nav mb-80">
+  <a href="/blog/" class="active" >All</a>
+  {% assign categories = site.data._models.category | sort: 'order' | descending %}
+  {% for categorylist in categories %}
+  <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
+  {% endfor %}
+</section>
 
 
 <section class="blog-container">
-    <div class="blog-row">
-        <div class="blog-col">
-            <div class="post search-result">
-                <h2> SEARCH RESULT: </h2>
-                <ul id="search-results"></ul>
-            </div>
-        </div> 
-        <div class="blog-right-block">
-            {% include blog-aside.html %}
-        </div>   
+  <div class="blog-row">
+    <div class="blog-col">
+      <div class="post search-result">
+        <h4> SEARCH RESULT: </h4>
+        <ul id="search-results"></ul>
+      </div>
     </div>
+    <div class="blog-right-block">
+        {% include blog-aside.html %}
+    </div>
+  </div>
 </section>
 
 <script>
   window.store = {
     {% for post in site.data._models.blog %}
       "{{ post.url_friendly_name }}": {
-        "title": "{{ post.title | xml_escape }}", 
+        "title": "{{ post.title | xml_escape }}",
         "category": "{{ post.category.title | xml_escape }}",
         "content": {{ post.short_description | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url_friendly_name | xml_escape }}"
