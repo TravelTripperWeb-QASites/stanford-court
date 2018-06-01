@@ -1,11 +1,7 @@
 // About Page Elements
 // ==========================================================================
 
-.history {
-  min-height: 770px;
-  background: url('/assets/images/hotel/history.jpg');
-}
-
+// hotel amenites
 .hotel-amenities-wrap {
   position: relative;
   @include media-breakpoint-up(lg) {
@@ -131,16 +127,17 @@
   }
 }
 
-.heading {
-  width: 100%;
-  margin: 95px 0;
-  overflow: hidden;
-  text-align: right;
-  @include media-breakpoint-down(sm) {
-    display: none;
+h2 {
+  &.large-header {
+    width: 100%;
+    margin: 95px 0;
+    overflow: hidden;
+    text-align: right;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 }
-
 .art-wrapper {
   @include media-breakpoint-up(md) {
     margin-bottom: 140px;
