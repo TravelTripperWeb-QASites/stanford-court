@@ -7,6 +7,9 @@
     padding: 0;
     background-color: transparent;
   }
+  &.no-gap {
+    padding: 0;
+  }
   .page-intro-inner {
     @include make-row;
   }
@@ -68,6 +71,7 @@
     margin: 0;
     @include media-breakpoint-up(md) {
       height: 332px;
+
     }
     @include media-breakpoint-up(lg) {
       position: absolute;
@@ -75,6 +79,11 @@
       left: 0;
       z-index: 9;
       margin: 0 100px;
+    }
+    &.over-lap {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: -60px;
+      }
     }
   }
 }
