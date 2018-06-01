@@ -57,8 +57,15 @@ p {
   @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
+b,
+strong {
+  font-weight: 600;
+}
+
 a {
+  color: $primary-color;
   &:hover {
+    color: $secondary-color;
     text-decoration: none;
   }
 }

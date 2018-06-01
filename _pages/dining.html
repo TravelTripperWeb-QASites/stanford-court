@@ -9,22 +9,34 @@ meta_tags:
 
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/dining/hero.jpg');">
   <div class="banner-text">
+    {% regionblock dine-title, type: header %}
     <h1>Dining</h1>
+    {% endregionblock %}
   </div>
 </section>
 
 <section class="seven-stills-dining align-items-center">
   <div class="details">
     <div class="seven-stills-info">
+      {% regionblock dine_sub_title, type: header %}
       <h3>Seven Stills</h3>
+      {% endregionblock %}
+      {% regionblock dine_hours, type: header %}
       <h4>Hours of Operation</h4>
+      {% endregionblock %}
+      {% regionblock dine_text, type: text %}
       <p>Dining - 4:00 PM to 10:30 PM, daily<br>
         Bar - 4:00 PM to 10:30 PM, daily</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita. </p>
+      {% endregionblock %}
       <div>
+        {% regionblock menu_link, type: text %}
         <a class="primary-btn" href="/">View Menu</a>
+        {% endregionblock %}
       </div>
+      {% regionblock table_link, type: text %}
       <a href="/" class="black-btn">Reserve A Table</a>
+      {% endregionblock %}
     </div>
   </div>
   <div class="image-slider">
@@ -69,9 +81,13 @@ meta_tags:
   </div>
   <div class="details">
     <div class="market-place-info">
+      {% regionblock marketplace_title, type: header %}
       <h3>Marketplace</h3>
+      {% endregionblock %}
+      {% regionblock marketplace_text, type: text %}
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita. </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita. </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
