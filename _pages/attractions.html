@@ -31,7 +31,7 @@ meta_tags:
     {% for attraction in attractions %}
     <div class="attraction-block">
       <a href="{{ attraction.url_friendly_name }}/">
-        <div class="image d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
+        <div class="image background-cover d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
         </div>
       </a>
       <div class="content">
