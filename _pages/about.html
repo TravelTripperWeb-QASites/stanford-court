@@ -9,10 +9,12 @@ meta_tags:
 
 <div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
   <ul class="banner-nav">
+    {% regionblock hotel_links_nav, type: text %}
     <a href="#about">About Us</a>
     <a href="#history">Hotel History</a>
     <a href="#amenities">Amenities</a>
     <a href="#art">Art</a>
+    {% endregionblock %}
   <ul>
 </div>
 
@@ -21,9 +23,15 @@ meta_tags:
     <div class="gradient-bg solid-bg">
       <div class="gradient-bg-inner">
         <div class="text-inner">
+          {% regionblock hotel_sub_title, type: header %}
           <h4>Lorem Ipsum</h4>
+          {% endregionblock %}
+          {% regionblock hotel_title, type: header %}
           <h3>Lorem ipsum dolor<br>sit amet.</h3>
+          {% endregionblock %}
+          {% regionblock hotel_text, type: text %}
           <p class="d-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          {% endregionblock %}
         </div>
         <div class="image over-lap background-cover" style="background-image: url('/assets/images/hotel/green_img.jpg');"></div>
       </div>
@@ -118,25 +126,41 @@ meta_tags:
           </div>
 </div>
 </section>
+{% regionblock hotel_amenities_section_caption, type: header %}
 <h2 class="large-header" id="amenities">Amenities</h2>
+{% endregionblock %}
 <section class="art-wrapper">
   <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
     <div class="image down-full background-cover gradient-bg">
       <div class="title">
+        {% regionblock hotel_amenities_section_title, type: header %}
         <h4>Stanford Court</h4>
+        {% endregionblock %}
+        {% regionblock hotel_amenities_section_header, type: header %}
         <h3>Unparalleled Service </h3>
+        {% endregionblock %}
         <div class="d-blank d-md-none">
+        {% regionblock hotel_amenities_section_text, type: text %}
         <p class="mb-3">Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p> <p class="mb-3" >The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
+        {% endregionblock %}
+        {% regionblock hotel_amenities_section_link, type: text %}
         <a class="primary-btn mt-5 " href="/amenities/" title="Amenities">Learn More</a>
+        {% endregionblock %}
       </div>
       </div>
+      {% regionblock hotel_amenities_section_frame, type: image %}
       <img class="frame-middle" src="/assets/images/hotel/amenities.jpg" alt="amenities">
+      {% endregionblock %}
     </div>
     <div class="content down  d-md-block d-none">
+      {% regionblock hotel_amenities_section_text, type: text %}
       <p>Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p>
 
       <p>The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
+      {% endregionblock %}
+      {% regionblock hotel_amenities_section_link, type: text %}
       <a class="primary-btn" href="/amenities/" title="Amenities">Learn More</a>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -145,14 +169,15 @@ meta_tags:
   <div class="hotel-amenities-inner">
     <div class="hotel-amenities-row m-0 d-flex align-items-center">
       <div class="text d-none d-lg-block">
+        {% regionblock hotel_amenities_head_01, type: header %}
         <h3 class="txt-white">Perfect Place To<br> Enjoy A Stay <br> With Your Pet </h3>
+        {% endregionblock %}
       </div>
       <div class="images p-0">
         <div class="images-inner m-0">
           <div class="two background-cover" style="background-image: url('/assets/images/hotel/pets.jpg');"></div>
           <div class="one background-cover d-lg-block d-none" style="background-image: url('/assets/images/hotel/amenities.jpg');"></div>
             <div class="one background-cover d-lg-none d-block" style="background-image: url('/assets/images/hotel/pets3.jpg');"></div>
-
         </div>
       </div>
     </div>
@@ -160,16 +185,21 @@ meta_tags:
       <div class="images p-0 d-none d-lg-block">
         <div class="images-inner m-0">
           <div class="full background-cover" style="background-image: url('/assets/images/hotel/pets-with-bed.jpg');"></div>
-
         </div>
       </div>
       <div class="text">
+         {% regionblock hotel_amenities_head, type: header %}
          <h3 class="txt-white d-lg-none d-block">Perfect Place To Enjoy A Stay With Your Pet </h3>
-        <p>Your pooch pals are always welcome @ TSC , but we do charge a $50 deep cleaning fee . You’ll also get a cool bag of canine goodies including poop bags , a lint roller & chew toys that you can keep , and we’ ll stock your room with food / water bowls & a plush dog bed for use during your stay.</p>
+         {% endregionblock %}
+         {% regionblock hotel_amenities_text, type: text %}
+          <p>Your pooch pals are always welcome @ TSC , but we do charge a $50 deep cleaning fee . You’ll also get a cool bag of canine goodies including poop bags , a lint roller & chew toys that you can keep , and we’ ll stock your room with food / water bowls & a plush dog bed for use during your stay.</p>
+        {% endregionblock %}
       </div>
     </div>
     <div class="tag-line-text d-none d-lg-block">
+      {% regionblock v_line_text, type: text %}
       <p>Lorem ipsum dolor sit amet, consectetur</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
@@ -177,12 +207,18 @@ meta_tags:
 <section class="art-wrapper" id="art">
   <div class="art-wrapper-inner m-0 d-flex align-items-center">
     <div class="image down background-cover" style="background-image: url('/assets/images/hotel/art.jpg');">
+      {% regionblock local_art_image, type: image %}
       <img class="frame-right" src="/assets/images/hotel/art-frame.jpg" alt="frame">
+      {% endregionblock %}
     </div>
     <div class="content down">
+      {% regionblock local_art_title, type: header %}
       <h3>Local Art</h3>
+      {% endregionblock %}
+      {% regionblock local_art_text, type: text %}
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
       <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>

@@ -1,8 +1,12 @@
 <section class="newsletter">
   <div class="newsletter-row">
     <div class="heading">
+      {% regionblock subscribe_subtitle type: text %}
       <h4>Subscribe</h4>
+        {% endregionblock %}
+      {% regionblock subscribe_subtitle type: text %}
       <h3>Sign up And Receive exclusive news</h3>
+      {% endregionblock %}
     </div>
     <div class="form">
       <h4>Email Address</h4> {% include forms/jotform/newsletter.html %}
