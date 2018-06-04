@@ -18,10 +18,16 @@
       .post {
         margin-bottom: 80px;
         .blog-image {
-          display: inline-block;
+          display: block;
           margin-bottom: 40px;
-          .main-hero {
-            width: 100%;
+          figure {
+            height: 228px;
+            @include media-breakpoint-up(lg) {
+              height: 500px;
+            }
+            @include media-breakpoint-up(md) {
+              height: 300px;
+            }
           }
         }
         .blog-title {
