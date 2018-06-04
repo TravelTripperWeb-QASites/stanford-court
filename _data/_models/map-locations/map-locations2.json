@@ -1,8 +1,31 @@
 {
   "title": "Fisherman's Wharf",
   "category": "attractions",
-  "Lattitude": 37.808000,
+  "Lattitude": 37.808,
   "Longitude": -122.417743,
   "order": 2,
-  "address": "San Francisco"
+  "address": "San Francisco",
+  "details": "<p>Fisherman&rsquo;s Wharf, on the northern waterfront, is one of the city's busiest tourist areas. Souvenir shops and stalls selling crab and clam chowder in sourdough bread bowls appear at every turn, as do postcard views of the bay, Golden Gate and Alcatraz.</p>",
+  "distance": "1.4 mile",
+  "image": {
+    "name": "Fisherman",
+    "file_name": "Fisherman.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/Fisherman.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-023508",
+    "file_type": "image/jpeg",
+    "width": 1080,
+    "height": 720,
+    "file_size": 106172,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/large_Fisherman.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/medium_Fisherman.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/small_Fisherman.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/xsmall_Fisherman.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/thumb_Fisherman.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023508/Fisherman.jpg",
+    "alt": "Fisherman",
+    "caption": ""
+  },
+  "url": "https://en.wikipedia.org/wiki/Fisherman%27s_Wharf,_San_Francisco"
 }
