@@ -11,7 +11,7 @@
     <ul class="recent-posts">
       {% for recentpost in site.data._models.blog | limit: 3%}
       <li>
-        <a href="/blog/{{recentpost.url_friendly_name }}/" class="thumb" style="background-image: url({{recentpost.blogimage.url}});"></a>
+        <a href="/blog/{{recentpost.url_friendly_name }}/" class="thumb background-cover" style="background-image: url({{recentpost.blogimage.url}});"></a>
         <h4 class="date">{% assign d = recentpost.date | date: "%-d" %}
           {{ recentpost.date | date: "%B" }}
           {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
