@@ -5,10 +5,13 @@
   "category":{
   	"label": "Category",
   	"type": "select",
-  	"options": ["attractions","shops","eat-drink","transportation"],
+  	"options": ["attractions"],
   	"required": true
   },
   "address":{
+    "required": true
+  },
+  "distance": {
     "required": true
   },
   "Lattitude":{
@@ -18,7 +21,18 @@
   "Longitude":{
      "required": true,
      "type": "float"
-  },  
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "details": {
+    "type": "richtext",
+    "required": true
+  },
+  "url": {
+    "required": true
+  },
   "order":{
     "type": "integer"
   }
