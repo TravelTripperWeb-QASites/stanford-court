@@ -32,11 +32,14 @@ include_in_nav_localized:
       {% for post in data_paginator.posts %}
         <div class="post">
           <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
-            <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}">
+            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="s{{post.img_alt_txt}}">
+          </figure>
+
           </a>
           <div class="blog-item-text">
 
-            <h4 class="date">{% assign d = post.date | date: "%-d" %}
+            <h4 class="date">
+              {% assign d = post.date | date: "%-d" %}
               {{ post.date | date: "%B" }}
               {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
               {{ post.date | date: "%Y" }}
