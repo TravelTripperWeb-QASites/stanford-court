@@ -30,6 +30,8 @@ main:
     dropdown:
         - title: Attractions
           url: /attractions/
+        - title: Events
+          url: /events/  
   - title: Gallery
     url: /gallery/
   - title: Contact
