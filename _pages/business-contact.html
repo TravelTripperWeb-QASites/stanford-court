@@ -2,7 +2,7 @@
 layout: default
 title: Contact
 meta_description:
-permalink: /contact/
+permalink: /business-contact/
 meta_tags:
   robots:
 ---
@@ -17,10 +17,11 @@ meta_tags:
 
 
 <section class="contact">
-{% regionblock text %}
-<p>Stanford Court San Francisco is always happy to respond to inquiries. Simply fill out the form and click Submit when you are done, or call us at: <br><a href="tel:415-989-3500">415-989-3500</a>.</p>
+{% regionblock contact_title, type: text %}
+<h3 class="text-center mt-5">Corporate Preferred Program </h3>
+<p>Simply complete the form on this page and click Submit, we'll be in touch shortly!</p>
 {% endregionblock %}
 
-{% include /forms/jotform/contact.html %}
+{% include /forms/jotform/business.html %}
 
 </section>

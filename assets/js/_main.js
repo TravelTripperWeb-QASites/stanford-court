@@ -73,6 +73,7 @@ $(document).ready(function () {
 
   $("#input_15").datepicker();
   $("#input_16").datepicker();
+  $("#datePick").datepicker();
 
   $(".gallery-carousel-inner .item").hover(function () {
     $(".item").removeClass("active");
