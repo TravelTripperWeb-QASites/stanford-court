@@ -1,2 +1,67 @@
 // Contact Page Elements
 // ==========================================================================
+
+.contact {
+  @include container-fix-4;
+  p {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .form-group {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+  }
+
+  .form-group-full {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(12);
+    }
+  }
+  .hint {
+    font-size: .7rem;
+  }
+
+  .form-control {
+    margin: 10px 0;
+    padding: 15px;
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    background: $white;
+    border: solid 1px $grey-border;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: inherit;
+    }
+  }
+  select  {
+    height: auto !important;
+  }
+  button {
+    @include transition ($global-transition);
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 35px;
+    font-family: $global-font-bold;
+    font-size: $type-size-9;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $primary-color;
+    border: solid 1px $primary-color;
+
+    &:hover {
+      @include transition ($global-transition);
+      background-color: $black;
+      border: solid 1px $black;
+    }
+  }
+}
