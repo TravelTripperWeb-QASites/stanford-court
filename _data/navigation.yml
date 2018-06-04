@@ -1,6 +1,9 @@
 main:
   - title: Hotel
     url: /hotel/
+    dropdown:
+      - title: Amenities
+        url: /amenities/
   - title: Rooms
     url: /rooms/
   - title: Special Offers
@@ -24,6 +27,9 @@ main:
           url: /businesstravel/
   - title: Neighborhood
     url: /neighborhood/
+    dropdown:
+        - title: Attractions
+          url: /attractions/
   - title: Gallery
     url: /gallery/
   - title: Contact

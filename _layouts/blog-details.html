@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% assign blogseo_title =  'blog title' %}
+{% assign blog = page %}
+{% assign model = page %}
+{% assign post = site.data._models.blog  %}
+{% for p in post %}
+    {% if p.url_friendly_name == blog.url_friendly_name %}
+        {% assign pInd = forloop.index0 | minus: 1 %}
+        {% assign nInd = forloop.index0 | plus: 1 %}
+        {% if forloop.first != true %}
+            {% assign prevPostTitle = post[pInd].title %}
+            {% assign prevPostUrl = post[pInd].url_friendly_name %}
+        {% endif %}
+        {% if forloop.last != true %}
+            {% assign nextPostTitle = post[nInd].title %}
+            {% assign nextPostUrl = post[nInd].url_friendly_name %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<div class="inner-banner without-text background-cover" style="background-image: url({{blog.blogimage.url}});"></div>
+
+<section class="inner-nav mb-80">
+  <a href="/blog/" class="active" >All</a>
+  {% assign categories = site.data._models.category | sort: 'order' | descending %}
+  {% for categorylist in categories %}
+  <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
+  {% endfor %}
+</section>
+
+<section class="blog-container">
+  <div class="blog-row">
+    <div class="blog-col">
+      <div class="post post-details">
+        <h4 class="date">{% assign d = blog.date | date: "%-d" %}
+          {{ blog.date | date: "%B" }}
+          {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+          {{ blog.date | date: "%Y" }}
+        </h4>
+        <h3 class="blog-heading">{{blog.title}}</h3>
+        <h4 class="blog-cat">
+          {% if blog.category.url_friendly_name %}
+            <a href="/blog/category/{{blog.category.url_friendly_name}}/"> {{blog.category.title}} </a>
+          {% endif %}
+        </h4>
+        <div class="blog-description">
+          {{blog.long_description}}
+        </div>
+
+      </div>
+    </div>
+    <div class="blog-right-block">
+      {% include blog-aside.html %}
+    </div>
+  </div>
+</section>

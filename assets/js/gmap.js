@@ -308,7 +308,7 @@ function addMarker(marker) {
                 }
             for (var i = 0; i < gmarkers1.length; i++) {
                if(i > 0){
-                   gmarkers1[i].setIcon('/assets/images/marker.png');
+                  // gmarkers1[i].setIcon('/assets/images/marker.png');
                    map.panTo(this.getPosition());
                }else{
 
@@ -317,10 +317,8 @@ function addMarker(marker) {
             infowindow = new google.maps.InfoWindow({
                               content: this.content
                             });
-            infowindow.open(map, this);
-            if(this.category !=='hotel'){
-                this.setIcon('/assets/images/marker-active.png');
-            }
+            //infowindow.open(map, this);
+
             var linktarget = $("[data-markerid='"+this.id+"']");
             $('.tab-pane h4 a').removeClass('active');
             linktarget.addClass('active');

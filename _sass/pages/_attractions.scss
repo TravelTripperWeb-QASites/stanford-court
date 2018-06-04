@@ -1,6 +1,10 @@
 // Offers & Offer Details Page Elements
 // ==========================================================================
-
+h1 {
+  &.banner-text {
+    word-break: break-all;
+  }
+}
 .attractions-listing {
   @include container-fix-2;
   .attractions-listing-row {
