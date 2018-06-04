@@ -553,3 +553,44 @@
     }
   }
 }
+
+// rooms search modal
+.booking-widget-rooms{
+    padding-right:0;
+    h4{
+        width:100%;
+    }
+
+        .adult-children-inner{
+            @include make-row();
+        }
+
+        .rooms-holder ,.adults-wrap, .children-wrap{
+            @include make-col-ready();
+            @include media-breakpoint-up(md) {
+                @include make-col(4);
+            }
+
+        }
+        select{
+            width:100%;
+            padding:5px;
+            margin:0 0 20px 0;
+        }
+        label{
+            font-family: $global-font-bold;
+            font-size: $type-size-9;
+            font-weight: 700;
+            display: block;
+            text-align:center;
+            position: relative;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          //  color: $text-color;
+            line-height: normal;
+        }
+
+    button{
+        cursor:pointer;
+    }
+}

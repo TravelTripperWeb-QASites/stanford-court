@@ -50,10 +50,14 @@
           window.location.reload();
           $(window).scrollTop(0);
         }
+        var queryString = window.location.hash.substr(1);
+        var splitQueryString = queryString.split("-");
+        $scope.roomCat = splitQueryString[0];
+        $scope.roomIndex = splitQueryString[1] || 0;
         setTimeout(function(){
           $(".loading").fadeOut('slow');
           $(window).scrollTop(0);
-        },2000);
+        },1500);
 
 
     }])
