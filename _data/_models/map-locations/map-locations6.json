@@ -4,5 +4,28 @@
   "Lattitude": 37.794138,
   "Longitude": -122.407791,
   "order": 6,
-  "address": "San Francisco"
+  "address": "San Francisco",
+  "distance": "0.3 miles",
+  "image": {
+    "name": "chinatown-gateway",
+    "file_name": "chinatown-gateway.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/chinatown-gateway.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-023032",
+    "file_type": "image/jpeg",
+    "width": 1200,
+    "height": 797,
+    "file_size": 381456,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/large_chinatown-gateway.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/medium_chinatown-gateway.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/small_chinatown-gateway.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/xsmall_chinatown-gateway.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/thumb_chinatown-gateway.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-023032/chinatown-gateway.jpg",
+    "alt": "china town gateway",
+    "caption": ""
+  },
+  "url": "https://en.wikipedia.org/wiki/Dragon_Gate_(San_Francisco)",
+  "details": "<p>Dragon Gate (\"Chinatown Gate\" on some maps) is a south-facing gate at the intersection of Bush Street and Grant Avenue, marking a southern entrance to San Francisco's Chinatown, in the U.S. state of California. It, along with the older Sing Fat and Sing Chong buildings (at Grant and California), is one of the most photographed locations in Chinatown.</p>"
 }
