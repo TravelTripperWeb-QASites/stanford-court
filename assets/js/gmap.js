@@ -269,7 +269,7 @@ function addMarker(marker) {
                 '</div>';
     var icon = '/assets/images/texture-map.png';
     marker1 = new google.maps.Marker({
-        id: marker[5],
+        id: marker[0],
         label:{
             text: (category =='hotel') ? '.': title,
             color: 'WHITE',
@@ -317,11 +317,13 @@ function addMarker(marker) {
             infowindow = new google.maps.InfoWindow({
                               content: this.content
                             });
-            //infowindow.open(map, this);
+            infowindow.open(map, this);
+          //  console.log(this.id);
+            $("#attractionsCarousel").carousel(parseInt(this.id) - 1);
 
             var linktarget = $("[data-markerid='"+this.id+"']");
             $('.tab-pane h4 a').removeClass('active');
-            linktarget.addClass('active');
+            //linktarget.addClass('active');
 
         };
     })(marker1, content));
@@ -371,14 +373,14 @@ $('.tab-pane h4 a').click(function(){
 });
 actionMarkers = function (markerID) {
      //console.log(markerID);
-    $('[data-markerid]').each(function() {
-        $(this).removeClass('active');
-    });
-    $('[data-markerid="'+markerID+'"]').addClass('active');
+    // $('[data-markerid]').each(function() {
+    //     $(this).removeClass('active');
+    // });
+    //$('[data-markerid="'+markerID+'"]').addClass('active');
     for (var i = 0; i < gmarkers1.length; i++) {
         if(gmarkers1[i].id == markerID)
         {
-            console.log(gmarkers1[i].id );
+          //  console.log(gmarkers1[i].id );
             google.maps.event.trigger(gmarkers1[i], 'click');
         }
      }
@@ -390,9 +392,17 @@ actionMarkers = function (markerID) {
 $(function() {
    // Init map
    //initialize();
-
-  $('#attractions-items a').click(function(e){
-        e.preventDefault();
-        actionMarkers($(this).data('markerid'));
-   });
+ $('.carousel-nav a').click( function(){
+   var slidto = 1;
+    $('#attractionsCarousel').bind('slide.bs.carousel', function (e) {
+       slidto += e.to;
+    });
+    setTimeout(function(){
+      actionMarkers(slidto);
+    },500);
+ });
+  // $('#attractions-items a').click(function(e){
+  //       e.preventDefault();
+  //       actionMarkers($(this).data('markerid'));
+  //  });
 });
