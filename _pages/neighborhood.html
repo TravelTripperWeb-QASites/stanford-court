@@ -40,6 +40,7 @@ meta_tags:
   <img src="/assets/images/neighborhood/map.jpg" alt="Map">
 </div>
 
+{% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
 <section class="attractions-wrapper">
   <div class="details pt-5">
     <div class="attraction-info">
@@ -71,11 +72,12 @@ meta_tags:
       <span class="sr-only">Next</span>
       </a>
     </div>
-    <div id="attractionsCarousel" class="carousel slide" data-ride="carousel">
+    <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/neighborhood/golden-gate.jpg'); "></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/neighborhood/golden-gate.jpg');"></div>
-      </div>
+        {% for attraction in neighborhood %}
+         <div data-markerid="{{ forloop.index }}" class="carousel-item {% if forloop.first %}active{% endif %} background-cover" style="background-image:url('{{ attraction.image.url_medium }}'); "></div>
+        {% endfor %}
+        </div>
     </div>
   </div>
 </section>
