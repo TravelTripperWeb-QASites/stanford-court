@@ -4,5 +4,28 @@
   "category": "attractions",
   "Lattitude": 37.793014,
   "Longitude": -122.416113,
-  "order": 1
+  "order": 1,
+  "details": "<p>Nob Hill is a neighborhood in San Francisco, California, centered on the intersection of California Street and Powell Street. It is one of San Francisco's 44 hills, and one of its original \"Seven Hills.\" Prior to the 1850s, Nob Hill was called California Hill (after California Street, which climbs its steep eastern face).</p>",
+  "distance": "0.6 miles",
+  "image": {
+    "name": "nob-hill",
+    "file_name": "nob-hill.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/nob-hill.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-022630",
+    "file_type": "image/jpeg",
+    "width": 1920,
+    "height": 1280,
+    "file_size": 275076,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/large_nob-hill.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/medium_nob-hill.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/small_nob-hill.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/xsmall_nob-hill.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/thumb_nob-hill.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022630/nob-hill.jpg",
+    "alt": "nob-hill",
+    "caption": ""
+  },
+  "url": "https://en.wikipedia.org/wiki/Nob_Hill,_San_Francisco"
 }
