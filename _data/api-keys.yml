@@ -1,5 +1,5 @@
 # Third Party API's
 maps:
   google:
-    enabled: false # false (default), true to enable
-    api_key:
+    enabled: true # false (default), true to enable
+    api_key: AIzaSyCEpybAskYoBWzLsaVZlnIPzbRruMIA1Zk

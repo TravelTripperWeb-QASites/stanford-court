@@ -1,0 +1,32 @@
+{
+  "title": "Golden Gate Bridge",
+  "category": "attractions",
+  "Lattitude": 37.8035598,
+  "Longitude": -122.4611395,
+  "order": 8,
+  "address": "San Francisco",
+  "url": "http://www.goldengatebridge.org/",
+  "details": "<p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the American city of San Francisco, California &ndash; the northern tip of the San Francisco Peninsula &ndash; to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait.</p>",
+  "image": {
+    "name": "golden-gate",
+    "file_name": "golden-gate.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/golden-gate.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-05-31-073834",
+    "file_type": "image/jpeg",
+    "width": 732,
+    "height": 395,
+    "file_size": 156896,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/large_golden-gate.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/medium_golden-gate.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/small_golden-gate.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/xsmall_golden-gate.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/thumb_golden-gate.jpg",
+    "git_file_name": "_assets/image_data/golden-gate.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_16278/media/2018-05-31-073834/golden-gate.jpg",
+    "alt": "Golden Gate",
+    "caption": ""
+  },
+  "distance": "16 min"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Embarcadero",
+  "category": "attractions",
+  "Lattitude": 37.799263,
+  "Longitude": -122.397673,
+  "order": 4,
+  "address": "San Francisco",
+  "url": "http://embarcaderocenter.com/",
+  "details": "<p>Spanning four blocks in the heart of downtown San Francisco, Embarcadero Center is one of the largest mixed-use complexes in the Western United States.</p>",
+  "distance": "0.9 mile",
+  "image": {
+    "name": "embarcaderocenter",
+    "file_name": "embarcaderocenter.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/embarcaderocenter.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-022335",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 399,
+    "file_size": 109557,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/large_embarcaderocenter.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/medium_embarcaderocenter.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/small_embarcaderocenter.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/xsmall_embarcaderocenter.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/thumb_embarcaderocenter.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-022335/embarcaderocenter.jpg",
+    "alt": "embarcadero center",
+    "caption": ""
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": {
+    "required": true
+  },
+  "category":{
+  	"label": "Category",
+  	"type": "select",
+  	"options": ["attractions"],
+  	"required": true
+  },
+  "address":{
+    "required": true
+  },
+  "distance": {
+    "required": true
+  },
+  "Lattitude":{
+     "required": true,
+     "type": "float"
+  },
+  "Longitude":{
+     "required": true,
+     "type": "float"
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "details": {
+    "type": "richtext",
+    "required": true
+  },
+  "url": {
+    "required": true
+  },
+  "order":{
+    "type": "integer"
+  }
+}

@@ -115,6 +115,21 @@ $(document).ready(function () {
     fullScreen: false
   });
 
+  $('.video-player-param').lightGallery({
+    counter: false,
+    youtubePlayerParams: {
+    modestbranding: 1,
+    showinfo: 0,
+    rel: 0,
+    controls: 0
+  },
+  vimeoPlayerParams: {
+    byline: 0,
+    portrait: 0,
+    color: 'A90707'
+  }
+});
+
   // set same height of each offer desc block in offer listing page
   setTimeout(function () {
     var newHeight = 0;

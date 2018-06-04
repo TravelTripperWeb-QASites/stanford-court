@@ -57,8 +57,15 @@ p {
   @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
+b,
+strong {
+  font-weight: 600;
+}
+
 a {
+  color: $primary-color;
   &:hover {
+    color: $secondary-color;
     text-decoration: none;
   }
 }
@@ -77,8 +84,16 @@ a {
   @include global-transition(.3s);
   &:hover {
     color: $black;
-    background-image: url('/assets/images/black-arrow.png');
     background-position: right 0 bottom 0;
+  }
+}
+
+.link-button {
+  @extend .primary-btn;
+  padding-right: 0;
+  background-image: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -149,4 +164,8 @@ a {
   height: 1px;
   content: '';
   background: $white;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }
