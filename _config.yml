@@ -3,7 +3,7 @@ title: "Stanford Court Hotel"
 title_separator: "|"
 name: "Boutique Hotel in San Francisco"
 description: "Stanford Court pushes the envelope for boutique hotels in San Francisco. Just a few steps from Union Square it offers top-tier rooms and the best in amenities!"
-url: https://www.stanfordcourt.com # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
+url: https://stanford-court-phase-1---blog-16311.traveltripper.io # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 repository: "TravelTripperWeb-Sites/stanford-court-phase-1" # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 reztripUrl: https://stanfordcourt.reztrip.com/
 # Language Settings
