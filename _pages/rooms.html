@@ -36,16 +36,16 @@ meta_tags:
 </section>
 {% assign rooms = site.data._models.rooms %}
 {% for room in rooms %}
-<section class="background-cover" style="background-image:url(/assets/images/rooms/{{ room.title | downcase }}_bg.jpg);">
+<section class="background-cover" style="background-image:url({{ room.roombackgroundimage.url }});">
   <div class="room-single">
     <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url({{room.roomimage.url}});"></div>
+      <div class="room-image  background-cover" style="background-image:url({{ room.roomimage.url }});"></div>
       <div class="room-info">
         <div class="info">
-        <h3 class="text-white">{{room.title}}</h3>
-        <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>{{room.long_description}}</p>
-        <a class="secondary-btn-inverse" href="{{room.book_this_room}}">Book Room</a>
+        <h3 class="text-white">{{ room.title }}</h3>
+        <a class="primary-btn-inverse" href="/room/#{{ room.title | downcase }}">Discover More</a>
+        <p>{{ room.long_description }}</p>
+        <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
         </div>
       </div>
     </div>
@@ -77,18 +77,7 @@ meta_tags:
         {% endregionblock %}
         {% regionblock room_features_list, type: tets %}
         <ul>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
-          <li>Amenity Number 1</li>
+          <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li>
         </ul>
         {% endregionblock %}
         <div class="clearfix"></div>
