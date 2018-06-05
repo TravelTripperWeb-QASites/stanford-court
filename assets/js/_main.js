@@ -87,6 +87,7 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
+
   //light gallery filter
   $(".filter").on("click", function () {
     var $this = $(this);
@@ -259,4 +260,17 @@ $(document).ready(function () {
 
       });
   }, 500);
+});
+
+$(window).on("load resize", function (e) {
+  $('.inner-nav').off('click');
+  if ($(document).width() < 768) {
+    $(".inner-nav ul, .categories ul").css("display", "none");
+    $(".inner-nav, .categories").click(function () {
+      $(this).find("ul").slideToggle(100);
+    });
+  }
+  if ($(document).width() >= 768) {
+    $(".inner-nav ul, .categories ul").css("display", "inline-block");
+  }
 });
