@@ -42,6 +42,12 @@
           margin-bottom: 20px;
         }
       }
+      .offer-desc {
+        height: auto !important;
+        @include media-breakpoint-up(md) {
+          height: 125px !important;
+        }
+      }
       p {
         margin-bottom: 26px;
         @include media-breakpoint-up(md) {
