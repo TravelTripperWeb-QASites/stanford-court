@@ -392,6 +392,22 @@
         min-height: 250px;
       }
 
+      //custom scrollbar
+      &::-webkit-scrollbar {
+        width: 5px;
+        background: transparent;
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $white;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 4px;
+      }
+
     }
   }
 }
@@ -557,42 +573,46 @@
 }
 
 // rooms search modal
-.booking-widget-rooms{
-    padding-right:0;
-    h4{
-        width:100%;
+.booking-widget-rooms {
+  padding-right: 0;
+
+  h3 {
+    width: 100%;
+  }
+
+  .adult-children-inner {
+    @include make-row();
+  }
+
+  .adults-wrap,
+  .children-wrap,
+  .rooms-holder {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
     }
+  }
 
-        .adult-children-inner{
-            @include make-row();
-        }
+  select {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 5px;
+    background: $white;
+  }
 
-        .rooms-holder ,.adults-wrap, .children-wrap{
-            @include make-col-ready();
-            @include media-breakpoint-up(md) {
-                @include make-col(4);
-            }
+  label {
+    position: relative;
+    display: block;
+    font-family: $global-font;
+    font-size: $type-size-4;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
-        }
-        select{
-            width:100%;
-            padding:5px;
-            margin:0 0 20px 0;
-        }
-        label{
-            font-family: $global-font-bold;
-            font-size: $type-size-9;
-            font-weight: 700;
-            display: block;
-            text-align:center;
-            position: relative;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-          //  color: $text-color;
-            line-height: normal;
-        }
-
-    button{
-        cursor:pointer;
-    }
+  button {
+    cursor: pointer;
+  }
 }
