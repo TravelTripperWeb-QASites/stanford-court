@@ -11,7 +11,11 @@ layout: default
 </section>
 
 <div class="inner-nav">
-  <a ng-class="{'active': $index == roomIndex}" ng-href="/room/#[[ room.category ]][[ $index > 0 ? '-' + $index : '' ]]" title="[[ r.name ]]" ng-repeat="r in rooms">[[ r.name ]]</a>
+  <ul>
+    <li>
+      <a ng-class="{'active': $index == roomIndex}" ng-href="/room/#[[ room.category ]][[ $index > 0 ? '-' + $index : '' ]]" title="[[ r.name ]]" ng-repeat="r in rooms">[[ r.name ]]</a>
+    </li>
+  </ul>
 </div>
 
 <section class="details-wrapper ">
@@ -148,13 +152,14 @@ layout: default
  <div class="modal-dialog " role="document">
    <div class="modal-content booking-widget">
      <div class="modal-header">
-       <h4 class="modal-title text-center">Rooms & Guests</h4>
+       <h3 class="modal-title text-center">Rooms & Guests</h3>
        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
          <span aria-hidden="true">&times;</span>
        </button>
      </div>
      <div class="modal-body">
-         <div class="rooms-holder m-auto">
+        <div class="adult-children-inner">
+         <div class="rooms-holder">
              <label >Rooms</label>
              <select role="listbox" tabindex="0" id="roomsselector" name="roomsCount" title="Rooms" aria-label="Rooms" >
                  <option selected="selected" value="1">1</option>
@@ -163,11 +168,11 @@ layout: default
                  <!-- <option value="4">4 Rooms</option> -->
              </select>
          </div>
-         <div class="adult-children">
 
 
-            <div class="adult-children-inner m-0">
-               <div id="adults-wrap" class="adults-wrap m-auto">
+
+
+               <div id="adults-wrap" class="adults-wrap ">
                    <label for="adults">Adults</label>
                    <select name="adults[]"  title="adults" aria-label="adults">
                        <option value="1">1</option>
@@ -177,7 +182,7 @@ layout: default
 
                    </select>
                </div>
-               <div id="children-wrap" class="children-wrap m-auto">
+               <div id="children-wrap" class="children-wrap">
                    <label for="children">Children</label>
                    <select name="children[]" title="Children" aria-label="Children">
                        <option value="0">0</option>
@@ -188,11 +193,11 @@ layout: default
 
                    </select>
                </div>
-           </div>
+
        </div>
        <div class="extra-adult-children"></div>
        <div class="text-center">
-           <button aria-label="Done" type="button" class=" black" data-dismiss="modal">Done</button>
+           <button aria-label="Done" type="button" class="black-btn" data-dismiss="modal">Done</button>
        </div>
      </div>
 
