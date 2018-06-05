@@ -14,20 +14,20 @@ layout: default
   <a ng-class="{'active': $index == roomIndex}" ng-href="/room/#[[ room.category ]][[ $index > 0 ? '-' + $index : '' ]]" title="[[ r.name ]]" ng-repeat="r in rooms">[[ r.name ]]</a>
 </div>
 
-<section class="details-wrapper align-items-center">
+<section class="details-wrapper ">
     <div class="tag-line-text">
       <p>[[ room.category ]]</p>
     </div>
 
-    <div class="details">
+    <div class="details d-flex align-items-center">
       <div class="room-info">
         <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
 
-        <h4>tonight’s rate <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room_category='+room.category+'&selected_room='+room.code ]]" target="_blank"><span><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]</span></a></h4>
+        <h4>tonight’s rate <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room_category='+room.category+'&selected_room='+room.code ]]" target="_blank"><span><a ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]</a></a></h4>
         <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
         <div class="area">
         <ul>
-          <li><img src="/assets/images/rooms/squire.png" alt="area"/><span>[[ room.room_size ]]<span ng-bind-html="room.room_size_units | renderHTMLCorrectly"></span></span></li>
+          <li><img src="/assets/images/rooms/squire.png" alt="area"/><span>[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span></li>
           <li><img src="/assets/images/rooms/guest.png" alt="guest"/><span>Max [[ room.max_number_of_guests ]] persons</span></li>
         </ul>
         </div>
