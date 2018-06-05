@@ -7,16 +7,20 @@ layout: default
 </section>
 
 <div class="inner-nav">
-  <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates"><span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span></a>
+  <ul>
+    <li>
+    <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates"><span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span></a>
+  </li>
+  </ul>
 </div>
 
-<section class="details-wrapper align-items-center">
+<section class="details-wrapper">
   <div class="tag-line-text">
     <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
   </div>
-  <div class="details">
+  <div class="details d-flex align-items-center">
     <div class="room-info">
-      <a class="back-btn" href="/offers/"><i class="fas fa-arrow-left"></i> Back To Offers</a>
+      <a class="back-btn" href="/offers/"><i class="fas fa-arrow-left"></i>Back To Offers</a>
       <!-- <h4>Save Up To <span>15% Off</span></h4> -->
       <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
       <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
