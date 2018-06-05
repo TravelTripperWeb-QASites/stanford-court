@@ -10,16 +10,6 @@ main:
     url: /offers/
   - title: Dining
     url: /dining/
-    dropdown:
-      - title: Outdoor Adventures
-        url: /activities/outdoor-adventures/
-      - title: Cultural Activities
-        url: /activities/cultural-activities/
-      - title: Shopping
-        url: /activities/shopping/
-      - title: Entertainment
-        url: /activities/entertainment/
-
   - title: Meetings
     url: /meetings/
     dropdown:
@@ -31,7 +21,7 @@ main:
         - title: Attractions
           url: /attractions/
         - title: Events
-          url: /events/  
+          url: /events/
   - title: Gallery
     url: /gallery/
   - title: Contact

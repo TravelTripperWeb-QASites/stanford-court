@@ -2,21 +2,21 @@
   <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
   <div class="form-row">
     <div class="form-group">
-      <input type="text" id="fname" name="q3_name[first]" class="form-textbox validate[required] form-control" required="required" size="10" value="" data-component="first" placeholder="First Name *" />
+      <input type="text" id="fname" name="q3_name[first]" class="form-textbox validate[required] form-control" required="required" size="10" value="" placeholder="First Name *" aria-label="Fisrt Name" title="First Name" />
     </div>
     <div class="form-group">
-      <input type="text" id="lname" name="q3_name[last]" class="form-textbox validate[required] form-control" required="required" placeholder="Last Name *" size="15" value="" data-component="last" />
+      <input type="text" id="lname" name="q3_name[last]" class="form-textbox validate[required] form-control" required="required" placeholder="Last Name *" size="15" value="" aria-label="Last Name" title="Last Name" />
     </div>
     <div class="form-group">
-      <input type="text" id="input_4" name="q4_address1" data-type="input-textbox" class="form-textbox form-control validate[required]" size="20" value="" required="required" data-component="textbox" aria-label="Address 1"  placeholder="Address 1 *" />
-    </div>
-    <div class="form-group">
-
-      <input type="text" id="input_5" name="q5_address15" data-type="input-textbox" class="form-textbox form-control" size="20" value="" data-component="textbox" aria-label="Address 2"   placeholder="Address 2"/>
+      <input type="text" id="input_4" name="q4_address1"  class="form-textbox form-control validate[required]" size="20" value="" required="required" aria-label="Address 1" title="Address 1"  placeholder="Address 1 *" />
     </div>
     <div class="form-group">
 
-      <select class="form-control" id="Country" name="q6_country" data-component="dropdown" >
+      <input type="text" id="input_5" name="q5_address15"  class="form-textbox form-control" size="20" value="" aria-label="Address 2" title="Address 2"  placeholder="Address 2"/>
+    </div>
+    <div class="form-group">
+
+      <select class="form-control" id="Country" name="q6_country" aria-label="Country" title="Country"  >
         <option value="">  Country </option>
         <option value="United States"> United States </option>
         <option value="Afghanistan"> Afghanistan </option>
@@ -266,19 +266,19 @@
       </select>
     </div>
     <div class="form-group">
-      <input type="text" required="required" id="city" name="q7_address2" data-type="input-textbox" class="form-textbox form-control validate[required]" size="20" value="" data-component="textbox" aria-label="City" placeholder="City" />
+      <input type="text" required="required" id="city" name="q7_address2"  class="form-textbox form-control validate[required]" size="20" value=""  aria-label="City" title="City" placeholder="City" />
     </div>
     <div class="form-group">
-      <input type="text" id="input_8" required="required" name="q8_city" data-type="input-textbox" class="form-textbox form-control validate[required]" size="20" value="" data-component="textbox" aria-label="Zip Code" placeholder="Zip/Postal Code *" />
+      <input type="text" id="input_8" required="required" name="q8_city"  class="form-textbox form-control validate[required]" size="20" value=""  aria-label="Zip Code" title="Zip/Postal Code" placeholder="Zip/Postal Code *" />
     </div>
     <div class="form-group">
-      <input type="email" required="required" id="input_9" name="q9_zippostalCode" data-type="input-textbox" class="form-textbox form-control validate[required, Email]" size="20" value="" data-component="textbox" placeholder="Email *" />
+      <input type="email" required="required" id="input_9" name="q9_zippostalCode"  class="form-textbox form-control validate[required, Email]" size="20" value=""  placeholder="Email *" aria-label="Email" title="Email" />
     </div>
     <div class="form-group">
-      <input type="text" required="required" id="input_10" name="q10_zippostalCode10" data-type="input-textbox" class="form-textbox form-control validate[required]" size="20" value="" data-component="textbox" aria-label="Telephone Number" placeholder="Telephone number" />
+      <input type="text" required="required" id="input_10" name="q10_zippostalCode10"  class="form-textbox form-control validate[required]" size="20" value=""  aria-label="Telephone Number" title="Telephone Number" placeholder="Telephone number" />
     </div>
     <div class="form-group">
-      <input type="text" id="input_12" name="q12_numberOf" data-type="input-textbox" class="form-textbox form-control" size="20" value="" placeholder="Number of guests" data-component="textbox" aria-label="Number of Guests" />
+      <input type="text" id="input_12" name="q12_numberOf"  class="form-textbox form-control" size="20" value="" placeholder="Number of guests"  aria-label="Number of Guests" title="Number of Guests"/>
       <span class="hint">Enter a number between 1 and 99.</span>
     </div>
     <div class="form-group">
@@ -289,68 +289,68 @@
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" CHECKED class="form-radio validate[required]" id="input_11_0" name="q11_inquiryInformation" value="Reservation Inquiry" />
+        <input type="radio" CHECKED class="form-radio validate[required]" id="input_11_0" name="q11_inquiryInformation" value="Reservation Inquiry" aria-label="Reservation Inquiry" title="Reservation Inquiry"/>
         <label id="label_input_11_0" for="input_11_0"> Reservation Inquiry </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_1" name="q11_inquiryInformation" value="General Inquiry" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_1" name="q11_inquiryInformation" value="General Inquiry" aria-label="General Inquiry" title="General Inquiry" />
         <label id="label_input_11_1" for="input_11_1"> General Inquiry </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_2" name="q11_inquiryInformation" value="Front Desk" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_2" name="q11_inquiryInformation" value="Front Desk" aria-label="Front Desk" title="Front Desk" />
         <label id="label_input_11_2" for="input_11_2"> Front Desk </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_3" name="q11_inquiryInformation" value="Concierge" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_3" name="q11_inquiryInformation" value="Concierge" aria-label="Concierge" title="Concierge" />
         <label id="label_input_11_3" for="input_11_3"> Concierge </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_4" name="q11_inquiryInformation" value="Accounting" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_4" name="q11_inquiryInformation" value="Accounting" aria-label="Accounting" title="Accounting" />
         <label id="label_input_11_4" for="input_11_4"> Accounting </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_5" name="q11_inquiryInformation" value="Housekeeping" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_5" name="q11_inquiryInformation" value="Housekeeping" aria-label="Housekeeping" title="Housekeeping" />
         <label id="label_input_11_5" for="input_11_5"> Housekeeping </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio validate[required]" id="input_11_6" name="q11_inquiryInformation" value="Wedding Group" />
+        <input type="radio" class="form-radio validate[required]" id="input_11_6" name="q11_inquiryInformation" value="Wedding Group" aria-label="Wedding Group" title="Wedding Group" />
         <label id="label_input_11_6" for="input_11_6"> Wedding Group </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio  validate[required]" id="input_11_7" name="q11_inquiryInformation" value="Corporate or Group Inquiry" aria-label="Corporate or Group Inquiry" />
+        <input type="radio" class="form-radio  validate[required]" id="input_11_7" name="q11_inquiryInformation" value="Corporate or Group Inquiry" aria-label="Corporate or Group Inquiry" title="Corporate or Group Inquiry" />
         <label id="label_input_11_7" for="input_11_7"> Corporate or Group Inquiry </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
-        <input type="radio" class="form-radio  validate[required]" id="input_11_8" name="q11_inquiryInformation" value="Other" aria-label="Other"/>
+        <input type="radio" class="form-radio  validate[required]" id="input_11_8" name="q11_inquiryInformation" value="Other" aria-label="Other" title="Other"/>
         <label id="label_input_11_8" for="other_11"> Other </label>
         <br/>
         </span>
       </div>
     </div>
     <div class="form-group">
-      <input type="text" id="input_13" name="q13_numberOf13" data-type="input-textbox" class="form-textbox form-control" size="20" value="" placeholder="Number of guestrooms" data-component="textbox" aria-label="Number of Guest Rooms" />
+      <input type="text" id="input_13" name="q13_numberOf13"  class="form-textbox form-control" size="20" value="" placeholder="Number of guestrooms"  aria-label="Number of Guest Rooms" title="Number of Guest Rooms" />
       <span class="hint">Enter a number between 1 and 99.</span>
     </div>
     <div class="form-group">
-      <input type="text" required="required" id="datePick" name="q17_arrivalDate" data-type="input-textbox" class="form-textbox form-control validate[required]" placeholder="Arrival Date" size="20" value="" data-component="textbox" aria-label="Arrival Date" />
+      <input type="text" required="required" id="datePick" name="q17_arrivalDate"  class="form-textbox form-control validate[required]" placeholder="Arrival Date" size="20" value=""  aria-label="Arrival Date" title="Arrival Date" />
     </div>
     <div class="form-group">
 
-      <input type="text" id="input_14" name="q14_numberOf14" data-type="input-textbox" class="form-textbox form-control" size="20" value="" placeholder="Number of nights per room" data-component="textbox" aria-label="Number of Nights per Room" />
+      <input type="text" id="input_14" name="q14_numberOf14"  class="form-textbox form-control" size="20" value="" placeholder="Number of nights per room"  aria-label="Number of Nights per Room" title="Number of Nights per Room" />
       <span class="hint">Enter a number between 1 and 99.</span>
     </div>
     <div class="form-group">
@@ -361,19 +361,19 @@
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" CHECKED class="form-radio" id="input_15_0" name="q15_howShould" value="Phone" />
+        <input type="radio" CHECKED class="form-radio" id="input_15_0" name="q15_howShould" value="Phone" aria-label="Phone" title="Phone" />
         <label id="label_input_15_0" for="input_15_0"> Phone </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio" id="input_15_1" name="q15_howShould" value="Email" />
+        <input type="radio" class="form-radio" id="input_15_1" name="q15_howShould" value="Email" aria-label="Email" title="Email" />
         <label id="label_input_15_1" for="input_15_1"> Email </label>
         </span>
         <span class="form-radio-item" style="clear:left;">
         <span class="dragger-item">
         </span>
-        <input type="radio" class="form-radio" id="input_15_2" name="q15_howShould" value="Mail" />
+        <input type="radio" class="form-radio" id="input_15_2" name="q15_howShould" value="Mail" aria-label="Mail" title="Mail" />
         <label id="label_input_15_2" for="input_15_2"> Mail </label>
         </span>
       </div>
@@ -381,7 +381,7 @@
   </div>
   <div class="form-group-full">
     <label class="control-label " for="email"> </label>
-    <textarea id="input_16" class="form-textarea form-control" name="q16_commentsOr" cols="40" rows="6" data-component="textarea" aria-label="Queries or Comments" placeholder="Comments or Questions"></textarea>
+    <textarea id="input_16" class="form-textarea form-control" name="q16_commentsOr" cols="40" rows="6" data-component="textarea" aria-label="Queries or Comments" title="Queries or Comments" placeholder="Comments or Questions"></textarea>
   </div>
   <div class="form-group">
     <button type="submit" class="butn btn-white uppercase">Submit</button>
