@@ -38,7 +38,7 @@ meta_tags:
     {% assign attractions = site.data._models.attractions | sort: 'sort_order' %}
     {% for attraction in attractions %}
     <div class="attraction-block">
-      <a href="{{ attraction.url_friendly_name }}/">
+      <a href="/{{ attraction.url_friendly_name }}/" title="{{ attraction.title }}">
         <div class="image background-cover d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
         </div>
       </a>
