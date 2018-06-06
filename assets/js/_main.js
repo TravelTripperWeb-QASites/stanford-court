@@ -87,6 +87,38 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
+  $(".gallery-carousel-inner .carousel-control-next").click(function(){
+    var activeItem = 0;
+    $(".gallery-carousel-inner .item").each(function(index){
+      if($(this).hasClass("active")) {
+        activeItem = index;
+        return false;
+      }
+    });
+    $(".gallery-carousel-inner .item").removeClass("active");
+    if(activeItem == 3) {
+      $(".gallery-carousel-inner .item").eq(0).addClass("active");
+    } else {
+      $(".gallery-carousel-inner .item").eq(activeItem+1).addClass("active");
+    }
+  });
+
+  $(".gallery-carousel-inner .carousel-control-prev").click(function(){
+    var activeItem = 0;
+    $(".gallery-carousel-inner .item").each(function(index){
+      if($(this).hasClass("active")) {
+        activeItem = index;
+        return false;
+      }
+    });
+    $(".gallery-carousel-inner .item").removeClass("active");
+    if(activeItem == 0) {
+      $(".gallery-carousel-inner .item").eq(3).addClass("active");
+    } else {
+      $(".gallery-carousel-inner .item").eq(activeItem-1).addClass("active");
+    }
+  });
+
 
   //light gallery filter
   $(".filter").on("click", function () {
