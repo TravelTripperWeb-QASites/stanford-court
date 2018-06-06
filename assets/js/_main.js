@@ -109,9 +109,22 @@ $(document).ready(function () {
           $('[data-offergallery]').lightGallery({
             selector: ".item:visible",
             counter: false,
-            share: false
+            share: false,
+            thumbnail: true,
+            youtubePlayerParams: {
+              modestbranding: 1,
+              showinfo: 0,
+              rel: 0,
+              controls: 0
+            },
+            vimeoPlayerParams: {
+              byline: 0,
+              portrait: 0,
+              color: 'A90707'
+            }
 
           });
+
         }
 
       }, 1000);
@@ -120,24 +133,22 @@ $(document).ready(function () {
   $('[data-offergallery]').lightGallery({
     selector: '.item',
     counter: false,
+    thumbnail: true,
     download: false,
-    fullScreen: false
+    youtubePlayerParams: {
+      modestbranding: 1,
+      showinfo: 0,
+      rel: 0,
+      controls: 0
+    },
+    vimeoPlayerParams: {
+      byline: 0,
+      portrait: 0,
+      color: 'A90707'
+    }
   });
 
-  $('.video-player-param').lightGallery({
-    counter: false,
-    youtubePlayerParams: {
-    modestbranding: 1,
-    showinfo: 0,
-    rel: 0,
-    controls: 0
-  },
-  vimeoPlayerParams: {
-    byline: 0,
-    portrait: 0,
-    color: 'A90707'
-  }
-});
+
 
   // set same height of each offer desc block in offer listing page
   setTimeout(function () {
