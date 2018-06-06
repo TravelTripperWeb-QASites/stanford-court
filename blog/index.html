@@ -36,8 +36,9 @@ include_in_nav_localized:
       {% for post in data_paginator.posts %}
         <div class="post">
           <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
-            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="s{{post.img_alt_txt}}">
+            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
           </figure>
+          <!-- <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}"> -->
 
           </a>
           <div class="blog-item-text">
@@ -67,37 +68,35 @@ include_in_nav_localized:
         </div>
       <div class="clearfix"></div>
       {% endfor %}
+
       {% if data_paginator.total_pages > 1 %}
-      <div class="pagination">
-        {% if data_paginator.previous_page %}
-        {% if data_paginator.page %}
-        <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow btn-outline-black" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> <img src="/assets/images/black-arrow.png" alt="Previous Page"> </a>
-        {% else %}
-        <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
-        {% endif %}
-        {% else %}
-        <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled btn-outline-black"><img src="/assets/images/black-arrow.png" alt="Previous Page"></a>
-        {% endif %}
-        <div class="pagnum">
-          {% for page in (1..data_paginator.total_pages) %}
-          {% if page == 1 %}
-          <a href="/blog/">{{ page }}</a>
-          {% elsif page == data_paginator.page %}
-          <a class="current" href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+
+        <div class="pagination">
+          {% if data_paginator.previous_page %}
+          {% if data_paginator.page %}
+          <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow btn-outline-black" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> <img src="/assets/images/black-arrow.png" alt="Previous Page"> </a>
           {% else %}
-          <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+          <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
           {% endif %}
-          {% endfor %}
+          {% else %}
+          <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled btn-outline-black"><img src="/assets/images/black-arrow.png" alt="Previous Page"></a>
+          {% endif %}
+
+          <div class="pagnum">
+            Page {% if data_paginator.page < 10 %} 0{% endif %}{{data_paginator.page}} Of {{data_paginator.total_pages}}
+          </div>
+
+          {% if data_paginator.next_page %}
+          <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow btn-outline-black" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <img src="/assets/images/black-arrow.png" alt="next page">
+          </a>
+          {% else %}
+          <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled btn-outline-black"> <img src="/assets/images/black-arrow.png" alt="next page"> </a>
+          {% endif %}
+
         </div>
-        {% if data_paginator.next_page %}
-        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow btn-outline-black" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-          <img src="/assets/images/black-arrow.png" alt="next page">
-        </a>
-        {% else %}
-        <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled btn-outline-black"> <img src="/assets/images/black-arrow.png" alt="next page"> </a>
-        {% endif %}
-      </div>
       {% endif %}
+
     </div>
     <div class="blog-right-block">
       {% include blog-aside.html %}

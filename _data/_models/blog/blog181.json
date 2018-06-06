@@ -1,5 +1,6 @@
 {
   "title": "Best Dim Sum in San Francisco",
+  "category": "category1",
   "blogimage": {
     "name": "dim-sum-sf",
     "file_name": "dim-sum-sf.jpg",

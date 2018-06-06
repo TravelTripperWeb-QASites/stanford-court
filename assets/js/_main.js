@@ -317,3 +317,12 @@ $(window).on("load resize", function (e) {
     $(".inner-nav ul, .categories ul").css("display", "inline-block");
   }
 });
+
+
+$(function() {
+  $().timelinr({
+    autoPlay: 'false',
+    autoPlayDirection: 'forward',
+    startAt: 1
+  })
+});
