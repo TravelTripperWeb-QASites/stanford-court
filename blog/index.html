@@ -36,8 +36,9 @@ include_in_nav_localized:
       {% for post in data_paginator.posts %}
         <div class="post">
           <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
-            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="s{{post.img_alt_txt}}">
+            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
           </figure>
+          <!-- <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}"> -->
 
           </a>
           <div class="blog-item-text">

@@ -1,6 +1,7 @@
 {
 	"title": "Stan’s San Francisco Activity Suggestions",
 	"url_friendly_name": "sf-activities",
+  "category": "category2",  
 	"blogimage": {
 		"url": "https://cdn.traveltripper.io/site-assets/446_617_1962/media/2017-02-24-065220/26.jpg"
 	},
