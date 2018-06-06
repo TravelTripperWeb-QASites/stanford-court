@@ -10,7 +10,7 @@ meta_tags:
 <div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
   <ul class="banner-nav">
     {% regionblock hotel_links_nav, type: text %}
-    <a href="#about">About Us</a>
+    <a href="#about" class="active">About Us</a>
     <a href="#history">Hotel History</a>
     <a href="#amenities">Amenities</a>
     <a href="#art">Art</a>
@@ -20,7 +20,7 @@ meta_tags:
 
 <section class="page-intro no-gap" id="about">
   <div class="page-intro-inner m-0 d-flex align-items-center">
-    <div class="gradient-bg solid-bg">
+    <div class="gradient-bg">
       <div class="gradient-bg-inner">
         <div class="text-inner">
           {% regionblock hotel_sub_title, type: header %}
@@ -102,9 +102,9 @@ meta_tags:
           </div>
 </div>
 </section>
-{% regionblock hotel_amenities_section_caption, type: header %}
+<!-- {% regionblock hotel_amenities_section_caption, type: header %}
 <h2 class="large-header" id="amenities">Amenities</h2>
-{% endregionblock %}
+{% endregionblock %} -->
 <section class="art-wrapper">
   <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
     <div class="image down-full background-cover gradient-bg">
