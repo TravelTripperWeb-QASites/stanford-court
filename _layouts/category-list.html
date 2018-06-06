@@ -7,11 +7,15 @@ layout: default
 
 
 <section class="inner-nav mb-80">
+  <ul>
+  <li>
   <a href="/blog/" >All</a>
   {% assign categories = site.data._models.category | sort: 'order' | descending %}
   {% for categorylist in categories %}
   <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}" class="{% if categorylist.url_friendly_name == page.data.url_friendly_name %} active {% endif %}"> {{categorylist.title}}</a>
   {% endfor %}
+  <li>
+  </ul>
 </section>
 
 <section class="blog-container">
@@ -21,7 +25,9 @@ layout: default
           {% if post.category.url_friendly_name == page.data.url_friendly_name %}
             <div class="post">
               <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
-                <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}">
+                <!-- <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}"> -->
+                <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
+              </figure>
               </a>
               <div class="blog-item-text">
 
