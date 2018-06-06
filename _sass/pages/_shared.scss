@@ -162,12 +162,14 @@
 
 // inner-nav
 .inner-nav {
-  padding: 25px 0 39px;
+  padding: 25px 0 10px;
   text-align: center;
   background: $black;
 
   ul {
     display: inline-block;
+    margin: 0;
+    padding: 0;
     li {
       display: inline-block;
       padding: 0 10px;
@@ -175,7 +177,7 @@
       a {
         position: relative;
         display: inline-block;
-        margin: 0 14px;
+        margin: 0 14px 15px;
         font-family: $global-font-bold;
         font-size: $type-size-5;
         font-weight: 700;
