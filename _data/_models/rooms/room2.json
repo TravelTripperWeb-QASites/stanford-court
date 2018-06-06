@@ -1,7 +1,7 @@
 {
   "title": "DELUXE",
   "long_description": "<p>Deluxe rooms up to 240 sq feet and include a King or Queen Bed. Situated on the exterior side and just the right size, these are our most popular rooms.&nbsp;<span style=\"color: #575757; font-family: 'GothamHTF Light', Helvetica, Arial, sans-serif; font-size: 15px;\">Accessible Rooms available.&nbsp;</span>Max occupancy is two persons.</p>",
-  "book_this_room": "https://stanfordcourt.reztrip.com/classic/en/searches/5979889a7b08e238b4a7d031/hotels/SFOSTF/rooms?_ga=2.205396632.981907577.1500874845-408165587.1493100699&action=show&controller=landings&selected_room=DX1Q&selected_room_category=Deluxe&starting_page=search",
+  "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room=DX1Q&selected_room_category=Deluxe",
   "more_info": "/room/#deluxe-queen",
   "sort_order": 2,
   "roomimage": {

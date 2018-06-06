@@ -22,8 +22,12 @@ p {
   padding: 0;
 }
 h1 {
-  @include text-formatting($title-font, $type-size-8, 700, 130px, $secondary-light, uppercase, -28px);
+  @include text-formatting($title-font, $type-size-7, 700, 130px, $secondary-light, uppercase, -20px);
   @include text-gradient(to right, $gradient-1, $gradient-2 100%);
+  @include media-breakpoint-up(sm) {
+    font-size:  $type-size-8;
+    letter-spacing: -28px;
+  }
   @include media-breakpoint-up(md) {
     font-size: 12rem;
     line-height: 10rem;
@@ -57,8 +61,15 @@ p {
   @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
+b,
+strong {
+  font-weight: 600;
+}
+
 a {
+  color: $primary-color;
   &:hover {
+    color: $secondary-color;
     text-decoration: none;
   }
 }
@@ -77,8 +88,16 @@ a {
   @include global-transition(.3s);
   &:hover {
     color: $black;
-    background-image: url('/assets/images/black-arrow.png');
     background-position: right 0 bottom 0;
+  }
+}
+
+.link-button {
+  @extend .primary-btn;
+  padding-right: 0;
+  background-image: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -149,4 +168,8 @@ a {
   height: 1px;
   content: '';
   background: $white;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }

@@ -20,7 +20,7 @@
   },
   "long_description": "<h4>Premier View&nbsp;</h4>\n<p>Premier View rooms are up to 256 sq ft and include a King or Queen Bed. With views of the city skyline or bay, these rooms offer that special Nob Hill experience! Max occupancy is three persons.</p>\n<p>Premier View Two Doubles are up to 270 sq ft and include views of the city skyline.&nbsp;Max occupancy is four persons.</p>\n<h4>Premier Interior&nbsp;</h4>\n<p>Premier Interior rooms are up to 270 sq ft.&nbsp;Spacious rooms with two Queen Beds, located on the interior side. Max occupancy is four persons.</p>",
   "sort_order": 3,
-  "book_this_room": "https://stanfordcourt.reztrip.com/classic/en/searches/597988b57b08e205b6a8e8a1/hotels/SFOSTF/rooms?_ga=2.194360869.981907577.1500874845-408165587.1493100699&action=show&controller=landings&selected_room=PV1Q&selected_room_category=Premier&starting_page=search",
+  "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room=PV1Q&selected_room_category=Premier",
   "more_info": "/room/#premier-view-queen",
   "roombackgroundimage": {
     "name": "premier_bg",

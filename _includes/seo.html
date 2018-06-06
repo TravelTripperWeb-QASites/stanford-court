@@ -4,7 +4,7 @@
 {% endif %}
 
 {% if page.data.title %}
-  {% assign seo_title = page.data.title | normalize_whitespace | escape_once %}
+ {% assign seo_title = page.data.title | normalize_whitespace | escape_once %}
 {% elsif page.title %}
   {% assign seo_title = page.title | normalize_whitespace | escape_once %}
 {% else %}

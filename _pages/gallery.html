@@ -12,10 +12,15 @@ meta_tags:
 
 {% assign categories = site.data._galleries %}
 <section class="inner-nav mb-5">
-  <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
-  {% for category in categories %} {% assign catname = category[0] %}
-  <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
-    {% endfor %}
+  <ul>
+    <li>
+    <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
+    {% for category in categories %} {% assign catname = category[0] %}
+    <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
+      {% endfor %}
+    <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
+  <li>
+</ul>
 </section>
 
 <section class="gallery-bg">
@@ -29,6 +34,18 @@ meta_tags:
 		  	   </div>
 		  	{% endfor %}
 		{% endfor %}
+    <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">
+         <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div>
+    </div>
+    <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=g_TXVVhpcOQ" >
+         <img src="/assets/images/gallery/video2_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div>
+    </div>
+    <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
+         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
+         <div class="play-icon"><i class="far fa-play-circle"></i></div> 
+    </div>
 	</div>
 </div>
 </section>

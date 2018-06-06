@@ -4,5 +4,28 @@
   "Lattitude": 37.806053,
   "Longitude": -122.410331,
   "order": 3,
-  "address": "San Francisco"
+  "address": "San Francisco",
+  "distance": "1.2 mile",
+  "details": "<p>North Beach, a buzzy neighborhood steeped in Italian heritage, draws locals and tourists to its checked-tablecloth trattorias, coffee shops and retro-flavored bars. The spirit of the Beat Generation can be felt at the storied City Lights bookstore and the memorabilia-filled Vesuvio Cafe bar.</p>",
+  "url": "https://en.wikipedia.org/wiki/North_Beach,_San_Francisco",
+  "image": {
+    "name": "North_Beach",
+    "file_name": "North_Beach.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/North_Beach.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-024819",
+    "file_type": "image/jpeg",
+    "width": 800,
+    "height": 1067,
+    "file_size": 207006,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/large_North_Beach.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/medium_North_Beach.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/small_North_Beach.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/xsmall_North_Beach.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/thumb_North_Beach.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024819/North_Beach.jpg",
+    "alt": "North Beach",
+    "caption": ""
+  }
 }

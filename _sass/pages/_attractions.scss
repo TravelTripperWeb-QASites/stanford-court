@@ -1,6 +1,26 @@
 // Offers & Offer Details Page Elements
 // ==========================================================================
+h1 {
+  &.banner-text {
+    @include media-breakpoint-up(md) {
+      font-size: $type-size-1;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 12rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 13rem;
+    }
+    @media only screen and (min-width: 1600px) {
+      font-size: 15rem;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size: 3.5rem;
+      letter-spacing: -12px;
+    }
 
+  }
+}
 .attractions-listing {
   @include container-fix-2;
   .attractions-listing-row {
