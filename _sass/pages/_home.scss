@@ -158,6 +158,7 @@
     position: relative;
     z-index: 1;
     margin-left: -13px;
+    overflow: hidden;
     opacity: .9;
     @include media-breakpoint-up(md) {
       margin-left: -80px;
@@ -241,8 +242,12 @@
     position: absolute;
     top: 0;
     right: auto;
-    left: 0;
     z-index: 1;
+    width: 100%;
+    @media (min-width: 480px) {
+      left: -28px;
+      width: auto;
+    }
     @include media-breakpoint-up(md) {
       top: 0;
       right: 0;
@@ -281,12 +286,30 @@
     }
     &.indicators {
       position: absolute;
-      top: 840px;
+      top: 1020px;
+      @media (min-width: 344px) {
+        top: 950px;
+      }
+      @media (min-width: 402px) {
+        top: 900px;
+      }
+      @media (min-width: 460px) {
+        top: 880px;
+      }
       @include media-breakpoint-up(sm) {
-        top: 750px;
+        top: 800px;
       }
       @include media-breakpoint-up(md) {
-        top: 340px;
+        top: 440px;
+      }
+      @include media-breakpoint-up(lg) {
+        top: 360px;
+      }
+      @media (min-width: 1200px) {
+        top: 430px;
+      }
+      @media (min-width: 1280px) {
+        top: 350px;
       }
       .image {
         height: auto;

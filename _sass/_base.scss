@@ -22,10 +22,11 @@ p {
   padding: 0;
 }
 h1 {
-  @include text-formatting($title-font, $type-size-7, 700, 130px, $secondary-light, uppercase, -20px);
+  @include text-formatting($title-font, $type-size-7, 700, 80px, $secondary-light, uppercase, -20px);
   @include text-gradient(to right, $gradient-1, $gradient-2 100%);
-  @include media-breakpoint-up(sm) {
+  @media (min-width: 480px) {
     font-size:  $type-size-8;
+    line-height: 130px;
     letter-spacing: -28px;
   }
   @include media-breakpoint-up(md) {
