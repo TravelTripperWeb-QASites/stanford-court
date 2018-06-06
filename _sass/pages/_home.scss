@@ -574,6 +574,9 @@
         @include media-breakpoint-up(md) {
           @include make-col(5.1);
         }
+        .carousel-nav {
+          right: -2px;
+        }
       }
     }
     .tag-line-text {
