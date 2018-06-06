@@ -5,7 +5,7 @@
     .date {
       margin-bottom: 25px;
       font-size: $type-size-10;
-      color: $primary-color;
+      color: $dark-text;
     }
     .blog-col {
       @include make-col-ready();

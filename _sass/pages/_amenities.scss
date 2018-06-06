@@ -27,6 +27,9 @@
     }
     p {
       padding-bottom: 25px;
+      a {
+        color: $dark-text;
+      }
     }
     &.down {
       @include media-breakpoint-up(md) {

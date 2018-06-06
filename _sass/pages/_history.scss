@@ -1,5 +1,6 @@
 .history {
   height: 620px;
+  background-color: $black;
   background-image: url('/assets/images/hotel/history.jpg');
   @include media-breakpoint-up(md) {
     height: 770px;

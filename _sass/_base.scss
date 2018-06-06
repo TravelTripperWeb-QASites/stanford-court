@@ -22,7 +22,7 @@ p {
   padding: 0;
 }
 h1 {
-  @include text-formatting($title-font, $type-size-7, 700, 130px, $secondary-light, uppercase, -20px);
+  @include text-formatting($title-font, $type-size-7, 700, 130px, $white, uppercase, -20px);
   @include text-gradient(to right, $gradient-1, $gradient-2 100%);
   @include media-breakpoint-up(sm) {
     font-size:  $type-size-8;

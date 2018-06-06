@@ -62,6 +62,7 @@
   }
   margin-bottom: 40px;
   padding: 46px 33px;
+  background-color: $black;
   background-image: url('/assets/images/home/amenities-bg.jpg');
   .home-amenities-inner {
     @include container-fix-2;
@@ -333,6 +334,7 @@
   margin-bottom: 95px;
   @include media-breakpoint-up(md) {
     display: block;
+    background-color: $black;
   }
   .gallery-carousel-inner {
     position: relative;
