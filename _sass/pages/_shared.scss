@@ -181,7 +181,16 @@
   padding: 25px 0 10px;
   text-align: center;
   background: $black;
-
+  .select-room {
+    display: block;
+    font-family: $global-font-bold;
+    font-size: $type-size-5;
+    font-weight: 700;
+    color: $white;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
   ul {
     display: inline-block;
     margin: 0;

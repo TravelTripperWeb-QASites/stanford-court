@@ -7,7 +7,7 @@ meta_tags:
   robots: noindex, follow
 ---
 
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/dining/hero.jpg');">
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
   <div class="banner-text">
     {% regionblock dine-title, type: header %}
       <h1>Sitemap</h1>
@@ -16,12 +16,6 @@ meta_tags:
 </section>
 
 {% assign links = site.data.navigation.main %} {% assign footer_links = site.data.navigation.footer %}
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
-  <div class="banner-text">
-    <h1>SITEMAP</h1>
-  </div>
-</section>
-
 <section class="static-content text-center">
   <div class="sitemap mb-5">
     <ul>
@@ -44,6 +38,7 @@ meta_tags:
           <a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a>
         </li>
       {% endfor %}
+      <li><a href="" onclick="srfp_widget.show()"  title="Speed RFP">Speed RFP</a></li>
     </ul>
   </div>
 </section>

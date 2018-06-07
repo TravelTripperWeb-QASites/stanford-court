@@ -148,8 +148,7 @@ meta_tags:
       <div class="images p-0">
         <div class="images-inner m-0">
           <div class="two background-cover" style="background-image: url('/assets/images/hotel/pets.jpg');"></div>
-          <div class="one background-cover d-lg-block d-none" style="background-image: url('/assets/images/hotel/amenities.jpg');"></div>
-          <div class="one background-cover d-lg-none d-block" style="background-image: url('/assets/images/hotel/pets3.jpg');"></div>
+          <div class="one background-cover" style="background-image: url('/assets/images/hotel/pets3.jpg');"></div>
         </div>
       </div>
     </div>
@@ -177,13 +176,13 @@ meta_tags:
 </section>
 
 <section class="art-wrapper" id="art">
-  <div class="art-wrapper-inner m-0 d-flex align-items-center">
+  <div class="art-wrapper-inner m-0 ">
     <div class="image down background-cover" style="background-image: url('/assets/images/hotel/art.jpg');">
       {% regionblock local_art_image, type: image %}
         <img class="frame-right" src="/assets/images/hotel/art-frame.jpg" alt="frame">
       {% endregionblock %}
     </div>
-    <div class="content down">
+    <div class="content down d-flex align-items-center">
       {% regionblock local_art_title, type: header %}
         <h3>Local Art</h3>
       {% endregionblock %}
