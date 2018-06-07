@@ -6,14 +6,14 @@ permalink: /sitemap/
 meta_tags:
   robots: noindex, follow
 ---
+
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/dining/hero.jpg');">
   <div class="banner-text">
     {% regionblock dine-title, type: header %}
-    <h1>Sitemap</h1>
+      <h1>Sitemap</h1>
     {% endregionblock %}
   </div>
 </section>
-
 
 {% assign links = site.data.navigation.main %} {% assign footer_links = site.data.navigation.footer %}
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
@@ -24,24 +24,26 @@ meta_tags:
 
 <section class="static-content text-center">
   <div class="sitemap mb-5">
-
     <ul>
       {% for link in links %}
       <li>
-        <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a> {% if link.dropdown %}
-        <ul>
-          {% for sublink in link.dropdown %}
-          <li>
-            <a href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
-          </li>
-          {% endfor %}
-        </ul>
+        <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a>
+        {% if link.dropdown %}
+          <ul>
+            {% for sublink in link.dropdown %}
+              <li>
+                <a href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
+              </li>
+            {% endfor %}
+          </ul>
         {% endif %}
       </li>
-      {% endfor %} {% for footer_link in footer_links %}
-      <li><a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a></li>
+      {% endfor %}
+      {% for footer_link in footer_links %}
+        <li>
+          <a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a>
+        </li>
       {% endfor %}
     </ul>
-
   </div>
 </section>

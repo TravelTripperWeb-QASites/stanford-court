@@ -6,10 +6,11 @@ permalink: /rooms/
 meta_tags:
   robots:
 ---
+
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/rooms/hero.jpg');">
   <div class="banner-text">
     {% regionblock rooms_title, type: header %}
-    <h1>Comfort</h1>
+      <h1>Comfort</h1>
     {% endregionblock %}
   </div>
 </section>
@@ -18,67 +19,50 @@ meta_tags:
   <div class="inner-intro-row m-0">
     <div class="heading">
       {% regionblock rooms_section_sub_title, type: header %}
-      <h4>ROOMS & SUITES</h4>
+        <h4>ROOMS & SUITES</h4>
       {% endregionblock %}
       {% regionblock rooms_section_title, type: header %}
-      <h3>Hilltop Haven</h3>
+        <h3>Hilltop Haven</h3>
       {% endregionblock %}
       {% regionblock rooms_section_link, type: text %}
-      <a class="primary-btn-inverse mt-3 mb-3" href="#room-amenities" title="View Hotel Amenities">View Hotel Amenities</a>
+        <a class="primary-btn-inverse mt-3 mb-3" href="#room-amenities" title="View Hotel Amenities">View Hotel Amenities</a>
       {% endregionblock %}
     </div>
     <div class="content">
       {% regionblock rooms_section_text, type: text %}
-      <p>Power down. The perfect spot for modern mavericks and mavens, our stylish accommodations offer residential respite from the supercharged neighborhoods of the city. We’re minimalists—we keep things simple with clean lines and custom-designed furniture. Let our elevated vantage point atop Nob Hill serve as the point of view for your next bright idea. Reliable high-speed WiFi and amenities inspired by San Francisco’s progressive tech culture support work and play, Silicon Valley-style.</p>
+        <p>Power down. The perfect spot for modern mavericks and mavens, our stylish accommodations offer residential respite from the supercharged neighborhoods of the city. We’re minimalists—we keep things simple with clean lines and custom-designed furniture. Let our elevated vantage point atop Nob Hill serve as the point of view for your next bright idea. Reliable high-speed WiFi and amenities inspired by San Francisco’s progressive tech culture support work and play, Silicon Valley-style.</p>
       {% endregionblock %}
     </div>
   </div>
 </section>
-{% assign rooms = site.data._models.rooms %}
-{% for room in rooms %}
+{% assign rooms = site.data._models.rooms %} {% for room in rooms %}
 <section class="background-cover" style="background-image:url({{ room.roombackgroundimage.url }});">
   <div class="room-single">
     <div class="room-row align-items-center">
       <div class="room-image  background-cover" style="background-image:url({{ room.roomimage.url }});"></div>
       <div class="room-info">
         <div class="info">
-        <h3 class="text-white">{{ room.title }}</h3>
-        <a class="primary-btn-inverse" href="/room/#{{ room.title | downcase }}">Discover More</a>
-        <p>{{ room.long_description }}</p>
-        <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
+          <h3 class="text-white">{{ room.title }}</h3>
+          <a class="primary-btn-inverse" href="/room/#{{ room.title | downcase }}">Discover More</a>
+          <p>{{ room.long_description }}</p>
+          <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 {% endfor %}
-<!-- <section class="background-cover" style="background-image:url(/assets/images/rooms/skyline_bg.jpg);">
-  <div class="room-single">
-    <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url(/assets/images/rooms/skyline.jpg);"></div>
-      <div class="room-info">
-        <div class="info">
-        <h3 class="text-white">Skyline</h3>
-        <a class="primary-btn-inverse" href="/">Discover More</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
-        <a class="secondary-btn-inverse" href="/">BookRoom</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="room-features">
-
   <div class="row m-0">
     <div class="feature-list d-flex justify-content-sm-end">
       <div class="list" id="room-amenities">
         {% regionblock room_features_header, type: header %}
-        <h4 class="text-center">unique Room Features</h4>
+          <h4 class="text-center">unique Room Features</h4>
         {% endregionblock %}
         {% regionblock room_features_list, type: tets %}
-        <ul>
-          <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li>
-        </ul>
+          <ul>
+            <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li>
+          </ul>
         {% endregionblock %}
         <div class="clearfix"></div>
       </div>

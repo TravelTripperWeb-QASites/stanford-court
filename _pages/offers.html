@@ -6,46 +6,46 @@ permalink: /offers/
 meta_tags:
   robots:
 ---
-<section rt3-special-rates= "offers">
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
-  <div class="banner-text">
-    {% regionblock offer_title, type: header %}
-    <h1>Specials</h1>
-    {% endregionblock %}
-  </div>
-</section>
 
-
-<section class="inner-intro">
-  <div class="inner-intro-row m-0">
-    <div class="heading">
-      {% regionblock offer_sub_title, type: header %}
-      <h4>CLOSE THE DEAL.</h4>
-      {% endregionblock %}
-      {% regionblock offer_header, type: header %}
-      <h3>Special Offers</h3>
+<section rt3-special-rates="offers">
+  <div class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
+    <div class="banner-text">
+      {% regionblock offer_title, type: header %}
+        <h1>Specials</h1>
       {% endregionblock %}
     </div>
-    <div class="content">
-      {% regionblock offer_text, type: text %}
-      <p>Thoughtful hotel packages make your trip that much simpler, so you can focus on the important stuff. Whether</p>
+  </div>
+
+  <div class="inner-intro">
+    <div class="inner-intro-row m-0">
+      <div class="heading">
+        {% regionblock offer_sub_title, type: header %}
+          <h4>CLOSE THE DEAL.</h4>
         {% endregionblock %}
-    </div>
-  </div>
-</section>
-
-<section class="offers-listing">
-  <div class="offers-listing-row m-0">
-    <div class="offer-block" ng-repeat="offer in offers.special_rates">
-      <div class="image d-flex justify-content-center" ng-style="{'background-image':'url([[offer.lead_photo_url.large]])'}">
-        <a ng-href="[[ offer.promo_url ]]" class="black-btn" target="_blank">Book Offer</a>
+        {% regionblock offer_header, type: header %}
+          <h3>Special Offers</h3>
+        {% endregionblock %}
       </div>
       <div class="content">
-        <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
-        <div ng-bind-html="offer.short_description | renderHTMLCorrectly" class="offer-desc"></div>
-        <a ng-href="/offer/#[[offer.rate_plan_name | formatNameForLink ]]" class="primary-btn">View Offer</a>
+        {% regionblock offer_text, type: text %}
+          <p>Thoughtful hotel packages make your trip that much simpler, so you can focus on the important stuff. Whether</p>
+        {% endregionblock %}
       </div>
     </div>
   </div>
-</section>
+
+  <div class="offers-listing">
+    <div class="offers-listing-row m-0">
+      <div class="offer-block" ng-repeat="offer in offers.special_rates">
+        <div class="image d-flex justify-content-center" ng-style="{'background-image':'url([[offer.lead_photo_url.large]])'}">
+          <a ng-href="[[ offer.promo_url ]]" class="black-btn" target="_blank">Book Offer</a>
+        </div>
+        <div class="content">
+          <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+          <div ng-bind-html="offer.short_description | renderHTMLCorrectly" class="offer-desc"></div>
+          <a ng-href="/offer/#[[offer.rate_plan_name | formatNameForLink ]]" class="primary-btn">View Offer</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

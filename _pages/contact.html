@@ -10,17 +10,15 @@ meta_tags:
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/press/hero.jpg');">
   <div class="banner-text">
     {% regionblock benner_title, type: header %}
-    <h1>Contact</h1>
+      <h1>Contact</h1>
     {% endregionblock %}
   </div>
 </section>
 
 
 <section class="contact">
-{% regionblock text %}
-<p>Stanford Court San Francisco is always happy to respond to inquiries. Simply fill out the form and click Submit when you are done, or call us at: <br><a href="tel:415-989-3500">415-989-3500</a>.</p>
-{% endregionblock %}
-
-{% include /forms/jotform/contact.html %}
-
+  {% regionblock text %}
+    <p>Stanford Court San Francisco is always happy to respond to inquiries. Simply fill out the form and click Submit when you are done, or call us at: <br><a href="tel:415-989-3500">415-989-3500</a>.</p>
+  {% endregionblock %}
+  {% include /forms/jotform/contact.html %}
 </section>

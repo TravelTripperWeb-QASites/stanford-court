@@ -21,18 +21,18 @@ layout: default
   <div class="image-slider">
     <div class="carousel-nav white">
       <a class="carousel-control-prev" href="#attractionCarousel" data-slide="prev">
-      <i class="fas fa-caret-left"></i>
-      <span class="sr-only">Previous</span>
+        <i class="fas fa-caret-left"></i>
+        <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#attractionCarousel" data-slide="next">
-      <i class="fas fa-caret-right"></i>
-      <span class="sr-only">Next</span>
+        <i class="fas fa-caret-right"></i>
+        <span class="sr-only">Next</span>
       </a>
     </div>
     <div id="attractionCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         {% for image in page.gallery %}
-        <div class="carousel-item background-cover{% if forloop.first %} active {% endif %}" style="background-image: url('{{ image.url_medium }}');"></div>
+          <div class="carousel-item background-cover{% if forloop.first %} active {% endif %}" style="background-image: url('{{ image.url_medium }}');"></div>
         {% endfor %}
       </div>
     </div>

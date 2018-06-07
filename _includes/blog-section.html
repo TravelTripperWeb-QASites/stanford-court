@@ -4,16 +4,16 @@
       <div class="home-blog-row">
         <div class="info">
           {% regionblock blog_title, type: header %}
-          <h3 class="txt-white">The 411<br>on the 415 </h3>
+            <h3 class="txt-white">The 411<br>on the 415 </h3>
           {% endregionblock %}
           {% regionblock blog_text type: text %}
-          <p>Looking for the best new place to eat in SoMa? The hottest little hole-in-the-wall for cocktails in the Mission? Maybe you’ve got a yen for some authentic outer sunset korean barbecue? Let this be your first stop in your San Francisco journey
+            <p>Looking for the best new place to eat in SoMa? The hottest little hole-in-the-wall for cocktails in the Mission? Maybe you’ve got a yen for some authentic outer sunset korean barbecue? Let this be your first stop in your San Francisco journey
             of discovery. </p>
           {% endregionblock %}
         </div>
         <div class="link">
           {% regionblock blog_link type: text %}
-          <a class="secondary-btn-inverse" href="/blog/">Dscover More</a>
+            <a class="secondary-btn-inverse" href="/blog/">Dscover More</a>
           {% endregionblock %}
         </div>
       </div>
@@ -23,25 +23,25 @@
     <div id="carousel-blog" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         {% for post in site.data._models.blog | limit: 5 | sort: 'date' | descending %}
-          <div class="carousel-item {% if forloop.index == 1 %} active {% endif %}">
-            <div class="carouse-row align-items-end">
-              <div class="carousel-text">
-                <div class="info">
-                  <h3>{{post.title}}</h3>
-                  <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" > {{post.category.title}} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
-                  <p>{{post.short_description}}</p>
-                </div>
+        <div class="carousel-item {% if forloop.index == 1 %} active {% endif %}">
+          <div class="carouse-row align-items-end">
+            <div class="carousel-text">
+              <div class="info">
+                <h3>{{ post.title }}</h3>
+                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/"> {{ post.category.title }} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
+                <p>{{ post.short_description }}</p>
               </div>
-              <div class="carousel-image background-cover" style="background-image:url({{post.blogimage.url}})"></div>
             </div>
+            <div class="carousel-image background-cover" style="background-image:url({{post.blogimage.url}})"></div>
           </div>
+        </div>
         {% endfor %}
       </div>
       <div class="blog-controls m-0">
         <div class="blog-indicators">
           <ol class="carousel-indicators">
             {% for post in site.data._models.blog | limit: 5 %}
-            <li data-target="#carousel-blog" data-slide-to="0" class="{% if forloop.index == 1 %} active {% endif %}" title="Carousel Blog"></li>
+              <li data-target="#carousel-blog" data-slide-to="0" class="{% if forloop.index == 1 %} active {% endif %}" title="Carousel Blog"></li>
             {% endfor %}
           </ol>
         </div>
@@ -59,7 +59,6 @@
         </div>
       </div>
     </div>
-
     <div class="tag-line-text">
       <p>A city that honors independence, innovation, and inclusion.</p>
     </div>

@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.active_lang | slice: 0,2 | default: "en" }}" class="no-js">
-
-<head>
-  {% include head.html %}
-  {% include head/custom.html %}
-</head>
-
-<body>
-
-  {% if site.data.tracking.analytics.provider and page.analytics != false %}
-    {% case site.data.tracking.analytics.provider %}
-    {% when "gtm" %}
-      {% include analytics/gtm-body.html %}
-    {% endcase %}
-  {% endif %}
-
-
-
-  <div class="container">
-    {{ content }}
-  </div>
-
-
-
-  {% include scripts.html %}
-
-</body>
-
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body>
+    {% if site.data.tracking.analytics.provider and page.analytics != false %}
+      {% case site.data.tracking.analytics.provider %}
+      {% when "gtm" %}
+        {% include analytics/gtm-body.html %}
+      {% endcase %}
+    {% endif %}
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include scripts.html %}
+  </body>
 </html>
