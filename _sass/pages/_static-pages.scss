@@ -1,24 +1,30 @@
 .static-content {
-  @include  container-fix-2;
+  @include container-fix-2;
   margin-top: 3rem;
+
   .w-70 {
     max-width: 700px;
     margin: auto;
   }
+
   p {
     padding-bottom: 17px;
   }
+
   //404 and sitemap
   .sitemap {
     max-width: 300px;
     margin: auto;
     text-align: left;
+
     ul {
       margin-left: 40px;
+
       ul {
         margin-left: 10px;
         padding: 0;
       }
+
       li {
         a {
           line-height: 30px;
@@ -34,12 +40,12 @@
       padding: 20px 0;
       font-family: $headings-font;
       font-size: $type-size-9;
-      font-weight: 400;    }
+      font-weight: 400;
+    }
   }
-
 }
 
 .wyndow {
-  @include  container-fix-2;
+  @include container-fix-2;
   margin-top: 3rem;
 }

@@ -7,12 +7,15 @@
     padding: 0;
     background-color: transparent;
   }
+
   &.no-gap {
     padding: 0;
   }
+
   .page-intro-inner {
     @include make-row;
   }
+
   .gradient-bg {
     @include make-col-ready();
     @include media-breakpoint-up(lg) {
@@ -20,6 +23,7 @@
       @include background-gradient(to right, $gradient-1, $gradient-2 150%);
     }
     background: linear-gradient(180deg, $nav-hover-bg 20%, $nav-hover-bg 80%, #fff 20%, #fff 80%);
+
     .gradient-bg-inner {
       position: relative;
       padding: 20px 0 0;
@@ -27,16 +31,19 @@
         min-height: 412px;
         padding: 75px 100px 0;
       }
+
       .text-inner {
         padding: 23px 35px 0;
         @include media-breakpoint-up(lg) {
           padding: 0;
         }
       }
+
       h4 {
         padding-bottom: 8px;
         color: $black;
       }
+
       h3 {
         padding-bottom: 25px;
         color: $black;
@@ -45,10 +52,12 @@
         }
       }
     }
+
     &.solid-bg {
       background: $nav-hover-bg;
     }
   }
+
   .content {
     @include make-col-ready();
     @include media-breakpoint-up(lg) {
@@ -60,18 +69,19 @@
       padding: 0 200px 0 100px;
     }
   }
+
   p {
     padding: 0 18px 50px 0;
     @include media-breakpoint-up(md) {
       padding: 0 0 25px;
     }
   }
+
   .image {
     height: 294px;
     margin: 0;
     @include media-breakpoint-up(md) {
       height: 332px;
-
     }
     @include media-breakpoint-up(lg) {
       position: absolute;
@@ -80,6 +90,7 @@
       z-index: 9;
       margin: 0 100px;
     }
+
     &.over-lap {
       @include media-breakpoint-down(sm) {
         margin-bottom: -60px;
@@ -91,13 +102,15 @@
 // Details scss
 .local-attractions {
   .local-attractions-row {
-    @include make-row() ;
+    @include make-row();
   }
+
   .nav-controls {
     display: none;
     @include media-breakpoint-up(md) {
       @include make-col(6);
       display: block;
+
       .carousel-nav {
         top: 0;
         right: inherit;
@@ -105,11 +118,10 @@
       }
     }
   }
-
 }
 
 .attractions-wrapper {
-  @include make-row() ;
+  @include make-row();
   position: relative;
   margin: 0 0 55px;
   @include media-breakpoint-up(md) {
@@ -123,6 +135,7 @@
       @include make-col(6);
       order: 1;
     }
+
     .attraction-info {
       width: 100%;
       margin: -4px auto 24px;
@@ -134,45 +147,53 @@
         padding-right: inherit;
         padding-left: 60px;
       }
+
       .back-btn {
         display: inline-block;
         margin-bottom: 33px;
         font-family: $global-font;
         font-weight: 500;
         color: $secondary-light;
+
         .svg-inline--fa {
           margin-right: 10px;
           font-size: $type-size-5;
         }
       }
+
       h4 {
         padding-bottom: 20px;
         color: $primary-color;
         @include media-breakpoint-up(md) {
           padding-bottom: 33px;
         }
+
         span {
           margin-left: 22px;
           font-family: $global-font-bold;
           font-weight: 700;
         }
+
         &:first-child {
           padding-bottom: 5px;
           color: $secondary-light;
         }
       }
+
       h3 {
         padding-bottom: 23px;
         @include media-breakpoint-up(md) {
           padding-bottom: 33px;
         }
       }
+
       p {
         padding-bottom: 6px;
         @include media-breakpoint-up(md) {
           padding-bottom: 27px;
         }
       }
+
       .primary-btn {
         margin-bottom: 0;
         @include media-breakpoint-up(md) {
@@ -181,6 +202,7 @@
       }
     }
   }
+
   .tag-line-text {
     position: absolute;
     bottom: 250px;
@@ -198,12 +220,14 @@
       font-size: $type-size-4;
       color: $vertical-line-bg;
       transform: rotate(270deg);
+
       &:before {
         @extend .vertical-line;
         background: $vertical-line-bg;
       }
     }
   }
+
   .image-slider {
     @include make-col-ready();
     min-height: 359px;
@@ -220,6 +244,7 @@
   position: relative;
   min-height: 779px;
   padding-bottom: 9px;
+
   &:after {
     position: absolute;
     bottom: 0;
@@ -241,6 +266,7 @@
   @include media-breakpoint-up(md) {
     padding: 50px 0 90px;
   }
+
   .find-your-way-inner {
     @include container-fix-3;
     position: relative;
@@ -249,6 +275,7 @@
     }
     padding: 0;
   }
+
   .image-part {
     position: relative;
     @include media-breakpoint-up(md) {
@@ -258,11 +285,13 @@
     height: 267px;
     margin-top: -42px;
   }
+
   .content {
     padding: 0 15px;
     @include media-breakpoint-up(md) {
       padding: 0;
     }
+
     .content-inner {
       position: relative;
       z-index: 1;
@@ -278,10 +307,12 @@
         padding: 64px 70px;
       }
     }
+
     h3 {
       padding-bottom: 18px;
       color: $black;
       letter-spacing: 0;
+
       &:last-child {
         padding-bottom: 0;
       }
@@ -289,8 +320,10 @@
         padding-bottom: 24px;
       }
     }
+
     h4 {
       color: $black;
+
       &.mb {
         margin-bottom: 35px;
         @include media-breakpoint-up(md) {
@@ -306,6 +339,7 @@
   @include media-breakpoint-up(md) {
     margin-top: -40px;
   }
+
   h2 {
     position: relative;
     bottom: -40px;
@@ -316,23 +350,27 @@
       margin-left: -80px;
     }
   }
+
   .events-carousel {
     margin-bottom: 44px;
     background: url('/assets/images/neighborhood/events-bg-2.jpg') repeat 0 0;
     @include media-breakpoint-up(md) {
       margin-bottom: 80px;
     }
+
     .events-carousel-inner {
       @include container-fix-2;
       padding: 87px 38px 50px;
       @include media-breakpoint-up(md) {
         padding: 120px 15px 50px;
       }
+
       .item {
         padding: 0 20px;
         @include media-breakpoint-up(md) {
           padding: 0 11px;
         }
+
         .image {
           height: 340px;
           margin-bottom: 46px;
@@ -341,6 +379,7 @@
             margin-bottom: 28px;
           }
         }
+
         .content {
           h3 {
             margin-bottom: 20px;
@@ -348,6 +387,7 @@
           }
         }
       }
+
       .secondary-btn-inverse {
         margin-top: 50px;
       }
