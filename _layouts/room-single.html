@@ -11,6 +11,7 @@ layout: default
   <div class="inner-banner background-cover" style="background-image: url('/assets/images/rooms/hero1.jpg');">
   </div>
   <div class="inner-nav">
+    <p class="select-room">Select Room</p>
     <ul>
       <li>
         <a ng-class="{'active': $index == roomIndex}" ng-href="/room/#[[ room.category ]][[ $index > 0 ? '-' + $index : '' ]]" title="[[ r.name ]]" ng-repeat="r in rooms">[[ r.name ]]</a>
@@ -70,7 +71,7 @@ layout: default
   </div>
 </section>
 
-<div class="room-amenites">
+<section class="room-amenites">
   <h2>DETAILS</h2>
   <div class="wrapper">
     <h4>unique Room Features</h4>
@@ -82,7 +83,7 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="rooms-search background-color">
   <form action="{{site.reztripUrl}}/search" method="get" id="frmBookingWidget" class="search-form">
