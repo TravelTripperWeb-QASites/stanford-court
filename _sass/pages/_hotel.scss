@@ -2,6 +2,7 @@
 // ==========================================================================
 
 // hotel amenites
+
 .hotel-amenities-wrap {
   position: relative;
   @include media-breakpoint-up(lg) {
@@ -138,6 +139,8 @@ h2 {
     }
   }
 }
+
+//art section 
 .art-wrapper {
   @include media-breakpoint-up(md) {
     margin-bottom: 140px;

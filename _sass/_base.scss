@@ -21,11 +21,12 @@ p {
   margin: 0;
   padding: 0;
 }
+
 h1 {
   @include text-formatting($title-font, $type-size-7, 700, 80px, $secondary-light, uppercase, -20px);
   @include text-gradient(to right, $gradient-1, $gradient-2 100%);
   @media (min-width: 480px) {
-    font-size:  $type-size-8;
+    font-size: $type-size-8;
     line-height: 130px;
     letter-spacing: -28px;
   }
@@ -44,13 +45,14 @@ h1 {
 h2 {
   @extend h1;
 }
+
 h3 {
   @include text-formatting($headings-font, $type-size-2, 400, 2.625rem, $secondary-light, uppercase, .4375rem);
   &.txt-white {
     color: $white;
   }
-
 }
+
 h4 {
   @include text-formatting($global-font, $type-size-5, 500, 1.625rem, $secondary-light, uppercase, 2.76px);
   &.txt-white {
@@ -69,6 +71,7 @@ strong {
 
 a {
   color: $primary-color;
+
   &:hover {
     color: $secondary-color;
     text-decoration: none;
@@ -85,8 +88,9 @@ a {
   background-image: url('/assets/images/black-arrow.png');
   background-repeat: no-repeat;
   background-position: right 4px bottom 0;
-  @include text-formatting($global-font-bold, $type-size-5, 700,  normal, $black, none, 1.2px);
+  @include text-formatting($global-font-bold, $type-size-5, 700, normal, $black, none, 1.2px);
   @include global-transition(.3s);
+
   &:hover {
     color: $black;
     background-position: right 0 bottom 0;
@@ -97,6 +101,7 @@ a {
   @extend .primary-btn;
   padding-right: 0;
   background-image: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -106,6 +111,7 @@ a {
   @extend .primary-btn;
   color: $white;
   background-image: url('/assets/images/white-arrow.png');
+
   &:hover {
     color: $white;
     background-image: url('/assets/images/white-arrow.png');
@@ -126,6 +132,7 @@ a {
     padding: 17px 55px;
     border-radius: 55px;
   }
+
   &:hover {
     color: $white;
     background: $secondary-color;
@@ -137,6 +144,7 @@ a {
   @extend .secondary-btn;
   color: $white;
   border: 1px solid $white;
+
   &:hover {
     color: $black;
     background: $white;
@@ -148,6 +156,7 @@ a {
   color: $white;
   background: $black;
   border: 1px solid $black;
+
   &:hover {
     color: $black;
     background: $white;
