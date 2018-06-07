@@ -209,6 +209,9 @@
       @include make-col-ready();
       @include media-breakpoint-up(md) {
         @include make-col(6);
+
+      }
+      @media screen and (min-width: 1080px) {
         padding: 0;
       }
 
