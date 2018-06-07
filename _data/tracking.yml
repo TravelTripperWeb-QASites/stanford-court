@@ -1,7 +1,7 @@
 # Analytics
 analytics:
-  provider: false # false (default), "google", "gtm", "custom"
+  provider: true # false (default), "google", "gtm", "custom"
   google:
     tracking_id:
   gtm:
-    tracking_id:
+    tracking_id: GTM-5NH75VS
