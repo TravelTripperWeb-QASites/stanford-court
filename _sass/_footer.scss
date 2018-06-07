@@ -97,7 +97,6 @@
   }
 }
 //newsletter sinup
-
 .newsletter {
   @include container-fix;
   max-width: 1100px;
@@ -163,10 +162,23 @@
       position: absolute;
       top: 42px;
       right: 15px;
+      background-image: url('/assets/images/white-arrow.png');
+      background-repeat: no-repeat;
+      background-position: right 30px bottom 18px;
       border: 1px solid $black;
-
+      @include media-breakpoint-down(md) {
+        background-position: right 14px bottom 18px;
+      }
       &:hover {
-        border: 1px solid #ccc;
+        color: $black;
+        background-image: url('/assets/images/black-arrow.png');
+        background-repeat: no-repeat;
+        background-position: right 30px bottom 18px;
+        border: 1px solid $grey-border;
+        @include media-breakpoint-down(md) {
+          background-position: right 14px bottom 18px;
+        }
+
       }
     }
   }
