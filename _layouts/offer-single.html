@@ -16,38 +16,40 @@ layout: default
     </ul>
   </div>
 
-  <div class="details-wrapper offers-inner-carousel">
-    <div class="tag-line-text">
-      <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
-    </div>
-    <div class="details d-flex align-items-center">
-      <div class="room-info">
-        <a class="back-btn" href="/offers/">
-          <i class="fas fa-arrow-left"></i>
-          Back To Offers
-        </a>
-        <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
-        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
-        <div>
-          <a class="primary-btn" href="/contact/">Contact Us</a>
+  <div class="offers-carousel-main">
+    <div class="offers-inner-carousel">
+      <div class="tag-line-text">
+        <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
+      </div>
+      <div class="details d-flex align-items-center">
+        <div class="offer-info">
+          <a class="back-btn" href="/offers/">
+            <i class="fas fa-arrow-left"></i>
+            Back To Offers
+          </a>
+          <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
+          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+          <div>
+            <a class="primary-btn" href="/contact/">Contact Us</a>
+          </div>
+          <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
         </div>
-        <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
       </div>
-    </div>
-    <div class="image-slider">
-      <div class="carousel-nav white" ng-show="offers.sRdetail.images.length > 0">
-        <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
-          <i class="fas fa-caret-left"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#offersCarousel" data-slide="next">
-          <i class="fas fa-caret-right"></i>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div id="offersCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item background-cover" ng-class="{'active': $index ==0 }" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images"></div>
+      <div class="image-slider">
+        <div class="carousel-nav white" ng-show="offers.sRdetail.images.length > 0">
+          <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
+            <i class="fas fa-caret-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#offersCarousel" data-slide="next">
+            <i class="fas fa-caret-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div id="offersCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item background-cover" ng-class="{'active': $index ==0 }" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images"></div>
+          </div>
         </div>
       </div>
     </div>
