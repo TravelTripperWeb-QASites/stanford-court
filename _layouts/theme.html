@@ -4,21 +4,16 @@
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-  <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-portal-info="portalInfo" rt3-rooms-browser="browser" ng-cloak>
+  <body>
     {% if site.data.tracking.analytics.provider and page.analytics != false %}
       {% case site.data.tracking.analytics.provider %}
       {% when "gtm" %}
         {% include analytics/gtm-body.html %}
       {% endcase %}
     {% endif %}
-    {% include nav-main.html %}
-    {{ content }}
-    {% include instagram.html %}
-    {% include newsletter.html %}
-    <footer class="footer">
-      {% include footer/custom.html %}
-      {% include footer.html %}
-    </footer>
+    <div class="container">
+      {{ content }}
+    </div>
     {% include scripts.html %}
   </body>
 </html>
