@@ -256,6 +256,9 @@
     position: absolute;
     bottom: 250px;
     left: 60px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
     @include media-breakpoint-up(lg) {
       left: 80px;
     }

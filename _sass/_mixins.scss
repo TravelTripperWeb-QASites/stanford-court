@@ -77,13 +77,6 @@
   }
 }
 
-// fix container
-@mixin container-fix {
-  @include make-container;
-  max-width: 1196px;
-
-}
-
 @mixin placeholder-style($font-family, $font-size, $color, $letter-spacing) {
   &::-webkit-input-placeholder { // Chrome/Opera/Safari
     font-family: $font-family;
@@ -109,6 +102,12 @@
     color: $color;
     letter-spacing: $letter-spacing;
   }
+}
+
+// fix container
+@mixin container-fix {
+  @include make-container;
+  max-width: 1196px;
 }
 
 @mixin container-fix-2 {
