@@ -16,13 +16,14 @@
     <div class="links">
       <ul>
         {% for link in links %}
-        <li><a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a></li>
+        <li>
+          <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a>
+        </li>
         {% endfor %}
       </ul>
     </div>
   </div>
 </div>
-
 
 <div class="footer-bottom">
   <hr>
