@@ -7,11 +7,14 @@ meta_tags:
   robots: noindex, nofollow
 ---
 
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/home/hero.jpg');">
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
   <div class="banner-text">
+  {% regionblock banner-title, type: header %}
     <h1>PRIVACY POLICY</h1>
+  {% endregionblock %}
 </section>
 <div class="static-content privacy">
+  {% regionblock privacy-content, type: text %}
   <p>&lsquo;Stanford Court Hotel (&ldquo;Hotel,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is committed to protecting your privacy when you visit and/or interact with our website located at <a title="stanfordcourt" href="/">www.stanfordcourt.com</a>    (the &ldquo;Site&rdquo;). As such, our privacy practices for the Site are explained in this Privacy Policy (this &ldquo;Policy&rdquo;). This Policy contains details about how we collect, use, and share information from you when you use the Site.</p>
   <p>We may update this Policy from time to time. By using the Site, you (on behalf of yourself and your organization, if applicable) are expressly agreeing to the terms and conditions of the then-posted version of this Policy. If you do not agree with the terms and conditions of this Policy, you must immediately cease your use of the Site.</p>
   <h4>CHANGES TO POLICY</h4>
@@ -112,4 +115,5 @@ meta_tags:
   </ul>
   <h4>CONTACT</h4>
   <p>If you have any questions regarding this Policy, please contact us at:&nbsp; <a href="mailto:mbaier@stanfordcourt.com" title="">mbaier@stanfordcourt.com</a>.</p>
+  {% endregionblock %}
 </div>

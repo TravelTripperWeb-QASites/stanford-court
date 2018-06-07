@@ -1,8 +1,10 @@
 .history {
-  height: 620px;
+  min-height: 600px;
+  margin-bottom: 50px;
   background-image: url('/assets/images/hotel/history.jpg');
   @include media-breakpoint-up(md) {
-    height: 770px;
+    min-height: 700px;
+    margin-bottom: 98px;
   }
 
   .history-wrapper {
