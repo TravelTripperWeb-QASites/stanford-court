@@ -45,9 +45,14 @@
         color: $white;
       }
 
-      h3 {
-        margin-bottom: 24px;
-        color: $white;
+      a {
+        h3 {
+          margin-bottom: 24px;
+          color: $white;
+          &:hover {
+            color: $primary-color;
+          }
+        }
       }
 
       p {
