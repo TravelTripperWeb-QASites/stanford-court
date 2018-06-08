@@ -58,6 +58,10 @@
       p {
         padding-bottom: 25px;
         color: $white;
+        span {
+          font-family: inherit !important;
+          color: $white !important;
+        }
       }
 
       .secondary-btn-inverse {
@@ -90,7 +94,7 @@
       padding: 13px 0;
       background: $black;
       @include media-breakpoint-up(md) {
-        max-width: 847px;
+        max-width: 818px;
         margin: 78px -229px 78px 0;
       }
 
