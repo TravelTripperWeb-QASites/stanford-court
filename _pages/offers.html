@@ -41,7 +41,9 @@ meta_tags:
           <a ng-href="[[ offer.promo_url ]]" class="black-btn" target="_blank">Book Offer</a>
         </div>
         <div class="content">
-          <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+          <a ng-href="/offer/#[[offer.rate_plan_name | formatNameForLink ]]">
+            <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+          </a>
           <div ng-bind-html="offer.short_description | renderHTMLCorrectly" class="offer-desc"></div>
           <a ng-href="/offer/#[[offer.rate_plan_name | formatNameForLink ]]" class="primary-btn">View Offer</a>
         </div>
