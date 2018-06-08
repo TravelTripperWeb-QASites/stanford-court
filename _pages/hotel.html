@@ -10,10 +10,10 @@ meta_tags:
 <div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
   <ul class="banner-nav">
     {% regionblock hotel_links_nav, type: text %}
-      <a href="#about" class="active">About Us</a>
-      <a href="#history">Hotel History</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#art">Art</a>
+      <a href="javascript:void(0);" data-rel="about" class="active">About Us</a>
+      <a href="javascript:void(0);" data-rel="history">Hotel History</a>
+      <a href="javascript:void(0);" data-rel="amenities">Amenities</a>
+      <a href="javascript:void(0);" data-rel="art">Art</a>
     {% endregionblock %}
     <ul>
 </div>
@@ -137,7 +137,7 @@ meta_tags:
   </div>
 </section>
 
-<section class="hotel-amenities-wrap background-cover">
+<section class="hotel-amenities-wrap background-cover" id="amenities">
   <div class="hotel-amenities-inner">
     <div class="hotel-amenities-row m-0 d-flex align-items-center">
       <div class="text d-none d-lg-block">

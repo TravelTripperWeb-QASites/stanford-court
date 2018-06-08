@@ -28,6 +28,19 @@ function pinterestShare(img, desc) {
 
 // Gallery
 $(document).ready(function () {
+
+  //smooth scroll for banner nav in hotel page
+  $('.banner-nav a').click(function () {
+    var scrollToId = $(this).attr("data-rel");
+    $('html, body').animate({
+        scrollTop: $("#"+scrollToId).offset().top - 110
+    }, 1000);
+  });
+
+  $(".scroll-to-top").click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+
   //home offers slick
   setTimeout(function() {
     $('#special-offers').slick({
