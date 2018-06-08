@@ -7,8 +7,13 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
-</div>
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock amenities-title, type: header %}
+      <h1>Amenities</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
 <section class="content-wrapper">
   <div class="content-wrapper-inner m-0 d-flex align-items-center">
