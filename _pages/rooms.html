@@ -35,7 +35,7 @@ meta_tags:
     </div>
   </div>
 </section>
-{% assign rooms = site.data._models.rooms %} {% for room in rooms %}
+{% assign rooms = site.data._models.rooms  | sort : "sort_order" %} {% for room in rooms %}
 <section class="background-cover" style="background-image:url({{ room.roombackgroundimage.url }});">
   <div class="room-single">
     <div class="room-row align-items-center">

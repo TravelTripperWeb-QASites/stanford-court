@@ -63,10 +63,6 @@
           color: $white !important;
         }
       }
-
-      .secondary-btn-inverse {
-        margin-top: 35px;
-      }
     }
   }
 }
@@ -150,8 +146,8 @@
     }
   }
 }
-// Details scss
 
+// Details scss
 .details-wrapper {
   @include make-row();
   position: relative;
