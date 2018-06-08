@@ -6,7 +6,9 @@ permalink: /page-not-found/
 meta_tags:
   robots:
 ---
-{% assign links = site.data.navigation.main %} {% assign footer_links = site.data.navigation.footer %}
+
+{% assign links = site.data.navigation.main %}
+{% assign footer_links = site.data.navigation.footer %}
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
   <div class="banner-text">
     <h1>404 Error</h1>
@@ -15,28 +17,32 @@ meta_tags:
 
 <section class="static-content text-center">
   <h4 class="w-70">We're sorry but it looks like that page doesn't exist anymore.
-Please view the Sitemap below or go back to the <a href="/">Homepage.</a></h4>
-
+    Please view the Sitemap below or go back to the <a href="/">Homepage.</a></h4>
   <div class="sitemap mb-5">
     <h3 class="p-5">SITEMAP</h3>
-
     <ul>
       {% for link in links %}
-      <li>
-        <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a> {% if link.dropdown %}
-        <ul>
-          {% for sublink in link.dropdown %}
-          <li>
-            <a href="{{ sublink.url }}" title="{{ sublink.title }}">{{ sublink.title }} </a>
-          </li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-      {% endfor %} {% for footer_link in footer_links %}
-      <li><a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a></li>
+        <li>
+          <a href="{{ link.url }}" title="{{ link.name }}">{{ link.title }}</a>
+          {% if link.dropdown %}
+            <ul>
+              {% for sublink in link.dropdown %}
+                <li>
+                  <a href="{{ sublink.url }}" title="{{ sublink.title }}">
+                    {{ sublink.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
       {% endfor %}
+      {% for footer_link in footer_links %}
+        <li>
+          <a href="{{ footer_link.url }}" title="{{ footer_link.name }}">{{ footer_link.title }}</a>
+        </li>
+      {% endfor %}
+      <li><a href="" onclick="srfp_widget.show()"  title="Speed RFP">Speed RFP</a></li>
     </ul>
-
   </div>
 </section>

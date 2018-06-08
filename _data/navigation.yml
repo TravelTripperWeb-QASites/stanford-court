@@ -14,7 +14,7 @@ main:
     url: /meetings/
     dropdown:
         - title: Business Travel
-          url: /businesstravel/
+          url: /business-travel/
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
@@ -24,6 +24,8 @@ main:
           url: /events/
   - title: Gallery
     url: /gallery/
+  - title: Blog
+    url: /blog/
   - title: Contact
     url: /contact/
 

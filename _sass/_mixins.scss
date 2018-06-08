@@ -52,9 +52,7 @@
 
 }
 
-
-//placeholder
-
+// Placeholder
 @mixin optional-at-root($sel) {
   @at-root #{if(not &, $sel, selector-append(&, $sel))} {
     @content;
@@ -77,13 +75,6 @@
   @include optional-at-root(':-ms-input-placeholder') {
     @content;
   }
-}
-
-// fix container
-@mixin container-fix {
-  @include make-container;
-  max-width: 1196px;
-
 }
 
 @mixin placeholder-style($font-family, $font-size, $color, $letter-spacing) {
@@ -111,6 +102,12 @@
     color: $color;
     letter-spacing: $letter-spacing;
   }
+}
+
+// fix container
+@mixin container-fix {
+  @include make-container;
+  max-width: 1196px;
 }
 
 @mixin container-fix-2 {

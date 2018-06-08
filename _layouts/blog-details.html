@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign blogseo_title =  'blog title' %}
 {% assign blog = page %}
 {% assign model = page %}
@@ -23,11 +24,15 @@ layout: default
 <div class="inner-banner without-text background-cover" style="background-image: url({{blog.blogimage.url}});"></div>
 
 <section class="inner-nav mb-80">
-  <a href="/blog/" class="active" >All</a>
-  {% assign categories = site.data._models.category | sort: 'order' | descending %}
-  {% for categorylist in categories %}
-  <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
-  {% endfor %}
+  <ul>
+    <li>
+      <a href="/blog/" class="active">All</a>
+      {% assign categories = site.data._models.category | sort: 'order' | descending %}
+      {% for categorylist in categories %}
+        <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
+      {% endfor %}
+    <li>
+  <ul>
 </section>
 
 <section class="blog-container">
@@ -41,11 +46,28 @@ layout: default
           <div class="right-sec">
             <span>Share: </span>
             <ul class="social-share">
-              <li> <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}{{ page.url }}&p[summary]={{ blog.short_description | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{blog.blogimage.url_large}}" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Share on Facebook"><i class="fab fa-facebook"></i></a> </li>
-              <li> <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" title="Share on Twitter"><i class="fab fa-twitter"></i></a> </li>
-              <li> <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus"><i class="fab fa-google-plus-g"></i></a> </li>
+              <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}{{ page.url }}&p[summary]={{ blog.short_description | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{blog.blogimage.url_large}}"
+                  title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Share on Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;" title="Share on Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
               {% assign title = blog.title | replace: "'", "" %}
-              <li> <a href="javascript:void(0);" title="Share on Pinterest" onClick="pinterestShare('{{blog.blogimage.url}}', '{{title}}');"><i class="fab fa-pinterest"></i></a> </li>
+              <li>
+                <a href="javascript:void(0);" title="Share on Pinterest" onClick="pinterestShare('{{blog.blogimage.url}}', '{{title}}');">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -63,7 +85,6 @@ layout: default
         <div class="blog-description">
           {{blog.long_description}}
         </div>
-
       </div>
     </div>
     <div class="blog-right-block">

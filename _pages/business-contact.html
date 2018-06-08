@@ -7,21 +7,18 @@ meta_tags:
   robots:
 ---
 
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/press/hero.jpg');">
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
   <div class="banner-text">
     {% regionblock benner_title, type: header %}
-    <h1>Contact</h1>
+      <h1>Contact</h1>
     {% endregionblock %}
   </div>
 </section>
 
-
 <section class="contact">
-{% regionblock contact_title, type: text %}
-<h3 class="text-center mt-5">Corporate Preferred Program </h3>
-<p>Simply complete the form on this page and click Submit, we'll be in touch shortly!</p>
-{% endregionblock %}
-
-{% include /forms/jotform/business.html %}
-
+  {% regionblock contact_title, type: text %}
+    <h3 class="text-center mt-5">Corporate Preferred Program </h3>
+    <p>Simply complete the form on this page and click Submit, we'll be in touch shortly!</p>
+  {% endregionblock %}
+  {% include /forms/jotform/business.html %}
 </section>

@@ -3,6 +3,7 @@
 
 .contact {
   @include container-fix-4;
+
   p {
     max-width: 600px;
     margin: auto;
@@ -12,6 +13,7 @@
       color: $dark-text;
     }
   }
+
   .form-group {
     @include make-col-ready();
     @include media-breakpoint-up(md) {
@@ -25,6 +27,7 @@
       @include make-col(12);
     }
   }
+
   .hint {
     font-size: .7rem;
   }
@@ -43,9 +46,11 @@
       box-shadow: inherit;
     }
   }
-  select  {
+
+  select {
     height: auto !important;
   }
+
   button {
     @include transition ($global-transition);
     display: inline-block;

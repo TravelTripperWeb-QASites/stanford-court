@@ -1,20 +1,19 @@
 // Footer Elements
-// ==========================================================================
-
-// For sticky footer see https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-
-//content with us
 .instagram {
   max-width: 991px;
   margin: 42px auto;
+
   .instagram-row {
     @include make-row;
   }
+
   .social-links {
     margin: auto;
+
     ul {
       margin: 0;
       padding: 0;
+
       li {
         display: inline-block;
         width: 60px;
@@ -30,14 +29,15 @@
           margin: 40px 6px;
         }
       }
-
     }
+
     a {
       display: block;
       padding: 17px 12px;
       color: $secondary-light;
       text-align: center;
       @include global-transition(.3s);
+
       &:hover {
         color: $primary-color;
       }
@@ -51,6 +51,7 @@
     .insta-widget-row {
       @include make-row;
     }
+
     .feed {
       @include make-col-ready();
       @include make-col(3);
@@ -58,9 +59,11 @@
         padding-right: 0;
         padding-left: 0;
       }
+
       img {
         width: 100%;
       }
+
       a {
         display: block;
 
@@ -83,17 +86,16 @@
             width: 100%;
           }
         }
+
         &:hover {
           &:after {
             opacity: 1;
-           }
-         }
+          }
+        }
       }
     }
   }
 }
-
-
 //newsletter sinup
 .newsletter {
   @include container-fix;
@@ -103,19 +105,23 @@
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .newsletter-row {
     @include make-row;
   }
+
   .heading {
     @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     h3 {
       @include media-breakpoint-down(sm) {
         padding-bottom: 39px;
       }
     }
+
     h4 {
       color: $gray-dark;
     }
@@ -126,6 +132,7 @@
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     h4 {
       padding-bottom: 16px;
       padding-left: 26px;
@@ -136,6 +143,7 @@
         padding-left: inherit;
       }
     }
+
     .form-control {
       height: 53px;
       padding-left: 26px;
@@ -145,7 +153,6 @@
       &:focus {
         box-shadow: none;
       }
-
       @include placeholder {
         font-size: .875rem;
       }
@@ -155,27 +162,44 @@
       position: absolute;
       top: 42px;
       right: 15px;
+      background-image: url('/assets/images/white-arrow.png');
+      background-repeat: no-repeat;
+      background-position: right 30px bottom 18px;
       border: 1px solid $black;
+      @include media-breakpoint-down(md) {
+        background-position: right 14px bottom 18px;
+      }
       &:hover {
-        border: 1px solid #ccc;
+        color: $black;
+        background-image: url('/assets/images/black-arrow.png');
+        background-repeat: no-repeat;
+        background-position: right 30px bottom 18px;
+        border: 1px solid $grey-border;
+        @include media-breakpoint-down(md) {
+          background-position: right 14px bottom 18px;
+        }
+
       }
     }
-
   }
 }
-
 
 footer {
   background: $black;
   background-image: none;
   background-repeat: no-repeat;
   background-position: -353px -232px;
+
   @include media-breakpoint-down(sm) {
     padding: 0 36px;
   }
   @include media-breakpoint-up(md) {
     background-image: url('/assets/images/footer-map.png');
   }
+  @media only screen and (max-width: 460px) {
+    padding: 0;
+  }
+
   .footer-top {
     @include container-fix;
     max-width: 1100px;
@@ -187,6 +211,7 @@ footer {
     .footer-top-row {
       @include make-row;
     }
+
     .footer-logo {
       padding-bottom: 45px;
       text-align: center;
@@ -196,6 +221,7 @@ footer {
         padding-bottom: 0;
       }
     }
+
     .address {
       @include make-col-ready();
       @include media-breakpoint-down(md) {
@@ -208,12 +234,15 @@ footer {
         @include make-col(12);
         text-align: center;
       }
+
       p {
         padding-bottom: 25px;
+
         a {
           padding: none;
         }
       }
+
       .svg-inline--fa {
         margin-top: 6px;
         margin-right: 10px;
@@ -232,22 +261,18 @@ footer {
         color: $white;
       }
     }
+
     .links {
-      // @include make-col-ready();
-      // @include media-breakpoint-down(md) {
-      //   @include make-col(4);
-      // }
-      // @include media-breakpoint-up(md) {
-      //   @include make-col(4);
-      // }
       @include make-col(4);
       @media only screen and (max-width: 460px) {
         @include make-col(12);
         text-align: center;
       }
+
       ul {
         margin: 0;
         padding: 0;
+
         li {
           float: left;
           width: 100%;
@@ -256,6 +281,7 @@ footer {
           @include media-breakpoint-up(md) {
             width: 49%;
           }
+
           a {
             font-weight: 500;
             color: $white;
@@ -264,17 +290,21 @@ footer {
       }
     }
   }
+
   .footer-bottom {
     @include container-fix;
     max-width: 1100px;
     padding-bottom: 20px;
+
     hr {
       margin-top: 0;
-      margin-bottom: 1.25rem ;
+      margin-bottom: 1.25rem;
       background: $white;
     }
+
     .footer-bottom-row {
       @include make-row;
+
       .copytext {
         text-align: left;
         @include make-col-ready();
@@ -285,15 +315,18 @@ footer {
           @include make-col(12);
           text-align: center;
         }
+
         p {
           font-size: 11px;
           color: $white;
+
           &.big-screen {
             display: none;
             @include media-breakpoint-up(md) {
               display: block;
             }
           }
+
           &.mobile {
             display: block;
             @include media-breakpoint-up(md) {
@@ -302,6 +335,7 @@ footer {
           }
         }
       }
+
       .ttsign {
         text-align: right;
         @include make-col-ready();
@@ -310,6 +344,7 @@ footer {
         }
         @media only screen and (max-width: 460px) {
           @include make-col(12);
+          text-align: center;
         }
       }
     }

@@ -5,9 +5,11 @@
   @include media-breakpoint-up(md) {
     margin-bottom: 86px;
   }
+
   .content-wrapper-inner {
     @include make-row;
   }
+
   .content {
     @include make-col-ready();
     @include media-breakpoint-up(md) {
@@ -22,15 +24,18 @@
     @media (min-width: 1440px) {
       padding: 80px 200px;
     }
+
     h3 {
       padding-bottom: 20px;
     }
+
     p {
       padding-bottom: 25px;
       a {
         color: $dark-text;
       }
     }
+
     &.down {
       @include media-breakpoint-up(md) {
         padding: 0 40px 0 60px;
@@ -45,6 +50,7 @@
       }
     }
   }
+
   .image {
     display: none;
     @include make-col-ready();
@@ -56,6 +62,7 @@
     @media (min-width: 1440px) {
       height: 737px;
     }
+
     &.down {
       display: block;
       height: 357px;
@@ -71,6 +78,7 @@
   @include media-breakpoint-up(md) {
     padding: 50px 0 90px;
   }
+
   .amenities-inner {
     @include container-fix-3;
     position: relative;
@@ -79,6 +87,7 @@
     }
     padding: 0;
   }
+
   .image-part {
     position: relative;
     @include media-breakpoint-up(md) {
@@ -88,11 +97,13 @@
     height: 267px;
     margin-top: -42px;
   }
+
   .content {
     padding: 0 15px;
     @include media-breakpoint-up(md) {
       padding: 0;
     }
+
     .content-inner {
       position: relative;
       z-index: 1;
@@ -107,6 +118,7 @@
         margin-top: -164px;
         padding: 64px 70px;
       }
+
       .scroll {
         height: 402px;
         overflow-y: scroll;
@@ -121,7 +133,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-          background-color: $white;
+          background-color: $black;
         }
 
         &::-webkit-scrollbar-track {
@@ -130,6 +142,7 @@
         }
       }
     }
+
     h4 {
       margin-bottom: 35px;
       color: $black;
@@ -137,15 +150,18 @@
         margin-bottom: 26px;
       }
     }
+
     ul {
       max-width: 90%;
       margin: 0;
       padding: 0;
+
       li {
         position: relative;
         padding: 0 0 6px 25px;
         font-size: $type-size-9;
         list-style: none;
+
         &:before {
           position: absolute;
           top: 8px;

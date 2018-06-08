@@ -6,10 +6,11 @@ permalink: /events/
 meta_tags:
   robots:
 ---
+
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/events/hero.jpg');">
   <div class="banner-text">
     {% regionblock rooms_title, type: header %}
-    <h1>Events</h1>
+      <h1>Events</h1>
     {% endregionblock %}
   </div>
 </section>
@@ -18,22 +19,34 @@ meta_tags:
   <div class="inner-intro-row m-0">
     <div class="heading">
       {% regionblock rooms_section_sub_title, type: header %}
-      <h4>WANT MORE?</h4>
+        <h4>WANT MORE?</h4>
       {% endregionblock %}
       {% regionblock rooms_section_title, type: header %}
-      <h3>SO MUCH TO SEE AND DO IN SAN FRANCISCO!</h3>
+        <h3>SO MUCH TO SEE AND DO IN SAN FRANCISCO!</h3>
       {% endregionblock %}
     </div>
     <div class="content">
       {% regionblock rooms_section_text, type: text %}
-      <p>FOR ASSISTANCE ARRANGING ACTIVITIES NOT LISTED BELOW, CONTACT <a href="mailto:concierge@stanfordcourt.com"> concierge@stanfordcourt.com </a></p>
+        <p>FOR ASSISTANCE ARRANGING ACTIVITIES NOT LISTED BELOW, CONTACT
+          <a href="mailto:concierge@stanfordcourt.com"> concierge@stanfordcourt.com </a>
+        </p>
       {% endregionblock %}
     </div>
   </div>
 </section>
 
-
 <section class="wyndow text-center">
-<a class="wyndow-app text-center text-black " href="https://wyndow.com" data-embed-id="25-app">Please wait while the events load...</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.wyndow.com/embed.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","wyndow-wjs");</script>
+  <a class="wyndow-app text-center text-black" href="https://wyndow.com" data-embed-id="25-app">Please wait while the events load...</a>
+  <script>
+    ! function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + "://platform.wyndow.com/embed.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, "script", "wyndow-wjs");
+  </script>
 </section>

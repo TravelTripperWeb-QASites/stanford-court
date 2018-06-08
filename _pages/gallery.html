@@ -7,51 +7,51 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
-</div>
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock gallery-title, type: header %}
+      <h1>Gallery</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
 {% assign categories = site.data._galleries %}
 <section class="inner-nav mb-5">
   <ul>
     <li>
-    <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
-    {% for category in categories %} {% assign catname = category[0] %}
-    <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
+      <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
+      {% for category in categories %}
+      {% assign catname = category[0] %}
+        <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
       {% endfor %}
-    <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
-  <li>
-</ul>
+      <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
+    <li>
+  </ul>
 </section>
 
 <section class="gallery-bg">
-<div class="gallery-listing mb-100" data-offergallery="true">
-	<div class="card-columns">
-		 {% for category in categories %}
-		    {% assign catname = category[0] %}
-		  	  {% for photo in site.data._galleries[catname].photos %}
-		  	   <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
-		    	<img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{photo.alt}}">
-		  	   </div>
-		  	{% endfor %}
-		{% endfor %}
-    <div class="card item video-player-param fancybox" data-filter="videos">
-      <a href="https://www.youtube.com/watch?v=FmiE9i-lI3k">
-         <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
-         <div class="play-icon"><i class="far fa-play-circle"></i></div>
-     </a>
+  <div class="gallery-listing mb-100" data-offergallery="true">
+    <div class="card-columns">
+      {% for category in categories %}
+      {% assign catname = category[0] %}
+      {% for photo in site.data._galleries[catname].photos %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
+          <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{photo.alt}}">
+        </div>
+      {% endfor %}
+      {% endfor %}
+      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">
+        <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
+        <div class="play-icon"><i class="far fa-play-circle"></i></div>
+      </div>
+      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=g_TXVVhpcOQ">
+        <img src="/assets/images/gallery/video2_thumb.jpg" alt="Stanford Court" />
+        <div class="play-icon"><i class="far fa-play-circle"></i></div>
+      </div>
+      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
+        <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
+        <div class="play-icon"><i class="far fa-play-circle"></i></div>
+      </div>
     </div>
-    <div class="card item video-player-param fancybox" data-filter="videos">
-      <a href="https://www.youtube.com/watch?v=g_TXVVhpcOQ">
-         <img src="/assets/images/gallery/video2_thumb.jpg" alt="Stanford Court" />
-         <div class="play-icon"><i class="far fa-play-circle"></i></div>
-     </a>
-    </div>
-    <div class="card item video-player-param fancybox" data-filter="videos">
-      <a href="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
-         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
-         <div class="play-icon"><i class="far fa-play-circle"></i></div>
-     </a>
-    </div>
-	</div>
-</div>
+  </div>
 </section>

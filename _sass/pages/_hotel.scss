@@ -2,6 +2,7 @@
 // ==========================================================================
 
 // hotel amenites
+
 .hotel-amenities-wrap {
   position: relative;
   @include media-breakpoint-up(lg) {
@@ -138,6 +139,8 @@ h2 {
     }
   }
 }
+
+//art section
 .art-wrapper {
   @include media-breakpoint-up(md) {
     margin-bottom: 140px;
@@ -148,13 +151,14 @@ h2 {
   }
 
   .content {
+    flex-direction: column;
+    padding: 50px;
+    background-color: $white;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(6);
       padding: 60px 80px 60px 120px;
     }
-    padding: 50px;
-    background-color: $white;
     @include media-breakpoint-up(lg) {
       padding: 80px 120px;
     }
@@ -186,18 +190,15 @@ h2 {
   }
 
   .image {
-    display: none;
     @include background-gradient(to right, $gradient-1, $gradient-2 150%);
     @include make-col-ready();
-    @include media-breakpoint-up(md) {
-      @include make-col(6);
-      display: block;
+    @include media-breakpoint-down(sm) {
       height: 550px;
     }
-    @media (min-width: 1440px) {
-      height: 737px;
-    }
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
 
+    }
     .title {
       max-width: 85%;
       margin: 42px auto;
@@ -231,13 +232,8 @@ h2 {
     }
 
     &.down {
-      display: block;
-      height: 357px;
       margin-bottom: 43px;
       background-size: cover;
-      @include media-breakpoint-up(md) {
-        height: 527px;
-      }
     }
 
     &.down-full {
