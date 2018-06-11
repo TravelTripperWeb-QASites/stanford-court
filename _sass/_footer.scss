@@ -94,7 +94,7 @@
         height: 100%;
         color: $white;
         text-align: left;
-        .svg-inline--fa {
+        .fa-instagram {
           position: absolute;
           bottom: 10px;
           left: 10px;
@@ -102,6 +102,9 @@
         }
         p {
           opacity: 0;
+          .svg-inline--fa {
+            opacity: 0;
+          }
         }
         &:after {
           position: absolute;
@@ -131,7 +134,11 @@
             padding: 10px 10px 0 10px;
             color: $white;
             opacity: 1;
-
+            .svg-inline--fa {
+              z-index: 1;
+              font-size: 14px;
+              opacity: 1;
+            }
             @include media-breakpoint-down(sm) {
               display: none;
             }
