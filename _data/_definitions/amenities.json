@@ -3,7 +3,7 @@
     "label": "Amenitie Name",
     "required": true
   },
-  "featured_image": {
+  "image": {
     "label": "Featured Image",
     "instructions": "Image on Amenitie (600px x 400px)",
     "type": "image",
@@ -11,7 +11,12 @@
   },
   "description": {
     "label": "Description of Amenitie",
-    "type": "text",
+    "type": "richtext",
     "required": true
-  }
+  },
+  "sort_order":
+    {
+      "type": "integer",
+      "required": true
+    }
 }
