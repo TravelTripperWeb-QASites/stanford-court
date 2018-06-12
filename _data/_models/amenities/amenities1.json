@@ -20,5 +20,25 @@
     "alt": "Shanghai art museum",
     "caption": ""
   },
-  "description": "<p>It’s clear you are in San Francisco when you stay at the Stanford Court . The city spirit is imbues every moment from watching the sweet cable car views as you sweat the treadmill to the locally inspired cocktails that keep the conversations flowing in our bar.</p>"
+  "description": "It’s clear you are in San Francisco when you stay at the Stanford Court . The city spirit is imbues every moment from watching the sweet cable car views as you sweat the treadmill to the locally inspired cocktails that keep the conversations flowing in our bar.",
+  "featured_image": {
+    "name": "workout",
+    "file_name": "workout.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/workout.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-12-032109",
+    "file_type": "image/jpeg",
+    "width": 711,
+    "height": 527,
+    "file_size": 204465,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/large_workout.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/medium_workout.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/small_workout.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/xsmall_workout.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/thumb_workout.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_16651/media/2018-06-12-032109/workout.jpg",
+    "alt": "At Gym",
+    "caption": ""
+  }
 }
