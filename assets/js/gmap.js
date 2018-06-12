@@ -229,11 +229,15 @@ var gmarkers1 = [];
  */
 
 function initialize() {
-    var center = new google.maps.LatLng(37.790905, -122.418997);
+   var minZoomLevel = 12;
+   if (screen.width > 1300) {
+       minZoomLevel = 14.7;
+   }
+    var center = new google.maps.LatLng(37.794511, -122.436291);
     var mapOptions = {
-        zoom: 11,
-        maxZoom: 16,
-        center: center,
+        zoom: 12,
+        minZoom: minZoomLevel,
+        maxZoom: 17,
         styles: mapstyle,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
