@@ -23,7 +23,7 @@
       padding-right: 35px;
       padding-left: 35px;
       @include media-breakpoint-up(md) {
-        max-width: 430px;
+        max-width: 530px;
         margin: auto;
         padding-top: 60px;
         padding-right: inherit;
@@ -139,7 +139,7 @@
     .carousel-item {
       min-height: 420px;
       @include media-breakpoint-up(lg) {
-        min-height: 527px;
+        min-height: 727px;
       }
     }
 
