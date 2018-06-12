@@ -1,0 +1,29 @@
+<div id="discoverCarousel" class="carousel slide" data-ride="carousel">
+  {% assign amenities-slide = site.data._models.amenities  sort: 'order'%}
+  <div class="carousel-inner indicators ">
+    <div class="carousel-block m-0">
+      <div class="image"></div>
+      <div class="carousel-caption">
+        <ol class="carousel-indicators">
+          {% for amenitie in amenities-slide %}
+            <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+            {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-inner">
+    {% for amenitie in amenities-slide %}
+    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="carousel-block m-0">
+        <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{amenitie.title}}</h3>
+          {{amenitie.description}}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
