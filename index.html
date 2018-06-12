@@ -97,8 +97,7 @@ meta_tags:
       {% endregionblock %}
       {% regionblock rooms-text, type: text %}
       <p class="txt-white">Our newly redesigned rooms are the perfect blend of edgy
-        expression and creature comforts.   The views inspire, the art
-        intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
+        expression and creature comforts.   The views inspire, the art intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
       {% endregionblock %}
       {% regionblock rooms-link, type: text %}
       <a href="{{ site.reztripUrl }}" class="secondary-btn-inverse">Book Your Room</a>
@@ -111,55 +110,57 @@ meta_tags:
   {% regionblock discover, type: header %}
   <h2>Discov<br class="d-block d-md-none">er</h2>
   {% endregionblock %}
+
     <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
+      {% assign amenities-slide = site.data._models.amenities %}
       <div class="carousel-inner indicators ">
         <div class="carousel-block m-0">
-          <div class="image"> </div>
+          <div class="image"></div>
           <div class="carousel-caption">
             <ol class="carousel-indicators">
-              <li data-target="#discoverCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#discoverCarousel" data-slide-to="1"></li>
-              <li data-target="#discoverCarousel" data-slide-to="2"></li>
+              {% for amenitie in amenities-slide %}
+                <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+                {% endfor %}
             </ol>
           </div>
         </div>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        {% for amenitie in amenities-slide %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
           <div class="carousel-block m-0">
-            <div class="image background-cover" style="background-image: url('/assets/images/home/workout.jpg');">
+            <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
             </div>
             <div class="carousel-caption">
-              <h3>Sweat it Out or Sip it Slowly</h3>
-              <p>It’s clear you are in San Francisco when you stay at the Stanford Court . The city spirit is imbues every moment from watching the sweet cable car views as you sweat the treadmill to the locally inspired cocktails that keep the conversations flowing in our bar.</p>
+              <h3>{{amenitie.title}}</h3>
+              {{amenitie.description}}
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="carousel-block m-0">
-            <div class="image background-cover" style="background-image: url('/assets/images/home/workout.jpg');">
-            </div>
-            <div class="carousel-caption">
-              <h3>Sweat it Out or Sip it Slowly</h3>
-              <p>It’s clear you are in San Francisco when you stay at the Stanford Court . The city spirit is imbues every moment from watching the sweet cable car views as you sweat the treadmill to the locally inspired cocktails that keep the conversations flowing in our bar.</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-block m-0">
-            <div class="image background-cover" style="background-image: url('/assets/images/home/workout.jpg');">
-            </div>
-            <div class="carousel-caption">
-              <h3>Sweat it Out or Sip it Slowly</h3>
-              <p>It’s clear you are in San Francisco when you stay at the Stanford Court . The city spirit is imbues every moment from watching the sweet cable car views as you sweat the treadmill to the locally inspired cocktails that keep the conversations flowing in our bar.</p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
   </div>
 </section>
 
-{% include stay-with-us.html%}
+<section class="stay-sfc">
+  <div class="stay-wrapper">
+    <div class="stay-row m-0">
+      <div class="header-title text-center">
+        {% regionblock stay-title, type: header %}
+          <h4>Stay at stanford Court</h4>
+        {% endregionblock %}
+        {% regionblock stay-content, type: header %}
+          <h3 class="text-white">Link to the best of<br>San Francisco.</h3>
+        {% endregionblock %}
+        <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+      </div>
+      <div class="logo">
+        <img src="/assets/images/footer-logo.png" alt="Stanford Court Hotel">
+      </div>
+    </div>
+  </div>
+</section>
+
 {% include special-offers.html%}
 {% include gallery-carousel.html%}
 {% include blog-section.html%}

@@ -1,0 +1,17 @@
+{
+  "title": {
+    "label": "Amenitie Name",
+    "required": true
+  },
+  "featured_image": {
+    "label": "Featured Image",
+    "instructions": "Image on Amenitie (600px x 400px)",
+    "type": "image",
+    "required": true
+  },
+  "description": {
+    "label": "Description of Amenitie",
+    "type": "text",
+    "required": true
+  }
+}
