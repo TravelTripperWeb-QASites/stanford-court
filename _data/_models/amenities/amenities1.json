@@ -1,6 +1,6 @@
 {
-  "title": "Sweat it Out or Sip it Slowly",
-  "description": "<p><strong>Hive mind?</strong> Buzz through the garden for a little headspace and solar energy. Honey from our own beehive, seasonal homegrown greens including three varieties of kale, and locally sourced organic produce are incorporated into the menu whenever possible. Reusable water bottles and Flowater filling stations throughout the hotel keep you hyrdroelectric. <strong>Seeking to optimize your performance on the road?</strong> The fitness center offers state-of-the-art equipment by Precor and Peloton, as well as interactive Kinima virtual personal training, which gives you real-time feedback and on-demand, adaptive coaching. And when the hackathon finally wraps, our Nod Hill program offers a selection of pillows, white noise*, and earplugs to put you in sleep mode.&nbsp;</p>\n<p><em>*Download app to enjoy.</em></p>",
+  "title": "Optimize your performance on the road",
+  "description": "<p>The fitness center offers state-of-the-art equipment by Precor and Peloton, as well as interactive Kinima virtual personal training, which gives you real-time feedback and on-demand, adaptive coaching. And when the hackathon finally wraps, our Nod Hill program offers a selection of pillows, white noise*, and earplugs to put you in sleep mode.&nbsp;</p>\n<p>&nbsp;</p>\n<p><em>*Download app to enjoy.</em></p>",
   "image": {
     "name": "workout",
     "file_name": "workout.jpg",
@@ -21,5 +21,5 @@
     "alt": "At Gym",
     "caption": ""
   },
-  "sort_order": 1
+  "sort_order": 2
 }
