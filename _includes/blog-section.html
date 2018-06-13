@@ -29,7 +29,7 @@
               <div class="info">
                 <h3>{{ post.title }}</h3>
                 <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/"> {{ post.category.title }} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
-                <p>{{ post.short_description }}</p>
+                {{ post.short_description }}
               </div>
             </div>
             <div class="carousel-image background-cover" style="background-image:url({{post.blogimage.url}})"></div>
@@ -38,8 +38,9 @@
         {% endfor %}
       </div>
       <div class="blog-controls m-0">
+
         <div class="blog-indicators">
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators ">
             {% for post in site.data._models.blog | limit: 5 %}
               <li data-target="#carousel-blog" data-slide-to="0" class="{% if forloop.index == 1 %} active {% endif %}" title="Carousel Blog"></li>
             {% endfor %}
