@@ -1,0 +1,31 @@
+{
+  "title": "Union Square",
+  "category": "attractions",
+  "Lattitude": 37.78798,
+  "Longitude": -122.407517,
+  "order": 7,
+  "address": "San Francisco",
+  "distance": "0.3 mile",
+  "url": "http://www.visitunionsquaresf.com/",
+  "image": {
+    "name": "unionsquaresf",
+    "file_name": "unionsquaresf.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/unionsquaresf.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-06-04-024419",
+    "file_type": "image/jpeg",
+    "width": 770,
+    "height": 554,
+    "file_size": 364160,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/large_unionsquaresf.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/medium_unionsquaresf.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/small_unionsquaresf.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/xsmall_unionsquaresf.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/thumb_unionsquaresf.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_15982/media/2018-06-04-024419/unionsquaresf.jpg",
+    "alt": "union square",
+    "caption": ""
+  },
+  "details": "<p>Union Square is the retail and cultural hub of San Francisco. It boasts the city&rsquo;s largest collection of luxury, department and boutique shopping, making it one of the premier tourist attractions in the Western United States. A spectacular selection of hotels, art galleries, salons, and theaters also contribute to the area's cosmopolitan, 24-hour character.</p>"
+}

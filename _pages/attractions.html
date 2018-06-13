@@ -7,22 +7,44 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/offers/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock banner_title, type: header %}
+      <h1 class="banner-text">Attractions</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+<section class="inner-intro">
+  <div class="inner-intro-row m-0">
+    <div class="heading">
+      {% regionblock attractions_title, type: header %}
+        <h3>Attractions</h3>
+      {% endregionblock %}
+    </div>
+    <div class="content">
+      {% regionblock attractions_text, type: text %}
+        <p>The stunning Grace Cathedral—most notable for its front doors, which are replicas of the Baptistry of Florence Cathedral’s "Gates of Paradise” by master artist Lorenzo Ghiberti—and Dragon’s Gate, the entrance to Chinatown, are just a couple blocks away. Head towards Union Square, and you’ll find the recently expanded Museum of Modern Art (SFMoMA), and the cable cars (Insider’s tip: board in Fisherman’s Wharf instead of downtown for shorter waits). Some other local favorites: lunch at the Ferry building, packing for a picnic at Mission Dolores Park, shopping on Fillmore Street, and long walks in the lush Presidio.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
 
-    Attractions Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:text %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<section class="attractions-listing">
+  <div class="attractions-listing-row m-0">
+    {% assign attractions = site.data._models.attractions | sort: 'sort_order' %}
+    {% for attraction in attractions %}
+    <div class="attraction-block">
+      <a href="/{{ attraction.url_friendly_name }}/" title="{{ attraction.title }}">
+        <div class="image background-cover d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
+        </div>
+      </a>
+      <div class="content">
+        <h3>{{ attraction.title }}</h3>
+        <p>{{ attraction.description }} </p>
+        <a href="{{ attraction.url_friendly_name }}/" class="primary-btn">View Attraction</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

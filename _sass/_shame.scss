@@ -1,2 +1,140 @@
 // Temporary Styles
 // ==========================================================================
+
+// carousel-control and indicators
+.carousel-indicators {
+  bottom: -60px;
+  left: 70px;
+  justify-content: left;
+  width: 200px;
+  margin: 0;
+  @include media-breakpoint-down(sm) {
+    left: 0;
+  }
+
+  li {
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+    line-height: 6px;
+    background-color: $gray;
+    border: 0;
+    border-radius: 100%;
+    @include global-transition(.3s);
+
+    &.active,
+    &:hover {
+      width: 6px;
+      height: 6px;
+      margin-right: 12px;
+      cursor: pointer;
+      background-color: $secondary-light;
+    }
+  }
+}
+
+.carousel-nav {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  width: 131px;
+  height: 60px;
+  background: $black;
+
+  .carousel-control-prev {
+    &:after {
+      position: absolute;
+      right: -2px;
+      width: 1px;
+      height: 20px;
+      content: '';
+      background: $white;
+    }
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    padding: 30px 32px;
+    opacity: inherit;
+  }
+
+  .carousel-control-next:focus,
+  .carousel-control-next:hover,
+  .carousel-control-prev:focus,
+  .carousel-control-prev:hover {
+    color: $primary-color;
+  }
+
+  &.white {
+    background: $white;
+
+    .carousel-control-prev {
+      &:after {
+        background: $black;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      color: $black;
+      opacity: inherit;
+    }
+
+    .carousel-control-next:focus,
+    .carousel-control-next:hover,
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover {
+      color: $primary-color;
+    }
+  }
+}
+// slick arrows
+.slick-controls {
+  .slick-arrow {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    bottom: auto;
+    left: auto;
+    z-index: 9;
+    padding: 30px 32px;
+    opacity: 1;
+
+    &:before {
+      content: none;
+      opacity: 1;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $white;
+    }
+
+    &.slick-prev {
+      right: 74px;
+      background: $white url('/assets/images/neighborhood/slick-prev.png') no-repeat center center;
+
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-prev.png');
+      }
+
+      &:after {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 1px;
+        height: 20px;
+        content: '';
+        background: $black;
+      }
+    }
+
+    &.slick-next {
+      background: $white url('/assets/images/neighborhood/slick-next.png') no-repeat center center;
+
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-next.png');
+      }
+    }
+  }
+}

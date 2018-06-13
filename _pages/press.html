@@ -1,0 +1,28 @@
+---
+layout: default
+title: Press
+meta_description:
+permalink: /press/
+meta_tags:
+  robots:
+---
+<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/neighborhood/hero.jpg');">
+</div>
+
+<section class="press-wrapper">
+  <div class="press-row">
+    {% assign presslist = site.data._models.press | sort: 'order' | reverse %}
+    {% for press in presslist %}
+      <div class="content">
+        <h3> {{press.title }} </h3>
+        {% if press.description != '' %}
+          {{ press.description | truncate: 100 }}
+        {% endif %}
+        <div>
+          <a class="primary-btn" href="{{press.linkurl}}" target="_blank">READ MORE</a>
+        </div>
+        <hr>
+      </div>
+    {% endfor %}
+  </div>
+</section>

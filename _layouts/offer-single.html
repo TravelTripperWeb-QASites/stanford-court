@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="loading" style="display:block">Loading&#8230;</div>
+<section rt3-special-rates="offers" ng-controller="offerDetail">
+  <div class="inner-banner without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
+  </div>
+  <div class="inner-nav">
+    <ul>
+      <li>
+        <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates">
+          <span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="offers-carousel-main">
+    <div class="offers-inner-carousel">
+      <div class="tag-line-text">
+        <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
+      </div>
+      <div class="details d-flex align-items-center">
+        <div class="offer-info">
+          <a class="back-btn" href="/offers/">
+            <i class="fas fa-arrow-left"></i>
+            Back To Offers
+          </a>
+          <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
+          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+          <div>
+            <a class="primary-btn" href="/contact/">Contact Us</a>
+          </div>
+          <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
+        </div>
+      </div>
+      <div class="image-slider">
+        <div class="carousel-nav white" ng-show="offers.sRdetail.images.length > 0">
+          <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
+            <i class="fas fa-caret-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#offersCarousel" data-slide="next">
+            <i class="fas fa-caret-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div id="offersCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item background-cover" ng-class="{'active': $index ==0 }" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-sec">
+    <div class="gallery-sec-inner">
+      <div class="img-sec background-cover" style="background-image: url('/assets/images/offers/gallery.jpg');">
+      </div>
+      <div class="content">
+        {% regionblock offer_gallery_title, type: header %}
+          <h3>Gallery</h3>
+        {% endregionblock %}
+        {% regionblock offer_gallery_link, type: text %}
+          <a href="/gallery/" class="primary-btn-inverse">See More</a>
+        {% endregionblock %}
+        {% regionblock offer_gallery_text, type: text %}
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        {% endregionblock %}
+      </div>
+      <div class="tag-line-text">
+        {% regionblock tagline_text type: text %}
+          <p>Our Gallery</p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>

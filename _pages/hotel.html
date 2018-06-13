@@ -1,0 +1,171 @@
+---
+layout: default
+title: Hotel
+meta_description:
+permalink: /hotel/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
+  <ul class="banner-nav">
+    {% regionblock hotel_links_nav, type: text %}
+      <a href="javascript:void(0);" data-rel="about" class="active">About Us</a>
+      <a href="javascript:void(0);" data-rel="history">Hotel History</a>
+      <a href="javascript:void(0);" data-rel="amenities">Amenities</a>
+      <a href="javascript:void(0);" data-rel="art">Art</a>
+    {% endregionblock %}
+    <ul>
+</div>
+
+<section class="page-intro no-gap" id="about">
+  <div class="page-intro-inner m-0 d-flex align-items-center">
+    <div class="gradient-bg">
+      <div class="gradient-bg-inner">
+        <div class="text-inner">
+          {% regionblock hotel_sub_title, type: header %}
+            <h4>HOTEL</h4>
+          {% endregionblock %}
+          {% regionblock hotel_title, type: header %}
+            <h3>PROGRESSIVE <br>OUTLOOK</h3>
+          {% endregionblock %}
+          {% regionblock hotel_text, type: text %}
+            <p class="d-block d-lg-none">From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
+            <p class="d-block d-lg-none">Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
+          {% endregionblock %}
+        </div>
+        <div class="image over-lap background-cover" style="background-image: url('/assets/images/hotel/green_img.jpg');"></div>
+      </div>
+    </div>
+    <div class="content d-none d-lg-block">
+      {% regionblock hotel_text, type: text %}
+        <p>From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
+        <p>Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="history background-cover">
+  <div class="history-wrapper">
+    <div class="info-content">
+      {% regionblock history_heading, type: header %}
+      <h3>TRUE TO OUR ROOTS</h3>
+      {% endregionblock %}
+      {% regionblock history_text, type: header %}
+      <p>Like our predecessors, we dare to dream big and connect people.</p>
+      <p>It all started with Leland Stanford, an industrial railroad tycoon who built the Central Pacific Railroad—a 19th century highway that catalyzed the exchange of new cultures and ideas. Stanford’s 1876 mansion became a relic of inspired luxury in the lush Nob Hill neighborhood until it was destroyed in a fire during the 1906 San Francisco earthquake. In 1912, investor Lucien H. Sly transformed the vacant lot into the posh Stanford Court Apartments. 60 years and a dramatic debut later, Stanford’s legacy stands today at the Stanford Court Hotel. </p>
+      <p>Now, we continue to champion San Francisco’s “boom town” spirit—the tenacity instilled by the risk takers and visionaries of the California Gold (and Silicon) Rush. We get it. You want a residential experience in Nob Hill. Well, we wanted to create a place that felt like the best version of home…a place we’d happily welcome our friends (with housekeeping!). Stanford Court offers the perfect mix of character, tech, and style, with all the comforts of a great boutique hotel in a “real” neighborhood.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+
+  <div id="history">
+    <div id="timeline">
+      <ul id="issues">
+        <li id="1863">
+          <div class="history-info">
+            <p>“The Big Four” including Leland Stanford<br>lay first rails of the Central Pacific Railroad</p>
+          </div>
+        </li>
+        <li id="1869">
+          <div class="history-info">
+            <p>Ceremonial Driving of the “Last Spike”</p>
+          </div>
+          <li id="1876">
+            <div class="history-info">
+              <p>Stanford Mansion completed atop Nob Hill</p>
+            </div>
+          </li>
+          <li id="1906">
+            <div class="history-info">
+              <p>The Great San Francisco Earthquake</p>
+            </div>
+          </li>
+          <li id="1912">
+            <div class="history-info">
+              <p>Mansion restored as one of SF’s most fashionable residences</p>
+            </div>
+          </li>
+          <li id="1972">
+            <div class="history-info">
+              <p>Stanford Court Hotel opens following dramatic remodel</p>
+            </div>
+          </li>
+          <li id="2018">
+            <div class="history-info">
+              <p>Newly Redesigned Stanford Court debuts</p>
+            </div>
+          </li>
+      </ul>
+      <div class="dates-nav">
+        <ul id="dates">
+          <li><a href="#1863">1863</a></li>
+          <li><a href="#1869">1869</a></li>
+          <li><a href="#1876">1876</a></li>
+          <li><a href="#1906">1906</a></li>
+          <li><a href="#1912">1912</a></li>
+          <li><a href="#1972">1972</a></li>
+          <li><a href="#2018">2018</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="art-wrapper" id="amenities">
+  <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
+    <div class="image down-full background-cover gradient-bg">
+      <div class="title">
+        {% regionblock hotel_amenities_section_title, type: header %}
+          <h4>Stanford Court</h4>
+        {% endregionblock %}
+        {% regionblock hotel_amenities_section_header, type: header %}
+          <h3>Unparalleled Service </h3>
+        {% endregionblock %}
+        <div class="d-blank d-md-none">
+          {% regionblock hotel_amenities_section_text, type: text %}
+            <p class="mb-3">Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p>
+            <p class="mb-3">The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
+          {% endregionblock %}
+          {% regionblock hotel_amenities_section_link, type: text %}
+            <a class="primary-btn mt-5 " href="/amenities/" title="Amenities">Learn More</a>
+          {% endregionblock %}
+        </div>
+      </div>
+      {% regionblock hotel_amenities_section_frame, type: image %}
+        <img class="frame-middle" src="/assets/images/hotel/amenities.jpg" alt="amenities">
+      {% endregionblock %}
+    </div>
+    <div class="content down  d-md-block d-none">
+      {% regionblock hotel_amenities_section_text, type: text %}
+        <p>Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p>
+        <p>The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
+      {% endregionblock %}
+      {% regionblock hotel_amenities_section_link, type: text %}
+        <a class="primary-btn" href="/amenities/" title="Amenities">Learn More</a>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="art-wrapper" id="art">
+  <div class="art-wrapper-inner m-0 ">
+    <div class="image down background-cover" style="background-image: url('/assets/images/hotel/art.jpg');">
+      {% regionblock local_art_image, type: image %}
+        <img class="frame-right" src="/assets/images/hotel/art-frame.jpg" alt="frame">
+      {% endregionblock %}
+    </div>
+    <div class="content down d-flex align-items-center">
+      {% regionblock local_art_title, type: header %}
+        <h3>Local Art</h3>
+      {% endregionblock %}
+      {% regionblock local_art_text, type: text %}
+        <p>Wander our halls and engage with video art, photography, oil paintings, murals, and more. Our immersive arts program enlivens our walls (and ceilings), connecting you with San Francisco’s creative community and culture. We partner with Daylighted, San Francisco’s premier fine arts consultancy, to bring new art from the Bay Area to our lobby. A dynamic selection of work is presented in our digital gallery across three 75” screens—featuring mixed media pieces by photographers and painters including Derek James Lynch, Mike Kepka, and a section of artists from Artspan, a renowned organization that supports local talent. Daylighted’s curators carefully select individual pieces monthly, so the rotation always stays fresh. </p>
+        <p>Intuitive and thought provoking, our SmArtGallery technology delivers an interactive user experience. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don’t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>

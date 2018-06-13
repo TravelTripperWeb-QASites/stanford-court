@@ -1,58 +1,185 @@
 // Base Elements
 // ==========================================================================
-
-body {
-  color: $text-color;
-  font-family: $global-font-family;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $global-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: $type-size-3;
+  @include text-formatting($title-font, $type-size-7, 700, 80px, $secondary-light, uppercase, -20px);
+  @include text-gradient(to right, $gradient-1, $gradient-2 100%);
+  @media (min-width: 480px) {
+    font-size: $type-size-8;
+    line-height: 130px;
+    letter-spacing: -28px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 12rem;
+    line-height: 10rem;
+    letter-spacing: -34px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: $type-size-0;
+    line-height: 12.75rem;
+    letter-spacing: -40px;
+  }
 }
 
 h2 {
-  font-size: $type-size-4;
+  @extend h1;
 }
 
 h3 {
-  font-size: $type-size-5;
+  @include text-formatting($headings-font, $type-size-2, 400, 2.625rem, $secondary-light, uppercase, .4375rem);
+  &.txt-white {
+    color: $white;
+  }
 }
 
 h4 {
-  font-size: $type-size-6;
+  @include text-formatting($global-font, $type-size-5, 500, 1.625rem, $secondary-light, uppercase, 2.76px);
+  &.txt-white {
+    color: $white;
+  }
 }
 
-h5 {
-  font-size: $type-size-6;
+p {
+  @include text-formatting($global-font, $font-size-base, 400, 1.6rem, $secondary-light, none, .5px);
 }
 
-h6 {
-  font-size: $type-size-6;
+b,
+strong {
+  font-weight: 600;
 }
-
-small, .small {
-  font-size: $type-size-6;
-}
-
-u,
-ins {
-  border-bottom: 1px solid $text-color;
-}
-
-// Links
 
 a {
-  color: $link-color;
-  &:visited {
-    color: $link-color-visited;
+  color: $primary-color;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
   }
-  &:hover,
-  &:active {
-    outline: 0;
-    color: $link-color-hover;
+}
+// Buttons
+
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  padding-right: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: url('/assets/images/black-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right 4px bottom 0;
+  @include text-formatting($global-font-bold, $type-size-5, 700, normal, $black, none, 1.2px);
+  @include global-transition(.3s);
+
+  &:hover {
+    color: $black;
+    background-position: right 0 bottom 0;
   }
+}
+
+.link-button {
+  @extend .primary-btn;
+  padding-right: 0;
+  background-image: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.primary-btn-inverse {
+  @extend .primary-btn;
+  color: $white;
+  background-image: url('/assets/images/white-arrow.png');
+
+  &:hover {
+    color: $white;
+    background-image: url('/assets/images/white-arrow.png');
+  }
+}
+
+.secondary-btn {
+  @extend .primary-btn;
+  padding: 17px 34px;
+  background-image: none;
+  border: 1px solid $secondary-color;
+  border-radius: 34px;
+  @include media-breakpoint-up(md) {
+    padding: 17px 39px;
+    border-radius: 39px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 17px 55px;
+    border-radius: 55px;
+  }
+
+  &:hover {
+    color: $white;
+    background: $secondary-color;
+    background-image: none;
+  }
+}
+
+.secondary-btn-inverse {
+  @extend .secondary-btn;
+  color: $white;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $black;
+    background: $white;
+  }
+}
+
+.black-btn {
+  @extend .secondary-btn;
+  color: $white;
+  background: $black;
+  border: 1px solid $black;
+
+  &:hover {
+    color: $black;
+    background: $white;
+    border: 1px solid $grey-border;
+  }
+}
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vertical-line {
+  position: absolute;
+  bottom: 8px;
+  left: -10px;
+  width: 71px;
+  height: 1px;
+  content: '';
+  background: $white;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }

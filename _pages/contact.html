@@ -7,22 +7,18 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock benner_title, type: header %}
+      <h1>Contact</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
 
-    Contact Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:text %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<section class="contact">
+  {% regionblock text %}
+    <p>Stanford Court San Francisco is always happy to respond to inquiries. Simply fill out the form and click Submit when you are done, or call us at: <br><a href="tel:415-989-3500">415-989-3500</a>.</p>
+  {% endregionblock %}
+  {% include /forms/jotform/contact.html %}
+</section>

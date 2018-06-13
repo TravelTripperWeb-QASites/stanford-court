@@ -1,0 +1,81 @@
+---
+layout: default
+title: Meetings
+meta_description:
+permalink: /meetings/
+meta_tags:
+  robots:
+---
+
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/meetings/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock meetings-title, type: header %}
+      <h1>Meetings</h1>
+    {% endregionblock %}
+  </div>
+</section>
+
+<section class="seven-stills-dining ">
+  <div class="details d-flex align-items-center">
+    <div class="seven-stills-info">
+      {% regionblock meetings-header, type: header %}
+        <h3>MEETINGS & EVENTS</h3>
+      {% endregionblock %}
+      {% regionblock meetings-text, type: text %}
+        <p>Let our team help make your meetings flow with ease and innovation. We’ll craft a creative space that fosters thought and ingenuity. Big, small, and everything in between.</p>
+      {% endregionblock %}
+      {% regionblock meetings-text_2, type: text %}
+        <p>Stanford Court offers over 2,100 square feet of event venues, including communal workspaces. For business dinners that won’t bore you, Nob Hill outpost of Seven Stills puts locally crafted small batch whiskeys within close reach. Stay balanced on the road. Immersive wellness and arts programming, year-round activations, and unique amenities help you harness the power of momentum. Whether through intellectual quests or expressive flexibility, Stanford Court elevates your perspective and puts you in the position to envision new frontiers</p>
+        <p>PLANNING AN OFFSITE?<br>Don’t wait. Book now.</p>
+      {% endregionblock %}
+      {% regionblock meetings-link, type: heatextder %}
+        <a href="" onclick="srfp_widget.show()" class="black-btn">Request for proposal</a>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="image-slider background-cover" style="background-image:url('/assets/images/meetings/intro.jpg'); ">
+    <!-- <div class="carousel-nav white">
+      <a class="carousel-control-prev" href="#sevenStillsDining" data-slide="prev">
+      <i class="fas fa-caret-left"></i>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#sevenStillsDining" data-slide="next">
+      <i class="fas fa-caret-right"></i>
+      <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="sevenStillsDining" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/meetings/intro.jpg'); "></div>
+      </div>
+    </div>-->
+  </div>
+</section>
+
+<section class="amenities-wrap">
+  <div class="amenities-inner">
+    <div class="image-part background-cover" style="background-image: url('/assets/images/meetings/amenities.jpg');">
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <div class="scroll">
+          {% regionblock meetings_list_header, type: header %}
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing</h4>
+          {% endregionblock %}
+          {% regionblock meetings_list, type: text %}
+            <ul>
+              <li>Plug & Play Audio Visual Technology</li>
+              <li>Catering Services</li>
+              <li>Business Center</li>
+              <li>Lorem Ipsum Dolor</li>
+              <li>Lorem Ipsum Dolor</li>
+              <li>Lorem Ipsum Dolor</li>
+              <li>Lorem Ipsum Dolor</li>
+              <li>Lorem Ipsum Dolor</li>
+            </ul>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+main:
+  - title: Hotel
+    url: /hotel/
+    dropdown:
+      - title: Amenities
+        url: /amenities/
+  - title: Rooms
+    url: /rooms/
+  - title: Special Offers
+    url: /offers/
+  - title: Dining
+    url: /dining/
+  - title: Meetings
+    url: /meetings/
+    dropdown:
+        - title: Business Travel
+          url: /business-travel/
+  - title: Neighborhood
+    url: /neighborhood/
+    dropdown:
+        - title: Attractions
+          url: /attractions/
+        - title: Events
+          url: /events/
+  - title: Gallery
+    url: /gallery/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+
+footer:
+  - title: Lost Items
+    url: https://www.chargerback.com/ReportLostItemCBEmbed.asp?CustomerID=2880&
+  - title: Press
+    url: /press/
+  - title: FAQs
+    url: /faq/
+  - title: Contact
+    url: /contact/
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Blog
+    url: /blog/

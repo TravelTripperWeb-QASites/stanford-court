@@ -1,0 +1,308 @@
+// Navigation Elements
+// ========================================================================== */
+
+.navbar {
+  padding: 0;
+  .logo-active {
+    display: none;
+    transition: $global-transition;
+  }
+  .navbar-brand {
+    z-index: 1;
+    width: 120px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    @media (min-width: 414px) {
+      width: 182px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: auto;
+    }
+    @media (min-width: 1100px) {
+      padding-top: 61px;
+      padding-bottom: 0;
+      padding-left: 54px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .navbar-nav {
+    margin-top: 0;
+    margin-left: auto;
+    font-family: $global-font-bold;
+    font-size: $type-size-4;
+    font-weight: 600;
+    letter-spacing: .7px;
+    background-color: $black;
+    @include media-breakpoint-up(lg) {
+      margin-top: -20px;
+      margin-right: 42px;
+      background-color: transparent;
+    }
+    .nav-item {
+      color: $white;
+      &.active {
+        .nav-link {
+          &::after {
+            width: 100%;
+            background-color: $white;
+          }
+        }
+      }
+    }
+    .nav-link {
+      position: relative;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0;
+      color: $white;
+      text-align: left;
+      transition: $global-transition;
+      @include media-breakpoint-up(lg) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: center;
+      }
+      @include media-breakpoint-down(md) {
+        padding: .6rem 50px;
+        font-size: $type-size-4;
+        font-weight: 700;
+        color: $white;
+        border-bottom: 1px solid $secondary-light;
+        transition: $global-transition;
+        &:hover {
+          color: $black;
+          background-color: $nav-hover-bg;
+        }
+      }
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: -14px;
+        left: 0;
+        display: none;
+        width: 0;
+        height: 6px;
+        margin: 0 auto;
+        content: '';
+        background-color: $white;
+        transition: $global-transition;
+        @include media-breakpoint-up(lg) {
+          display: block;
+        }
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .booknow {
+    position: absolute;
+    top: 22px;
+    right: 16px;
+    padding: 10px 12px;
+    font-family: $global-font-bold;
+    font-size: 12px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $book-btn-bg;
+    border: 1px solid $book-btn-bg;
+    transition: $global-transition;
+    @media (min-width: 414px) {
+      top: 28px;
+      padding: 12px;
+      font-size: 14px;
+      letter-spacing: 3.5px;
+    }
+    @include media-breakpoint-up(lg) {
+      top: 101px;
+      right: 54px;
+      padding: 14px 26px;
+    }
+    &:hover {
+      color: $black;
+      background-color: $white;
+      border: 1px solid $nav-hover-bg;
+      transition: $global-transition;
+    }
+  }
+  &.nav-active {
+    padding: 0;
+    background-color: $black;
+    opacity: 0;
+    transition: $global-transition;
+    .navbar-brand {
+      padding: 28px 0 30px 16px;
+      @media (min-width: 414px) {
+        padding: 30px 0 30px 25px;
+      }
+      .logo-active {
+        display: inherit;
+        width: 200px;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+      }
+      .main-logo {
+        display: none;
+      }
+    }
+    .booknow {
+      @include media-breakpoint-up(lg) {
+        top: 63px;
+        right: 28px;
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+    }
+    .navbar-nav {
+      margin-top: 0;
+      margin-right: 14px;
+      @include media-breakpoint-up(lg) {
+        margin-top: -50px;
+      }
+    }
+    &::before {
+      height: 0;
+    }
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 22px;
+    right: 140px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 0;
+    outline: 0;
+    @media (min-width: 414px) {
+      top: 30px;
+      right: 170px;
+    }
+    @include media-breakpoint-up(md) {
+      right: 194px;
+    }
+    .line {
+      width: 100%;
+      height: 3px;
+      margin-bottom: 6px;
+      background-color: $white;
+      transition: $global-transition;
+
+      &:last-child {
+        display: none;
+        margin-bottom: 0;
+      }
+      &:first-child {
+        margin-bottom: 0;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        position: relative;
+        top: -3px;
+        margin-bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+    &.collapsed {
+      .line {
+        &:first-child {
+          margin-bottom: 8px;
+          transform: none;
+          @media (min-width: 414px) {
+            margin-bottom: 12px;
+          }
+        }
+        &:last-child {
+          display: block;
+          margin-bottom: 0;
+        }
+        &:nth-child(2) {
+          position: static;
+          margin-bottom: 8px;
+          transform: none;
+          @media (min-width: 414px) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 230px;
+    content: '';
+    background: linear-gradient(to bottom, rgba(0,0,0,.6) 6%, rgba(73,73,73,.12) 84%, rgba(73,73,73,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00494949',GradientType=0 );
+  }
+}
+
+// Removes margins, padding, and bullet points from navigation lists
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  // Override white-space for nested lists
+  ol li,
+  ul li {
+    margin-bottom: 0;
+  }
+  li ol,
+  li ul {
+    margin-top: 0;
+  }
+}
+
+.dropdown-menu {
+  top: 40px;
+  padding: 0;
+  border-radius: 0;
+  @include media-breakpoint-down(md) {
+    display: block;
+    margin: 0;
+    text-align: center;
+    background-color: $white;
+    border: 0;
+  }
+  a {
+    padding: 14px;
+    font-size: $type-size-4;
+    font-weight: 700;
+    color: $black;
+    text-align: left;
+    border-bottom: 1px solid $nav-hover-bg;
+    transition: $global-transition;
+    @include media-breakpoint-down(md) {
+      padding-right: 70px;
+      padding-left: 70px;
+      color: $black;
+    }
+    &:hover {
+      color: $black;
+      background-color: $nav-hover-bg;
+    }
+  }
+}
+
+.dropdown-item {
+  padding: .7rem;
+}

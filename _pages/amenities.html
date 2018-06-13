@@ -7,22 +7,149 @@ meta_tags:
   robots:
 ---
 
-{% comment %}
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/amenities/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock amenities-title, type: header %}
+      <h1>Amenities</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-  Name:
+<section class="content-wrapper">
+  <div class="content-wrapper-inner m-0 d-flex align-items-center">
+    <div class="content">
+      {% regionblock amenities_title, type: header %}
+        <h3>OBSESSED WITH THE BEST OF SF </h3>
+      {% endregionblock %}
+      {% regionblock amenities_text, type: text %}
+        <p>We’re obsessed with giving you the sweetest experience possible, and for us, that means rounding up the best of SF and making it available to you. Influenced by the progressive tech culture on which San Francisco and Silicon Valley thrive, Stanford Court hotel amenitieswere thoughtfully developed to keep you efficient and feeling your best while on the road. </p>
+        <p>Connect with our front desk and concierge team. We’re happy to help around the clock. The lobby and business center are equipped with MacBooks, iPads, and iPad minis, all running on high speed WiFi. Wirelessly print from any of our devices or your own.</p>
+        <p>Designed to both invigorate and relax mind and body, our 24-hour fitness center, bike share, and wellness program provide a game-changing experience.</p>
+        <p>Stanford Court San Francisco is also home to Commons café and the Nob Hill outpost of Seven Stills, sourcing food, coffee, and spirits from local farms and vendors.</p>
+      {% endregionblock %}
+    </div>
+    <div class="image background-cover" style="background-image: url('/assets/images/amenities/intro.jpg');">
+    </div>
+  </div>
+</section>
 
-    Amenities Page
+<section class="amenities-wrap">
+  <div class="amenities-inner">
+    <div class="image-part background-cover" style="background-image: url('/assets/images/amenities/amenities.jpg');">
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <div class="scroll">
+          {% regionblock amenities_list_title, type: header %}
+            <h4>Our Urban Bundle: Offering you the best of everything</h4>
+          {% endregionblock %}
+          {% regionblock amenities_list, type: text %}
+            <ul>
+              <li>Expanded, state of the art fitness center</li>
+              <li>Morning beverage service including local Equator coffee and Mighty leaf tea</li>
+              <li>Super-Fast Wi-Fi – unlimited device connections</li>
+              <li>PressReader* digital magazines and newspapers</li>
+              <li>Public iMac Computers</li>
+              <li>Free printing and faxing</li>
+              <li>Tech Library Loans</li>
+              <li>Google Chromecast ready rooms</li>
+              <li>Vehicle charging station</li>
+              <li>Valet parking</li>
+              <li>24-hour front desk</li>
+              <li>Concierge</li>
+              <li>Multilingual staff</li>
+              <li>ATM on site</li>
+              <li>Complimentary Local & domestic long distance calls</li>
+              <li>Laundry/dry cleaning</li>
+              <li>Eat & Drink at Seven Stills Nob Hill</li>
+            </ul>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  Description:
+<section class="discover-sec content-wrapper pt-0">
+  <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
+    {% assign amenities-slide = site.data._models.amenities sort: 'order'%}
+    <div class="carousel-inner">
+      {% for amenitie in amenities-slide %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="carousel-block m-0">
+          <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{amenitie.title}}</h3>
+            {{amenitie.description}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="carousel-inner indicators ">
+      <div class="carousel-block m-0">
+        <div class="image"></div>
+        <div class="carousel-caption">
+          <ol class="carousel-indicators">
+            {% for amenitie in amenities-slide %}
+            <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- <div class="content-wrapper-inner m-0 d-flex align-items-center">
+    <div class="image down background-cover" style="background-image: url('/assets/images/amenities/wellness.jpg');"></div>
+    <div class="content down">
+      {% regionblock wellness_titel, type: text %}
+        <h3>wellness</h3>
+      {% endregionblock %}
+      {% regionblock wellness_text, type: text %}
+        <p>Give yourself permission to power down for a sec. At Stanford Court San Francisco, we believe in staying balanced. While we’re always up to try some new age sorcery, our modern approach to wellness is more about giving you practical options to recharge.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </p>
+      {% endregionblock %}
+    </div>
+  </div> -->
 
-    Static content that can be modified by editable regions.
 
-  Usage:
 
-    Text   - {% regionblock region_name, type:text %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<section class="hotel-amenities-wrap background-cover" >
+  <div class="hotel-amenities-inner">
+    <div class="hotel-amenities-row m-0 d-flex align-items-center">
+      <div class="text d-none d-lg-block">
+        {% regionblock hotel_amenities_head_01, type: header %}
+          <h3 class="txt-white">Perfect Place To<br> Enjoy A Stay <br> With Your Pet </h3>
+        {% endregionblock %}
+      </div>
+      <div class="images p-0">
+        <div class="images-inner m-0">
+          <div class="two background-cover" style="background-image: url('/assets/images/hotel/pets.jpg');"></div>
+          <div class="one background-cover" style="background-image: url('/assets/images/hotel/pets3.jpg');"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hotel-amenities-row m-0 d-flex align-items-center">
+      <div class="images p-0 d-none d-lg-block">
+        <div class="images-inner m-0">
+          <div class="full background-cover" style="background-image: url('/assets/images/hotel/pets-with-bed.jpg');"></div>
+        </div>
+      </div>
+      <div class="text">
+        {% regionblock hotel_amenities_head, type: header %}
+          <h3 class="txt-white d-lg-none d-block">Perfect Place To Enjoy A Stay With Your Pet </h3>
+        {% endregionblock %}
+        {% regionblock hotel_amenities_text, type: text %}
+          <p>Intuitive and thought provoking, our SmArtGallery technology delivers an interactive user experience. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don’t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="tag-line-text d-none d-lg-block">
+      {% regionblock v_line_text, type: text %}
+        <p>SF Pet Frendly Hotel</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>

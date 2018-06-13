@@ -1,0 +1,58 @@
+{
+  "title": {
+    "label": "Attraction Name",
+    "required": true
+  },
+  "meta_title": {
+    "label": "Google Friendly (meta) Title",
+    "required": true
+  },
+  "url_friendly_name": {
+    "label": "Permalink",
+    "type": "url_slug",
+    "required": true
+  },
+  "featured_image": {
+    "label": "Featured Image",
+    "instructions": "Image on attractions listings page (600px x 400px)",
+    "type": "image",
+    "required": true
+  },
+  "banner_image": {
+    "label": "Banner Image",
+    "instructions": "Image at the top of single attraction page (1200px up)",
+    "type": "image",
+    "required": true
+  },
+  "description": {
+    "label": "Short Description of Attraction",
+    "type": "text",
+    "required": true
+  },
+  "address": {
+    "label": "Address of Attraction",
+    "type": "text",
+    "required": true
+  },
+  "time": {
+    "label": "Reaching time of Attraction",
+    "type": "text",
+    "required": true
+  },
+  "website": {
+    "label": "Attraction Website",
+    "type": "text",
+    "required": false
+  },
+  "gallery": {
+    "label": "Photo Gallery",
+    "instructions": "These photos should be the same dimensions.",
+    "type": "image",
+    "multiple": true
+  },
+  "sort_order":
+    {
+      "type": "integer",
+      "required": true
+    }
+}

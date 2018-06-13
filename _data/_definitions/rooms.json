@@ -1,0 +1,28 @@
+{
+  "title": {
+    "required": true
+  },
+  "roomimage": {
+    "type": "image",
+    "required": true
+  },
+  "roombackgroundimage": {
+    "type": "image",
+    "required": true
+  },
+  "long_description": {
+    "required": true,
+    "type": "richtext"
+  },
+  "book_this_room": {
+    "type": "url",
+    "label": "Book this room URL"
+  },
+  "more_info": {
+    "label": "More Info URL"
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true
+  }
+}

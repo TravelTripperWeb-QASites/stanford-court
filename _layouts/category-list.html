@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% assign seo_title = page.data.title %}
+<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/blog/hero.jpg');"></div>
+
+<section class="inner-nav mb-80">
+  <ul>
+    <li>
+      <a href="/blog/">All</a>
+      {% assign categories = site.data._models.category | sort: 'order' | descending %}
+      {% for categorylist in categories %}
+        <a href="/blog/category/{{ categorylist.url_friendly_name }}/" title="{{ categorylist.title }}" class="{% if categorylist.url_friendly_name == page.data.url_friendly_name %} active {% endif %}">{{ categorylist.title }}
+        </a>
+      {% endfor %}
+    </li>
+  </ul>
+</section>
+
+<section class="blog-container">
+  <div class="blog-row">
+    <div class="blog-col">
+      {% for post in site.data._models.blog %}
+      {% if post.category.url_friendly_name == page.data.url_friendly_name %}
+        <div class="post">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
+            <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
+            </figure>
+          </a>
+          <div class="blog-item-text">
+            <h4 class="date">
+              {% assign d = post.date | date: "%-d" %}
+              {{ post.date | date: "%B" }}
+              {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+              {{ post.date | date: "%Y" }}
+            </h4>
+            <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title">
+              <h3> {{ post.title }} </h3>
+            </a>
+
+            <p class="extra-links">
+              {% if post.category.url_friendly_name %}
+                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/"> {{ post.category.title }} </a>
+              {% endif %} |
+              <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
+            </p>
+            <div class="short-description">
+              {{ post.short_description }}
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="blog-right-block">
+      {% include blog-aside.html %}
+    </div>
+  </div>
+</section>
