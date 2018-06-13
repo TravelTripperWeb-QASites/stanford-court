@@ -71,7 +71,35 @@ meta_tags:
 </section>
 
 <section class="discover-sec content-wrapper pt-0">
-  {% include amenities-carousel.html %}
+  <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
+    {% assign amenities-slide = site.data._models.amenities sort: 'order'%}
+    <div class="carousel-inner">
+      {% for amenitie in amenities-slide %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="carousel-block m-0">
+          <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{amenitie.title}}</h3>
+            {{amenitie.description}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="carousel-inner indicators ">
+      <div class="carousel-block m-0">
+        <div class="image"></div>
+        <div class="carousel-caption">
+          <ol class="carousel-indicators">
+            {% for amenitie in amenities-slide %}
+            <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
   <!-- <div class="content-wrapper-inner m-0 d-flex align-items-center">
     <div class="image down background-cover" style="background-image: url('/assets/images/amenities/wellness.jpg');"></div>
