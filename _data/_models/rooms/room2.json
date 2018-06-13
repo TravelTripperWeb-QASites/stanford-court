@@ -1,6 +1,6 @@
 {
-  "title": "DELUXE",
-  "long_description": "<p>Deluxe rooms up to 240 sq feet and include a King or Queen Bed. Situated on the exterior side and just the right size, these are our most popular rooms.Accessible Rooms available. Max occupancy is two persons.</p>",
+  "title": "DELUXE/INCUBATOR",
+  "long_description": "<p>Your very own sanctuary and our most popular room. These exterior-facing rooms are up to 240 square feet with a Queen or King bed. 49&rdquo; HD television with HDMI and USB Ports, USB outlets, and a smart mini-fridge. Accessible Rooms available.</p>",
   "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room=DX1Q&selected_room_category=Deluxe",
   "more_info": "/room/#deluxe-queen",
   "sort_order": 2,
@@ -18,9 +18,9 @@
     "width": 800,
     "height": 600,
     "file_size": 56414,
-    "alt": "deluxe",
-    "caption": "deluxe",
-    "description": "deluxe"
+    "alt": "Deluxe Room",
+    "caption": "Deluxe Room",
+    "description": "Deluxe Room"
   },
   "roombackgroundimage": {
     "name": "deluxe_bg",
