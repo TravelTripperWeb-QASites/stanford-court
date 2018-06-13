@@ -1,6 +1,6 @@
 {
-  "title": "STANDARD",
-  "long_description": "<p>Standard Rooms are up to 210 sq feet. These are our interior facing rooms, compact, quiet, and perfect for that quick trip.&nbsp;Feature fast and reliable WiFi, writing desk, coffee/tea maker, premium cable, in room safe, and windows that can open. Connecting rooms are not available.&nbsp;Accessible Rooms available. Max occupancy is two persons.&nbsp;</p>",
+  "title": "STANDARD/START-UP",
+  "long_description": "<p>Compact and convenient. These interior-facing rooms are up to 220 square feet with a Queen or King bed. Efficiently equipped with a 49&rdquo; HD television with HDMI and USB Ports, USB outlets, and a smart mini-fridge. Accessible Rooms available.</p>",
   "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room=ST1Q&selected_room_category=Standard",
   "more_info": "/room/#standard-queen",
   "sort_order": 1,
@@ -18,9 +18,9 @@
     "width": 800,
     "height": 600,
     "file_size": 46101,
-    "alt": "standard",
-    "caption": "standard",
-    "description": "standard"
+    "alt": "Standard room",
+    "caption": "Standard room",
+    "description": "Standard room "
   },
   "roombackgroundimage": {
     "name": "standard_bg",
