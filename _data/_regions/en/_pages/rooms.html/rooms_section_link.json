@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<p><a class=\"primary-btn-inverse mt-3 mb-3\" title=\"View Hotel Amenities\" href=\"#amenities\">View Hotel Amenities</a></p>"
+    "content": "<p><a class=\"primary-btn-inverse mt-3 mb-3\" title=\"View Hotel Amenities\" href=\"../amenities/\">View Hotel Amenities</a></p>"
   }
 ]
