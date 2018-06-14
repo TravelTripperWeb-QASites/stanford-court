@@ -9,6 +9,9 @@
     margin: auto;
     padding: 30px;
     text-align: center;
+    a {
+      color: $dark-text;
+    }
   }
 
   .form-group {
