@@ -37,6 +37,12 @@
         @include media-breakpoint-up(lg) {
           padding: 0;
         }
+        p {
+          display: none;
+          @include media-breakpoint-down(md) {
+            display: block;
+          }
+        }
       }
 
       h4 {

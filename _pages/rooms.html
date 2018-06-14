@@ -35,19 +35,17 @@ meta_tags:
     </div>
   </div>
 </section>
-
-{% assign rooms = site.data._models.rooms %}
-{% for room in rooms %}
-<section class="background-cover bg-black" style="background-image:url({{ room.roombackgroundimage.url }});">
+{% assign rooms = site.data._models.rooms  | sort : "sort_order" %} {% for room in rooms %}
+<section class="background-cover" style="background-image:url({{ room.roombackgroundimage.url }});">
   <div class="room-single">
     <div class="room-row align-items-center">
       <div class="room-image  background-cover" style="background-image:url({{ room.roomimage.url }});"></div>
       <div class="room-info">
         <div class="info">
-          <a href="/room/#{{ room.title | downcase }}">
+          <a href="/room/#{{ room.roomtype | downcase }}">
             <h3>{{ room.title }}</h3>
           </a>
-          <a class="primary-btn-inverse" href="/room/#{{ room.title | downcase }}">Discover More</a>
+          <a class="primary-btn-inverse" href="/room/#{{ room.roomtype | downcase }}">Discover More</a>
           <p>{{ room.long_description }}</p>
           <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
         </div>

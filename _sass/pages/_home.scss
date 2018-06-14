@@ -308,38 +308,60 @@
       z-index: 10;
       padding: 50px 50px 100px;
       text-align: left;
-
+      ul {
+        margin-left: 20px;
+        padding: 0;
+        li {
+          color: $secondary-light;
+        }
+      }
       h3 {
         padding-bottom: 20px;
       }
     }
 
     &.indicators {
-      position: absolute;
-      top: 1020px;
-      @media (min-width: 344px) {
-        top: 950px;
-      }
-      @media (min-width: 402px) {
-        top: 900px;
-      }
-      @media (min-width: 460px) {
-        top: 880px;
-      }
+      position: relative;
+      bottom: 30px;
+      // top: 1020px;
+      // @media (min-width: 344px) {
+      //   top: 950px;
+      // }
+      // @media (min-width: 402px) {
+      //   top: 900px;
+      // }
+      // @media (min-width: 460px) {
+      //   top: 880px;
+      // }
+      // @include media-breakpoint-up(sm) {
+      //   top: 800px;
+      // }
+      // @include media-breakpoint-up(md) {
+      //   top: 440px;
+      // }
+      // @include media-breakpoint-up(lg) {
+      //   top: 360px;
+      // }
+      // @media (min-width: 1200px) {
+      //   top: 430px;
+      // }
       @include media-breakpoint-up(sm) {
-        top: 800px;
+        bottom: 60px;
       }
       @include media-breakpoint-up(md) {
-        top: 440px;
+        bottom: 80px;
       }
       @include media-breakpoint-up(lg) {
-        top: 360px;
+        bottom: 90px;
       }
-      @media (min-width: 1200px) {
-        top: 430px;
+      @include media-breakpoint-up(xl) {
+        bottom: 0;
       }
-      @media (min-width: 1280px) {
-        top: 350px;
+      @media (min-width: 1360px) {
+        bottom: 100px;
+      }
+      &.bottom-zeor {
+        bottom: 20px;
       }
 
       .image {
@@ -595,10 +617,11 @@
         @include make-col-ready();
         min-height: 337px;
         margin-bottom: 40px;
+        background-position: top center;
         order: 1;
         @include media-breakpoint-up(md) {
           @include make-col(5);
-          min-height: 395px;
+          min-height: 450px;
           margin-bottom: inherit;
           order: 2;
         }

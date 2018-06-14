@@ -69,22 +69,23 @@ layout: default
       </div>
     </div>
   </div>
-</section>
 
-<section class="room-amenites">
-  <h2>DETAILS</h2>
-  <div class="wrapper">
-    <h4>unique Room Features</h4>
-    <div class="amenites-list">
-      <div class="force-overflow">
-        <ul>
-          <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
-        </ul>
+
+  <section class="room-amenites">
+    <h2>DETAILS</h2>
+    <div class="wrapper">
+      <h4>unique Room Features</h4>
+      <div class="amenites-list">
+        <div class="force-overflow">
+          <ul>
+            <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
+            <!-- <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li> -->
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </section>
-
 <div class="rooms-search background-color">
   <form action="{{site.reztripUrl}}/search" method="get" id="frmBookingWidget" class="search-form">
     <input type="hidden" name="selected_room" value="[[room.code]]" />

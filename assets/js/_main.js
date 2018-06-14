@@ -5,6 +5,64 @@
 winResize(); //from function.js
 navOnScroll(); //from function.js
 
+// Instagram API script
+$(window)
+      .on("load", function (e) {
+        var ownerId = '6142505566';
+        var instaurl = 'https://apinsta.herokuapp.com/u/stanfordcourtsf/';
+        var instaFeedUrl = "https://www.instagram.com/p/";
+        $.ajax({
+          url: instaurl,
+          dataType: "json",
+          success: function (response) {
+
+           console.log('ok insta', response);
+            var showInstaFeeds = [],
+              feedCount = 0;
+            var allFeeds = response.graphql.user.edge_owner_to_timeline_media.edges;
+            showInstaFeeds = $.grep(allFeeds, function (ele, i) {
+              return ele.node.owner.id == ownerId;
+            });
+            //console.log('testtt', showInstaFeeds);
+            if (showInstaFeeds.length < 6) {
+              for (var j = 0; j < allFeeds.length; j++) {
+                if (allFeeds[j].node.owner.id != ownerId) {
+                  showInstaFeeds.push(allFeeds[j]);
+                  feedCount++;
+                  if (feedCount > 7)
+                    break;
+                }
+              }
+            }
+
+
+            setTimeout(function () {
+              $.each(showInstaFeeds, function (i, item) {
+                if ($(window)
+                  .width() >= 767) {
+                  if (i > 3) return false;
+                } else {
+                  if (i > 3) return false;
+                }
+
+                $('<div class="feed background-cover" style="background-image:url(' + item.node.thumbnail_src + ');"><a href="' + instaFeedUrl + item.node.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.node.edge_liked_by.count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.node.edge_media_to_comment.count + '</p></a></div>')
+                  .appendTo('.instagram-feed');
+              });
+              var heightDIV = $('.instagram-feed div:first-child')
+                .innerWidth();
+              $('.instagram-feed div')
+                .each(function () {
+                  $(this)
+                    .css('height', heightDIV + 'px');
+                });
+              $('.instagram-feed')
+                .slideDown('slow');
+            }, 500);
+          }
+        });
+      });
+
+
 $(window).on("load", function () {
   // nav menu on hover
   $('ul.navbar-nav li.dropdown a').attr('data-toggle', 'disable');
@@ -28,6 +86,19 @@ function pinterestShare(img, desc) {
 
 // Gallery
 $(document).ready(function () {
+
+  //smooth scroll for banner nav in hotel page
+  $('.banner-nav a').click(function () {
+    var scrollToId = $(this).attr("data-rel");
+    $('html, body').animate({
+        scrollTop: $("#"+scrollToId).offset().top - 110
+    }, 1000);
+  });
+
+  $(".scroll-to-top").click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+
   //home offers slick
   setTimeout(function() {
     $('#special-offers').slick({

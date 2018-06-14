@@ -1,10 +1,29 @@
 // Footer Elements
 .instagram {
+  position: relative;
   max-width: 991px;
   margin: 42px auto;
-
+  .back-to-top {
+    position: absolute;
+    bottom: 55px;
+    left: -135px;
+    z-index: 10;
+    padding: 20px;
+    cursor: pointer;
+    background: url('/assets/images/arrow-up.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    @include media-breakpoint-down(lg) {
+      left: -85px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
   .instagram-row {
     @include make-row;
+    display: inherit;
+    text-align: center;
   }
 
   .social-links {
@@ -55,31 +74,49 @@
     .feed {
       @include make-col-ready();
       @include make-col(3);
+      height: 205px;
+      padding-right: 0;
+      padding-left: 0;
+      border-right: 15px solid $white;
+      border-left: 15px solid $white;
       @include media-breakpoint-down(sm) {
+        height: 125px;
         padding-right: 0;
         padding-left: 0;
-      }
-
-      img {
-        width: 100%;
+        border-right: 0 solid $white;
+        border-left: 0 solid $white;
       }
 
       a {
+        position: relative;
         display: block;
-
+        width: 100%;
+        height: 100%;
+        color: $white;
+        text-align: left;
+        .fa-instagram {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          opacity: 1;
+        }
+        p {
+          display: none;
+          opacity: 0;
+          .svg-inline--fa {
+            opacity: 0;
+          }
+        }
         &:after {
           position: absolute;
           top: 0;
           right: 0;
           bottom: 0;
           left: 0;
-          width: 88%;
+          width: 100%;
           margin: auto;
           content: '';
-          background-color: rgba($black,.5);
-          background-image: url('/assets/images/insta-icon.png');
-          background-repeat: no-repeat;
-          background-position: left 15px bottom 15px;
+          @include background-gradient(to right, $gradient-1, $gradient-2 150%);
           opacity: 0;
           @include global-transition(.3s);
           @include media-breakpoint-down(sm) {
@@ -88,8 +125,28 @@
         }
 
         &:hover {
-          &:after {
+          .svg-inline--fa {
+            opacity: 0;
+          }
+          p {
+            position: absolute;
+            bottom: 10px;
+            z-index: 1;
+            display: block;
+            padding: 10px 10px 0 10px;
+            color: $white;
             opacity: 1;
+            .svg-inline--fa {
+              z-index: 1;
+              font-size: 14px;
+              opacity: 1;
+            }
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
+          &:after {
+            opacity: .8;
           }
         }
       }

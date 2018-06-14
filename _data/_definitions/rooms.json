@@ -2,6 +2,9 @@
   "title": {
     "required": true
   },
+  "roomtype": {
+    "required": true
+  }, 
   "roomimage": {
     "type": "image",
     "required": true

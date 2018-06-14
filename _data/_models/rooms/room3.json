@@ -1,5 +1,6 @@
 {
-  "title": "PREMIER",
+  "roomtype": "PREMIER",
+  "title": "PREMIER | Accelerator",
   "roomimage": {
     "url": "https://cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022731/premier.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/192_617_5515/media/2017-07-27-022731/premier.jpg",
@@ -14,11 +15,11 @@
     "width": 800,
     "height": 600,
     "file_size": 63792,
-    "alt": "premier",
-    "caption": "premier",
-    "description": "premier"
+    "alt": "Premier Room",
+    "caption": "Premier Room",
+    "description": "Premier Room"
   },
-  "long_description": "<h4>Premier View&nbsp;</h4>\n<p>Premier View rooms are up to 256 sq ft and include a King or Queen Bed. With views of the city skyline or bay, these rooms offer that special Nob Hill experience! Max occupancy is three persons.</p>\n<p>Premier View Two Doubles are up to 270 sq ft and include views of the city skyline.&nbsp;Max occupancy is four persons.</p>\n<h4>Premier Interior&nbsp;</h4>\n<p>Premier Interior rooms are up to 270 sq ft.&nbsp;Spacious rooms with two Queen Beds, located on the interior side. Max occupancy is four persons.</p>",
+  "long_description": "<h4>Premier View&nbsp;</h4>\n<p>This is what the view from the top looks like. These exterior-facing skyline and bay view rooms are up to 256 square feet with a Queen or King Serta pillowtop bed. 49&rdquo; HD television with HDMI and USB Ports, USB outlets, and a smart mini-fridge. Accessible Rooms available.</p>\n<p>Premier View Two Doubles are up to 270 square feet and feature views of the San Francisco skyline.&nbsp;</p>\n<h4>Premier Interior&nbsp;</h4>\n<p>Retreat and recharge. These interior-facing rooms overlook our quiet courtyard. Up to 270 square feet with two Queen pillowtop beds. 49&rdquo; HD television with HDMI and USB Ports, USB outlets, and a smart mini-fridge. Accessible Rooms available.</p>",
   "sort_order": 3,
   "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room=PV1Q&selected_room_category=Premier",
   "more_info": "/room/#premier-view-queen",
