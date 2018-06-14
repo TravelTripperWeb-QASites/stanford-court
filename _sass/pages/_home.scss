@@ -359,7 +359,9 @@
       @media (min-width: 1360px) {
         bottom: 100px;
       }
-
+      &.bottom-zeor {
+        bottom: 20px;
+      }
 
       .image {
         height: auto;
