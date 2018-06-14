@@ -38,6 +38,7 @@
     }
 
     h1 {
+      color: $white;
       @include media-breakpoint-down(sm) {
         font-size: $type-size-7;
         letter-spacing: -17px;
@@ -306,4 +307,11 @@
       }
     }
   }
+}
+
+.bg-black {
+  background-color: $black;
+}
+.text-black {
+  color: $black;
 }

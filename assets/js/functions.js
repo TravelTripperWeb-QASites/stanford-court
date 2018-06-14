@@ -13,17 +13,17 @@ function navOnScroll() {
         	//navigationClass.addClass('nav-active');
     //    }else{
 
-    			if(navigationClass.offset().top > 100){
-    	           navigationClass.addClass('nav-active');
-    			}else{
-    				navigationClass.removeClass('nav-active');
-    			}
-
-    			if($(window).scrollTop() > 100){
-    			   navigationClass.addClass('nav-active');
-    			}else{
-    				navigationClass.removeClass('nav-active');
-    			}
+    			// if(navigationClass.offset().top > 100){
+    	    //        navigationClass.addClass('nav-active');
+    			// }else{
+    			// 	navigationClass.removeClass('nav-active');
+    			// }
+          //
+    			// if($(window).scrollTop() > 100){
+    			//    navigationClass.addClass('nav-active');
+    			// }else{
+    			// 	navigationClass.removeClass('nav-active');
+    			// }
       //  }
     });
 }
