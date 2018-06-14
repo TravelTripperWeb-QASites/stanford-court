@@ -1,6 +1,7 @@
 .history {
   min-height: 600px;
   margin-bottom: 50px;
+  background-color: $black;
   background-image: url('/assets/images/hotel/history.jpg');
   @include media-breakpoint-up(md) {
     min-height: 700px;
