@@ -47,18 +47,26 @@ jQuery.fn.timelinr = function(options){
 			var heightIssue = $(settings.issuesDiv+' li').height();
 			var widthDates = $(settings.datesDiv).width();
 			var heightDates = $(settings.datesDiv).height();
-			var widthDate = $(settings.datesDiv+' li').width();
-			var heightDate = $(settings.datesDiv+' li').height();
+		  var widthDate = $(settings.datesDiv+' li').width();
+      var itemsTime = $(settings.datesDiv+' li');
+      var widthDaterand = 0;
+      $.each(itemsTime, function(i, index){
+        widthDaterand = widthDaterand + $(this).width();
+      });
+
+        var heightDate = $(settings.datesDiv+' li').height();
 			// set positions!
 			if(settings.orientation == 'horizontal') {
 				$(settings.issuesDiv).width(widthIssue*howManyIssues);
-				$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
+				//$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
+        $(settings.datesDiv).width(widthDaterand).css('marginLeft',widthContainer/2-widthDate/2);
 				var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
 			} else if(settings.orientation == 'vertical') {
 				$(settings.issuesDiv).height(heightIssue*howManyIssues);
 				$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
 				var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
 			}
+
 
 			$(settings.datesDiv+' a').click(function(event){
 				event.preventDefault();

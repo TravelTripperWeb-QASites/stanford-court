@@ -92,12 +92,39 @@
       overflow: hidden;
       li {
         float: left;
-        width: 100px;
+        width: 150px;
         height: 150px;
         font-size: 14px;
         text-align: center;
         list-style: none;
 
+        &.year4 {
+            width:50px;
+        }
+        &.year5 {
+            width:60px;
+        }
+        &.year6 {
+            width:70px;
+        }
+        &.year7 {
+            width:80px;
+        }
+        &.year8 {
+            width:90px;
+        }
+        &.year9 {
+            width:100px;
+        }
+        &.year10 {
+            width:130px;
+        }
+        &.year15 {
+            width:160px;
+        }
+        &.year20 {
+            width:190px;
+        }
         a {
           display: inline-block;
           color: $white;

@@ -88,7 +88,9 @@ meta_tags:
   {% endregionblock %}
   <div class="events-carousel">
     <div class="events-carousel-inner">
+      {% regionblock events_text, type: header %}
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</h3>
+        {% endregionblock %}
       <div class="text-center">
         <a href="/events/" class="black-btn">See all Events</a>
       </div>
@@ -96,7 +98,6 @@ meta_tags:
   </div>
 </section>
 
-{% include special-offers-text.html %}
 
 <section class="find-your-way">
   <div class="find-your-way-inner">
@@ -132,3 +133,5 @@ meta_tags:
     </div>
   </div>
 </section>
+
+{% include special-offers.html %}

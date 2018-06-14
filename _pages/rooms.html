@@ -42,10 +42,10 @@ meta_tags:
       <div class="room-image  background-cover" style="background-image:url({{ room.roomimage.url }});"></div>
       <div class="room-info">
         <div class="info">
-          <a href="/room/#{{ room.title | downcase }}">
+          <a href="/room/#{{ room.roomtype | downcase }}">
             <h3>{{ room.title }}</h3>
           </a>
-          <a class="primary-btn-inverse" href="/room/#{{ room.title | downcase }}">Discover More</a>
+          <a class="primary-btn-inverse" href="/room/#{{ room.roomtype | downcase }}">Discover More</a>
           <p>{{ room.long_description }}</p>
           <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
         </div>
