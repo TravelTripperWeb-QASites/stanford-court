@@ -74,7 +74,7 @@
   .dates-nav {
     bottom: 0;
     width: 100%;
-    margin-top: 85px;
+    margin-top: 55px;
     margin-left: 0;
     background: url('/assets/images/small-line.png') left 56px repeat-x;
     @include media-breakpoint-up(lg) {
@@ -157,7 +157,7 @@
 
   #issues {
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto 20px ;
     padding: 0;
     overflow: hidden;
 
@@ -214,12 +214,16 @@
       }
 
       p {
+        max-width: 100%;
         margin-right: 20px;
-        padding-bottom: 10px ;
+        //padding-bottom: 10px ;
         font-weight: normal;
         line-height: 22px;
         color: $white;
         letter-spacing: .05em;
+        @include media-breakpoint-up(md) {
+          max-width: 175px;
+        }
         @media (min-width: 768px) and (max-width: 900px) {
           margin-right: 20px;
           text-align: left;
