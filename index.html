@@ -176,17 +176,15 @@ meta_tags:
     </div>
     <div class="item active">
       <a href="/gallery/">
-        {% regionblock gallery_img_one, type: image %}
+        <!-- {% regionblock gallery_img_one, type: image %} -->
         <img src="/assets/images/home/gallery-1.jpg" alt="Gallery">
+        <!-- {% endregionblock %} -->
+      </a>
+      <a href="/gallery/">
+        {% regionblock gallery_title_one, type: header %}
+        <h3>Lorem ipsum dolor sir.</h3>
         {% endregionblock %}
       </a>
-      {% regionblock gallery_title_one, type: header %}
-      <div>
-        <a href="/gallery/">
-          <h3>Lorem ipsum dolor sir.</h3>
-        </a>
-      </div>
-      {% endregionblock %}
     </div>
 
     <div class="item">
