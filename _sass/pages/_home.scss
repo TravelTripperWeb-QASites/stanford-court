@@ -430,11 +430,19 @@
       display: inline-block;
       float: left;
       width: 16.66%;
+      height: 855px;
       overflow: hidden;
       @include global-transition(.3s);
 
       &.active {
         width: 50%;
+      }
+      .img-block {
+        display: block;
+        height: inherit;
+        div {
+          height: inherit;
+        }
       }
 
       h3 {
