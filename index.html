@@ -8,10 +8,10 @@ meta_tags:
 ---
 
 <div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
-  {% assign hero-slide = site.data._models.hero-carousel %}
+  {% assign hero-slide = site.data._models.home-hero-carousel %}
   <div class="carousel-inner" role="listbox">
     {% for banner in hero-slide %}
-    <div class="carousel-item background-cover {% if forloop.first %}active{% endif %}" data-resize style="background-image: url('{{ banner.image.url_medium }}');">
+    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" data-resize style="background-image: url('{{ banner.image.url_large }}');">
     </div>
     {% endfor %}
   </div>
