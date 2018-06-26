@@ -83,6 +83,10 @@ $(window).on("load", function () {
       var link = jQuery(this).closest('a').attr("href");
       window.location.href = link;
     });
+    $('ul.navbar-nav li.dropdown .dropdown-item').click(function(){
+      var link = jQuery(this).closest('a').attr("href");
+      window.location.href = link;
+    });
   }
 
 
