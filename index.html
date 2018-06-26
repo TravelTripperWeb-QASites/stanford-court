@@ -7,7 +7,21 @@ meta_tags:
   robots:
 ---
 
-<div data-resize class="hero-banner background-cover" style="background-image: url('/assets/images/home/banner.jpg');">
+<!-- <div data-resize class="hero-banner background-cover" style="background-image: url('/assets/images/home/banner.jpg');">
+
+</div> -->
+
+<div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
+  {% assign hero-slide = site.data._models.hero-carousel %}
+  <div class="carousel-inner" role="listbox">
+
+    {% for banner in hero-slide %}
+    <div class="carousel-item background-cover {% if forloop.first %}active{% endif %}" data-resize  style="background-image: url('{{ banner.image.url_medium }}');">
+    </div>
+      {% endfor %}
+    <!-- <div class="carousel-item   background-cover" data-resize  style="background-image: url('/assets/images/home/banner.jpg');"> -->
+    </div>
+  </div>
   {% include brg-widget.html %}
 </div>
 

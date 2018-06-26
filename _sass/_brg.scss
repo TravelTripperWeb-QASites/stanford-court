@@ -1,10 +1,16 @@
+
+.brg-widget {
+  position: absolute;
+  bottom: 117px;
+  left: 100px;
+  max-width: 50%;
+}
 .recentBookingsOuter {
   .recentBookingsInner {
-    position: absolute;
-
-    bottom: 180px;
-    left: 100px;
-    z-index: 19;
+    // position: absolute;
+    // bottom: 180px;
+    // left: 100px;
+    // z-index: 19;
     text-align: center;
     text-transform: none;
   }
@@ -49,16 +55,16 @@
 }
 
 .price-wrap {
-  position: absolute;
-  bottom: 100px;
-  left: 100px;
-  min-width: 44%;
+  // position: absolute;
+  // bottom: 100px;
+  // left: 100px;
+  // min-width: 44%;
   font-family: $headings-font;
   background-color: $black;
 
   .best-rate-ota {
     width: 100%;
-    max-width: 600px;
+    //max-width: 600px;
     margin: 0 auto;
 
     .boxes {
@@ -68,7 +74,7 @@
 
       .tonight-rate {
         float: left;
-        width: 38%;
+        width: 50%;
         height: 100%;
         padding: 10px 20px;
 

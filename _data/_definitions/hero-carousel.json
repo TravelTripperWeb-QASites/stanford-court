@@ -1,0 +1,13 @@
+{
+  "title": {
+    "label": "Image Name"
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": false
+  }
+}
