@@ -13,8 +13,8 @@
         hotelID: '', // hotel id
         portalID: '', // hotel portal id
         customHTML: '<h4> Special Offer</h4>', // extra html code abve the title
-        buttonText: 'Learn More', // link text
-        buttonClass: 'btn btn-primary', //link class
+        buttonText: 'View More', // link text
+        buttonClass: 'primary-btn', //link class
         pageLink: false,
         offerdetailPage: '/offer/', //offer detail page url
         description: false, // offer short description
