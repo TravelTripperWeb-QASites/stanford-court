@@ -7,8 +7,17 @@ meta_tags:
   robots:
 ---
 
-<div data-resize class="hero-banner background-cover" style="background-image: url('/assets/images/home/hero.jpg');">
+<div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
+  {% assign hero-slide = site.data._models.home-hero-carousel %}
+  <div class="carousel-inner" role="listbox">
+    {% for banner in hero-slide %}
+    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" data-resize style="background-image: url('{{ banner.image.url_large }}');">
+    </div>
+    {% endfor %}
+  </div>
+  {% include brg-widget.html %}
 </div>
+
 
 <section class="home-intro">
   <div class="home-intro-inner m-0 d-flex align-items-center">
@@ -89,9 +98,9 @@ meta_tags:
       {% endregionblock %}
     </div>
     <div class="content">
-      <span class="plus-icon">
+      <!-- <span class="plus-icon">
         <a href="/gallery/"><img src="/assets/images/home/camera-icon.png" alt="Camera"></a>
-      </span>
+      </span> -->
       {% regionblock rooms-header, type: header %}
       <h3 >COMFY DOESN’T MEAN CONFINING</h3>
       {% endregionblock %}
@@ -119,8 +128,8 @@ meta_tags:
           <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
           </div>
           <div class="carousel-caption">
-            <h3>{{amenitie.title}}</h3>
-            {{amenitie.description}}
+            <h3>{{ amenitie.title }}</h3>
+            {{ amenitie.description }}
           </div>
         </div>
       </div>
@@ -160,6 +169,8 @@ meta_tags:
   </div>
 </section>
 
-{% include special-offers.html%}
-{% include gallery-carousel.html%}
-{% include blog-section.html%}
+{% include special-offers.html %}
+
+{% include gallery-carousel.html %}
+
+{% include blog-section.html %}

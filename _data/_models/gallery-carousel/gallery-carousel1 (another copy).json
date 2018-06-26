@@ -1,0 +1,24 @@
+{
+  "title": "Title One",
+  "image": {
+    "name": "gallery-1",
+    "file_name": "gallery-1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/gallery-1.jpg",
+    "tags": "",
+    "description": "Standard Room ",
+    "date_added": "2018-06-25-035558",
+    "file_type": "image/jpeg",
+    "width": 1440,
+    "height": 855,
+    "file_size": 258479,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/large_gallery-1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/medium_gallery-1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/small_gallery-1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/xsmall_gallery-1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/thumb_gallery-1.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_16969/media/2018-06-25-035558/gallery-1.jpg",
+    "alt": "gallery-1",
+    "caption": "Standard Room"
+  },
+  "sort_order": 1
+}

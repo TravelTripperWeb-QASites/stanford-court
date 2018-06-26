@@ -38,7 +38,7 @@
     font-weight: 600;
     letter-spacing: .7px;
     background-color: $black;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       margin-top: -20px;
       margin-right: 42px;
       background-color: transparent;
@@ -53,6 +53,29 @@
           }
         }
       }
+      &.dropdown {
+        .nav-link {
+          &:before {
+            position: absolute;
+            top: 6px;
+            right: -15px;
+            left: auto;
+            content: '';
+            border-top: .6em solid $white;
+            border-right: .4em solid transparent;
+            border-left: .4em solid transparent;
+            transition: $global-transition;
+            transform: rotate(-90deg);
+          }
+          &:hover {
+            &:before {
+              @include media-breakpoint-up(xl) {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+      }
     }
     .nav-link {
       position: relative;
@@ -62,12 +85,12 @@
       color: $white;
       text-align: left;
       transition: $global-transition;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(xl) {
         margin-right: 1rem;
         margin-left: 1rem;
         text-align: center;
       }
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         padding: .6rem 50px;
         font-size: $type-size-4;
         font-weight: 700;
@@ -91,7 +114,7 @@
         content: '';
         background-color: $white;
         transition: $global-transition;
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           display: block;
         }
       }
@@ -141,14 +164,14 @@
     transition: $global-transition;
     .navbar-brand {
       padding: 28px 0 30px 16px;
-      @media (min-width: 414px) {
-        padding: 30px 0 30px 25px;
+      @media (min-width: 320px) {
+        padding: 12px 0 12px 10px;
       }
       .logo-active {
         display: inherit;
-        width: 200px;
-        @include media-breakpoint-down(md) {
-          width: 100%;
+        width: 120px;
+        @media (min-width: 414px) {
+          width: 140px;
         }
       }
       .main-logo {
@@ -156,18 +179,50 @@
       }
     }
     .booknow {
-      @include media-breakpoint-up(lg) {
-        top: 63px;
-        right: 28px;
-        padding: 8px 16px;
-        font-size: 12px;
+      top: 0;
+      right: 0;
+      padding: 19px 16px;
+      font-size: 12px;
+      @media (min-width: 414px) {
+        padding: 21px 16px;
       }
     }
     .navbar-nav {
-      margin-top: 0;
-      margin-right: 14px;
-      @include media-breakpoint-up(lg) {
-        margin-top: -50px;
+      margin-right: 0;
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-right: 140px;
+      }
+      .nav-item {
+        &.dropdown {
+          .nav-link {
+            &:before {
+              top: 16px;
+              right: auto;
+              left: 200px;
+              transition: $global-transition;
+              @include media-breakpoint-up(xl) {
+                top: 6px;
+                right: -15px;
+                left: auto;
+              }
+            }
+            &:hover {
+              &:before {
+                border-top: .6em solid $black;
+                @include media-breakpoint-up(xl) {
+                  border-top: .6em solid $white;
+                  transform: rotate(0deg);
+                }
+              }
+            }
+            &.open {
+              &:before {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
       }
     }
     &::before {
@@ -176,19 +231,16 @@
   }
   .navbar-toggler {
     position: absolute;
-    top: 22px;
-    right: 140px;
+    top: 7px;
+    right: 122px;
     width: 40px;
     height: 40px;
     padding: 0;
     border-radius: 0;
     outline: 0;
     @media (min-width: 414px) {
-      top: 30px;
-      right: 170px;
-    }
-    @include media-breakpoint-up(md) {
-      right: 194px;
+      top: 11px;
+      right: 140px;
     }
     .line {
       width: 100%;
@@ -217,9 +269,6 @@
         &:first-child {
           margin-bottom: 8px;
           transform: none;
-          @media (min-width: 414px) {
-            margin-bottom: 12px;
-          }
         }
         &:last-child {
           display: block;
@@ -229,9 +278,6 @@
           position: static;
           margin-bottom: 8px;
           transform: none;
-          @media (min-width: 414px) {
-            margin-bottom: 12px;
-          }
         }
       }
     }
@@ -276,8 +322,7 @@ nav {
   top: 40px;
   padding: 0;
   border-radius: 0;
-  @include media-breakpoint-down(md) {
-    display: block;
+  @include media-breakpoint-down(lg) {
     margin: 0;
     text-align: center;
     background-color: $white;
@@ -291,7 +336,7 @@ nav {
     text-align: left;
     border-bottom: 1px solid $nav-hover-bg;
     transition: $global-transition;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-right: 70px;
       padding-left: 70px;
       color: $black;

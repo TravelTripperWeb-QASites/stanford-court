@@ -310,7 +310,7 @@
       margin-right: 0;
       margin-left: auto;
       padding: 28px 34px;
-      background: $nav-hover-bg;
+      background-image: url('/assets/images/amenities/beige-bg.jpg');
       @include media-breakpoint-up(md) {
         width: 70%;
         margin-top: -164px;

@@ -10,22 +10,45 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class="item active">
-      <a href="/gallery/"><img src="/assets/images/home/gallery-1.jpg" alt="Gallery"></a>
-      <a href="/gallery/"><h3>Lorem ipsum dolor sir.</h3></a>
+    {% assign gallery-item = site.data._models.gallery-carousel %}
+    {% for gallery in gallery-item  | limit: 4 %}
+    <div class="item {% if forloop.first == true %} active {% endif %}">
+      <a href="/gallery/" class="img-block">
+        <div style="background-image:url({{ gallery.image.url }});">
+        </div>
+      </a>
+      <a href="/gallery/">
+        <h3>{{ gallery.title }} </h3>
+      </a>
+    </div>
+    {% endfor %}
+    <!-- <div class="item">
+      <a href="/gallery/" class="img-block">
+        <div style="background-image:url(/assets/images/home/gallery-2.jpg);">
+        </div>
+      </a>
+      <a href="/gallery/">
+        <h3>Lorem ipsum dolor.</h3>
+      </a>
     </div>
     <div class="item">
-      <a href="/gallery/"><img src="/assets/images/home/gallery-2.jpg" alt="Gallery" /></a>
-      <a href="/gallery/"><h3>Lorem ipsum dolor.</h3></a>
+      <a href="/gallery/" class="img-block">
+        <div style="background-image:url(/assets/images/home/gallery-3.jpg);">
+        </div>
+      </a>
+      <a href="/gallery/">
+        <h3>Lorem ipsum.</h3>
+      </a>
     </div>
     <div class="item">
-      <a href="/gallery/"><img src="/assets/images/home/gallery-3.jpg" alt="Gallery" /></a>
-      <a href="/gallery/"><h3>Lorem ipsum.</h3></a>
-    </div>
-    <div class="item">
-      <a href="/gallery/"><img src="/assets/images/home/gallery-4.jpg" alt="Gallery" /></a>
-      <a href="/gallery/"><h3>Lorem ipsum dolo sit amet</h3></a>
-    </div>
+      <a href="/gallery/" class="img-block">
+        <div style="background-image:url(/assets/images/home/gallery-4.jpg);">
+        </div>
+      </a>
+      <a href="/gallery/">
+        <h3>Lorem ipsum dolo sit amet</h3>
+      </a>
+    </div> -->
     <div style="clear: both;"></div>
   </div>
 </section>

@@ -1,0 +1,26 @@
+<section class="brg-widget">
+  <div class="recentBookingsOuter" rt3-recent-bookings="recentBookings" ng-cloak>
+    <div class="recentBookingsInner" style="display:none" >
+      <span class="recentBookingsHolder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
+    </div>
+</div>
+
+<!-- brg rate section -->
+<div class="price-wrap" ng-show="browser.isRate" style="display:none" >
+<div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+  <div class="boxes">
+
+    <div class="tonight-rate ">
+      <p>Best Price Available</p>
+      <h4>Tonight's Rate <a href="https://stanfordcourt.reztrip.com/search?" target="_blank"  class="homeTonightRate" ><span class="price">[[ browser.toNightsRate ]]</span></a></h4>
+    </div>
+
+    <div class="ota-list">
+      <ul>
+        <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>$[[ value ]]</span></li>
+      </ul>
+    </div>
+</div>
+</div>
+</div>
+</section>

@@ -43,18 +43,19 @@
   }
 
   .slick-arrow {
-    top: 110px !important;
+    top: 145px !important;
+    right: 0 !important;
     display: block;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: none !important;
     }
 
     &.slick-next {
-      right: 0 !important;
+      right: 30px !important;
     }
 
     &.slick-prev {
-      right: 64px !important;
+      right: 94px !important;
     }
   }
 
