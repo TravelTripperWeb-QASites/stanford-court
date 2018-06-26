@@ -30,6 +30,31 @@
         max-width: 100%;
         cursor: pointer;
       }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(transparent 0%, rgba(0, 0, 0, .7) 90%, rgba(0, 0, 0, .75) 100%);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        opacity: 0;
+        h4 {
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+          color: $white;
+          text-align: center;
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
     }
 
     &.hidden {

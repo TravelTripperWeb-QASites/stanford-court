@@ -206,28 +206,19 @@ $(document).ready(function () {
 
         }
 
-      }, 1000);
+      }, 0);
     } // if
   }); // on
-  $('[data-offergallery]').lightGallery({
-    selector: '.item',
-    counter: false,
-    thumbnail: true,
-    download: false,
-    youtubePlayerParams: {
-      modestbranding: 1,
-      showinfo: 0,
-      rel: 0,
-      controls: 0
-    },
-    vimeoPlayerParams: {
-      byline: 0,
-      portrait: 0,
-      color: 'A90707'
-    }
-  });
-
-
+  //
+  // $('[data-offergallery]')
+  //       .rezGallery({
+  //         hotelID: 'SFOSTF',
+  //         portalID: 'stanfordcourt',
+  //         buttonClass: 'btn-common btn-od-form',
+  //         pageLink: true,
+  //         description: true,
+  //         offerdetailPage: '/special/'
+  //       });
 
   // set same height of each offer desc block in offer listing page
   setTimeout(function () {
@@ -371,5 +362,16 @@ $(function() {
     autoPlay: 'false',
     autoPlayDirection: 'forward',
     startAt: 1
-  })
+  });
+  // get rt3 offers in gallery
+$('#lightgallery')
+  .rezGallery({
+    hotelID: 'SFOSTF',
+    portalID: 'stanfordcourt',
+    buttonClass: 'btn-common btn-od-form',
+    pageLink: true,
+    description: true,
+    offerdetailPage: '/special/'
+  });
+
 });

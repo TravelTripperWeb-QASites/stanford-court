@@ -36,8 +36,17 @@ meta_tags:
       {% assign catname = category[0] %}
       {% for photo in site.data._galleries[catname].photos %}
         <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
-          <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{photo.alt}}">
+          <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{ photo.alt }}">
+          <div class="overlay">
+            <h4>{{ photo.alt }}</h4>
+          </div>
         </div>
+        {% assign mod = forloop.index | modulo: 3 %}
+        {% if mod == 2 %}
+        <div class="card item fancybox rez-offer" data-filter="{{catname}}" data-sub-html="" data-src="">
+
+        </div>
+        {% endif %}
       {% endfor %}
       {% endfor %}
       <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">

@@ -37,7 +37,7 @@ meta_tags:
   <div class="offers-listing">
     <div class="offers-listing-row m-0">
       <div class="offer-block" ng-repeat="offer in offers.special_rates">
-        <div class="image d-flex justify-content-center" ng-style="{'background-image':'url([[offer.lead_photo_url.large]])'}">
+        <div class="image background-cover d-flex justify-content-center" ng-style="{'background-image':'url([[offer.lead_photo_url.large]])'}">
           <a ng-href="[[ offer.promo_url ]]" class="black-btn" target="_blank">Book Offer</a>
         </div>
         <div class="content">
