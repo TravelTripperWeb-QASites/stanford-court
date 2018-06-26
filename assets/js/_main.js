@@ -393,4 +393,7 @@ $(function() {
       description: true,
       offerdetailPage: '/special/'
     });
+    setTimeout(function () {
+  		$(".price-wrap, .recentBookingsInner").css('display', 'block');
+  	}, 2000);
 });
