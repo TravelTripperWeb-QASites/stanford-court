@@ -66,14 +66,26 @@ $(window)
 $(window).on("load", function () {
   // nav menu on hover
   $('ul.navbar-nav li.dropdown a').attr('data-toggle', 'disable');
-  if ($(window).width() > 991) {
+  if ($(window).width() > 1201) {
     //Add Hover effect to menus
     jQuery('ul.navbar-nav li.dropdown').hover(function () {
       jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
     }, function () {
       jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
     });
+  } else {
+    $('ul.navbar-nav li.dropdown').click(function(e){
+      e.preventDefault();
+      jQuery(this).find('.dropdown-menu').fadeToggle();
+      $(this).find(".nav-link").toggleClass("open");
+    });
+    $('ul.navbar-nav li.dropdown a span').click(function(){
+      var link = jQuery(this).closest('a').attr("href");
+      window.location.href = link;
+    });
   }
+
+
 });
 
 function pinterestShare(img, desc) {

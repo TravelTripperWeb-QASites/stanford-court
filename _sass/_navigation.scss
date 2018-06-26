@@ -69,7 +69,9 @@
           }
           &:hover {
             &:before {
-              transform: rotate(0deg);
+              @include media-breakpoint-up(xl) {
+                transform: rotate(0deg);
+              }
             }
           }
         }
@@ -208,10 +210,15 @@
             &:hover {
               &:before {
                 border-top: .6em solid $black;
-                transform: rotate(0deg);
                 @include media-breakpoint-up(xl) {
                   border-top: .6em solid $white;
+                  transform: rotate(0deg);
                 }
+              }
+            }
+            &.open {
+              &:before {
+                transform: rotate(0deg);
               }
             }
           }
@@ -316,7 +323,6 @@ nav {
   padding: 0;
   border-radius: 0;
   @include media-breakpoint-down(lg) {
-    display: block;
     margin: 0;
     text-align: center;
     background-color: $white;
