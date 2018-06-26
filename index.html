@@ -7,8 +7,10 @@ meta_tags:
   robots:
 ---
 
-<div data-resize class="hero-banner background-cover" style="background-image: url('/assets/images/home/hero.jpg');">
+<div data-resize class="hero-banner background-cover" style="background-image: url('/assets/images/home/banner.jpg');">
+  {% include brg-widget.html %}
 </div>
+
 
 <section class="home-intro">
   <div class="home-intro-inner m-0 d-flex align-items-center">
@@ -89,9 +91,9 @@ meta_tags:
       {% endregionblock %}
     </div>
     <div class="content">
-      <span class="plus-icon">
+      <!-- <span class="plus-icon">
         <a href="/gallery/"><img src="/assets/images/home/camera-icon.png" alt="Camera"></a>
-      </span>
+      </span> -->
       {% regionblock rooms-header, type: header %}
       <h3 >COMFY DOESN’T MEAN CONFINING</h3>
       {% endregionblock %}
