@@ -64,7 +64,13 @@
             border-top: .6em solid $white;
             border-right: .4em solid transparent;
             border-left: .4em solid transparent;
+            transition: $global-transition;
             transform: rotate(-90deg);
+          }
+          &:hover {
+            &:before {
+              transform: rotate(0deg);
+            }
           }
         }
       }
@@ -201,7 +207,11 @@
             }
             &:hover {
               &:before {
+                border-top: .6em solid $black;
                 transform: rotate(0deg);
+                @include media-breakpoint-up(xl) {
+                  border-top: .6em solid $white;
+                }
               }
             }
           }
