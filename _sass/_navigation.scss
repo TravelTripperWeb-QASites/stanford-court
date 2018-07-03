@@ -57,20 +57,20 @@
         .nav-link {
           &:before {
             position: absolute;
-            top: 6px;
+            top: 8px;
             right: -15px;
             left: auto;
             content: '';
-            border-top: .6em solid $white;
+            border-top: .4em solid $white;
             border-right: .4em solid transparent;
             border-left: .4em solid transparent;
             transition: $global-transition;
-            transform: rotate(-90deg);
+            transform: rotate(0deg);
           }
           &:hover {
             &:before {
               @include media-breakpoint-up(xl) {
-                transform: rotate(0deg);
+                transform: rotate(-180deg);
               }
             }
           }
@@ -202,17 +202,17 @@
               left: 200px;
               transition: $global-transition;
               @include media-breakpoint-up(xl) {
-                top: 6px;
+                top: 8px;
                 right: -15px;
                 left: auto;
               }
             }
             &:hover {
               &:before {
-                border-top: .6em solid $black;
+                border-top: .4em solid $black;
                 @include media-breakpoint-up(xl) {
-                  border-top: .6em solid $white;
-                  transform: rotate(0deg);
+                  border-top: .4em solid $white;
+                  transform: rotate(-180deg);
                 }
               }
             }

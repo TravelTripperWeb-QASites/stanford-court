@@ -3,6 +3,10 @@
     "label": "Category Name",
     "required": true
   },
+  "description": {
+    "label": "Category Description",
+    "required": true
+  },
   "url_friendly_name": {
     "type": "url_slug",
     "label": "URL Friendly Name",
