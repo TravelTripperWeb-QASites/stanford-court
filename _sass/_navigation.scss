@@ -202,17 +202,17 @@
               left: 200px;
               transition: $global-transition;
               @include media-breakpoint-up(xl) {
-                top: 6px;
+                top: 8px;
                 right: -15px;
                 left: auto;
               }
             }
             &:hover {
               &:before {
-                border-top: .6em solid $black;
+                border-top: .4em solid $black;
                 @include media-breakpoint-up(xl) {
-                  border-top: .6em solid $white;
-                  transform: rotate(0deg);
+                  border-top: .4em solid $white;
+                  transform: rotate(-180deg);
                 }
               }
             }
