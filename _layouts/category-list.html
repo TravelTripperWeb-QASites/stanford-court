@@ -21,6 +21,23 @@ layout: default
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col">
+      <div class="category-info">
+        {% assign categories = site.data._models.category | sort: 'order' | descending %}
+        {% for categorylist in categories %}
+        {% if categorylist.url_friendly_name == page.data.url_friendly_name %}
+        <div class="category-title ">
+
+            <h4>{{ categorylist.title }}
+            </h4>
+        </div>
+        <div class="category-description">
+          <p>{{ categorylist.description }}<p>
+        </div>
+        {% endif %}
+        {% endfor %}
+        <hr>
+      </div>
+
       {% for post in site.data._models.blog %}
       {% if post.category.url_friendly_name == page.data.url_friendly_name %}
         <div class="post">

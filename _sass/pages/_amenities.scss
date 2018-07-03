@@ -119,7 +119,7 @@
       margin-right: auto;
       margin-left: 0;
       padding: 43px 34px;
-      background-image: url('/assets/images/amenities/beige-bg.jpg');
+      @include background-gradient(to right, $gradient-1, $gradient-2 150%);
       @include media-breakpoint-up(md) {
         width: 70%;
         margin-top: -164px;

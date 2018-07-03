@@ -18,7 +18,27 @@
       @include media-breakpoint-up(xl) {
         padding-right: 70px;
       }
-
+      .category-info {
+        @include make-row ;
+        margin: 0;
+        .category-title {
+          @include media-breakpoint-up(lg) {
+            @include make-col(3);
+          }
+          h6 {
+            text-transform: uppercase;
+          }
+        }
+        .category-description {
+          @include media-breakpoint-up(lg) {
+            @include make-col(9);
+          }
+        }
+        hr {
+          width: 100%;
+          margin: 2.6rem 0;
+        }
+      }
       .post {
         margin-bottom: 80px;
 
@@ -64,6 +84,10 @@
           font-size: $type-size-10;
           text-transform: none;
           letter-spacing: .5px;
+          &.date {
+            text-transform: uppercase;
+          }
+
         }
 
         form {

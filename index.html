@@ -20,26 +20,28 @@ meta_tags:
 
 
 <section class="home-intro">
-  <div class="home-intro-inner m-0 d-flex align-items-center">
-    <div class="image background-cover" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
+  <div class="home-intro-inner m-0 d-flex align-items-end">
+     <div class="image background-cover" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
     <div class="content">
-      {% regionblock intro_subheader, type: header %}
-      <h4>About us</h4>
-      {% endregionblock %}
-      {% regionblock intro_header, type: header %}
-      <h3>Welcome to Stanford court</h3>
-      {% endregionblock %}
-      {% regionblock intro_text, type: text %}
-      <p>At the crest of Nob Hill it’s easy to see what makes
-      San Francisco special.  While the views are  amazing,
-      it’s the city’s energy, restless spirit of transformation and
-      maverick innovation that quickens your heartbeat and
-      gets your mind spinning.  Come play (stay) with us.
-      </p>
-      {% endregionblock %}
-      {% regionblock intro_link, type: text %}
-      <a href="/hotel/" class="primary-btn">Discover More</a>
-      {% endregionblock %}
+      <div class="info">
+        {% regionblock intro_subheader, type: header %}
+        <h4>About us</h4>
+        {% endregionblock %}
+        {% regionblock intro_header, type: header %}
+        <h3>Welcome to Stanford court</h3>
+        {% endregionblock %}
+        {% regionblock intro_text, type: text %}
+        <p>At the crest of Nob Hill it’s easy to see what makes
+        San Francisco special.  While the views are  amazing,
+        it’s the city’s energy, restless spirit of transformation and
+        maverick innovation that quickens your heartbeat and
+        gets your mind spinning.  Come play (stay) with us.
+        </p>
+        {% endregionblock %}
+        {% regionblock intro_link, type: text %}
+        <a href="/hotel/" class="primary-btn">Discover More</a>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
 </section>
