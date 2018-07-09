@@ -33,12 +33,20 @@ include_in_nav_localized:
 <section class="blog-container">
   <div class="blog-row">
     <div class="blog-col">
+      <div class="category-info">
+        <div class="category-title ">
+          <h4>Blogs</h4>
+        </div>
+        <div class="category-description">
+          <p>An insider’s guide to exploration, culture, lifestyle, local eats and innovation in the most forward-thinking city in the world, San Francisco.</p>
+        </div>
+        <hr>
+      </div>
       {% for post in data_paginator.posts %}
         <div class="post">
           <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
             <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
           </figure>
-          <!-- <img src="{{post.blogimage.url}}" class="img-responsive main-hero listing-img" alt="{{post.img_alt_txt}}"> -->
 
           </a>
           <div class="blog-item-text">
@@ -51,17 +59,17 @@ include_in_nav_localized:
             </h4>
 
             <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title">
-              <h3> {{post.title}} </h3>
+              <h3> {{ post.title }} </h3>
             </a>
 
             <p class="extra-links">
               {% if post.category.url_friendly_name %}
-              <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" > {{post.category.title}} </a>
+              <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" > {{ post.category.title }} </a>
               {% endif %} | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
             </p>
 
             <div class="short-description">
-              {{post.short_description}}
+              {{ post.short_description }}
             </div>
 
           </div>
