@@ -144,7 +144,19 @@
         display: block;
       }
       @include media-breakpoint-up(xl) {
-        right: -3.5%;
+        right: -4%;
+      }
+      @media only screen and (min-width: 1300px) {
+        right: -6%;
+      }
+      @media only screen and (min-width: 1400px) {
+        right: -8%;
+      }
+      @media only screen and (min-width: 1600px) {
+        right: -11%;
+      }
+      @media only screen and (min-width: 1800px) {
+        right: -12%;
       }
 
       p {
@@ -159,7 +171,7 @@
           @extend .vertical-line;
           bottom: 10px;
           width: 262px;
-          background-color: $black;
+          background-color: $vertical-line-bg;
         }
       }
     }
