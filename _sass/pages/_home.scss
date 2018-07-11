@@ -507,6 +507,15 @@
       height: 855px;
       overflow: hidden;
       @include global-transition(.3s);
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, .2);
+      }
 
       &.active {
         width: 50%;
@@ -523,6 +532,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: 1;
         width: 700px;
         padding: 40px;
         color: $white;
