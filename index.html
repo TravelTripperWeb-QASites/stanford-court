@@ -108,9 +108,6 @@ meta_tags:
       {% endregionblock %}
     </div>
     <div class="content">
-      <!-- <span class="plus-icon">
-        <a href="/gallery/"><img src="/assets/images/home/camera-icon.png" alt="Camera"></a>
-      </span> -->
       {% regionblock rooms-header, type: header %}
       <h3 >COMFY DOESN’T MEAN CONFINING</h3>
       {% endregionblock %}
@@ -197,7 +194,7 @@ meta_tags:
     {% for gallery in gallery-item  | limit: 4 %}
     <div class="item {% if forloop.first == true %} active {% endif %}">
       <a href="/gallery/" class="img-block">
-        <div style="background-image:url({{ gallery.image.url }});">
+        <div style="background-image:url({{ gallery.image.url_large }});">
         </div>
       </a>
       <a href="/gallery/">
