@@ -304,6 +304,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144351/thumb_SC-King-3.png",
       "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144351/SC-King-3.png",
       "alt": "SC-King-3"
+    },
+    {
+      "name": "SC-King-4-RT",
+      "file_name": "SC-King-4-RT.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/SC-King-4-RT.png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-11-144437",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 2335373,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/large_SC-King-4-RT.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/medium_SC-King-4-RT.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/small_SC-King-4-RT.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/xsmall_SC-King-4-RT.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/thumb_SC-King-4-RT.png",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144437/SC-King-4-RT.png",
+      "alt": "SC-King-4-RT"
     }
   ],
   "description": ""
