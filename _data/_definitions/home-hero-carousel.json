@@ -1,9 +1,9 @@
 {
   "title": {
-    "label": "Image Name"
+    "label": "video title"
   },
-  "image": {
-    "type": "image",
+  "video url": {
+    "type": "text",
     "required": true
   },
   "sort_order": {
