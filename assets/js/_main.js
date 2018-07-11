@@ -139,6 +139,7 @@ $(document).ready(function () {
         }
       ]
     });
+    $('.loading').css('display', 'none');
   },2500);
 
   $("#input_15").datepicker();
