@@ -2,10 +2,13 @@
 .brg-widget {
   position: absolute;
   bottom: 191px;
-  width: 95.5%;
+  width: auto;
   margin: 0 15px;
+  @include media-breakpoint-up(sm) {
+    width: 95.5%;
+  }
   @include media-breakpoint-up(md) {
-    width: 100%;
+    width: 96.5%;
   }
   @include media-breakpoint-up(lg) {
     @include make-col(6);
