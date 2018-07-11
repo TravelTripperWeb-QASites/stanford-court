@@ -10,8 +10,11 @@ meta_tags:
 <div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
   {% assign hero-slide = site.data._models.home-hero-carousel %}
   <div class="carousel-inner" role="listbox">
-    {% for banner in hero-slide %}
-    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" data-resize style="background-image: url('{{ banner.image.url_large }}');">
+    {% for banner in hero-slide  | limit: 1 %}
+    <div class="carousel-item background-cover active" style="background-image: url('{{ banner.image.url_large }}');">
+      <video autoplay muted loop poster="transparent.png" id="stanfordVideo">
+        <source src="banner.video.url" type="video/mp4">
+      </video>
     </div>
     {% endfor %}
   </div>

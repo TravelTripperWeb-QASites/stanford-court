@@ -1,9 +1,13 @@
 {
   "title": {
-    "label": "video title"
+    "label": "video Name"
   },
-  "video url": {
-    "type": "text",
+  "image": {
+    "type": "image",
+    "required": false
+  },
+  "video": {
+    "type": "video",
     "required": true
   },
   "sort_order": {
