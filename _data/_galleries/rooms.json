@@ -418,6 +418,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144632/thumb_SC-DD-Lifestyle.png",
       "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144632/SC-DD-Lifestyle.png",
       "alt": "SC-DD-Lifestyle"
+    },
+    {
+      "name": "SC-DD-1.",
+      "file_name": "SC-DD-1..jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/SC-DD-1..png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-11-144707",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 2086546,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/large_SC-DD-1..png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/medium_SC-DD-1..png",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/small_SC-DD-1..png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/xsmall_SC-DD-1..png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/thumb_SC-DD-1..png",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144707/SC-DD-1..png",
+      "alt": "SC-DD-1."
     }
   ],
   "description": ""
