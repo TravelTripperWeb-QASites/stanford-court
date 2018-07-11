@@ -4,46 +4,21 @@
   "image": {
     "name": "IMG_0111",
     "file_name": "IMG_0111.jpg",
-    "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/IMG_0111.png",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/IMG_0111.png",
     "tags": "",
     "description": "",
-    "date_added": "2018-07-11-124912",
+    "date_added": "2018-07-11-125355",
     "file_type": "image/jpeg",
-    "width": 1800,
-    "height": 1200,
-    "file_size": 2091301,
-    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/large_IMG_0111.png",
-    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/medium_IMG_0111.png",
-    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/small_IMG_0111.png",
-    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/xsmall_IMG_0111.png",
-    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/thumb_IMG_0111.png",
-    "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-124912/IMG_0111.png",
-    "alt": "Seven Stills pairing",
-    "caption": "",
-    "crop": {
-      "origin": {
-        "x": 0,
-        "y": 0
-      },
-      "width": 1800,
-      "height": 1046
-    },
-    "croppedImage": {
-      "name": "IMG_0111",
-      "file_name": "IMG_0111.png",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/IMG_0111.png",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-07-11-125228",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1046,
-      "file_size": 1717172,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/large_IMG_0111.png",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/medium_IMG_0111.png",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/small_IMG_0111.png",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/xsmall_IMG_0111.png",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125228/thumb_IMG_0111.png"
-    }
+    "width": 1200,
+    "height": 800,
+    "file_size": 1038683,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/large_IMG_0111.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/medium_IMG_0111.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/small_IMG_0111.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/xsmall_IMG_0111.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/thumb_IMG_0111.png",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-125355/IMG_0111.png",
+    "alt": "Seven Stills",
+    "caption": ""
   }
 }
