@@ -247,6 +247,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144140/thumb_SC-Desk-RT.png",
       "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144140/SC-Desk-RT.png",
       "alt": "SC-Desk-RT"
+    },
+    {
+      "name": "SC-King-1",
+      "file_name": "SC-King-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/SC-King-1.png",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-11-144206",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 2136305,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/large_SC-King-1.png",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/medium_SC-King-1.png",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/small_SC-King-1.png",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/xsmall_SC-King-1.png",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/thumb_SC-King-1.png",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_17356/media/2018-07-11-144206/SC-King-1.png",
+      "alt": "SC-King-1"
     }
   ],
   "description": ""
