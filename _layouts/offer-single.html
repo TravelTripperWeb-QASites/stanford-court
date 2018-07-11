@@ -56,25 +56,21 @@ layout: default
   </div>
 
   <div class="gallery-sec">
+    {% assign gallery-cross = site.data._models.gallery-cross-sell %}
+    {% for gallery in gallery-cross %}
     <div class="gallery-sec-inner">
-      <div class="img-sec background-cover" style="background-image: url('/assets/images/offers/gallery.jpg');">
+      <div class="img-sec background-cover" style="background-image: url('{{gallery.image.url_large}}');">
       </div>
       <div class="content">
-        {% regionblock offer_gallery_title, type: header %}
-          <h3>Gallery</h3>
-        {% endregionblock %}
-        {% regionblock offer_gallery_link, type: text %}
+          <h3>{{gallery.title}}</h3>
           <a href="/gallery/" class="primary-btn-inverse">See More</a>
-        {% endregionblock %}
-        {% regionblock offer_gallery_text, type: text %}
-          <p> There’s no better place to un-lock the real San Francisco. Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do. We love to share and can’t wait to help you explore. </p>
-        {% endregionblock %}
+          {{gallery.description}}
       </div>
       <div class="tag-line-text">
-        {% regionblock tagline_text type: text %}
-          <p>Our Gallery</p>
-        {% endregionblock %}
+          <p>{{gallery.tag-line}}</p>
       </div>
+
     </div>
+    {% endfor %}
   </div>
 </section>
