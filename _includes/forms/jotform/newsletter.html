@@ -1,6 +1,10 @@
 <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.newsletter-id }}/" method="post" name="form_{{ site.data.forms.jotform.newsletter-id }}" id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
   <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
   <input class="form-control" type="email" aria-label="Email" title="Email" id="input_3" name="q3_input3" placeholder="Enter your email address here*" required>
-  <button class="black-btn" type="submit" id="input_2">submit</button>
+  <button class="black-btn" type="submit" id="subscribe">submit</button>
+  <div class="tnc pl-5 pt-2">
+  <input type="checkbox" class="form-check-input" id="agree" name="q4_iAgree[]" value="agree" required>
+  <label class="form-check-label" for="agree">I agree to the <a href="/privacy-policy/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.</label>
+  </div>
   <input type="hidden" id="" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
 </form>
