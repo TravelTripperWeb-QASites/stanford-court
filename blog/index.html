@@ -21,12 +21,14 @@ include_in_nav_localized:
 <section class="inner-nav mb-80">
   <ul>
     <li>
-      <a href="/blog/" class="active" >All</a>
-  {% assign categories = site.data._models.category | sort: 'order' | descending %}
-  {% for categorylist in categories %}
-    <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
-  {% endfor %}
-</li>
+      <a href="/blog/" class="active">All</a>
+      {% assign categories = site.data._models.category | sort: 'order' | descending %}
+      {% for categorylist in categories %}
+      <a href="/blog/category/{{ categorylist.url_friendly_name }}/" title="{{ categorylist.title }}">
+        {{ categorylist.title }}
+      </a>
+      {% endfor %}
+    </li>
   </ul>
 </section>
 
@@ -35,7 +37,7 @@ include_in_nav_localized:
     <div class="blog-col">
       <div class="category-info">
         <div class="category-title ">
-          <h4>Blogs</h4>
+          <h4>Blog</h4>
         </div>
         <div class="category-description">
           <p>An insider’s guide to exploration, culture, lifestyle, local eats and innovation in the most forward-thinking city in the world, San Francisco.</p>
