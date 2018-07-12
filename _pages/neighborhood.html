@@ -7,75 +7,73 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner without-text background-cover" style="background-image: url('/assets/images/neighborhood/hero.jpg');">
-</div>
+<section class="inner-banner background-cover" style="background-image: url('/assets/images/neighborhood/hero.jpg');">
+  <div class="banner-text">
+    {% regionblock banner_title, type: header %}
+      <h1>LOCATION</h1>
+    {% endregionblock %}
+  </div>
+</section>
 
-<section class="page-intro">
-  <div class="page-intro-inner m-0 d-flex align-items-center">
-    <div class="gradient-bg">
-      <div class="gradient-bg-inner">
-        <div class="text-inner">
-          {% regionblock offer_header, type: header %}
-            <h4>San francisco</h4>
-          {% endregionblock %}
-          {% regionblock offer_header, type: header %}
-            <h3>THE PERFECT<br>LOCATION </h3>
-          {% endregionblock %}
-          {% regionblock location_text, type: text %}
-            <p class="d-block d-lg-none">It’s cool. We’ll point you in the right direction. Stanford Court overlooks the city from Nob Hill, one of San Francisco’s most sought-after neighborhoods. It’s a great spot with some spectacular views, all just blocks away from Union Square,
-            our ideal location connects you with the entire city. Whether you’re headed to the Financial District, looking for the best dim sum in Chinatown, or meeting up at the Moscone center, everything you need is easily within walking distance.</p>
-          {% endregionblock %}
-        </div>
-        <div class="image background-cover" style="background-image: url('/assets/images/neighborhood/intro.jpg');"></div>
-      </div>
+<section class="inner-intro">
+  <div class="inner-intro-row m-0">
+    <div class="heading">
+      {% regionblock intro_section_sub_title, type: header %}
+        <h4>San Fransisco</h4>
+      {% endregionblock %}
+      {% regionblock intro_section_title, type: header %}
+        <h3>The Perfect Location</h3>
+      {% endregionblock %}
     </div>
-    <div class="content d-none d-lg-block">
-      {% regionblock location_text, type: text %}
+    <div class="content">
+      {% regionblock intro_section_text, type: text %}
         <p>It’s cool. We’ll point you in the right direction. Stanford Court overlooks the city from Nob Hill, one of San Francisco’s most sought-after neighborhoods. It’s a great spot with some spectacular views, all just blocks away from Union Square. Whether you’re headed to the Financial District, looking for the best dim sum in Chinatown, or meeting up at the Moscone center, everything you need is easily within walking distance.</p>
       {% endregionblock %}
     </div>
   </div>
 </section>
 
-<div class="map d-none d-md-block" id="map">
-  <img src="/assets/images/neighborhood/map.jpg" alt="Map">
-</div>
-
-<section class="local-attractions">
-  {% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
-  <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      {% for attraction in neighborhood %}
-        <div data-markerid="{{ forloop.index }}" class="carousel-item {% if forloop.first %}active{% endif %} background-cover">
-          <div class="attractions-wrapper">
-            <div class="details pt-5">
-              <div class="attraction-info">
-                <h4 class="d-block d-md-none">Local attractions</h4>
-                <h3>{{ attraction.title }}</h3>
-                <h4>{{ attraction.address }}
-                  <span>{{ attraction.distance }}</span>
-                </h4> {{ attraction.details }}
-                <div>
-                  <a class="primary-btn" href="{{attraction.url}}" target="_blank">Website</a>
+<section class="neighborhood-map">
+  <div class="neighborhood-map-inner m-0">
+    <div class="map d-none d-md-block" id="map"> </div>
+    <div class="local-attractions">
+      {% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
+      <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          {% for attraction in neighborhood %}
+            <div data-markerid="{{ forloop.index }}" class="carousel-item {% if forloop.first %}active{% endif %} background-cover">
+              <div class="attractions-wrapper">
+                <div class="details">
+                  <div class="attraction-info">
+                    <h4 class="d-block d-md-none">Local attractions</h4>
+                    <h3>{{ attraction.title }}</h3>
+                    <h4>{{ attraction.address }}
+                      <span>{{ attraction.distance }}</span>
+                    </h4>
+                    {{ attraction.details | truncatewords: 20 }}
+                    <div>
+                      <a class="primary-btn" href="{{attraction.url}}" target="_blank">Website</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="image-slider  background-cover" style="background-image:url('{{ attraction.image.url_medium }}'); "></div>
               </div>
             </div>
-            <div class="image-slider  background-cover" style="background-image:url('{{ attraction.image.url_medium }}'); "></div>
-          </div>
+          {% endfor %}
         </div>
-      {% endfor %}
-    </div>
-    <div class="local-attractions-row justify-content-end">
-      <div class="nav-controls">
-        <div class="carousel-nav white">
-          <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev">
-            <i class="fas fa-caret-left"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#attractionsCarousel" data-slide="next">
-            <i class="fas fa-caret-right"></i>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="local-attractions-row">
+          <div class="nav-controls">
+            <div class="carousel-nav white">
+              <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev">
+                <i class="fas fa-caret-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#attractionsCarousel" data-slide="next">
+                <i class="fas fa-caret-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,10 +96,11 @@ meta_tags:
   </div>
 </section>
 
+{% include special-offers-text.html %}
 
 <section class="find-your-way">
   <div class="find-your-way-inner">
-    <div class="image-part background-cover" style="background-image: url('/assets/images/neighborhood/find-way.jpg');">
+    <div class="image-part background-cover" style="background-image: url('/assets/images/neighborhood/directions.jpg');">
     </div>
     <div class="content">
       <div class="content-inner background-cover">
@@ -133,5 +132,3 @@ meta_tags:
     </div>
   </div>
 </section>
-
-{% include special-offers.html %}

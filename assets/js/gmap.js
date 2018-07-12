@@ -229,9 +229,9 @@ var gmarkers1 = [];
  */
 
 function initialize() {
-   var minZoomLevel = 12;
+   var minZoomLevel = 8;
    if (screen.width > 1300) {
-       minZoomLevel = 14.7;
+       minZoomLevel = 10;
    }
     var center = new google.maps.LatLng(37.794511, -122.436291);
     var mapOptions = {
