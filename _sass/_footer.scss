@@ -407,3 +407,10 @@ footer {
     }
   }
 }
+
+#subscribe, #contact-btn, #business-btn {
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}

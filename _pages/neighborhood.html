@@ -37,6 +37,18 @@ meta_tags:
   <div class="neighborhood-map-inner m-0">
     <div class="map d-none d-md-block" id="map"> </div>
     <div class="local-attractions">
+      <div class="nav-controls">
+        <div class="carousel-nav white">
+          <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev">
+            <i class="fas fa-caret-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#attractionsCarousel" data-slide="next">
+            <i class="fas fa-caret-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
       {% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
       <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
@@ -50,7 +62,7 @@ meta_tags:
                     <h4>{{ attraction.address }}
                       <span>{{ attraction.distance }}</span>
                     </h4>
-                    {{ attraction.details | truncatewords: 20 }}
+                    {{ attraction.details }}
                     <div>
                       <a class="primary-btn" href="{{attraction.url}}" target="_blank">Website</a>
                     </div>
@@ -60,20 +72,6 @@ meta_tags:
               </div>
             </div>
           {% endfor %}
-        </div>
-        <div class="local-attractions-row">
-          <div class="nav-controls">
-            <div class="carousel-nav white">
-              <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev">
-                <i class="fas fa-caret-left"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#attractionsCarousel" data-slide="next">
-                <i class="fas fa-caret-right"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
