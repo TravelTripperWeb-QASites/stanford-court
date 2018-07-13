@@ -233,13 +233,15 @@ function initialize() {
    if (screen.width > 1300) {
        minZoomLevel = 10;
    }
-    var center = new google.maps.LatLng(37.794511, -122.436291);
+    var center = new google.maps.LatLng(37.791505,  -122.409598);
     var mapOptions = {
-        zoom: 12,
+        zoom: 15,
         minZoom: minZoomLevel,
         maxZoom: 17,
         styles: mapstyle,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: {lat: 37.791505, lng: -122.409598}
+
     };
 
 
@@ -363,7 +365,8 @@ filterMarkers = function (category) {
    if($('.mapview').attr('data-mapfor') =='contact'){
 
    }else{
-       map.fitBounds(bounds);
+
+       //map.fitBounds(bounds);
    }
 
 };
