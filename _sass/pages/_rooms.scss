@@ -15,12 +15,17 @@
     @include make-col-ready();
     min-height: 468px;
     margin-bottom: 50px;
+    background-size: 100% 100%;
+    transition: all .5s ease;
     @include media-breakpoint-up(md) {
       @include make-col(4.3);
       min-height: 540px;
     }
     @media only screen and (max-width: 460px) {
       min-height: 368px;
+    }
+    &:hover {
+      background-size: 110% 110%;
     }
   }
 

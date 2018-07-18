@@ -22,11 +22,15 @@
       position: relative;
       min-height: 339px;
       margin-bottom: 47px;
+      background-size: 100% 100%;
+      transition: all .5s ease;
       @include media-breakpoint-up(md) {
         min-height: 357px;
         margin-bottom: 20px;
       }
-
+      &:hover {
+        background-size: 110% 110%;
+      }
       a {
         position: absolute;
         top: 50%;

@@ -132,7 +132,7 @@ $(document)
     console.log(pathArray[pathArray.length - 3]);
     if ((pathArray[pathArray.length - 2] == 'events-testing' && (pathArray[pathArray.length - 1])
         .length > 1) || pathArray[pathArray.length - 3] == 'events-testing') {
-      window.location.href = "http://master.stanford-court-phase-1.sites.traveltripper.io/events-testing/";
+      window.location.href = "https://www.stanfordcourt.com/events-testing/";
     }
 
     //smooth scroll for banner nav in hotel page
