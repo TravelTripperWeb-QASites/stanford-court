@@ -36,19 +36,19 @@
       font-size: 1.125rem;
     }
 
-    figure {
+    .image {
       height: 486px;
-      margin-bottom: 23px;
-      background-size: 100% 100%;
-      transition: all .5s ease;
-
-      &:hover {
-        background-size: 110% 110%;
-        // background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, .4) 0%, transparent 50%);
-        // background-image: linear-gradient(0deg,rgba(0, 0, 0, .4) 0%, transparent 50%);
-        // filter: grayscale(70%) opacity(70%);
-        // -webkit-filter:  grayscale(70%) opacity(70%);
-        // background-color: rgba(92, 111, 123,1);
+      margin-bottom: 32px;
+      overflow: hidden;
+      figure {
+        height: 486px;
+        margin: 0;
+        transition: all .5s ease;
+        &:hover {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -69,5 +69,4 @@
       right: 94px !important;
     }
   }
-
 }
