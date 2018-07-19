@@ -1,5 +1,6 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
+
 .room-single {
   @include container-fix-2;
 
@@ -11,21 +12,33 @@
     }
   }
 
+
   .room-image {
     @include make-col-ready();
-    min-height: 468px;
     margin-bottom: 50px;
-    background-size: 100% 100%;
-    transition: all .5s ease;
+    padding: 0;
+    overflow: hidden;
     @include media-breakpoint-up(md) {
       @include make-col(4.3);
-      min-height: 540px;
     }
-    @media only screen and (max-width: 460px) {
-      min-height: 368px;
-    }
-    &:hover {
-      background-size: 110% 110%;
+
+    figure {
+      min-height: 468px;
+      margin: 0;
+      padding-right: 15px;
+      padding-left: 15px;
+      transition: all .5s ease;
+      @include media-breakpoint-up(md) {
+        min-height: 540px;
+      }
+      @media only screen and (max-width: 460px) {
+        min-height: 368px;
+      }
+      &:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -54,6 +67,7 @@
         h3 {
           margin-bottom: 24px;
           color: $white;
+
           &:hover {
             color: $primary-color;
           }
@@ -63,13 +77,14 @@
       p {
         padding-bottom: 25px;
         color: $white;
+
         span {
           font-family: $global-font !important;
           color: $primary-color !important;
         }
       }
-   }
- }
+    }
+  }
 }
 // Room Feature
 
@@ -151,7 +166,6 @@
     }
   }
 }
-
 // Details scss
 .details-wrapper {
   @include make-row();
@@ -208,6 +222,7 @@
           font-family: $global-font-bold;
           font-weight: 700;
           color: $dark-text;
+
           a {
             color: $dark-text;
           }
@@ -258,6 +273,7 @@
         @include media-breakpoint-up(md) {
           padding-bottom: 27px;
         }
+
         span {
           font-family: $global-font !important;
           color: $primary-color !important;
@@ -327,6 +343,7 @@
   }
 }
 // UNIQUE ROOM FEATURES
+
 .room-amenites {
   position: relative;
   padding-top: 159px;
@@ -361,7 +378,7 @@
     background-image: none;
     @include media-breakpoint-up(md) {
       padding: 64px;
-      background-image: url('/assets/images/footer-map.png');
+      background-image: url("/assets/images/footer-map.png");
       background-repeat: no-repeat;
       background-position: top -83px right -341px;
     }
@@ -442,7 +459,7 @@
 .rooms-search {
   margin: 85px auto;
   padding: 80px 0 55px;
-  background: url('/assets/images/rooms/search_bg.jpg');
+  background: url("/assets/images/rooms/search_bg.jpg");
   @include media-breakpoint-down(sm) {
     display: none;
   }
@@ -502,7 +519,7 @@
       }
 
       &.date-pic {
-        background: url('/assets/images/rooms/angle-up.png');
+        background: url("/assets/images/rooms/angle-up.png");
         background-repeat: no-repeat;
         background-position: right 20px bottom 22px;
       }
@@ -589,8 +606,7 @@
       transform: translate(-50%, -50%);
     }
 
-    .number-input
-    a.plus:after {
+    .number-input a.plus:after {
       transform: translate(-50%, -50%) rotate(90deg);
     }
 

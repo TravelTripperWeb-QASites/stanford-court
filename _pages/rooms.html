@@ -39,7 +39,11 @@ meta_tags:
 <section class="background-cover" style="background-image:url({{ room.roombackgroundimage.url }});">
   <div class="room-single">
     <div class="room-row align-items-center">
-      <div class="room-image  background-cover" style="background-image:url({{ room.roomimage.url }});"></div>
+
+        <div class="room-image">
+          <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
+        </div>
+
       <div class="room-info">
         <div class="info">
           <a href="/room/#{{ room.roomtype | downcase }}">

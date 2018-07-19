@@ -5,7 +5,9 @@
   <div class="slick-controls" id="special-offers">
     <div class="item" ng-repeat="offer in offers.special_rates | limitTo: 3">
       <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
-      <figure class="background-cover" ng-style="{'background-image':'url([[ offer.lead_photo_url.large ]])'}"></figure>
+      <div class="image">
+        <figure class="background-cover" ng-style="{'background-image':'url([[ offer.lead_photo_url.large ]])'}"></figure>
+      </div>
       <hr>
       <span>[[ $index + 1 ]]</span>
       <a class="primary-btn float-right" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="">Discover More</a>
