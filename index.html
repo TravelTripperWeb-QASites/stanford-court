@@ -12,9 +12,13 @@ meta_tags:
   <div class="carousel-inner" role="listbox">
     {% for banner in hero-slide  | limit: 1 %}
     <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" data-resize style="background-image: url('{{ banner.image.url_large }}');">
-      <video autoplay muted loop poster="transparent.png" id="stanfordVideo">
-        <source src="{{ banner.video }}" type="video/mp4">
-      </video>
+      <div class="desktop-overlay">
+        <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" autoplay muted loop poster="transparent.png" id="stanfordVideo">
+            <source src="{{ banner.video }}" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
     {% endfor %}
   </div>
