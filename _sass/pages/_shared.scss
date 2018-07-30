@@ -72,7 +72,7 @@
 
   .banner-nav {
     position: absolute;
-    top: 35%;
+    top: 65%;
     right: 0;
     left: 0;
     max-width: 770px;
@@ -80,7 +80,7 @@
     padding: 0;
     text-align: center;
     @include media-breakpoint-up(md) {
-      top: 30%;
+      top: 60%;
     }
 
     a {

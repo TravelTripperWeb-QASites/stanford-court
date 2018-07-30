@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign promos = page %}
+{% assign model = page %}
+
+{% assign promo_seo_title = promos.promo_seo_title %}
+<div class="inner-banner without-text background-cover" style="background-image:url({{promos.bannerimage.url}})">
+</div>
+
+<section class="offers-carousel-main">
+  <div class="offers-inner-carousel">
+    <div class="tag-line-text">
+      <p>{{promos.title}}</p>
+    </div>
+    <div class="details d-flex align-items-center">
+      <div class="offer-info">
+        <a class="back-btn">{{promos.subtitle}}</a> {{promos.promocontent}}
+        <div>
+          <a class="primary-btn" target="_blank" href="{{promos.promolink}}">
+          {{promos.button_label1}}
+        </a>
+        </div>
+        {% if promos.button_label2 and promos.button_label2 != "" %}
+          <a class="secondary-btn" target="_blank" href="{{promos.second_promolink}}">
+            {{promos.button_label2}}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="image-slider background-cover" style="background-image:url({{promos.promoimage.url}})">
+    </div>
+  </div>
+</section>
+
+{% include special-offers.html %}

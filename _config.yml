@@ -92,6 +92,8 @@ page_gen: #
   - data: 'category'
     template: 'category-list'
     dir: 'blog/category'
+  - data: 'promos'
+    template: 'promo-details'
   # - data: 'events'
   #   template: 'event-single'
   #   dir: 'events'
