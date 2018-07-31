@@ -79,9 +79,7 @@
     margin: auto;
     padding: 0;
     text-align: center;
-    @include media-breakpoint-up(md) {
-      top: 60%;
-    }
+
 
     a {
       position: relative;
