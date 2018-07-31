@@ -1,0 +1,32 @@
+{
+  "order": 3,
+  "title": "NOOK",
+  "category": "attractions",
+  "address": "1500 Hyde St",
+  "distance": "0.7 miles",
+  "Lattitude": 37.794692,
+  "Longitude": -122.417987,
+  "image": {
+    "name": "frmNook1",
+    "file_name": "frmNook1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/frmNook1.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-30-232059",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 400,
+    "file_size": 74043,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/large_frmNook1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/medium_frmNook1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/small_frmNook1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/xsmall_frmNook1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/thumb_frmNook1.jpg",
+    "git_file_name": "_assets/image_data/frmNook1.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232059/frmNook1.jpg",
+    "alt": "Nook",
+    "caption": ""
+  },
+  "details": "<p>Nook is a charming cafe and wine bar in Russian Hill. By day, abundant natural light and its comfortable vibe make it an ideal spot for a relaxing cup of coffee or getting some work done. Sample the tasty menu, prepared with healthy and fresh ingredients, while watching the cable cars roll by. In the evening, it evolves into a cozy setting for date night, offering a rotating wine selection and inventive Soju cocktails.<span style=\"background-color: rgba(0, 0, 0, 0.03); color: rgba(0, 0, 0, 0.87); font-family: Roboto, Arial, sans-serif; font-size: 13px;\">cafenook.com</span></p>",
+  "url": "cafenook.com"
+}

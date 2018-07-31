@@ -6,17 +6,20 @@ main:
         url: /amenities/
   - title: Rooms
     url: /rooms/
+    dropdown:
+        - title: ADA Rooms
+          url: /room/#accessible
   - title: Special Offers
     url: /offers/
   - title: Dining
     url: /dining/
-  - title: Meetings
-    url: /meetings/
+  - title: Work Life
+    url: /work-life/
     dropdown:
         - title: Business Travel
           url: /business-travel/
-        - title: Meeting Rewards
-          url: /meeting-rewards/
+        - title: Special Promotion
+          url: /special-promotion/
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
@@ -44,3 +47,5 @@ footer:
     url: /privacy-policy/
   - title: Blog
     url: /blog/
+  - title: Accessibility Statement
+    url: /accessibility/
