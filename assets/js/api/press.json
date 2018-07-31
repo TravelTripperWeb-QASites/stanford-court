@@ -1,0 +1,12 @@
+---
+---
+{% assign allpress =  site.data._models.press | sort: 'order' | reverse %}
+{"allpress": [{% for press in allpress %}
+   {
+     "title": {{ press.title | jsonify }},
+     "description": {{ press.description | jsonify }},
+     "linkurl": {{ press.linkurl | jsonify }},
+     "order": {{ press.order }}
+   }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]}
