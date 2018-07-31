@@ -27,7 +27,7 @@ layout: default
         <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
         <h4>tonight’s rate
           <span>
-            <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room_category='+room.category+'&selected_room='+room.code ]]" target="_blank" ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] [[ room.todayRate ]]
+            <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
             </a>
           </span>
         </h4>
@@ -48,7 +48,7 @@ layout: default
         <div>
           <a class="primary-btn" href="/contact/">Contact Us</a>
         </div>
-        <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room_category=[[ room.category ]]&selected_room=[[ room.code ]]">Book This Room</a>
+        <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room=[[ room.code ]]">Book This Room</a>
       </div>
     </div>
     <div class="image-slider">

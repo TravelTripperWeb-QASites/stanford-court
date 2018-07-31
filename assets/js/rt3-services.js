@@ -198,6 +198,10 @@ angular.module('rezTrip')
                       todayRate = {'todayRate': Math.round(roomRate)};
 
                     }
+
+                    if(room.category == 'Suites' && room.code != 'PR1K') {
+                      self.roomsList[key].category = 'Skyline';
+                    }
                     angular.extend(self.roomsList[key] , todayRate);
 
                 });
@@ -350,7 +354,7 @@ angular.module('rezTrip')
                                  default:
                                      value.prevOfferCode = response.special_rates[key-1].rate_plan_code;
                                      value.nextOfferCode = response.special_rates[key+1].rate_plan_code;
-                             } 
+                             }
                           }
 
                           angular.extend(specialRates.sRdetail, value);
