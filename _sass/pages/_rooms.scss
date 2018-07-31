@@ -107,7 +107,7 @@
       max-width: 100%;
       margin-top: -70px;
       margin-right: inherit;
-      padding: 13px 0;
+      padding: 13px 0 70px;
       background: $black;
       @include media-breakpoint-up(md) {
         max-width: 818px;
@@ -128,8 +128,10 @@
           position: relative;
           float: left;
           width: 49%;
+          height: 35px;
           margin-bottom: 20px;
-          padding-left: 20px;
+          //padding-left: 20px;
+          padding: 0 20px;
           color: $white;
           list-style: none;
           @include media-breakpoint-up(lg) {
