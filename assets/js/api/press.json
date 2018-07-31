@@ -1,6 +1,6 @@
 ---
 ---
-{% assign allpress =  site.data._models.press | sort: 'order' %}
+{% assign allpress =  site.data._models.press | sort: 'order' | reverse %}
 {"allpress": [{% for press in allpress %}
    {
      "title": {{ press.title | jsonify }},
