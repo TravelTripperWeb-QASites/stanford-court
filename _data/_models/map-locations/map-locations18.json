@@ -1,0 +1,32 @@
+{
+  "order": 9,
+  "title": "Coit Tower",
+  "details": "<p>Perched atop Telegraph Hill, Coit Tower is one of San Francisco&rsquo;s most iconic structures. The art deco tower was built in 1933 and houses a collection of murals commissioned as part of the New Deal&rsquo;s Public Works of Arts Projects. The lobby floor, which is free to the public, presents murals with themes spanning agriculture, banking, farming, and infrastructure. Purchase a ticket to see the frescoes on the second floor, or ride the elevator to the top for panoramic views of the city.</p>",
+  "category": "attractions",
+  "address": "1 Telegraph Hill Blvd",
+  "distance": "1.5 miles",
+  "Lattitude": 37.802468,
+  "Longitude": -122.40571,
+  "image": {
+    "name": "photodune-11243540-san-francisco-coit-tower-m",
+    "file_name": "photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-30-232103",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 400,
+    "file_size": 133550,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/large_photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/medium_photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/small_photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/xsmall_photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/thumb_photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "git_file_name": "_assets/image_data/photodune-11243540-san-francisco-coit-tower-m.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232103/photodune-11243540-san-francisco-coit-tower-m.jpg",
+    "alt": "Coit Tower",
+    "caption": ""
+  },
+  "url": " sfrecpark.org"
+}
