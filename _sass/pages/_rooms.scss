@@ -130,8 +130,7 @@
           width: 49%;
           height: 35px;
           margin-bottom: 20px;
-          //padding-left: 20px;
-          padding: 0 20px;
+          padding: 0 20px; 
           color: $white;
           list-style: none;
           @include media-breakpoint-up(lg) {
