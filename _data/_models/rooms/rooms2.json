@@ -1,7 +1,7 @@
 {
   "sort_order": 6,
   "title": "Accessible Rooms",
-  "roomtype": "Accessible Rooms",
+  "roomtype": "Accessible",
   "long_description": "<p>Accessible Rooms include features for guests with additional needs. Rooms include either roll in shower or tub with grab bars. All rooms are wheelchair accessible &amp; include ADA compliant phones. Some features vary by room type, including door bell, low peep hole and folding seat. Portable tub seats and ADA sets that include TTY, alarm clock, portable door bell &amp; pillow shaker are available on request. Rooms are equipped with 49&rdquo; HD television with HDMI and USB Ports, USB outlets, and a mini-fridge.</p>",
   "roomimage": {
     "name": "SC-DD-1.",
@@ -45,6 +45,6 @@
     "alt": "standard_bg",
     "caption": ""
   },
-  "more_info": "",
+  "more_info": "/room/#accessible/",
   "book_this_room": "https://stanfordcourt.reztrip.com/search?selected_room= AC1K&selected_room_category= Accessible&starting_page=search"
 }
