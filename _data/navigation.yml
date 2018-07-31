@@ -14,12 +14,12 @@ main:
   - title: Dining
     url: /dining/
   - title: Work Life
-    url: /work-life/
+    url: /meetings/
     dropdown:
         - title: Business Travel
           url: /business-travel/
-        - title: Special Promotion
-          url: /special-promotion/
+        - title: Meeting Rewards
+          url: /meeting-rewards/
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
