@@ -1,0 +1,32 @@
+{
+  "order": 6,
+  "title": "Grace Cathedral",
+  "details": "<p>Situated on the west end of Huntington Park, Grace Cathedral is an Episcopal church and the largest Gothic structure in the West. The Doors of Paradise&mdash; a replica of 15th century artist Lorenzo Ghiberti&rsquo;s famous gilded bronze doors greet visitors to the Cathedral&rsquo;s entrance. Inside, large-scale murals by Jan Henryk de Rosen adorn the walls and two elaborate labyrinths cover the floors. Each Tuesday, hundreds gather for yoga on the labyrinth, a must-do for all yogis in town. Mats are available for loan at Stanford Court.</p>",
+  "image": {
+    "name": "Grace Cathedral 1_Huntington Park",
+    "file_name": "Grace Cathedral 1_Huntington Park.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/Grace_Cathedral_1_Huntington_Park.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-30-232100",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 400,
+    "file_size": 67133,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/large_Grace_Cathedral_1_Huntington_Park.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/medium_Grace_Cathedral_1_Huntington_Park.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/small_Grace_Cathedral_1_Huntington_Park.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/xsmall_Grace_Cathedral_1_Huntington_Park.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/thumb_Grace_Cathedral_1_Huntington_Park.jpg",
+    "git_file_name": "_assets/image_data/Grace-Cathedral-1-Huntington-Park.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232100/Grace_Cathedral_1_Huntington_Park.jpg",
+    "alt": "Grace Cathedral",
+    "caption": ""
+  },
+  "category": "attractions",
+  "address": "1100 California St",
+  "url": "gracecathedral.org",
+  "distance": "0.2 miles",
+  "Lattitude": 37.791905,
+  "Longitude": -122.413039
+}
