@@ -1,0 +1,32 @@
+{
+  "order": 7,
+  "title": "Cable Car Museum",
+  "category": "attractions",
+  "details": "<p>The Cable Car Museum offers an engaging view into the nearly 150-year history of this beloved icon of San Francisco. The Museum houses one of the first cable cars ever built, a 1873 Sutter St. grip car and trailer, as well as scale models of the 57 varieties of cable cars that have made the climb up and down Nob Hill. It also serves as the &ldquo;barn&rdquo; for the 40 cars in service today. Visitors get the unique thrill of watching the giant wheels and cables in action as they pull the trolleys through the city. Admission is free.</p>",
+  "address": " 1201 Mason St.",
+  "url": "cablecarmuseum.org",
+  "image": {
+    "name": "600x400 cable car",
+    "file_name": "600x400 cable car.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/600x400_cable_car.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-30-232055",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 400,
+    "file_size": 81048,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/large_600x400_cable_car.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/medium_600x400_cable_car.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/small_600x400_cable_car.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/xsmall_600x400_cable_car.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/thumb_600x400_cable_car.jpg",
+    "git_file_name": "_assets/image_data/600x400-cable-car.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232055/600x400_cable_car.jpg",
+    "alt": "Cable Car Museum",
+    "caption": ""
+  },
+  "Lattitude": 37.794662,
+  "Longitude": -116,
+  "distance": "0.3 miles"
+}

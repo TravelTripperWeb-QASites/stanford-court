@@ -1,0 +1,32 @@
+{
+  "order": 4,
+  "title": "Swan Oyster Depot",
+  "category": "attractions",
+  "address": "1517 Polk St",
+  "distance": "0.6 miles",
+  "Lattitude": 37.791107,
+  "Longitude": -122.420794,
+  "image": {
+    "name": "Oyster Depot stock jason-leung-708941-unsplash",
+    "file_name": "Oyster Depot stock jason-leung-708941-unsplash.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-30-232102",
+    "file_type": "image/jpeg",
+    "width": 600,
+    "height": 400,
+    "file_size": 51398,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/large_Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/medium_Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/small_Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/xsmall_Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/thumb_Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "git_file_name": "_assets/image_data/Oyster-Depot-stock-jason-leung-708941-unsplash.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-30-232102/Oyster_Depot_stock_jason-leung-708941-unsplash.jpg",
+    "alt": "Swan Oyster Depot",
+    "caption": ""
+  },
+  "details": "<p>Swan Oyster Depot may not look like much on first (or second) glance, but the no-frills raw bar and fish market is a San Francisco institution, serving fresh seafood for over 100 years. Spots at the 18-seat counter are always in high demand, but the abundant selection of lobster, crab, shrimp, salmon, oysters, clam chowder, and much (much) more is well worth the wait.</p>",
+  "url": "swanoysterdepot.us"
+}
