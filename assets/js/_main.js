@@ -65,6 +65,9 @@ $(window)
 
 $(window)
   .on("load", function () {
+    $('.loading')
+      .css('display', 'none');
+  }, 2500);
     // nav menu on hover
     $('ul.navbar-nav li.dropdown a')
       .attr('data-toggle', 'disable');
@@ -181,9 +184,7 @@ $(document)
         }
       ]
         });
-      $('.loading')
-        .css('display', 'none');
-    }, 2500);
+
 
     $("#input_15")
       .datepicker();
