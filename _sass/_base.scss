@@ -45,6 +45,22 @@ h1 {
 h2 {
   @extend h1;
 }
+.small-heading {
+  h1 {
+    font-size: 3.5rem;
+    @include media-breakpoint-up(md) {
+      font-size: 9rem;
+      line-height: 10rem;
+      letter-spacing: -34px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 10.5rem;
+    }
+    @media (min-width: 1340px) {
+      font-size: 12.5rem;
+    }
+  }
+}
 
 h3 {
   @include text-formatting($headings-font, $type-size-2, 400, 2.625rem, $secondary-light, uppercase, .4375rem);
