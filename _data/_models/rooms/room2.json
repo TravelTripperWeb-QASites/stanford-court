@@ -23,7 +23,32 @@
     "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16790/media/2018-06-22-192331/thumb_SC-King-2-Web.jpg",
     "path": "//cdn.traveltripper.io/site-assets/192_901_16790/media/2018-06-22-192331/SC-King-2-Web.jpg",
     "alt": "SC-King-2-Web",
-    "caption": "Deluxe Room"
+    "caption": "Deluxe Room",
+    "crop": {
+      "origin": {
+        "x": 1219,
+        "y": 0
+      },
+      "width": 2781,
+      "height": 2248
+    },
+    "croppedImage": {
+      "name": "SC-King-2-Web",
+      "file_name": "SC-King-2-Web.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/SC-King-2-Web.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-31-003714",
+      "file_type": "image/jpeg",
+      "width": 2781,
+      "height": 2248,
+      "file_size": 1862988,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/large_SC-King-2-Web.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/medium_SC-King-2-Web.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/small_SC-King-2-Web.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/xsmall_SC-King-2-Web.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_17719/media/2018-07-31-003714/thumb_SC-King-2-Web.jpg"
+    }
   },
   "roombackgroundimage": {
     "name": "deluxe_bg",
