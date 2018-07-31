@@ -1,6 +1,6 @@
 (function($) {
 
-  if ('[data-press]') { 
+  if ('[data-press]') {
     $.getJSON( "/assets/js/api/press.json", function( data ) {
       var pressData = data.allpress;
       $('[data-paginate]').pagination({
@@ -9,8 +9,8 @@
         showPageNumbers: false,
         showNavigator: true,
         formatNavigator: 'PAGE <%= currentPage %> OF <%= totalPage %>',
-        nextText: '<img src="http://localhost:3000/assets/images/black-arrow.png" alt="next">',
-        prevText: '<img src="http://localhost:3000/assets/images/black-arrow.png" alt="prev" style="transform: rotate(-180deg);">',
+        nextText: '<img src="/assets/images/black-arrow.png" alt="next">',
+        prevText: '<img src="/assets/images/black-arrow.png" alt="prev" style="transform: rotate(-180deg);">',
          callback: function(pressData, pagination) {
               var html = pressTemplate(pressData);
               $('[data-press]').html(html);

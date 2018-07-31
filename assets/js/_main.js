@@ -65,6 +65,7 @@ $(window)
 
 $(window)
   .on("load", function () {
+    setTimeout(function () {
     $('.loading')
       .css('display', 'none');
   }, 2500);
@@ -127,8 +128,7 @@ function pinterestShare(img, desc) {
 }
 
 // Gallery
-$(document)
-  .ready(function () {
+$(document).ready(function() {
 
     //create aray of url
     var pathArray = window.location.href.split('/');
@@ -491,7 +491,7 @@ $(document)
         });
     }, 500);
   });
-
+});
 $(window)
   .on("load resize", function (e) {
     $('.inner-nav')
