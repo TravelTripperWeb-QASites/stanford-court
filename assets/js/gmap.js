@@ -235,9 +235,9 @@ function initialize() {
    }
     var center = new google.maps.LatLng(37.791505,  -122.409598);
     var mapOptions = {
-        zoom: 15,
+        zoom: 16,
         minZoom: minZoomLevel,
-        maxZoom: 17,
+        maxZoom: 18,
         styles: mapstyle,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: {lat: 37.791505, lng: -122.409598}
