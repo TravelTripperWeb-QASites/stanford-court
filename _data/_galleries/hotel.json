@@ -218,7 +218,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/xsmall_music-room1.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/thumb_music-room1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/music-room1.jpg",
-      "alt": "Music Room"
+      "alt": "Music Room",
+      "caption": "Music Room"
     },
     {
       "name": "bar-and-lounge",
