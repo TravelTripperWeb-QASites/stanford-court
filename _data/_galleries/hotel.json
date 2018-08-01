@@ -258,7 +258,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/xsmall_registration.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/thumb_registration.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/registration.jpg",
-      "alt": "Registration"
+      "alt": "Registration",
+      "caption": "Registration"
     },
     {
       "name": "lobby-art",
