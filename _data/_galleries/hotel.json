@@ -358,7 +358,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/xsmall_map-room.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/thumb_map-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
-      "alt": "Map Room"
+      "alt": "Map Room",
+      "caption": "Map Room"
     },
     {
       "name": "audio-room1",
