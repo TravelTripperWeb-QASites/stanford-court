@@ -233,14 +233,14 @@ function initialize() {
    if (screen.width > 1300) {
        minZoomLevel = 10;
    }
-    var center = new google.maps.LatLng(37.791505,  -122.409598);
+    var center = new google.maps.LatLng(37.791961,  -122.412206);
     var mapOptions = {
         zoom: 16,
         minZoom: minZoomLevel,
         maxZoom: 18,
         styles: mapstyle,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: {lat: 37.791505, lng: -122.409598}
+        center: {lat: 37.791961, lng: -122.412206}
 
     };
 
