@@ -278,7 +278,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/xsmall_lobby-art.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/thumb_lobby-art.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/lobby-art.jpg",
-      "alt": "Lobby Art"
+      "alt": "Lobby Art",
+      "caption": "Lobby Art"
     },
     {
       "name": "lobby",
