@@ -58,7 +58,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/xsmall_music-room.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/thumb_music-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/music-room.jpg",
-      "alt": "Music Room"
+      "alt": "Music Room",
+      "caption": "Music Room"
     },
     {
       "name": "audio-room",
