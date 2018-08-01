@@ -184,7 +184,7 @@ $(document).ready(function() {
         }
       ]
         });
-
+    }, 2500);
 
     $("#input_15")
       .datepicker();
@@ -491,7 +491,7 @@ $(document).ready(function() {
         });
     }, 500);
   });
-});
+
 $(window)
   .on("load resize", function (e) {
     $('.inner-nav')
