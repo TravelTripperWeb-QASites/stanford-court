@@ -38,7 +38,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/xsmall_fitness-center.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/thumb_fitness-center.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/fitness-center.jpg",
-      "alt": "Fitness Center"
+      "alt": "Fitness Center",
+      "caption": "Fitness Center"
     },
     {
       "name": "music-room",
