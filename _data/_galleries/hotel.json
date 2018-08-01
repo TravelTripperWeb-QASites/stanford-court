@@ -18,7 +18,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/xsmall_lobby-seating.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/thumb_lobby-seating.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-025758/lobby-seating.jpg",
-      "alt": "Lobby Seating"
+      "alt": "Lounge Seating",
+      "caption": "Lounge Seating"
     },
     {
       "name": "fitness-center",
@@ -37,7 +38,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/xsmall_fitness-center.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/thumb_fitness-center.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/fitness-center.jpg",
-      "alt": "Fitness Center"
+      "alt": "Fitness Center",
+      "caption": "Fitness Center"
     },
     {
       "name": "music-room",
@@ -56,7 +58,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/xsmall_music-room.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/thumb_music-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/music-room.jpg",
-      "alt": "Music Room"
+      "alt": "Music Room",
+      "caption": "Music Room"
     },
     {
       "name": "audio-room",
@@ -75,7 +78,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/xsmall_audio-room.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/thumb_audio-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/audio-room.jpg",
-      "alt": "Audio Room"
+      "alt": "Audio Room",
+      "caption": "Audio Room"
     },
     {
       "name": "breakfast-cafe",
@@ -94,7 +98,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/xsmall_breakfast-cafe.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/thumb_breakfast-cafe.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030143/breakfast-cafe.jpg",
-      "alt": "Breakfast Cafe"
+      "alt": "Breakfast Cafe",
+      "caption": "Breakfast Cafe"
     },
     {
       "name": "fitness-center1",
@@ -113,7 +118,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030158/xsmall_fitness-center1.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030158/thumb_fitness-center1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030158/fitness-center1.jpg",
-      "alt": "Fitness Center"
+      "alt": "Fitness Center",
+      "caption": "Fitness Center"
     },
     {
       "name": "art wall - daylighted",
@@ -132,7 +138,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/xsmall_art_wall_-_daylighted.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/thumb_art_wall_-_daylighted.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
-      "alt": "Art Wall daylighted"
+      "alt": "Art Wall - Daylighted",
+      "caption": "Art Wall - Daylighted"
     },
     {
       "name": "benny-bufano",
@@ -151,7 +158,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/xsmall_benny-bufano.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/thumb_benny-bufano.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
-      "alt": "Benny Bufano"
+      "alt": "Benny Bufano",
+      "caption": "Benny Bufano"
     },
     {
       "name": "library",
@@ -170,7 +178,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/xsmall_library.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/thumb_library.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/library.jpg",
-      "alt": "Library"
+      "alt": "Library",
+      "caption": "Library"
     },
     {
       "name": "breakfast-buffet",
@@ -189,7 +198,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/xsmall_breakfast-buffet.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/thumb_breakfast-buffet.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
-      "alt": "Breakfast Buffet"
+      "alt": "Breakfast Buffet",
+      "caption": "Breakfast Buffet"
     },
     {
       "name": "music-room1",
@@ -208,7 +218,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/xsmall_music-room1.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/thumb_music-room1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030330/music-room1.jpg",
-      "alt": "Music Room"
+      "alt": "Music Room",
+      "caption": "Music Room"
     },
     {
       "name": "bar-and-lounge",
@@ -227,7 +238,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030349/xsmall_bar-and-lounge.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030349/thumb_bar-and-lounge.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030349/bar-and-lounge.jpg",
-      "alt": "Bar and Lounge"
+      "alt": "Bar and Lounge",
+      "caption": "Bar and Lounge"
     },
     {
       "name": "registration",
@@ -246,7 +258,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/xsmall_registration.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/thumb_registration.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030413/registration.jpg",
-      "alt": "Registration"
+      "alt": "Registration",
+      "caption": "Registration"
     },
     {
       "name": "lobby-art",
@@ -265,7 +278,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/xsmall_lobby-art.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/thumb_lobby-art.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030428/lobby-art.jpg",
-      "alt": "Lobby Art"
+      "alt": "Lobby Art",
+      "caption": "Lobby Art"
     },
     {
       "name": "lobby",
@@ -284,7 +298,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/xsmall_lobby.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/thumb_lobby.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/lobby.jpg",
-      "alt": "Lobby"
+      "alt": "Lobby",
+      "caption": "Lobby"
     },
     {
       "name": "lounge-and-bar",
@@ -303,7 +318,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/xsmall_lounge-and-bar.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/thumb_lounge-and-bar.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/lounge-and-bar.jpg",
-      "alt": "Lounge and bar"
+      "alt": "Lounge and Bar",
+      "caption": "Lounge and Bar"
     },
     {
       "name": "lounge-and-bar1",
@@ -322,7 +338,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030537/xsmall_lounge-and-bar1.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030537/thumb_lounge-and-bar1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030537/lounge-and-bar1.jpg",
-      "alt": "Lounge and bar"
+      "alt": "Lounge and Bar",
+      "caption": "Lounge and Bar"
     },
     {
       "name": "map-room",
@@ -341,7 +358,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/xsmall_map-room.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/thumb_map-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
-      "alt": "Map Room"
+      "alt": "Map Room",
+      "caption": "Map Room"
     },
     {
       "name": "audio-room1",
@@ -360,7 +378,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/xsmall_audio-room1.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/thumb_audio-room1.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
-      "alt": "Audio Room"
+      "alt": "Audio Room",
+      "caption": "Audio Room"
     },
     {
       "name": "discover-the-hotel",
@@ -379,7 +398,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/xsmall_discover-the-hotel.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/thumb_discover-the-hotel.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030632/discover-the-hotel.jpg",
-      "alt": "Discover the hotel"
+      "alt": "Discover the Hotel",
+      "caption": "Discover the Hotel"
     }
   ],
   "description": ""
