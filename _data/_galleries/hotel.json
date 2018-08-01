@@ -178,7 +178,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/xsmall_library.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/thumb_library.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030257/library.jpg",
-      "alt": "Library"
+      "alt": "Library",
+      "caption": "Library"
     },
     {
       "name": "breakfast-buffet",
