@@ -298,7 +298,8 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/xsmall_lobby.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/thumb_lobby.jpg",
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030447/lobby.jpg",
-      "alt": "Lobby"
+      "alt": "Lobby",
+      "caption": "Lobby"
     },
     {
       "name": "lounge-and-bar",
