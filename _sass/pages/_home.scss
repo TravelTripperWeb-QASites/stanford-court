@@ -35,16 +35,23 @@
     margin-top: -210px;
     padding: 23px 35px;
     background-color: $white;
+    @media (max-width: 1018px) {
+      padding: 73px 80px 80px 140px !important;
+    }
     @include media-breakpoint-up(lg) {
       @include make-col(6);
       position: absolute;
       right: 0;
       margin-top: 0;
-      padding: 80px 80px 80px 140px;
+      padding: 113px 80px 80px 140px;
     }
     @include media-breakpoint-up(xl) {
       margin-top: 0;
-      padding: 80px 80px 160px 200px;
+      padding: 52px 80px 160px 200px;
+    }
+
+    @media (min-width: 1600px) {
+      padding: 116px 80px 160px 200px;
     }
     .info {
       max-width: 100%;
