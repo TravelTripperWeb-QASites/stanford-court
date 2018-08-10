@@ -18,6 +18,9 @@ meta_tags:
             <source src="{{ banner.video }}" type="video/mp4">
           </video>
         </div>
+        <div class="scroll-down">
+        <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+      </div>
       </div>
     </div>
     {% endfor %}
@@ -28,7 +31,7 @@ meta_tags:
 
 <section class="home-intro">
   <div class="home-intro-inner m-0 d-flex align-items-end">
-    <div class="image">
+    <div class="image" id="scroll-to">
       <div class="background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
       {% regionblock intro_img_caption, type: text %}
       <p>Caption goes here</p>
@@ -36,9 +39,6 @@ meta_tags:
     </div>
     <div class="content">
       <div class="info">
-        {% regionblock intro_subheader, type: header %}
-        <h4>About us</h4>
-        {% endregionblock %}
         {% regionblock intro_header, type: header %}
         <h3>Welcome to Stanford court</h3>
         {% endregionblock %}
