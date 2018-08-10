@@ -30,6 +30,21 @@
     content: '';
     background-color: rgba($black, .25);
   }
+
+  .scroll-down {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    left: 0;
+    z-index: 6;
+    max-width: 75px;
+    margin: 0 auto;
+    padding: 25px;
+    cursor: pointer;
+    @include media-breakpoint-down(md) {
+      bottom: 110px;
+    }
+  }
 }
 
 .inner-banner {
