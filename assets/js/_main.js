@@ -4,7 +4,14 @@
 
 winResize(); //from function.js
 navOnScroll(); //from function.js
-
+//scroll to down
+$(document).ready(function() {
+  $(".scroll-down").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#scroll-to").offset().top - 104
+    }, 1000);
+  });
+});
 // Instagram API script
 $(window)
   .on("load", function (e) {
