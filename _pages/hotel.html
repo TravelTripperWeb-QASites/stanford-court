@@ -9,29 +9,26 @@ meta_tags:
 
 <div class="inner-banner  background-cover" style="background-image: url('/assets/images/hotel/history.jpg');">
 
-  <div class="banner-text">
+  <!--div class="banner-text">
     {% regionblock banner_title, type: header %}
     <h1>About Us</h1>
     {% endregionblock %}
-  </div>
-  <ul class="banner-nav">
-    {% regionblock hotel_links_nav, type: text %}
+  </div-->
 
-      <a href="javascript:void(0);" data-rel="history">Hotel History</a>
-      <a href="javascript:void(0);" data-rel="amenities">Amenities</a>
-      <a href="javascript:void(0);" data-rel="art">Art</a>
-    {% endregionblock %}
     <ul>
 </div>
-
+<section class="inner-nav mb-5">
+  <ul class="banner-nav">
+      <li><a href="javascript:void(0);" data-rel="history">History</a></li>
+      <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
+      <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
+  </ul>
+</section>
 <section class="page-intro no-gap" id="about">
   <div class="page-intro-inner m-0 d-flex align-items-center">
     <div class="gradient-bg">
       <div class="gradient-bg-inner">
         <div class="text-inner">
-          {% regionblock hotel_sub_title, type: header %}
-            <h4>HOTEL</h4>
-          {% endregionblock %}
           {% regionblock hotel_title, type: header %}
             <h3>PROGRESSIVE <br>OUTLOOK</h3>
           {% endregionblock %}
@@ -101,6 +98,12 @@ meta_tags:
           <li class="year20"><a href="#1972">1972</a></li>
           <li class="year15"><a href="#2018">2018</a></li>
         </ul>
+      </div>
+      <div class="h-controls">
+        <div id="grad_left"></div>
+        <div id="grad_right"></div>
+        <a href="#" id="next"><i class="fal fa-angle-left"></i>+</a>
+        <a href="#" id="prev"><i class="fal fa-angle-left"></i>-</a>
       </div>
     </div>
   </div>
