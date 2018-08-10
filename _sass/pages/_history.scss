@@ -3,9 +3,8 @@
   margin-bottom: 50px;
   padding-top: 5rem;
   padding-bottom: 5rem;
-
   background-color: $black;
-  background-image: url('/assets/images/hotel/history.jpg');
+  background-image: url("/assets/images/hotel/history.jpg");
   @include media-breakpoint-up(md) {
     min-height: 700px;
     margin-bottom: 98px;
@@ -22,6 +21,7 @@
     @media (min-width: 1680px) {
       padding-left: 0;
     }
+
     .info-content {
       width: 100%;
 
@@ -29,12 +29,13 @@
         margin: 20px 0;
         color: $white;
       }
+
       p {
-        padding-bottom: 10px ;
+        padding-bottom: 10px;
         font-weight: normal;
         line-height: 22px;
         color: $white;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
       }
     }
   }
@@ -45,7 +46,6 @@
     margin: auto;
     padding: 0 30px;
     overflow: hidden;
-
     @media (min-width: 1680px) {
       width: 1630px;
       overflow: hidden;
@@ -77,14 +77,17 @@
   }
 
   .dates-nav {
+    position: relative;
     bottom: 0;
+    z-index: 2;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 5px;
     margin-left: 0;
     overflow: hidden;
-    background: url('/assets/images/small-line.png') left 56px repeat-x;
-    @include media-breakpoint-up(lg) {
-      width: 100%;
+    background: url("/assets/images/small-line.png") left 56px repeat-x;
+    @include media-breakpoint-up(md) {
+      width: 70%;
+      margin-top: 105px;
       overflow: hidden;
     }
 
@@ -93,6 +96,7 @@
       height: 150px;
       padding: 0;
       overflow: hidden;
+
       li {
         float: left;
         width: 150px;
@@ -102,35 +106,45 @@
         list-style: none;
 
         &.year4 {
-            width:50px;
+          width: 50px;
         }
+
         &.year5 {
-            width:60px;
+          width: 60px;
         }
+
         &.year6 {
-            width:70px;
+          width: 70px;
         }
+
         &.year7 {
-            width:80px;
+          width: 80px;
         }
+
         &.year8 {
-            width:90px;
+          width: 90px;
         }
+
         &.year9 {
-            width:100px;
+          width: 100px;
         }
+
         &.year10 {
-            width:130px;
+          width: 130px;
         }
+
         &.year15 {
-            width:160px;
+          width: 160px;
         }
+
         &.year20 {
-            width:190px;
+          width: 190px;
         }
+
         a {
           display: inline-block;
           color: $white;
+
           &.selected {
             color: $primary-color;
           }
@@ -139,7 +153,7 @@
         &:nth-child(odd) {
           height: 60px;
           margin-bottom: 44px;
-          background: url('/assets/images/biggerdot.png') right 10px bottom no-repeat;
+          background: url("/assets/images/biggerdot.png") right 10px bottom no-repeat;
 
           a {
             padding-bottom: 20px;
@@ -149,36 +163,42 @@
         &:nth-child(even) {
           height: 60px;
           margin-top: 52px;
-          background: url('/assets/images/biggerdot.png') right 10px top 0 no-repeat;
+          background: url("/assets/images/biggerdot.png") right 10px top 0 no-repeat;
 
           a {
             padding-top: 20px;
           }
         }
       }
-
     }
   }
 
   #issues {
+    position: inherit;
+    top: inherit;
+    z-index: 1;
     width: 100%;
-    margin: 0 auto 20px ;
+    margin: 0 auto 20px;
     padding: 0;
     overflow: hidden;
-
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 100px;
+    }
     li {
       float: left;
       list-style: none;
+
       .history-info {
         float: inherit;
-        max-width: 91%;
+        max-width: 100%;
         margin: auto;
-        @include  media-breakpoint-up(md) {
+        @include media-breakpoint-up(md) {
           float: right;
           max-width: 445px;
+          margin-right: 90px;
         }
       }
-
       @media (min-width: 1600px) {
         width: 1570px;
       }
@@ -227,7 +247,7 @@
         font-weight: normal;
         line-height: 22px;
         color: $white;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
         @include media-breakpoint-up(md) {
           max-width: 175px;
         }
@@ -242,4 +262,53 @@
       }
     }
   }
+
+  // #grad_left,
+  // #grad_right {
+  //   width: 100px;
+  //   height: 350px;
+  //   position: absolute;
+  //   top: 0;
+  // }
+  .h-controls {
+    position: absolute;
+    top: -120px;
+    right: inherit;
+    z-index: 77;
+    width: 95%;
+    margin: auto;
+    @include media-breakpoint-up(md) {
+      top: -24px;
+      right: 0;
+      width: 30%;
+    }
+  }
+  #next,
+  #prev {
+    position: absolute;
+    top: 0;
+    font-size: 70px;
+    top: 170px;
+    width:30px;
+    height: 38px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+
+  #next {
+    right: 0;
+    background-image: url("../images/hotel/right-arrow.png");
+    background-size: 30px;
+  }
+
+  #prev {
+    left: 0;
+    background-image: url("../images/hotel/left-arrow.png");
+    background-size: 30px;
+  }
+
+
 }
