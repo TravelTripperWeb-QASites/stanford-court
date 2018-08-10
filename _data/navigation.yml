@@ -6,9 +6,6 @@ main:
         url: /amenities/
   - title: Rooms
     url: /rooms/
-    dropdown:
-        - title: ADA Rooms
-          url: /room/#accessible
   - title: Special Offers
     url: /offers/
   - title: Dining

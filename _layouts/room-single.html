@@ -8,9 +8,9 @@ layout: default
   <div style="display:none">
     [[ rooms = ( browser.roomsList | filter:{'category':roomCat});"" ]] [[ room = ( rooms[roomIndex]);"" ]]
   </div>
-  <div class="inner-banner background-cover" style="background-image: url('/assets/images/rooms/hero1.jpg');">
+  <div class="inner-banner background-cover" ng-style="{'background-image':'url(' + room.photos[0].large + ')'}">
   </div>
-  <div class="inner-nav">
+  <div class="inner-nav fixed-menu">
     <p class="select-room">Select Room</p>
     <ul>
       <li>
