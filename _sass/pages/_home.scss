@@ -90,7 +90,7 @@
     margin-bottom: 0;
     padding: 73px 0;
   }
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 46px 33px;
   background-color: $black;
   background-image: url('/assets/images/home/amenities-bg.jpg');
@@ -193,9 +193,10 @@
 }
 
 .rooms-wrapper {
-  padding: 0 0 40px;
+  padding: 0 0 20px;
   @include media-breakpoint-up(md) {
-    padding: 90px 0;
+    //padding: 90px 0;
+    padding: 45px 0;
   }
 
   h2 {
@@ -285,7 +286,7 @@
   position: relative;
   padding-top: 70px;
   @include media-breakpoint-up(md) {
-    padding-top: 300px;
+    padding-top: 255px;
   }
 
   h2 {
@@ -435,7 +436,7 @@
 
 .gallery-carousel {
   display: none;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
   @include media-breakpoint-up(md) {
     display: block;
     background-color: $black;
@@ -497,7 +498,7 @@
 //stay stanford court
 
 .stay-sfc {
-  margin: 97px auto 102px;
+  margin: 47px auto 52px;
   background: $gray-dark;
   background-image: url('/assets/images/home/stay-sfc.jpg');
   background-repeat: no-repeat;

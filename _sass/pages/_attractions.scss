@@ -30,11 +30,11 @@ h1 {
   }
 
   .attraction-block {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(4);
-      margin-bottom: 90px;
+      margin-bottom: 45px;
       padding-right: 10px;
       padding-left: 10px;
     }

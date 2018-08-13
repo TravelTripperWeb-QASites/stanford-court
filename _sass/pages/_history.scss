@@ -1,13 +1,13 @@
 .history {
   min-height: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: $black;
-  background-image: url("/assets/images/hotel/history.jpg");
+  background-image: url('/assets/images/hotel/history.jpg');
   @include media-breakpoint-up(md) {
     min-height: 700px;
-    margin-bottom: 98px;
+    margin-bottom: 47px;
     padding-top: 4rem;
   }
 
@@ -35,7 +35,7 @@
         font-weight: normal;
         line-height: 22px;
         color: $white;
-        letter-spacing: 0.05em;
+        letter-spacing: .05em;
       }
     }
   }
@@ -84,7 +84,7 @@
     margin-top: 5px;
     margin-left: 0;
     overflow: hidden;
-    background: url("/assets/images/small-line.png") left 56px repeat-x;
+    background: url('/assets/images/small-line.png') left 56px repeat-x;
     @include media-breakpoint-up(md) {
       width: 70%;
       margin-top: 105px;
@@ -153,7 +153,7 @@
         &:nth-child(odd) {
           height: 60px;
           margin-bottom: 44px;
-          background: url("/assets/images/biggerdot.png") right 10px bottom no-repeat;
+          background: url('/assets/images/biggerdot.png') right 10px bottom no-repeat;
 
           a {
             padding-bottom: 20px;
@@ -163,7 +163,7 @@
         &:nth-child(even) {
           height: 60px;
           margin-top: 52px;
-          background: url("/assets/images/biggerdot.png") right 10px top 0 no-repeat;
+          background: url('/assets/images/biggerdot.png') right 10px top 0 no-repeat;
 
           a {
             padding-top: 20px;
@@ -286,27 +286,25 @@
   #next,
   #prev {
     position: absolute;
-    top: 0;
-    font-size: 70px;
     top: 170px;
-    width:30px;
+    width: 30px;
     height: 38px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
     overflow: hidden;
+    font-size: 70px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
   }
 
 
   #next {
     right: 0;
-    background-image: url("../images/hotel/right-arrow.png");
+    background-image: url('../images/hotel/right-arrow.png');
     background-size: 30px;
   }
 
   #prev {
     left: 0;
-    background-image: url("../images/hotel/left-arrow.png");
+    background-image: url('../images/hotel/left-arrow.png');
     background-size: 30px;
   }
 

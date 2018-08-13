@@ -85,7 +85,7 @@ data_paginate:
 page_gen: #
   - data: 'attractions'
     template: 'attraction-single'
-    dir: 'attractions'
+    dir: 'neighborhood'
   - data: 'blog'
     template: 'blog-details'
     dir: 'blog'
