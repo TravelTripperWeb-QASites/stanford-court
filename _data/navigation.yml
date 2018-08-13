@@ -10,18 +10,14 @@ main:
     url: /offers/
   - title: Dining
     url: /dining/
-  - title: Work Life
+  - title: Meetings & Events
     url: /meetings/
     dropdown:
-        - title: Business Travel
-          url: /business-travel/
-        - title: Meeting Rewards
-          url: /meeting-rewards/
+        - title: Corporate Preferred Program
+          url: /corporate-preferred-program/
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
-        - title: Attractions
-          url: /attractions/
         - title: Events
           url: /events/
   - title: Gallery

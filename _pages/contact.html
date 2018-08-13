@@ -14,7 +14,60 @@ meta_tags:
     {% endregionblock %}
   </div> -->
 </section>
+<section class="inner-intro ">
+  <div class="inner-intro-row m-0" id="attractions">
+    <div class="heading">
+      {% regionblock attractions_title, type: header %}
+        <h3>Contact</h3>
+      {% endregionblock %}
+    </div>
+    <div class="content address">
+      {% regionblock attractions_text, type: text %}
+      <p><i class="fas fa-map-marker-alt"></i>
+        <a href="">905 California Street, Nob Hill,<br>San Francisco, CA 94108</a></p>
+      <i class="fas fa-phone"></i>
+      <a href="tel:415 989-3500" title="">415 989-3500</a><br>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:info@stanfordcourt.com" title="info@stanfordcourt.com">info@stanfordcourt.com</a>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
 
+<section class="find-your-way">
+  <div class="find-your-way-inner">
+    <div class="image-part background-cover" style="background-image: url('/assets/images/neighborhood/directions.jpg');">
+    </div>
+    <div class="content">
+      <div class="content-inner background-cover">
+        {% regionblock find_your_way_header, type: header %}
+          <h4 class="mb">Find Your Way</h4>
+        {% endregionblock %}
+        <h4>Directions 01</h4>
+        {% regionblock direction_01, type: header %}
+          <h3>
+            <a href="https://bit.ly/2sD1N3g" target="_blank">
+            San Francisco International Airport - SFO</a>
+          </h3>
+        {% endregionblock %}
+        <h4>Directions 02</h4>
+        {% regionblock direction_02, type: header %}
+          <h3>
+            <a href="https://bit.ly/2M6L8gI" target="_blank">
+            Oakland International Airport - OAK</a>
+          </h3>
+        {% endregionblock %}
+        <h4>Directions 03</h4>
+        {% regionblock direction_03, type: header %}
+          <h3 class="pb-0">
+            <a href="https://bit.ly/2LtVgPd" target="_blank">
+            san Jose International Airport - SJC</a>
+          </h3>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="contact">
   {% regionblock text %}
