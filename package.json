@@ -16,24 +16,9 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "parallelshell": "^3.0.1",
-    "prettier-stylelint": "^0.4.2",
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "js:uglify": "uglifyjs  assets/js/functions.js  assets/js/gmap.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-share.js assets/js/lg-thumbnail.js assets/js/lg-video.js assets/js/slick.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/jquery.timelinr.js assets/js/lunr.js assets/js/search.js  assets/js/rez-gallery.js assets/js/pagination.min.js assets/js/press.js assets/js/_main.js assets/js/utm-tracking.js -c  -o assets/js/main.min.js",
-    "js:watch": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run js:uglify",
-    "browsersync": "browser-sync start --server --files 'assets/css/main.css' 'assets/js/main.min.js' '**/*.html'",
-    "browsersync:jekyll": "browser-sync start --server '_site' --files '_site'",
-    "css": "node-sass --output-style expanded _sass/main.scss assets/css/main.css",
-    "css:min": "node-sass --output-style compressed _sass/main.scss assets/css/main.css",
-    "css:watch": "node-sass --output-style expanded --watch _sass/main.scss assets/css/main.css",
-    "watch:css": "parallelshell 'npm run css:watch' 'npm run browsersync'",
-    "watch:jekyll": "parallelshell 'jekyll build --watch' 'npm run browsersync:jekyll'",
-    "watch:all": "parallelshell 'npm run css:watch' 'npm run js:watch' 'npm run browsersync'"
+    "uglify": "uglifyjs  assets/js/functions.js  assets/js/gmap.js assets/js/lightgallery.js assets/js/lg-fullscreen.js assets/js/lg-share.js assets/js/lg-thumbnail.js assets/js/lg-video.js assets/js/slick.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/jquery.timelinr.js assets/js/lunr.js assets/js/search.js  assets/js/rez-gallery.js assets/js/pagination.min.js assets/js/press.js assets/js/_main.js assets/js/utm-tracking.js -c  -o assets/js/main.min.js"
   }
 }
