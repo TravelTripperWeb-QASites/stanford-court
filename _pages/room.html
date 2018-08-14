@@ -1,8 +1,214 @@
 ---
-layout: room-single
+layout: default
 title: Room Details
 meta_description:
 permalink: /room/
 meta_tags:
   robots:
 ---
+
+<div class="loading" style="display:block">Loading&#8230;</div>
+
+<section ng-controller="roomDetail">
+  <div style="display:none">
+    [[ rooms = ( browser.roomsList | filter:{'category':roomCat});"" ]] [[ room = ( rooms[roomIndex]);"" ]]
+  </div>
+  <div class="inner-banner background-cover" ng-style="{'background-image':'url(' + room.photos[0].large + ')'}">
+  </div>
+  <div class="inner-nav fixed-menu">
+    <p class="select-room">Select Room</p>
+    <ul>
+      <li>
+        <a ng-class="{'active': $index == roomIndex}" ng-href="/room/#[[ room.category ]][[ $index > 0 ? '-' + $index : '' ]]" title="[[ r.name ]]" ng-repeat="r in rooms">[[ r.name ]]</a>
+      </li>
+    </ul>
+  </div>
+  <div class="details-wrapper ">
+    <div class="tag-line-text">
+      <p>[[ room.category ]]</p>
+    </div>
+    <div class="details d-flex align-items-center">
+      <div class="room-info">
+        <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
+        <h4>tonight’s rate
+          <span>
+            <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
+            </a>
+          </span>
+        </h4>
+        <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
+        <div class="area">
+          <ul>
+            <li>
+              <img src="/assets/images/rooms/squire.png" alt="area" />
+              <span>[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span>
+            </li>
+            <li>
+              <img src="/assets/images/rooms/guest.png" alt="guest" />
+              <span>Max [[ room.max_number_of_guests ]] persons</span>
+            </li>
+          </ul>
+        </div>
+        <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+        <div>
+          <a class="primary-btn" href="/contact/">Contact Us</a>
+        </div>
+        <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room=[[ room.code ]]">Book This Room</a>
+      </div>
+    </div>
+    <div class="image-slider">
+      <div class="carousel-nav white" ng-show="room.photos.length > 1">
+        <a class="carousel-control-prev" href="#roomsCarousel" data-slide="prev">
+          <i class="fas fa-caret-left"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#roomsCarousel" data-slide="next">
+          <i class="fas fa-caret-right"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div id="roomsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item background-cover" ng-class="{'active': $index ==0}" ng-style="{'background-image':'url(' + pic.large + ')'}" ng-repeat="pic in room.photos"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="room-amenites">
+    <h2>DETAILS</h2>
+    <div class="wrapper">
+      <h4>unique Room Features</h4>
+      <div class="amenites-list">
+        <div class="force-overflow">
+          <ul>
+            <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
+            <li><span>Simmons pillow top mattress</span></li>
+            <li><span>100% cotton 300-thread count linens</span></li>
+            <li><span>Deluxe goose feather down comforter</span></li>
+            <li><span>Blackout shades</span></li>
+            <li><span>USB outlets</span></li>
+            <li><span>Bedside LCD Reading Lamps</span></li>
+            <li><span>Laptop-sized safe</span></li>
+            <li><span>49'' LG HDTV</span></li>
+            <li><span>Google Chromecast</span></li>
+            <li><span>Mini Refrigerator</span></li>
+            <li><span>The Coffee Bean Coffee</span></li>
+            <li><span>Granite bathroom vanity</span></li>
+            <li><span>Adjustable height Toto Aerojet Hand Shower</span></li>
+            <li><span>Towel Warmer</span></li>
+            <li><span>All natural plant based EO bath products</span></li>
+            <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
+            <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
+            <!-- <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<div class="rooms-search background-color">
+  <form action="{{site.reztripUrl}}/search" method="get" id="frmBookingWidget" class="search-form">
+    <input type="hidden" name="selected_room" value="[[room.code]]" />
+    <ul>
+      <li>
+        <label>Arrival</label>
+        <input id="datepicker-arrival" class="date-pic" type="text" aria-label="Arrival Date" title="arrival date" readonly>
+        <input type="hidden" name="arrival_date">
+      </li>
+      <li>
+        <label>Departure</label>
+        <input id="datepicker-departure" class="date-pic" type="text" aria-label="Departure Date" title="Departure Date" readonly>
+        <input type="hidden" name="departure_date" aria-label="Departure Date" title="Departure Date">
+      </li>
+      <li>
+        <label>Rooms</label>
+        <div class="number-input rooms-holder" data-toggle="modal" data-target="#bookingWidgetRoomsModal">
+          <a href="javascript:void();" title="Rooms"></a>
+          <input name="rooms" value="1" type="number" aria-label="Rooms" title="Rooms">
+          <a href="javascript:void();" class="plus" title="Rooms"></a>
+        </div>
+      </li>
+      <li>
+        <label>Adults</label>
+        <div class="number-input adults-holder" data-toggle="modal" data-target="#bookingWidgetRoomsModal">
+          <a href="javascript:void();" title="quantity"></a>
+          <input class="quantity" name="" value="1" type="number" aria-label="Adults" title="Adults">
+          <a href="javascript:void();" class="plus" title="quantity"></a>
+        </div>
+      </li>
+      <li>
+        <label>Children</label>
+        <div class="number-input children-holder" data-toggle="modal" data-target="#bookingWidgetRoomsModal">
+          <a href="javascript:void();" title="title=" quantity ""></a>
+          <input class="quantity" name="" value="0" type="number" aria-label="Children" title="Children">
+          <a href="javascript:void();" class="plus" title="title=" quantity ""></a>
+        </div>
+      </li>
+    </ul>
+    <div class="reztrip-extra-adults-children" style="display:none">
+      <input type="hidden" name="adults[]" value="1" />
+      <input type="hidden" name="children[]" value="0" />
+    </div>
+    <div class="pt-4 text-center">
+      <button class="black-btn" type="submit">Book Your Stay</button>
+    </div>
+  </form>
+</div>
+
+<div class="special-offers d-none d-md-block">
+  <h3 class="text-center">Special Offers</h3>
+  <p>What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
+  <p class="text-center">
+    <a class="black-btn" href="/offers/" title="All Offers">All Offers</a>
+  </p>
+</div>
+
+<!--  Modal to get rooms adults children value-->
+<div class="modal fade booking-widget-rooms" id="bookingWidgetRoomsModal" tabindex="-1" role="dialog" aria-labelledby="bookingWidgetRoomsLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content booking-widget">
+      <div class="modal-header">
+        <h3 class="modal-title text-center">Rooms & Guests</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+      </div>
+      <div class="modal-body">
+        <div class="adult-children-inner">
+          <div class="rooms-holder">
+            <label>Rooms</label>
+            <select role="listbox" tabindex="0" id="roomsselector" name="roomsCount" title="Rooms" aria-label="Rooms">
+               <option selected="selected" value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+             </select>
+          </div>
+          <div id="adults-wrap" class="adults-wrap ">
+            <label for="adults">Adults</label>
+            <select name="adults[]" title="adults" aria-label="adults">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+           </select>
+          </div>
+          <div id="children-wrap" class="children-wrap">
+            <label for="children">Children</label>
+            <select name="children[]" title="Children" aria-label="Children">
+               <option value="0">0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+             </select>
+          </div>
+        </div>
+        <div class="extra-adult-children"></div>
+        <div class="text-center">
+          <button aria-label="Done" type="button" class="black-btn" data-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
