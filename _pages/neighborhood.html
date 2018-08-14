@@ -32,7 +32,8 @@ meta_tags:
     </div>
   </div>
 </section>
-<div class="map d-none d-md-block" id="map">
+
+<div class="map d-none d-md-block" id="leaflet-map"  data-attractions="show">
   <img src="/assets/images/neighborhood/map.jpg" alt="Map">
 </div>
 
@@ -76,52 +77,6 @@ meta_tags:
     </div>
   </div>
 </section>
-{% comment %}
-<!--section class="neighborhood-map">
-  <div class="neighborhood-map-inner m-0">
-    <div class="map d-none d-md-block" id="map"> </div>
-    <div class="local-attractions">
-      <div class="nav-controls">
-        <div class="carousel-nav white">
-          <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev">
-            <i class="fas fa-caret-left"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#attractionsCarousel" data-slide="next">
-            <i class="fas fa-caret-right"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      {% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
-      <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          {% for attraction in neighborhood %}
-            <div data-markerid="{{ forloop.index }}" class="carousel-item {% if forloop.first %}active{% endif %} background-cover">
-              <div class="attractions-wrapper">
-                <div class="details">
-                  <div class="attraction-info">
-                    <h4 class="d-block d-md-none">Local attractions</h4>
-                    <h3>{{ attraction.title }}</h3>
-                    <h4>{{ attraction.address }}
-                      <span>{{ attraction.distance }}</span>
-                    </h4>
-                    {{ attraction.details }}
-                    <div>
-                      <a class="primary-btn" href="{{attraction.url}}" target="_blank">Website</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="image-slider  background-cover" style="background-image:url('{{ attraction.image.url_medium }}'); "></div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section-->
-{% endcomment %}
 
 <section class="events-carousel-wrapper">
   {% regionblock events_header, type: header %}
