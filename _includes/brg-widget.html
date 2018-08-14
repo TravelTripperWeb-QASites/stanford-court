@@ -12,12 +12,12 @@
 
     <div class="tonight-rate ">
       <p>Best Price Available</p>
-      <h4>Tonight's Rate <a href="https://stanfordcourt.reztrip.com/search?" target="_blank"  class="homeTonightRate" ><span class="price">[[ browser.toNightsRate ]]</span></a></h4>
+      <h4>Tonight's Rate <a href="https://stanfordcourt.reztrip.com/search" target="_blank"  class="homeTonightRate" ><span class="price">[[ portalInfo.default_currency_symbol ]][[ browser.toNightsRate ]]</span></a></h4>
     </div>
 
     <div class="ota-list">
       <ul>
-        <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>$[[ value ]]</span></li>
+        <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>[[ portalInfo.default_currency_symbol ]][[ value ]]</span></li>
       </ul>
     </div>
 </div>

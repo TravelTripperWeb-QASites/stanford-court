@@ -16,12 +16,6 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "parallelshell": "^3.0.1",
-    "prettier-stylelint": "^0.4.2",
     "uglify-js": "^2.6.1"
   },
   "scripts": {
