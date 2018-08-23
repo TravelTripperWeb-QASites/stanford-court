@@ -201,3 +201,14 @@ a {
 .mb-80 {
   margin-bottom: 80px;
 }
+
+
+.map-circle-icon {
+  width: 147px !important;
+  height: 56px !important;
+  color: $white;
+  background: url('/assets/images/texture-map.png') no-repeat;
+  text-align: center;
+  padding-top: 15px;
+
+}

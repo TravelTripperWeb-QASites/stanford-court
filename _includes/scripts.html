@@ -1,5 +1,4 @@
 {% include scripts/ipify.html %}
-
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -8,40 +7,84 @@
 <script src="https://www.speedrfp.com/irfps/js/widget/" type="text/javascript"></script>
 
 <script type="text/javascript" charset="utf-8">
-    var options = {};
-    options.display = "overlay";
-    options.rfp_type = "meeting";
-    options.key = "f9aad5bfed895570";
-    options.uid = "5LBFZ";
-    options.button = "none";
-    var srfp_widget = new srfp.widget(options);
+var options = {};
+options.display = "overlay";
+options.rfp_type = "meeting";
+options.key = "f9aad5bfed895570";
+options.uid = "5LBFZ";
+options.button = "none";
+var srfp_widget = new srfp.widget(options);
 </script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script>
-    TTWeb.Config.configure({
-      hotelId: 'SFOSTF', //'orwhatever your values are',
-      portalId: 'stanfordcourt',
-      defaultTimezone: 'America/New_York', // timezone of site
-      ipAddress: sessionStorage.ip_add,
-      defaultCurrency: 'USD'
-    });
+TTWeb.Config.configure({
+  hotelId: 'SFOSTF', //'orwhatever your values are',
+  portalId: 'stanfordcourt',
+  defaultTimezone: 'America/New_York', // timezone of site
+  ipAddress: sessionStorage.ip_add,
+  defaultCurrency: 'USD'
+});
 
 
-    $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: true,
-         showOfferCode: true
-    });
+$("[show-booking-widget]").bookingWidget({
+  showRateCalendar: true,
+  showOfferCode: true
+});
 </script>
-{% assign mapitems = site.data._models.map-locations | sort: 'order' %}
-<script type="text/javascript">
-	var markers1 = [];
-	// Our markers
-	markers1 = [
-	  //hint ['serial id','title', lat,long, 'category','labelid','address','map direction link' ]
-    ['0', '{{site.name}}', 37.791505, -122.409598, 'hotel','0', '905 California Street, Nob Hill, San Francisco, CA 94108','{{site.data.hotel-detail.gmapurl}}'],
-    {% for mapitem in mapitems %}['{{ forloop.index}}', '{{mapitem.title | escape | replace :'&#39;',''}}', {{mapitem.Lattitude}}, {{mapitem.Longitude}}, '{{mapitem.category}}', '{{mapitem.id | replace:'.json',''}}','{{mapitem.address | escape | replace :'&#39;',''}}',''] {% unless forloop.last %},{% endunless %}{% endfor %} ];
-</script>
-{% if site.data.api-keys.maps.google.enabled != false %}
-  <script async defer src="https://maps.google.com/maps/api/js?key={{ site.data.api-keys.maps.google.api_key }}&callback=initialize"></script>
+
+
+
+{% if page.url contains 'neighborhood' %}
+  {% assign map = true %}
+  {% assign mapitems = site.data._models.map-locations | sort: 'order' %}
+  <script type="text/javascript">
+    var attractions = [];
+    // Our markers
+    attractions = [
+      //hint ['title', lat,long, 'category','labelid','address','map direction link' ]
+      ['{{site.name}}', 37.791505, -122.409598, 'hotel', '905 California Street, Nob Hill, San Francisco, CA 94108','{{site.data.hotel-detail.gmapurl}}'],
+      {% for mapitem in mapitems %}[ '{{mapitem.title | escape | replace :'&#39;',''}}', {{mapitem.Lattitude}}, {{mapitem.Longitude}}, '{{mapitem.category}}','{{mapitem.address | escape | replace :'&#39;',''}}',''] {% unless forloop.last %},{% endunless %}{% endfor %} ];
+  </script>
+{% endif %}
+
+{% if map == true %}
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+  <script src="/assets/js/leafletmap.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      function onAttractionMarkerClick(e) {
+        var markerId = e.target.options.marker_item -1 ;
+        $("#attractionsCarousel").carousel(markerId -1);
+      }
+
+    	var mapOptions = {
+      	hotelTitle       : 'BOUTIQUE HOTEL IN SAN FRANCISCO',
+      	hotelAddress     : '905 California Street, Nob Hill, San Francisco, CA 94108',
+      	hotelLat         : 37.791505,
+      	hotelLong        : -122.409598,
+      	hotelMarker      : '/assets/images/hotel-marker.png',
+      	markerSize       : [135, 88],
+        zoom             : 16,
+        maxZoom          : 18,
+        attrLabel        : true,
+        markerLabelText  : true,
+        showPopup        : true,
+        fitBounds        : false,
+        markerClickAction: onAttractionMarkerClick,
+        attractionsList  : attractions,
+        TileStyle        : 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
+    	};
+
+    	$('#leaflet-map').leafMap(mapOptions);
+
+      $('#attractionsCarousel').on('slide.bs.carousel', function (e) {
+         var markerId = e.to;
+         $('#attractionsCarousel [data-mappable-item=' + markerId + ']').click();
+      });
+
+    })
+  </script>
 {% endif %}
