@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<p><a class=\"primary-btn-inverse\" href=\"neighborhood/\">Discover More</a></p>"
+    "content": "<p><a class=\"primary-btn-inverse\" href=\"neighborhood/\">Discover Neighborhood</a></p>"
   }
 ]
