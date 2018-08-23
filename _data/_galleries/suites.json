@@ -1,7 +1,26 @@
 {
   "name": "Suites",
   "photos": [
-
+    {
+      "name": "SC-Pres-Suite-3.",
+      "file_name": "SC-Pres-Suite-3..jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/SC-Pres-Suite-3..jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-23-175015",
+      "file_type": "image/jpeg",
+      "width": 864,
+      "height": 576,
+      "file_size": 178304,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/large_SC-Pres-Suite-3..jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/medium_SC-Pres-Suite-3..jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/small_SC-Pres-Suite-3..jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/xsmall_SC-Pres-Suite-3..jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/thumb_SC-Pres-Suite-3..jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-175015/SC-Pres-Suite-3..jpg",
+      "alt": "Stanford Court Presidential Suite",
+      "caption": "Stanford Court Presidential Suite"
+    }
   ],
   "description": ""
 }
