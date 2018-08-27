@@ -158,7 +158,7 @@
     padding: 22px;
     background-color: $black;
     @include media-breakpoint-up(md) {
-      padding: 85px;
+      padding: 40px 85px;
     }
 
     .heading {
@@ -207,6 +207,9 @@
             color: $white;
           }
         }
+      }
+      a {
+        color: $white;
       }
     }
 

@@ -41,7 +41,9 @@ meta_tags:
     <div class="room-row align-items-center">
 
         <div class="room-image">
-          <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
+          <a href="/room/#{{ room.roomtype | downcase }}">
+            <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
+          </a>
         </div>
 
       <div class="room-info">

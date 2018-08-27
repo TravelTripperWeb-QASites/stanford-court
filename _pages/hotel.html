@@ -7,15 +7,10 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner  background-cover" style="background-image: url('/assets/images/hotel/history.jpg');">
-  <!--div class="banner-text">
-    {% regionblock banner_title, type: header %}
-    <h1>About Us</h1>
-    {% endregionblock %}
-  </div-->
+<div class="inner-banner  background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
 </div>
 
-<section class="inner-nav mb-5">
+<section class="inner-nav fixed-menu">
   <ul class="banner-nav">
     <li><a href="javascript:void(0);" data-rel="history">History</a></li>
     <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
@@ -130,9 +125,6 @@ meta_tags:
   <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
     <div class="image down-full background-cover gradient-bg">
       <div class="title">
-        {% regionblock hotel_amenities_section_title, type: header %}
-          <h4>Stanford Court</h4>
-        {% endregionblock %}
         {% regionblock hotel_amenities_section_header, type: header %}
           <h3>The Best of the Bay</h3>
         {% endregionblock %}
@@ -158,6 +150,22 @@ meta_tags:
       {% regionblock hotel_amenities_section_link, type: text %}
         <a class="primary-btn" href="/amenities/" title="Amenities">Learn More</a>
       {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="stay-sfc">
+  <div class="stay-wrapper">
+    <div class="stay-row m-0">
+      <div class="header-title text-center">
+        {% regionblock stay-title, type: header %}
+        <h4>Stay at stanford Court</h4> {% endregionblock %} {% regionblock stay-content, type: header %}
+        <h3 class="text-white">Link to the best of<br>San Francisco.</h3> {% endregionblock %}
+        <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+      </div>
+      <div class="logo">
+        <img src="/assets/images/footer-logo.png" alt="Stanford Court Hotel">
+      </div>
     </div>
   </div>
 </section>
