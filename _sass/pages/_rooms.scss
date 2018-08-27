@@ -349,6 +349,7 @@
   position: relative;
   padding-top: 159px;
   @include media-breakpoint-up(md) {
+    margin-bottom: 45px;
     padding-top: 139px;
   }
 

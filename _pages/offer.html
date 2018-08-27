@@ -38,7 +38,7 @@ meta_tags:
         </div>
       </div>
       <div class="image-slider">
-        <div class="carousel-nav white" ng-show="offers.sRdetail.images.length > 0">
+        <div class="carousel-nav white" ng-hide="true">
           <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
             <i class="fas fa-caret-left"></i>
             <span class="sr-only">Previous</span>
@@ -50,7 +50,7 @@ meta_tags:
         </div>
         <div id="offersCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item background-cover" ng-class="{'active': $index ==0 }" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images"></div>
+            <div class="carousel-item background-cover active" ng-style="{'background-image':'url([[pic.large]])'}" ng-repeat="pic in offers.sRdetail.images" ng-if="$index == 1"></div>
           </div>
         </div>
       </div>

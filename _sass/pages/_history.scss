@@ -241,7 +241,7 @@
       }
 
       p {
-        max-width: 100%;
+        width: 100%;
         margin-right: 20px;
         //padding-bottom: 10px ;
         font-weight: normal;
@@ -251,6 +251,7 @@
         @include media-breakpoint-up(md) {
           max-width: 175px;
         }
+
         @media (min-width: 768px) and (max-width: 900px) {
           margin-right: 20px;
           text-align: left;
