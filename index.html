@@ -24,12 +24,11 @@ meta_tags:
     </div>
     {% endfor %}
   </div>
-  {% include brg-widget.html %}
 </div>
-
+{% include brg-widget.html %}
 
 <section class="home-intro">
-  <div class="home-intro-inner m-0 d-flex align-items-end">
+  <div class="home-intro-inner m-0 d-flex align-items-center">
     <div class="image">
       <div class="background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
       {% regionblock intro_img_caption, type: text %}
