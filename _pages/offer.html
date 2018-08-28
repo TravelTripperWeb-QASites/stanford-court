@@ -9,16 +9,16 @@ meta_tags:
 
 <div class="loading" style="display:block">Loading&#8230;</div>
 <section rt3-special-rates="offers" ng-controller="offerDetail">
-  <div class="inner-banner without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
-  </div>
-  <div class="inner-nav">
-    <ul>
-      <li>
-        <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates">
-          <span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span>
-        </a>
-      </li>
-    </ul>
+  <div class="inner-banner full without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
+    <div class="inner-nav fixed-menu">
+      <ul>
+        <li>
+          <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates">
+            <span ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"><span>
+            </a>
+          </li>
+        </ul>
+      </div>
   </div>
 
   <div class="offers-carousel-main">

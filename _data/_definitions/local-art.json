@@ -9,12 +9,6 @@
     "type": "image",
     "required": true
   },
-  "overlap-image": {
-    "label": "Featured Image",
-    "instructions": "Image on Amenitie (600px x 400px)",
-    "type": "image",
-    "required": true
-  },
   "description": {
     "label": "Description of Amenitie",
     "type": "richtext",

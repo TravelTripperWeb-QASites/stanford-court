@@ -85,59 +85,10 @@
     }
   }
 
-  .banner-nav {
-    position: absolute;
-    top: 65%;
-    right: 0;
-    left: 0;
-    max-width: 770px;
-    margin: auto;
-    padding: 0;
-    text-align: center;
 
-
-    a {
-      position: relative;
-      margin: 10px 15px;
-      font-family: $headings-font;
-      font-size: 18px;
-      line-height: 4rem;
-      color: $white;
-      text-transform: uppercase;
-      letter-spacing: 6px;
-      @include media-breakpoint-up(md) {
-        font-size: 30px;
-      }
-
-      &::after {
-        @include global-transition(.3s);
-        position: absolute;
-        right: 0;
-        bottom: -6px;
-        left: 0;
-        display: block;
-        width: 0;
-        height: 4px;
-        margin: 0 auto;
-        content: '';
-        background-color: $white;
-      }
-
-      &:hover {
-        text-decoration: none;
-
-        &::after {
-          width: 100%;
-        }
-      }
-
-      &.active {
-        &::after {
-          width: 100%;
-        }
-      }
-
-    }
+  &.full {
+    position: relative;
+    height: 100vh;
   }
 }
 
@@ -356,13 +307,16 @@
       }
     }
   }
+
+
   &.fixed-menu {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: 99;
     width: 100%;
 
   }
+
 }
 
 .bg-black {

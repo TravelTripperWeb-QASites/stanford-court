@@ -196,6 +196,11 @@
         @include media-breakpoint-up(md) {
           float: right;
           max-width: 445px;
+          margin-right: 0;
+        }
+        @include media-breakpoint-up(xl) {
+          float: right;
+          max-width: 445px;
           margin-right: 90px;
         }
       }
@@ -263,14 +268,6 @@
       }
     }
   }
-
-  // #grad_left,
-  // #grad_right {
-  //   width: 100px;
-  //   height: 350px;
-  //   position: absolute;
-  //   top: 0;
-  // }
   .h-controls {
     position: absolute;
     top: -120px;
@@ -298,15 +295,33 @@
 
 
   #next {
-    right: 0;
+    right: 40px;
     background-image: url('../images/hotel/right-arrow.png');
     background-size: 30px;
+    @include media-breakpoint-up(md) {
+      right: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      right: 30px;
+    }
+    @media (min-width: 1600px) {
+      right: 80px;
+    }
   }
 
   #prev {
     left: 0;
     background-image: url('../images/hotel/left-arrow.png');
     background-size: 30px;
+    @include media-breakpoint-up(md) {
+      left: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      left: 50px;
+    }
+    @media (min-width: 1600px) {
+      left: 100px;
+    }
   }
 
 

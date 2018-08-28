@@ -187,6 +187,21 @@ h2 {
         padding: 80px 200px;
       }
     }
+    &.h-30 {
+      height: 30px;
+    }
+    .carousel-indicators {
+      bottom: 0;
+      left: 50px;
+      width: 200px;
+      margin: 0;
+      @include media-breakpoint-up(md) {
+        left: 120px;
+      }
+      @include media-breakpoint-up(lg) {
+        left: 170px;
+      }
+    }
   }
 
   .image {
@@ -244,6 +259,9 @@ h2 {
         height: 380px;
         margin-bottom: inherit;
       }
+    }
+    &.no-bg {
+      background: none;
     }
   }
 }

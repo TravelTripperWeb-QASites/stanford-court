@@ -7,16 +7,15 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner  background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
+<div class="inner-banner full background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
+  <div class="inner-nav fixed-menu">
+    <ul class="banner-nav">
+      <li><a href="javascript:void(0);" data-rel="history">History</a></li>
+      <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
+      <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
+    </ul>
+  </div>
 </div>
-
-<section class="inner-nav fixed-menu">
-  <ul class="banner-nav">
-    <li><a href="javascript:void(0);" data-rel="history">History</a></li>
-    <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
-    <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
-  </ul>
-</section>
 
 <section class="page-intro no-gap" id="about">
   <div class="page-intro-inner m-0 d-flex align-items-center">
@@ -170,18 +169,17 @@ meta_tags:
   </div>
 </section>
 
-<section class="art-wrapper" id="art">
-    <div class="art-wrapper-inner m-0 ">
+
+<section class="discover-sec content-wrapper pt-0">
   <div id="local-art" class="carousel slide" data-ride="carousel">
     {% assign local-art-slide = site.data._models.local-art sort: 'order'%}
     <div class="carousel-inner">
       {% for art in local-art-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <div class="art-wrapper-inner m-0 ">
-          <div class="image down background-cover" style="background-image: url('{{ art.image.url_medium }}');">
-            <img class="frame-right" src="/assets/images/hotel/art-area.jpg" alt="Art">
+        <div class="carousel-block m-0">
+          <div class="image background-cover" style="background-image: url('{{ art.image.url_medium }}');">
           </div>
-          <div class="content down d-flex align-items-center">
+          <div class="carousel-caption">
             <h3>{{art.title}}</h3>
             {{art.description}}
           </div>
@@ -194,7 +192,7 @@ meta_tags:
         <div class="image"></div>
         <div class="carousel-caption">
           <ol class="carousel-indicators">
-            {% for art in art-slide %}
+            {% for art in local-art-slide %}
             <li data-target="#local-art" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
             {% endfor %}
           </ol>
@@ -202,5 +200,4 @@ meta_tags:
       </div>
     </div>
   </div>
-</div>
 </section>
