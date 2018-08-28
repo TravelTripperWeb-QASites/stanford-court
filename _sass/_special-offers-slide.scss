@@ -37,19 +37,13 @@
     }
 
     .image {
-      height: 339px;
+      height: 357px;
       margin-bottom: 32px;
       overflow: hidden;
-      @include media-breakpoint-up(md) {
-        height: 357px;
-      }
       figure {
-        height: 339px;
+        height: 357px;
         margin: 0;
         transition: all .5s ease;
-        @include media-breakpoint-up(md) {
-          height: 357px;
-        }
         &:hover {
           -moz-transform: scale(1.1);
           -webkit-transform: scale(1.1);
@@ -60,19 +54,28 @@
   }
 
   .slick-arrow {
-    top: 145px !important;
+    top: 110px !important;
     right: 0 !important;
     display: block;
+    @include media-breakpoint-up(sm) {
+      top: 145px !important;
+    }
     @include media-breakpoint-up(lg) {
       display: none !important;
     }
 
     &.slick-next {
-      right: 30px !important;
+      right: 0 !important;
+      @include media-breakpoint-up(sm) {
+        right: 9px !important;
+      }
     }
 
     &.slick-prev {
-      right: 94px !important;
+      right: 64px !important;
+      @include media-breakpoint-up(sm) {
+        right: 73px !important;
+      }
     }
   }
 }
