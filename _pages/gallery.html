@@ -17,7 +17,6 @@ meta_tags:
         {% assign catname = category[0] %}
         <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
         {% endfor %}
-        <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
       <li>
     </ul>
   </div>
@@ -29,12 +28,29 @@ meta_tags:
       {% for category in categories %}
       {% assign catname = category[0] %}
       {% for photo in site.data._galleries[catname].photos %}
-        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
+      {% if catname != "video" %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" >
           <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{ photo.alt }}">
           <div class="overlay">
             <h4>{{ photo.alt }}</h4>
           </div>
         </div>
+        {% else %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-html="#video{{forloop.index}}" >
+          <div style="display:none;" id="video{{forloop.index}}">
+            <video class="lg-video-object lg-html5" autoplay muted controls >
+              <source src="{{photo.url}}" type="video/mp4" >
+            </video>
+            </div>
+              <img src="/assets/images/gallery/video.jpg" class="img-fluid" alt="{{ photo.alt }}">
+            <div class="overlay">
+              <h4>{{ photo.alt }}</h4>
+            </div>
+              <div class="play-icon"><i class="far fa-play-circle"></i></div>
+        </div>
+
+
+        {% endif %}
         {% assign mod = forloop.index | modulo: 3 %}
         {% if mod == 2 %}
         <div class="card item hidden fancybox rez-offer" data-filter="{{catname}}" data-sub-html="" data-src="">
@@ -54,11 +70,11 @@ meta_tags:
       <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
         <div class="play-icon"><i class="far fa-play-circle"></i></div>
-      </div> -->
+      </div>
       <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
         <div class="play-icon"><i class="far fa-play-circle"></i></div>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>
