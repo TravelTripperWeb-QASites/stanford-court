@@ -20,7 +20,7 @@
   .item {
     padding: 28px 0 0;
     @include media-breakpoint-up(sm) {
-      padding: 63px 30px 55px;
+      padding: 63px 10px 55px;
     }
 
     h3 {
@@ -37,13 +37,19 @@
     }
 
     .image {
-      height: 486px;
+      height: 339px;
       margin-bottom: 32px;
       overflow: hidden;
+      @include media-breakpoint-up(md) {
+        height: 357px;
+      }
       figure {
-        height: 486px;
+        height: 339px;
         margin: 0;
         transition: all .5s ease;
+        @include media-breakpoint-up(md) {
+          height: 357px;
+        }
         &:hover {
           -moz-transform: scale(1.1);
           -webkit-transform: scale(1.1);

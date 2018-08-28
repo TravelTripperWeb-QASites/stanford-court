@@ -93,7 +93,6 @@ meta_tags:
   <h2>Rooms</h2> {% endregionblock %}
   <div class="rooms-inner">
     <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms-img.jpg');">
-      <!-- <img src="/assets/images/home/rooms-img.jpg" alt="Room"> -->
       {% regionblock rooms-link, type: text %}
       <a href="/rooms/" class="primary-btn">View Rooms</a> {% endregionblock %}
     </div>
@@ -108,8 +107,11 @@ meta_tags:
 </section>
 
 <section class="discover-sec">
-  {% regionblock discover, type: header %}
-  <h2>Discov<br class="d-block d-md-none">er</h2> {% endregionblock %}
+  <h2>
+    {% regionblock discover, type: header %}
+    Discov<br class="d-block d-md-none">er
+    {% endregionblock %}
+  </h2>
   <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
     {% assign amenities-slide = site.data._models.home-amenities sort: 'order'%}
     <div class="carousel-inner">
