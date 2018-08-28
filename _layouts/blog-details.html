@@ -21,19 +21,18 @@ layout: default
     {% endif %}
 {% endfor %}
 
-<div class="inner-banner without-text background-cover" style="background-image: url({{blog.blogimage.url}});"></div>
+<div class="inner-banner full without-text background-cover  mb-80" style="background-image: url({{blog.blogimage.url}});">
 
-<section class="inner-nav mb-80">
-  <ul>
-    <li>
-      <a href="/blog/" class="active">All</a>
-      {% assign categories = site.data._models.category | sort: 'order' | descending %}
-      {% for categorylist in categories %}
-        <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a>
-      {% endfor %}
-    <li>
-  <ul>
-</section>
+  <div class="inner-nav fixed-menu">
+    <ul>
+      <li>
+        <a href="/blog/" class="active">All</a> {% assign categories = site.data._models.category | sort: 'order' | descending %} {% for categorylist in categories %}
+        <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a> {% endfor %}
+      <li>
+    <ul>
+  </div>
+</div>
+
 
 <section class="blog-container">
   <div class="blog-row">
