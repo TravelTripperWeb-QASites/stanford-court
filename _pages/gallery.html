@@ -17,7 +17,7 @@ meta_tags:
       <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
       {% for category in categories %}
       {% assign catname = category[0] %}
-        <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
+        <a href="javascript:;" class="filter" data-rel="{{ catname }}">{{ site.data._galleries[catname].name }}</a>
       {% endfor %}
       <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
     <li>
