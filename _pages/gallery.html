@@ -7,27 +7,20 @@ meta_tags:
   robots:
 ---
 
-<section class="inner-banner background-cover" style="background-image: url('/assets/images/accessibility/hero.jpg');">
-  <!-- <div class="banner-text">
-    {% regionblock gallery-title, type: header %}
-      <h1>Gallery</h1>
-    {% endregionblock %}
-  </div> -->
-</section>
-
-{% assign categories = site.data._galleries %}
-<section class="inner-nav mb-5">
-  <ul>
-    <li>
-      <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
-      {% for category in categories %}
-      {% assign catname = category[0] %}
+<div class="inner-banner full background-cover  mb-5" style="background-image: url('/assets/images/gallery/hero.jpg');">
+  {% assign categories = site.data._galleries %}
+  <div class="inner-nav fixed-menu">
+    <ul>
+      <li>
+        <a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a>
+        {% for category in categories %}
+        {% assign catname = category[0] %}
         <a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a>
-      {% endfor %}
-      <a href="javascript:;" class="filter" data-rel="videos">Videos</a>
-    <li>
-  </ul>
-</section>
+        {% endfor %}
+      <li>
+    </ul>
+  </div>
+</div>
 
 <section class="gallery-bg">
   <div class="gallery-listing mb-100" data-offergallery="true">
@@ -35,12 +28,29 @@ meta_tags:
       {% for category in categories %}
       {% assign catname = category[0] %}
       {% for photo in site.data._galleries[catname].photos %}
-        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
+      {% if catname != "video" %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" >
           <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{ photo.alt }}">
           <div class="overlay">
             <h4>{{ photo.alt }}</h4>
           </div>
         </div>
+        {% else %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-html="#video{{forloop.index}}" >
+          <div style="display:none;" id="video{{forloop.index}}">
+            <video class="lg-video-object lg-html5" autoplay muted controls >
+              <source src="{{photo.url}}" type="video/mp4" >
+            </video>
+            </div>
+              <img src="/assets/images/gallery/video.jpg" class="img-fluid" alt="{{ photo.alt }}">
+            <div class="overlay">
+              <h4>{{ photo.alt }}</h4>
+            </div>
+              <div class="play-icon"><i class="far fa-play-circle"></i></div>
+        </div>
+
+
+        {% endif %}
         {% assign mod = forloop.index | modulo: 3 %}
         {% if mod == 2 %}
         <div class="card item hidden fancybox rez-offer" data-filter="{{catname}}" data-sub-html="" data-src="">
@@ -49,7 +59,7 @@ meta_tags:
         {% endif %}
       {% endfor %}
       {% endfor %}
-      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">
+      <!-- <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">
         <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
         <div class="play-icon"><i class="far fa-play-circle"></i></div>
       </div>
@@ -61,6 +71,10 @@ meta_tags:
         <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
         <div class="play-icon"><i class="far fa-play-circle"></i></div>
       </div>
+      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
+        <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
+        <div class="play-icon"><i class="far fa-play-circle"></i></div>
+      </div>-->
     </div>
   </div>
 </section>

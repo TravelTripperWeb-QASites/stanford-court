@@ -16,20 +16,19 @@ meta_tags:
           <video class="embed-responsive-item" autoplay muted loop poster="/assets/images/transparent.png" id="stanfordVideo">
             <source src="{{ banner.video }}" type="video/mp4">
           </video>
-        </div>
-        <div class="scroll-down">
-          <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+          <div class="scroll-down">
+            <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+          </div>
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
-  {% include brg-widget.html %}
 </div>
-
+{% include brg-widget.html %}
 
 <section class="home-intro">
-  <div class="home-intro-inner m-0 d-flex align-items-end">
+  <div class="home-intro-inner m-0 d-flex align-items-center">
     <div class="image">
       <div class="background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');"></div>
       {% regionblock intro_img_caption, type: text %}
@@ -93,7 +92,6 @@ meta_tags:
   <h2>Rooms</h2> {% endregionblock %}
   <div class="rooms-inner">
     <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms-img.jpg');">
-      <!-- <img src="/assets/images/home/rooms-img.jpg" alt="Room"> -->
       {% regionblock rooms-link, type: text %}
       <a href="/rooms/" class="primary-btn">View Rooms</a> {% endregionblock %}
     </div>
@@ -108,8 +106,11 @@ meta_tags:
 </section>
 
 <section class="discover-sec">
-  {% regionblock discover, type: header %}
-  <h2>Discov<br class="d-block d-md-none">er</h2> {% endregionblock %}
+  <h2>
+    {% regionblock discover, type: header %}
+    Discov<br class="d-block d-md-none">er
+    {% endregionblock %}
+  </h2>
   <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
     {% assign amenities-slide = site.data._models.home-amenities sort: 'order'%}
     <div class="carousel-inner">
@@ -158,7 +159,7 @@ meta_tags:
 
 {% include special-offers.html %}
 
-<section class="gallery-carousel">
+<section class="gallery-carousel" id="gallerySuites">
   <div class="gallery-carousel-inner">
     <div class="carousel-nav white">
       <a class="carousel-control-prev" href="javascript:void(0);" data-slide="prev" title="prev">

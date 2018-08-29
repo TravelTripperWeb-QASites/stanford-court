@@ -7,21 +7,15 @@ meta_tags:
   robots:
 ---
 
-<div class="inner-banner  background-cover" style="background-image: url('/assets/images/hotel/history.jpg');">
-  <!--div class="banner-text">
-    {% regionblock banner_title, type: header %}
-    <h1>About Us</h1>
-    {% endregionblock %}
-  </div-->
+<div class="inner-banner full background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
+  <div class="inner-nav fixed-menu">
+    <ul class="banner-nav">
+      <li><a href="javascript:void(0);" data-rel="history">History</a></li>
+      <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
+      <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
+    </ul>
+  </div>
 </div>
-
-<section class="inner-nav mb-5">
-  <ul class="banner-nav">
-    <li><a href="javascript:void(0);" data-rel="history">History</a></li>
-    <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
-    <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
-  </ul>
-</section>
 
 <section class="page-intro no-gap" id="about">
   <div class="page-intro-inner m-0 d-flex align-items-center">
@@ -130,9 +124,6 @@ meta_tags:
   <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
     <div class="image down-full background-cover gradient-bg">
       <div class="title">
-        {% regionblock hotel_amenities_section_title, type: header %}
-          <h4>Stanford Court</h4>
-        {% endregionblock %}
         {% regionblock hotel_amenities_section_header, type: header %}
           <h3>The Best of the Bay</h3>
         {% endregionblock %}
@@ -162,22 +153,51 @@ meta_tags:
   </div>
 </section>
 
-<section class="art-wrapper" id="art">
-  <div class="art-wrapper-inner m-0 ">
-    <div class="image down background-cover" style="background-image: url('/assets/images/hotel/art.jpg');">
-      {% regionblock local_art_image, type: image %}
-        <img class="frame-right" src="/assets/images/hotel/art-area.jpg" alt="Art">
-      {% endregionblock %}
+<section class="stay-sfc">
+  <div class="stay-wrapper">
+    <div class="stay-row m-0">
+      <div class="header-title text-center">
+        {% regionblock stay-title, type: header %}
+        <h4>Stay at stanford Court</h4> {% endregionblock %} {% regionblock stay-content, type: header %}
+        <h3 class="text-white">Link to the best of<br>San Francisco.</h3> {% endregionblock %}
+        <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+      </div>
+      <div class="logo">
+        <img src="/assets/images/footer-logo.png" alt="Stanford Court Hotel">
+      </div>
     </div>
-    <div class="content down d-flex align-items-center">
-      {% regionblock local_art_title, type: header %}
-        <h3>Local Art</h3>
-      {% endregionblock %}
+  </div>
+</section>
 
-      {% regionblock local_art_text, type: text %}
-        <p>Wander our halls and engage with video art, photography, oil paintings, murals, and more. Our immersive arts program enlivens our walls (and ceilings), connecting you with San Francisco’s creative community and culture. We partner with Daylighted, San Francisco’s premier fine arts consultancy, to bring new art from the Bay Area to our lobby. A dynamic selection of work is presented in our digital gallery across three 75” screens—featuring mixed media pieces by photographers and painters including Derek James Lynch, Mike Kepka, and a section of artists from Artspan, a renowned organization that supports local talent. Daylighted’s curators carefully select individual pieces monthly, so the rotation always stays fresh. </p>
-        <p>Intuitive and thought provoking, our SmArtGallery technology delivers an interactive user experience. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don’t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</p>
-      {% endregionblock %}
+
+<section class="discover-sec content-wrapper pt-0">
+  <div id="local-art" class="carousel slide" data-ride="carousel">
+    {% assign local-art-slide = site.data._models.local-art sort: 'order'%}
+    <div class="carousel-inner">
+      {% for art in local-art-slide %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="carousel-block m-0">
+          <div class="image background-cover" style="background-image: url('{{ art.image.url_medium }}');">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{art.title}}</h3>
+            {{art.description}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="carousel-inner indicators bottom-zeor">
+      <div class="carousel-block m-0">
+        <div class="image"></div>
+        <div class="carousel-caption">
+          <ol class="carousel-indicators">
+            {% for art in local-art-slide %}
+            <li data-target="#local-art" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </section>

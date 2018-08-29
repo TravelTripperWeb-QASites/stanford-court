@@ -77,3 +77,76 @@
 .agree {
   margin: 15px 0;
 }
+
+.direction-from {
+  padding: 0 0 40px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 50px 0 45px;
+  }
+
+  .direction-from-inner {
+    @include container-fix-4;
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      padding: 0 15px;
+    }
+    padding: 0;
+  }
+
+  .content {
+    padding: 0 15px;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+
+    .content-inner {
+      position: relative;
+      z-index: 1;
+      margin-right: 0;
+      margin-left: auto;
+      padding: 28px 34px;
+      @include background-gradient(to right, $gradient-1, $gradient-2 150%);
+      @include media-breakpoint-up(md) {
+        padding: 64px 70px;
+      }
+    }
+
+    h3 {
+      padding-bottom: 18px;
+      color: $black;
+      letter-spacing: 0;
+
+      a {
+        color: $black;
+        text-decoration: none;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-bottom: 24px;
+      }
+    }
+
+    h4 {
+      color: $black;
+
+      &.mb {
+        margin-bottom: 35px;
+        @include media-breakpoint-up(md) {
+          margin-bottom: 26px;
+        }
+      }
+    }
+
+    h5 {
+      a {
+        color: inherit;
+      }
+    }
+  }
+}

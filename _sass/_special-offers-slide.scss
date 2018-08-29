@@ -20,7 +20,7 @@
   .item {
     padding: 28px 0 0;
     @include media-breakpoint-up(sm) {
-      padding: 63px 30px 55px;
+      padding: 63px 10px 55px;
     }
 
     h3 {
@@ -37,11 +37,11 @@
     }
 
     .image {
-      height: 486px;
+      height: 357px;
       margin-bottom: 32px;
       overflow: hidden;
       figure {
-        height: 486px;
+        height: 357px;
         margin: 0;
         transition: all .5s ease;
         &:hover {
@@ -54,19 +54,28 @@
   }
 
   .slick-arrow {
-    top: 145px !important;
+    top: 110px !important;
     right: 0 !important;
     display: block;
+    @include media-breakpoint-up(sm) {
+      top: 145px !important;
+    }
     @include media-breakpoint-up(lg) {
       display: none !important;
     }
 
     &.slick-next {
-      right: 30px !important;
+      right: 0 !important;
+      @include media-breakpoint-up(sm) {
+        right: 9px !important;
+      }
     }
 
     &.slick-prev {
-      right: 94px !important;
+      right: 64px !important;
+      @include media-breakpoint-up(sm) {
+        right: 73px !important;
+      }
     }
   }
 }

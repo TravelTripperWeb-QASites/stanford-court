@@ -43,7 +43,7 @@ $("[show-booking-widget]").bookingWidget({
     // Our markers
     attractions = [
       //hint ['title', lat,long, 'category','labelid','address','map direction link' ]
-      ['{{site.name}}', 37.791505, -122.409598, 'hotel', '905 California Street, Nob Hill, San Francisco, CA 94108','{{site.data.hotel-detail.gmapurl}}'],
+      //['{{site.name}}', 37.791505, -122.409598, 'hotel', '905 California Street, Nob Hill, San Francisco, CA 94108','{{site.data.hotel-detail.gmapurl}}'],
       {% for mapitem in mapitems %}[ '{{mapitem.title | escape | replace :'&#39;',''}}', {{mapitem.Lattitude}}, {{mapitem.Longitude}}, '{{mapitem.category}}','{{mapitem.address | escape | replace :'&#39;',''}}',''] {% unless forloop.last %},{% endunless %}{% endfor %} ];
   </script>
 {% endif %}
@@ -61,7 +61,7 @@ $("[show-booking-widget]").bookingWidget({
       }
 
     	var mapOptions = {
-      	hotelTitle       : 'BOUTIQUE HOTEL IN SAN FRANCISCO',
+      	hotelTitle       : 'Stanford Court',
       	hotelAddress     : '905 California Street, Nob Hill, San Francisco, CA 94108',
       	hotelLat         : 37.791505,
       	hotelLong        : -122.409598,
