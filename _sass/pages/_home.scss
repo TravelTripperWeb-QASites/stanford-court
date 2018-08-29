@@ -745,7 +745,7 @@
 
 .desktop-overlay {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   background-color: transparent;
   @include media-breakpoint-up(md) {
     background-color: $white;

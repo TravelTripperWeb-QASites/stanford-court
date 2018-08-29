@@ -4,7 +4,6 @@
 .hero-banner {
   position: relative;
   display: flex;
-  height: 100vh;
   background-color: $black;
 
   video {
@@ -12,8 +11,6 @@
     right: 0;
     bottom: 0;
     display: block;
-    min-width: 100%;
-    min-height: 100%;
     background-color: #539cc7;
     background-size: cover;
     @include media-breakpoint-down(sm) {
@@ -34,15 +31,24 @@
   .scroll-down {
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 50px;
     left: 0;
     z-index: 6;
     max-width: 75px;
     margin: 0 auto;
     padding: 25px;
     cursor: pointer;
-    @include media-breakpoint-down(md) {
-      bottom: 110px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      min-height: auto !important;
+      @include media-breakpoint-down(sm) {
+        height: 100vh !important;
+      }
+
     }
   }
 }
