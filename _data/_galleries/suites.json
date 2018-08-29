@@ -320,6 +320,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073139/sc-lg-king-bed-2.jpg",
       "alt": "Stanford Court King Bed",
       "caption": "Stanford Court King Bed"
+    },
+    {
+      "name": "sc-double-bed-studio-suite-1",
+      "file_name": "sc-double-bed-studio-suite-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/sc-double-bed-studio-suite-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-29-073233",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 251999,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/large_sc-double-bed-studio-suite-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/medium_sc-double-bed-studio-suite-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/small_sc-double-bed-studio-suite-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/xsmall_sc-double-bed-studio-suite-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/thumb_sc-double-bed-studio-suite-1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/sc-double-bed-studio-suite-1.jpg",
+      "alt": "Stanford Court Double Bed Studio",
+      "caption": "Stanford Court Double Bed Studio"
     }
   ],
   "description": ""
