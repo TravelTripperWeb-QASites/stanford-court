@@ -340,6 +340,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073233/sc-double-bed-studio-suite-1.jpg",
       "alt": "Stanford Court Double Bed Studio",
       "caption": "Stanford Court Double Bed Studio"
+    },
+    {
+      "name": "sc-double-deluxe-suite-1",
+      "file_name": "sc-double-deluxe-suite-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/sc-double-deluxe-suite-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-29-073308",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 174542,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/large_sc-double-deluxe-suite-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/medium_sc-double-deluxe-suite-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/small_sc-double-deluxe-suite-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/xsmall_sc-double-deluxe-suite-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/thumb_sc-double-deluxe-suite-1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073308/sc-double-deluxe-suite-1.jpg",
+      "alt": "Stanford Court Double Deluxe Suite",
+      "caption": "Stanford Court Double Deluxe Suite"
     }
   ],
   "description": ""
