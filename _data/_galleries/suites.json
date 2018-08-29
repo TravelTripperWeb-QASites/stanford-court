@@ -180,6 +180,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072449/sc-presidental-suite-8-bathroom.jpg",
       "alt": "Stanford Court Presidential Suite Bathroom",
       "caption": "Stanford Court Presidential Suite Bathroom"
+    },
+    {
+      "name": "sc-parlor-suite-1",
+      "file_name": "sc-parlor-suite-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/sc-parlor-suite-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-29-072526",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 126505,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/large_sc-parlor-suite-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/medium_sc-parlor-suite-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/small_sc-parlor-suite-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/xsmall_sc-parlor-suite-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/thumb_sc-parlor-suite-1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072526/sc-parlor-suite-1.jpg",
+      "alt": "Stanford Court Parlor Suite",
+      "caption": "Stanford Court Parlor Suite"
     }
   ],
   "description": ""
