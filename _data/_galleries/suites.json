@@ -280,6 +280,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073017/sc-bedroom-suite-2.jpg",
       "alt": "Stanford Court Bedroom Suite",
       "caption": "Stanford Court Bedroom Suite"
+    },
+    {
+      "name": "sc-lg-king-bed-1",
+      "file_name": "sc-lg-king-bed-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/sc-lg-king-bed-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-29-073106",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 266339,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/large_sc-lg-king-bed-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/medium_sc-lg-king-bed-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/small_sc-lg-king-bed-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/xsmall_sc-lg-king-bed-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/thumb_sc-lg-king-bed-1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-073106/sc-lg-king-bed-1.jpg",
+      "alt": "Stanford Court King Bed",
+      "caption": "Stanford Court King Bed"
     }
   ],
   "description": ""
