@@ -11,6 +11,27 @@ $(document).ready(function() {
       scrollTop: $("#scroll-to").offset().top - 104
     }, 1000);
   });
+
+  $(document).on("click", "#gallerySuites .img-block", function(e){
+    e.preventDefault();
+    localStorage.gallerySuites = "true";
+    var url = window.location.href;
+    var lastCharacter = url.slice(-1);
+    if(lastCharacter == "/") {
+      var galleryUrl = url+"gallery/";
+      window.location.href = galleryUrl;
+    }
+    // var galleryUrl = url.replace(/\/[^\/]*$/, '/gallery/');
+    // window.location.href = galleryUrl;
+  });
+
+  if(localStorage.gallerySuites == "true") {
+    setTimeout(function(){
+      $(".inner-nav [data-rel='suites']").click();
+      localStorage.gallerySuites = "false";
+    }, 1000);
+  }
+
 });
 // Instagram API script
 $(window)
@@ -184,7 +205,7 @@ $(document).ready(function() {
               }
         },
             {
-              breakpoint: 500,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 1,
               }

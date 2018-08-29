@@ -55,6 +55,7 @@
     .scroll {
       height: 402px;
       overflow-y: scroll;
+      border-right: 1px solid $black;
       @include media-breakpoint-up(md) {
         height: 314px;
       }
@@ -72,6 +73,9 @@
       &::-webkit-scrollbar-track {
         background-color: transparent;
         border-radius: 4px;
+      }
+      .scroll-inner {
+        width: 80%;
       }
     }
   }

@@ -30,7 +30,11 @@
         max-width: 100%;
         cursor: pointer;
       }
-
+      video {
+        width: 100%;
+        max-width: 100%;
+        cursor: pointer;
+      }
       .overlay {
         position: absolute;
         top: 0;
@@ -57,7 +61,7 @@
         }
       }
       &.hidden {
-        display: none;
+        display: none !important;
       }
     }
 
