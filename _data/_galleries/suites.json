@@ -260,6 +260,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072708/sc-parlor-suite-4.jpg",
       "alt": "Stanford Court Parlor Suite",
       "caption": "Stanford Court Parlor Suite"
+    },
+    {
+      "name": "sc-bedroom-suite-1",
+      "file_name": "sc-bedroom-suite-1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/sc-bedroom-suite-1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-08-29-072939",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 254806,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/large_sc-bedroom-suite-1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/medium_sc-bedroom-suite-1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/small_sc-bedroom-suite-1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/xsmall_sc-bedroom-suite-1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/thumb_sc-bedroom-suite-1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_18596/media/2018-08-29-072939/sc-bedroom-suite-1.jpg",
+      "alt": "Stanford Court Bedroom Suite",
+      "caption": "Stanford Court Bedroom Suite"
     }
   ],
   "description": ""
