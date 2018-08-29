@@ -1,6 +1,6 @@
 {
   "sort_order": 2,
-  "title": "Lobby Art",
+  "title": "Carefully Curated",
   "image": {
     "name": "Lobby Art",
     "file_name": "Lobby Art.jpg",
@@ -22,5 +22,5 @@
     "alt": "Lobby Art",
     "caption": ""
   },
-  "description": "<p><span style=\"color: #231f20; font-family: futura-pt, sans-serif; font-size: 16px; letter-spacing: 0.5px;\">Wander our halls and engage with video art, photography, oil paintings, murals, and more. Our immersive arts program enlivens our walls (and ceilings), connecting you with San Francisco&rsquo;s creative community and culture. We partner with Daylighted, San Francisco&rsquo;s premier fine arts consultancy, to bring new art from the Bay Area to our lobby. A dynamic selection of work is presented in our digital gallery across three 75&rdquo; screens&mdash;featuring mixed media pieces by photographers and painters. Daylighted&rsquo;s curators carefully select individual pieces monthly, so the rotation always stays fresh. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don&rsquo;t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</span></p>"
+  "description": "<p><span style=\"color: #231f20; font-family: futura-pt, sans-serif; font-size: 16px; letter-spacing: 0.5px;\">Daylighted&rsquo;s curators carefully select individual pieces monthly, so the rotation always stays fresh. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don&rsquo;t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</span></p>"
 }
