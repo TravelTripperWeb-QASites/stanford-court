@@ -384,3 +384,14 @@
   }
 
 }
+
+// map marker customized css
+.leaflet-container {
+  .leaflet-marker-pane {
+    img {
+      left: 50px !important;
+      z-index: 999 !important;
+      //transform: translate3d(1005px, 221px, 0) !important;
+    }
+  }
+}

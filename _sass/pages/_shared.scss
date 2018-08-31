@@ -31,12 +31,12 @@
   .scroll-down {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 80px;
     left: 0;
     z-index: 6;
     max-width: 75px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 23px;
     cursor: pointer;
     @include media-breakpoint-down(sm) {
       display: none;
@@ -396,4 +396,8 @@
     width: 16px;
     margin-top: -3px;
   }
+}
+
+.brg-widget {
+  display: none;
 }
