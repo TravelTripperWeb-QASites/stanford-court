@@ -366,9 +366,15 @@ footer {
         width: 79px;
         &:first-child {
           margin-bottom: 20px;
+	  @media only screen and (max-width: 460px) {
+	    margin-bottom: 0px;
+	  }
         }
         &:last-child {
-          width: auto;
+          width: 100px;
+	  @media only screen and (max-width: 460px) {
+ 	    width: 120px;
+	  }
         }
       }
     }
