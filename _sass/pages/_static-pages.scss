@@ -1,3 +1,11 @@
+.faq-seach {
+  max-width: 400px;
+  margin: 20px auto 40px;
+}
+.no-results {
+  display: none;
+  text-align: center;
+}
 .static-content {
   @include container-fix-2;
   margin-top: 3rem;
