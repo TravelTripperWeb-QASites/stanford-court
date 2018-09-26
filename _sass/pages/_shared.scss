@@ -96,6 +96,20 @@
     position: relative;
     height: 100vh;
   }
+  .scroll-down {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    z-index: 6;
+    max-width: 75px;
+    margin: 0 auto;
+    padding: 23px;
+    cursor: pointer;
+    &.bottom-up {
+      bottom: 120px;
+    }
+  }
 }
 
 .inner-intro {

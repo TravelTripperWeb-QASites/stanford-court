@@ -13,10 +13,13 @@ meta_tags:
       <h1>Sitemap</h1>
     {% endregionblock %}
   </div> -->
+  <div class="scroll-down">
+    <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+  </div>
 </section>
 
 {% assign links = site.data.navigation.main %} {% assign footer_links = site.data.navigation.footer %}
-<section class="static-content text-center">
+<section class="static-content text-center" id="scroll-to">
   <div class="sitemap mb-5">
     <ul>
       {% for link in links %}

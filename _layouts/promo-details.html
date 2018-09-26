@@ -6,9 +6,12 @@ layout: default
 
 {% assign promo_seo_title = promos.promo_seo_title %}
 <div class="inner-banner without-text background-cover" style="background-image:url({{promos.bannerimage.url}})">
+  <div class="scroll-down">
+    <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+  </div>
 </div>
 
-<section class="offers-carousel-main">
+<section class="offers-carousel-main" id="scroll-to">
   <div class="offers-inner-carousel">
     <div class="tag-line-text">
       <p>{{promos.title}}</p>
