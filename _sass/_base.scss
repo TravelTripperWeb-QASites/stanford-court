@@ -212,3 +212,18 @@ a {
   padding-top: 15px;
 
 }
+
+.form-control {
+  margin: 10px 0;
+  padding: 15px;
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: .02rem;
+  background: $white;
+  border: solid 1px $grey-border;
+  border-radius: 0;
+
+  &:focus {
+    box-shadow: inherit;
+  }
+}
