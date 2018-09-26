@@ -1,19 +1,22 @@
 .brg-widget {
   position: absolute;
-  bottom: 191px;
-  width: auto;
-  margin: 0 15px;
-  @include media-breakpoint-up(sm) {
-    width: 95.5%;
-  }
-  @include media-breakpoint-up(md) {
-    width: 96.5%;
-  }
-  @include media-breakpoint-up(lg) {
-    @include make-col(6);
-    bottom: 0;
-    margin: 0;
-  }
+  right: 0;
+  left: 0;
+  margin: auto;
+  // bottom: 191px;
+  // width: auto;
+  // margin: 0 15px;
+  // @include media-breakpoint-up(sm) {
+  //   width: 95.5%;
+  // }
+  // @include media-breakpoint-up(md) {
+  //   width: 96.5%;
+  // }
+  // @include media-breakpoint-up(lg) {
+  //   @include make-col(6);
+  //   bottom: 0;
+  //   margin: 0;
+  // }
 }
 
 .recentBookingsOuter {
@@ -68,8 +71,9 @@
 }
 
 .price-wrap {
+
   font-family: $headings-font;
-  background-color: $black;
+  //background-color: $black;
 
   .best-rate-ota {
     width: 100%;
@@ -164,7 +168,7 @@
             margin: 3px;
             padding: 2px;
             font-size: 15px;
-            color: $book-btn-bg;
+            color: $white;
 
             span {
               padding-left: 4px;

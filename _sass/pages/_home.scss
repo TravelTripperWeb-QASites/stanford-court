@@ -49,9 +49,6 @@
       padding: 0 80px 0 200px;
     }
 
-    // @media (min-width: 1600px) {
-    //   padding: 116px 80px 160px 200px;
-    // }
     .info {
       max-width: 100%;
       @include media-breakpoint-up(lg) {
@@ -201,20 +198,16 @@
   h2 {
     position: relative;
     z-index: 1;
-    margin-left: -13px;
+    //margin-left: -13px;
     overflow: hidden;
     opacity: .9;
     @include media-breakpoint-up(md) {
-      margin-left: -80px;
+      //margin-left: -80px;
     }
   }
 
   .rooms-inner {
-    @include container-fix-3;
     position: relative;
-    @include media-breakpoint-up(xl) {
-      padding: 0 15px;
-    }
     padding: 0;
   }
 
@@ -226,35 +219,42 @@
     }
     height: 353px;
     margin-top: -42px;
-    a {
-      position: absolute;
-      bottom: 20px;
-      left: 80px;
-      @include media-breakpoint-up(md) {
-        bottom: -60px;
-        left: 60px;
-      }
-    }
+    // a {
+    //   position: absolute;
+    //   bottom: 20px;
+    //   left: 80px;
+    //   @include media-breakpoint-up(md) {
+    //     bottom: -60px;
+    //     left: 60px;
+    //   }
+    // }
   }
 
   .content {
     position: relative;
     z-index: 1;
     width: 100%;
-    margin-top: 0;
-    margin-right: 0;
+    max-width: 920px;
+    margin-top: -90px;
+    margin-right: auto;
     margin-left: auto;
     padding: 43px 50px 50px;
     background: $black;
-    @include media-breakpoint-up(md) {
-      width: 58%;
-      margin-top: -164px;
-      padding: 64px 70px;
+    .content-row {
+      @include make-row;
     }
-    @include media-breakpoint-up(xl) {
-      margin-right: -72px;
+    .room-titles {
+      @include make-col-ready();
+      @include media-breakpoint-up(mg) {
+        @include make-col(6);
+      }
     }
-
+    .room-description {
+      @include make-col-ready();
+      @include media-breakpoint-up(mg) {
+        @include make-col(6);
+      }
+    }
     .plus-icon {
       position: absolute;
       top: -63px;
@@ -267,6 +267,7 @@
     }
 
     h3 {
+      max-width: 300px;
       padding-bottom: 24px;
       color: $white;
     }
