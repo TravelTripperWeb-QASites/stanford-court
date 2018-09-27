@@ -217,3 +217,15 @@ body:hover .visually-hidden button {
     margin-top: 80px !important;
   }
 }
+
+.mb-8 {
+  margin-bottom: 40px !important;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 80px !important;
+  }
+}
+
+.mnh-5 {
+  min-height: 500px !important;
+}

@@ -415,3 +415,29 @@
 // .brg-widget {
 //   display: none;
 // }
+
+//Gradient Background cross-cell section
+.group-offerings {
+  padding: 43px 34px 50px;
+  @include background-gradient(to right, $gradient-1, $gradient-2 150%);
+  text-align: center;
+
+  h4 {
+    margin: 15px 0 35px;
+  }
+
+  ul {
+    margin: 25px 0;
+    padding: 0 15px;
+
+    li {
+      font-weight: 600;
+      list-style: none;
+    }
+  }
+
+  i {
+    font-size: $type-size-6;
+    opacity: .7;
+  }
+}
