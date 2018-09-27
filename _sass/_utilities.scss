@@ -209,3 +209,11 @@ body:hover .visually-hidden button {
     transform: rotate(360deg);
   }
 }
+
+.mt-8 {
+  margin-top: 40px !important;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 80px !important;
+  }
+}
