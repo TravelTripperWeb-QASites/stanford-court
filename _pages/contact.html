@@ -17,7 +17,7 @@ meta_tags:
   <div class="inner-intro-row m-0">
     <div class="heading">
       {% regionblock attractions_title, type: header %}
-        <h3>Contact</h3>
+      <h3>Contact</h3>
       {% endregionblock %}
     </div>
     <div class="content address">
@@ -30,30 +30,21 @@ meta_tags:
       <a href="mailto:info@stanfordcourt.com" title="info@stanfordcourt.com">info@stanfordcourt.com</a>
       {% endregionblock %}
 
-      {% regionblock find_your_way_header, type: header %}
-        <h5 class="mb">Getting here</h5>
+      {% regionblock getting_header, type: header %}
+      <h4 class="mb">Getting here</h4>
       {% endregionblock %}
+      <div class="directions">
+      {% regionblock directions, type: html %}
+      <a href="https://bit.ly/2sD1N3g" target="_blank">
+        Directions 01: San Francisco International Airport - SFO</a>
 
-      {% regionblock direction_01, type: header %}
-        <h3>
-          <a href="https://bit.ly/2sD1N3g" target="_blank">
-          Directions 01: San Francisco International Airport - SFO</a>
-        </h3>
-      {% endregionblock %}
+      <a href="https://bit.ly/2M6L8gI" target="_blank">
+        Directions 02:  Oakland International Airport - OAK</a>
 
-      {% regionblock direction_02, type: header %}
-        <h3>
-          <a href="https://bit.ly/2M6L8gI" target="_blank">
-          Directions 02:  Oakland International Airport - OAK</a>
-        </h3>
+      <a href="https://bit.ly/2LtVgPd" target="_blank">
+          Directions 03: san Jose International Airport - SJC</a>
       {% endregionblock %}
-
-      {% regionblock direction_03, type: header %}
-        <h3 class="pb-0">
-          <a href="https://bit.ly/2LtVgPd" target="_blank">
-            Directions 03: san Jose International Airport - SJC</a>
-        </h3>
-      {% endregionblock %}
+      <div>
     </div>
   </div>
 </section>
