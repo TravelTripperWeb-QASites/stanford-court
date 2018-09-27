@@ -272,6 +272,33 @@ $(document).ready(function() {
       });
   }, 2500);
 
+  // more rooms slick
+  setTimeout(function() {
+    $('#moreRooms')
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerMode: false,
+        adaptiveHeight: true,
+        responsive: [{
+            breakpoint: 990,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+  }, 2500);
+
   $("#input_15")
     .datepicker();
   $("#input_16")

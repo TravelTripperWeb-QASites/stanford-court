@@ -24,6 +24,7 @@ layout: default
 <div class="inner-banner full without-text background-cover  mb-80" style="background-image: url({{blog.blogimage.url}});">
 
   <div class="inner-nav fixed-menu">
+    <p class="select-room">Select Blog Category</p>
     <ul>
       <li>
         <a href="/blog/" class="active">All</a> {% assign categories = site.data._models.category | sort: 'order' | descending %} {% for categorylist in categories %}
