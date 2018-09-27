@@ -109,17 +109,25 @@
 .local-attractions {
   .local-attractions-row {
     @include make-row();
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
   }
 
   .nav-controls {
-    display: none;
     @include media-breakpoint-up(md) {
       @include make-col(6);
       display: block;
-
-      .carousel-nav {
+    }
+    .carousel-nav {
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      @include media-breakpoint-up(md) {
         top: 0;
         right: inherit;
+        left: auto;
         z-index: 1;
       }
     }

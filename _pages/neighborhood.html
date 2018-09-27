@@ -58,7 +58,7 @@ meta_tags:
         </div>
       {% endfor %}
     </div>
-    <div class="local-attractions-row justify-content-end">
+    <div class="local-attractions-row">
       <div class="nav-controls">
         <div class="carousel-nav white">
           <a class="carousel-control-prev" href="#attractionsCarousel" data-slide="prev" >
@@ -75,7 +75,22 @@ meta_tags:
   </div>
 </section>
 
-<section class="events-carousel-wrapper">
+<section class="inner-intro mt-5 mb-0">
+  <div class="inner-intro-row m-0" id="attractions">
+    <div class="heading">
+      {% regionblock attractions_title, type: header %}
+        <h3>Attractions</h3>
+      {% endregionblock %}
+    </div>
+    <div class="content">
+      {% regionblock attractions_text, type: text %}
+        <p>The stunning Grace Cathedral—most notable for its front doors, which are replicas of the Baptistry of Florence Cathedral’s "Gates of Paradise” by master artist Lorenzo Ghiberti—and Dragon’s Gate, the entrance to Chinatown, are just a couple blocks away. Head towards Union Square, and you’ll find the recently expanded Museum of Modern Art (SFMoMA), and the cable cars (Insider’s tip: board in Fisherman’s Wharf instead of downtown for shorter waits). Some other local favorites: lunch at the Ferry building, packing for a picnic at Mission Dolores Park, shopping on Fillmore Street, and long walks in the lush Presidio.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+</section>
+
+<section class="events-carousel-wrapper mt-0">
   {% regionblock events_header, type: header %}
     <h2>Events</h2>
   {% endregionblock %}
@@ -87,21 +102,6 @@ meta_tags:
       <div class="text-center">
         <a href="/events/" class="black-btn">See all Events</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="inner-intro mt-0">
-  <div class="inner-intro-row m-0" id="attractions">
-    <div class="heading">
-      {% regionblock attractions_title, type: header %}
-        <h3>Attractions</h3>
-      {% endregionblock %}
-    </div>
-    <div class="content">
-      {% regionblock attractions_text, type: text %}
-        <p>The stunning Grace Cathedral—most notable for its front doors, which are replicas of the Baptistry of Florence Cathedral’s "Gates of Paradise” by master artist Lorenzo Ghiberti—and Dragon’s Gate, the entrance to Chinatown, are just a couple blocks away. Head towards Union Square, and you’ll find the recently expanded Museum of Modern Art (SFMoMA), and the cable cars (Insider’s tip: board in Fisherman’s Wharf instead of downtown for shorter waits). Some other local favorites: lunch at the Ferry building, packing for a picnic at Mission Dolores Park, shopping on Fillmore Street, and long walks in the lush Presidio.</p>
-      {% endregionblock %}
     </div>
   </div>
 </section>
