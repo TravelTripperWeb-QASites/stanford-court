@@ -31,12 +31,12 @@ permalink: /room/
     <div class="details d-flex align-items-center">
       <div class="room-info">
         <a class="back-btn" href="/rooms/#[[ room.category | formatNameForLink ]]"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
-        <h4>tonight’s rate
+        <!-- <h4>tonight’s rate
           <span>
             <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
             </a>
           </span>
-        </h4>
+        </h4> -->
         <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
         <div class="area">
           <ul>
@@ -74,7 +74,7 @@ permalink: /room/
   </div>
 
 
-  <section class="room-amenites">
+  <!-- <section class="room-amenites">
     <h2>DETAILS</h2>
     <div class="wrapper">
       <h4>unique Room Features</h4>
@@ -99,12 +99,58 @@ permalink: /room/
             <li><span>All natural plant based EO bath products</span></li>
             <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
             <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
-            <!-- <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li> -->
           </ul>
         </div>
       </div>
     </div>
-  </section>
+</section> -->
+
+<section class="room-amenites">
+  <div class="room-amenites-inr">
+    <h3>Unique Room Features</h3>
+    <ul>
+      <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
+      <li><span>Simmons pillow top mattress</span></li>
+      <li><span>100% cotton 300-thread count linens</span></li>
+      <li><span>Deluxe goose feather down comforter</span></li>
+      <li><span>Blackout shades</span></li>
+      <li><span>USB outlets</span></li>
+      <li><span>Bedside LCD Reading Lamps</span></li>
+      <li><span>Laptop-sized safe</span></li>
+      <li><span>49'' LG HDTV</span></li>
+      <li><span>Google Chromecast</span></li>
+      <li><span>Mini Refrigerator</span></li>
+      <li><span>The Coffee Bean Coffee</span></li>
+      <li><span>Granite bathroom vanity</span></li>
+      <li><span>Adjustable height Toto Aerojet Hand Shower</span></li>
+      <li><span>Towel Warmer</span></li>
+      <li><span>All natural plant based EO bath products</span></li>
+      <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
+      <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="more-rooms" rt3-special-rates="offers">
+  <h3 class="text-center">Other Rooms</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo enim, auctor sit amet rhoncus non, varius ut est. </p>
+  <div class="slick-controls" id="moreRooms">
+    <div class="item" ng-repeat="offer in offers.special_rates | limitTo: 4">
+      <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+      <div class="image">
+        <figure class="background-cover" ng-style="{'background-image':'url([[ offer.lead_photo_url.large ]])'}"></figure>
+      </div>
+      <hr>
+      <span>[[ $index + 1 ]]</span>
+      <a class="primary-btn float-right" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="">Discover More</a>
+    </div>
+  </div>
+  <p class="text-center d-none d-sm-block">
+    <a class="black-btn" href="/offers/" title="">All Offers</a>
+  </p>
+</section>
+
+
 </section>
 
 <div class="special-offers d-none d-md-block">

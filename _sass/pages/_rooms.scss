@@ -346,129 +346,32 @@
 // UNIQUE ROOM FEATURES
 
 .room-amenites {
-  position: relative;
-  padding-top: 159px;
-  @include media-breakpoint-up(md) {
-    margin-bottom: 45px;
-    padding-top: 139px;
-  }
-
-  h2 {
-    position: absolute;
-    top: 0;
-    right: auto;
-    left: -28px;
-    z-index: 1;
-    width: 100%;
-    line-height: 7.65rem;
-    color: $black;
-    text-align: left;
-    @include media-breakpoint-up(md) {
-      top: 0;
-      right: 0;
-      left: auto;
-      line-height: 12.75rem;
-      text-align: right;
+  @include background-gradient(to right, $gradient-1, $gradient-2 150%);
+  margin-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .room-amenites-inr {
+    @include container-fix-2;
+    h3 {
+      margin-bottom: 50px;
+      text-align: center;
     }
-  }
-
-  .wrapper {
-    @include container-fix-4;
-    width: 95%;
-    padding: 32px 16px;
-    background: $black;
-    background-image: none;
-    @include media-breakpoint-up(md) {
-      padding: 64px;
-      background-image: url("/assets/images/footer-map.png");
-      background-repeat: no-repeat;
-      background-position: top -83px right -341px;
-    }
-
-    h4 {
-      padding-bottom: 30px;
-      color: $white;
-      @include media-breakpoint-down(sm) {
-        text-align: center;
-      }
-    }
-
-    .amenites-list {
-      position: relative;
-      width: 100%;
-      height: 280px;
-      overflow-y: scroll;
-      border-right: 1px solid $white;
-      // box-shadow: inset 0px 0px 0px 10px red;
-      // &:after {
-      //   position: absolute;
-      //   top: 0;
-      //   right: 0;
-      //   bottom: 0;
-      //   width: 1px;
-      //   height: inherit;
-      //   content: '';
-      //   background: $white;
-      // }
-
-      @include media-breakpoint-up(md) {
-        max-width: 318px;
-      }
-
-      ul {
-        padding: 0;
-
-        li {
-          position: relative;
-          float: left;
-          width: 49%;
-          padding-bottom: 29px;
-          padding-left: 30px;
-          color: $white;
-          list-style: none;
-          @include media-breakpoint-up(md) {
-            float: inherit;
-            width: 80%;
-            padding-bottom: 29px;
-            padding-left: 30px;
-          }
-          @media only screen and (max-width: 460px) {
-            width: 100%;
-          }
-
-          &:before {
-            position: absolute;
-            top: 5px;
-            left: 0;
-            width: 14px;
-            height: 14px;
-            content: '';
-            border: 1px solid $white;
-            border-radius: 14px;
-          }
+    ul {
+      margin-bottom: 0;
+      @include make-row;
+      li {
+        width: 100%;
+        padding-right: 50px;
+        padding-bottom: 16px;
+        @include media-breakpoint-up(md) {
+          @include make-col(4);
         }
-      }
-
-      .force-overflow {
-        min-height: 250px;
-      }
-      //custom scrollbar
-      &::-webkit-scrollbar {
-        width: 5px;
-        background: transparent;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background-color: $white;
-        width: 5px;
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: transparent;
       }
     }
   }
 }
+
+
 // rooms search
 
 .rooms-search {
