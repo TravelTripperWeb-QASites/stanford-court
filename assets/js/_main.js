@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   $('body').on('keyup', '.faq-seach input', function() {
     var searchQuery = $(".faq-seach input").val().toLowerCase();
-    console.log(searchQuery);
+    //console.log(searchQuery);
     if (searchQuery.length > 2) {
       $(".container-for-search p").hide();
       $(".container-for-search p").each(function(key) {
@@ -66,43 +66,61 @@ $(document).ready(function() {
 
 });
 // Instagram API script
-$(window).on("load", function(e) {
-  var ownerId = '6142505566';
-  var instaurl = 'https://igmedia.herokuapp.com/u/stanfordcourtsf/';
-  var instaFeedUrl = "https://www.instagram.com/p/";
-  $.ajax({
-    url: instaurl,
-    dataType: "json",
-    success: function(response) {
+$(window)
+      .on("load", function (e) {
+        var ownerId = '6142505566';
+        var instaurl = 'https://apinsta.herokuapp.com/u/stanfordcourtsf/';
+        var instaFeedUrl = "https://www.instagram.com/p/";
+        $.ajax({
+          url: instaurl,
+          dataType: "json",
+          success: function (response) {
 
-      var showInstaFeeds = [],
-        feedCount = 0;
-      setTimeout(function() {
-        $.each(response.medias, function(i, item) {
-          if ($(window)
-            .width() >= 767) {
-            if (i > 3) return false;
-          } else {
-            if (i > 3) return false;
+           console.log('ok insta', response);
+            var showInstaFeeds = [],
+              feedCount = 0;
+            var allFeeds = response.graphql.user.edge_owner_to_timeline_media.edges;
+            showInstaFeeds = $.grep(allFeeds, function (ele, i) {
+              return ele.node.owner.id == ownerId;
+            });
+            //console.log('testtt', showInstaFeeds);
+            if (showInstaFeeds.length < 6) {
+              for (var j = 0; j < allFeeds.length; j++) {
+                if (allFeeds[j].node.owner.id != ownerId) {
+                  showInstaFeeds.push(allFeeds[j]);
+                  feedCount++;
+                  if (feedCount > 7)
+                    break;
+                }
+              }
+            }
+
+
+            setTimeout(function () {
+              $.each(showInstaFeeds, function (i, item) {
+                if ($(window)
+                  .width() >= 767) {
+                  if (i > 3) return false;
+                } else {
+                  if (i > 3) return false;
+                }
+
+                $('<div class="feed background-cover" style="background-image:url(' + item.node.thumbnail_src + ');"><a href="' + instaFeedUrl + item.node.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.node.edge_liked_by.count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.node.edge_media_to_comment.count + '</p></a></div>')
+                  .appendTo('.instagram-feed');
+              });
+              var heightDIV = $('.instagram-feed div:first-child')
+                .innerWidth();
+              $('.instagram-feed div')
+                .each(function () {
+                  $(this)
+                    .css('height', heightDIV + 'px');
+                });
+              $('.instagram-feed')
+                .slideDown('slow');
+            }, 500);
           }
-
-          $('<div class="feed background-cover" style="background-image:url(' + item.thumbnail + ');"><a href="' + instaFeedUrl + item.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.like_count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.comment_count + '</p></a></div>')
-            .appendTo('.instagram-feed');
         });
-        var heightDIV = $('.instagram-feed div:first-child')
-          .innerWidth();
-        $('.instagram-feed div')
-          .each(function() {
-            $(this)
-              .css('height', heightDIV + 'px');
-          });
-        $('.instagram-feed')
-          .slideDown('slow');
-      }, 500);
-    }
-  });
-});
-
+      });
 
 $(window)
   .on("load", function() {
@@ -156,8 +174,7 @@ $(window)
           window.location.href = link;
         });
     }
-
-
+    
   });
 
 function pinterestShare(img, desc) {

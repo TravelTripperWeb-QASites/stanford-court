@@ -173,9 +173,25 @@
         }
         a {
           display: inline-flex;
-          padding-bottom: 14px;
+          padding-bottom: 20px;
           &:hover {
             color: $white;
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+        h4 {
+          padding-bottom: 20px;
+          color: $white;
+        }
+        .directions {
+          a {
+            font-family: $global-font-bold;
+            font-size: $type-size-6;
+            letter-spacing: .3px;
           }
         }
       }
