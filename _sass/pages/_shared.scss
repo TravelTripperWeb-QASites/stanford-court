@@ -308,7 +308,7 @@
 
     ul {
       position: absolute;
-      top: 45px;
+      top: 69px;
       right: 0;
       left: 0;
       z-index: 9;
@@ -322,6 +322,7 @@
         padding: 0;
 
         a {
+          margin: 2px auto;
           padding: 8px 3px;
 
           &::after {
@@ -357,7 +358,7 @@
       position: fixed !important;
       top: 50px;
       bottom: auto;
-      width: 100%; 
+      width: 100%;
     }
 
 }
