@@ -7,8 +7,7 @@
     "required": true
   },
   "url_friendly_name": {
-    "label": "URL Friendly Name",
-    "type": "url_slug"
+    "label": "Url"
   },
   "sort_order": {
     "type": "integer",
