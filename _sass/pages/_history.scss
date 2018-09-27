@@ -12,16 +12,10 @@
   }
 
   .history-wrapper {
-    @include container-fix-2;
-    max-width: 1670px;
-    padding-left: 30px;
-    @include media-breakpoint-up(lg) {
-      padding-left: 113px;
-    }
+    @include container-fix-2 ;
     @media (min-width: 1680px) {
-      padding-left: 0;
+      max-width: 1640px;
     }
-
     .info-content {
       width: 100%;
 
@@ -47,11 +41,11 @@
     padding: 0 30px;
     overflow: hidden;
     @media (min-width: 1680px) {
-      width: 1630px;
+      width: 1640px;
       overflow: hidden;
     }
     @media (min-width: 1366px) and (max-width: 1440px) {
-      width: 1300px;
+      width: 1235px;
     }
     @media (min-width: 1025px) and (max-width: 1324px) {
       width: 1220px;
@@ -247,14 +241,17 @@
 
       p {
         width: 100%;
-        margin-right: 20px;
-        //padding-bottom: 10px ;
         font-weight: normal;
         line-height: 22px;
         color: $white;
-        letter-spacing: 0.05em;
+        letter-spacing: .05em;
         @include media-breakpoint-up(md) {
-          max-width: 175px;
+          max-width: 275px;
+          margin-top: 35px;
+        }
+        @media (min-width: 1600px) {
+          max-width: 250px;
+          margin-top: 35px;
         }
 
         @media (min-width: 768px) and (max-width: 900px) {
@@ -278,7 +275,10 @@
     @include media-breakpoint-up(md) {
       top: -24px;
       right: 0;
-      width: 30%;
+      width: 32%;
+    }
+    @media (min-width: 1680px) {
+        width: 35%;
     }
   }
   #next,
@@ -296,21 +296,23 @@
 
   #next {
     right: 40px;
+    display: block !important;
     background-image: url('../images/hotel/right-arrow.png');
     background-size: 30px;
     @include media-breakpoint-up(md) {
-      right: 0;
+      left: 0;
     }
     @include media-breakpoint-up(lg) {
-      right: 30px;
+      left: 81px;
     }
     @media (min-width: 1600px) {
-      right: 80px;
+      left: 131px;
     }
   }
 
   #prev {
     left: 0;
+    display: block !important;
     background-image: url('../images/hotel/left-arrow.png');
     background-size: 30px;
     @include media-breakpoint-up(md) {

@@ -44,6 +44,10 @@ meta_tags:
           <a href="/room/#{{ room.roomtype | downcase }}">
             <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
           </a>
+          <div class="overlay">
+            <a class="primary-btn-inverse" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
+          </div>
+
         </div>
 
       <div class="room-info">

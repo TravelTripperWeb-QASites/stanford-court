@@ -18,8 +18,8 @@ main:
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
-        - title: Events
-          url: /events/
+        - title: SF Events
+          url: /sf-events/
   - title: Gallery
     url: /gallery/
   - title: Blog

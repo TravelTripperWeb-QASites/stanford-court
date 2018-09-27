@@ -11,9 +11,9 @@ meta_tags:
   <div class="inner-nav fixed-menu">
     <p class="select-room">Select Gallery Category</p>
     <ul class="banner-nav">
-      <li><a href="javascript:void(0);" data-rel="history">History</a></li>
-      <li><a href="javascript:void(0);" data-rel="amenities">Amenities</a></li>
-      <li><a href="javascript:void(0);" data-rel="art">Art</a></li>
+      <li><a href="#history" data-rel="history">History</a></li>
+      <li><a href="#amenities" data-rel="amenities">Amenities</a></li>
+      <li><a href="#arts" data-rel="arts">Art</a></li>
     </ul>
   </div>
   <div class="scroll-down">
@@ -26,9 +26,7 @@ meta_tags:
     <div class="gradient-bg" id="scroll-to">
       <div class="gradient-bg-inner">
         <div class="text-inner">
-          {% regionblock hotel_title, type: header %}
-            <h3>PROGRESSIVE <br>OUTLOOK</h3>
-          {% endregionblock %}
+
           {% regionblock hotel_text, type: text %}
             <p class="d-block d-lg-none">From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
             <p class="d-block d-lg-none">Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
@@ -38,6 +36,9 @@ meta_tags:
       </div>
     </div>
     <div class="content d-none d-lg-block">
+      {% regionblock hotel_title, type: header %}
+        <h3>PROGRESSIVE <br>OUTLOOK</h3>
+      {% endregionblock %}
       {% regionblock hotel_text, type: text %}
         <p>From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
         <p>Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
@@ -47,6 +48,26 @@ meta_tags:
 </section>
 
 <section class="history background-cover">
+
+  <div class="history-wrapper">
+    <div class="info-content">
+      {% regionblock history_heading, type: header %}
+      <h3>TRUE TO OUR ROOTS</h3>
+      {% endregionblock %}
+
+      {% regionblock history_text, type: header %}
+      <p>Like our predecessors, we dare to dream big and connect people.</p>
+
+      <p>It all started with Leland Stanford, an industrial railroad tycoon who built the Central Pacific Railroad—a 19th century highway that catalyzed the exchange of new cultures and ideas. Stanford’s 1876 mansion became a relic of inspired luxury in the lush Nob Hill neighborhood until it was destroyed in a fire during the 1906 San Francisco earthquake. In 1912, investor Lucien H. Sly transformed the vacant lot into the posh Stanford Court Apartments. 60 years and a dramatic debut later, Stanford’s legacy stands today at the Stanford Court Hotel. </p>
+
+      <p>Restored and relocated to the hotel’s arrival porte cochere entrance is 3-ton, 10-foot tall penguin sculpture by Beniamino Bufano, which for 45 years was hidden in the landscape at the corner of Pine and Powell Streets. Bufano created many public art sculptures which can be found throughout the city and Bay Area. His free public art reflects the irreverent yet inclusive spirit of the city. Spanning the wall beneath the lobby dome is a mural based on photographer Eadweard Muybridge’s “Sallie Gardner at a Gallop”, an innovative photo series centered on a horse’s gait. Commissioned by Stanford in 1878, the series of 24 images shot in rapid succession not only enabled Stanford to win a bet, but also helped lay the groundwork for the motion-picture industry.  Mounted on the ceiling of the hotel’s bar is a mural from the legendary car chase scene through the streets of San Francisco from the 1968 movie “Bullitt” starring Steve McQueen. The exhilarating scene considered to be one of the best of its kind in movie history features two heavily modified four-speed Mustangs burning rubber across the city from Fisherman’s Wharf to Guadalupe Canyon Parkway.
+      </p>
+
+      <p>Marrying maverick discovery with artistic expression, the art embodies the singular ethos that has come to define our city. We continue to champion San Francisco’s “boom town” spirit—the tenacity instilled by the risk takers and visionaries of the California Gold (and Silicon) Rush. Stanford Court offers the perfect mix of character, culture, tech, and style, with all the comforts of a great boutique hotel.</p>
+      {% endregionblock %}
+    </div>
+  </div>
+
   <div id="history">
     <div id="timeline">
       <ul id="issues">
@@ -104,24 +125,6 @@ meta_tags:
       </div>
     </div>
   </div>
-  <div class="history-wrapper">
-    <div class="info-content">
-      {% regionblock history_heading, type: header %}
-      <h3>TRUE TO OUR ROOTS</h3>
-      {% endregionblock %}
-
-      {% regionblock history_text, type: header %}
-      <p>Like our predecessors, we dare to dream big and connect people.</p>
-
-      <p>It all started with Leland Stanford, an industrial railroad tycoon who built the Central Pacific Railroad—a 19th century highway that catalyzed the exchange of new cultures and ideas. Stanford’s 1876 mansion became a relic of inspired luxury in the lush Nob Hill neighborhood until it was destroyed in a fire during the 1906 San Francisco earthquake. In 1912, investor Lucien H. Sly transformed the vacant lot into the posh Stanford Court Apartments. 60 years and a dramatic debut later, Stanford’s legacy stands today at the Stanford Court Hotel. </p>
-
-      <p>Restored and relocated to the hotel’s arrival porte cochere entrance is 3-ton, 10-foot tall penguin sculpture by Beniamino Bufano, which for 45 years was hidden in the landscape at the corner of Pine and Powell Streets. Bufano created many public art sculptures which can be found throughout the city and Bay Area. His free public art reflects the irreverent yet inclusive spirit of the city. Spanning the wall beneath the lobby dome is a mural based on photographer Eadweard Muybridge’s “Sallie Gardner at a Gallop”, an innovative photo series centered on a horse’s gait. Commissioned by Stanford in 1878, the series of 24 images shot in rapid succession not only enabled Stanford to win a bet, but also helped lay the groundwork for the motion-picture industry.  Mounted on the ceiling of the hotel’s bar is a mural from the legendary car chase scene through the streets of San Francisco from the 1968 movie “Bullitt” starring Steve McQueen. The exhilarating scene considered to be one of the best of its kind in movie history features two heavily modified four-speed Mustangs burning rubber across the city from Fisherman’s Wharf to Guadalupe Canyon Parkway.
-      </p>
-
-      <p>Marrying maverick discovery with artistic expression, the art embodies the singular ethos that has come to define our city. We continue to champion San Francisco’s “boom town” spirit—the tenacity instilled by the risk takers and visionaries of the California Gold (and Silicon) Rush. Stanford Court offers the perfect mix of character, culture, tech, and style, with all the comforts of a great boutique hotel.</p>
-      {% endregionblock %}
-    </div>
-  </div>
 </section>
 
 <section class="art-wrapper" id="amenities">
@@ -157,24 +160,7 @@ meta_tags:
   </div>
 </section>
 
-<section class="stay-sfc">
-  <div class="stay-wrapper">
-    <div class="stay-row m-0">
-      <div class="header-title text-center">
-        {% regionblock stay-title, type: header %}
-        <h4>Stay at stanford Court</h4> {% endregionblock %} {% regionblock stay-content, type: header %}
-        <h3 class="text-white">Link to the best of<br>San Francisco.</h3> {% endregionblock %}
-        <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
-      </div>
-      <div class="logo">
-        <img src="/assets/images/footer-logo.png" alt="Stanford Court Hotel">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="discover-sec content-wrapper pt-0">
+<section class="discover-sec content-wrapper pt-0" id="arts">
   <div id="local-art" class="carousel slide" data-ride="carousel">
     {% assign local-art-slide = site.data._models.local-art sort: 'order'%}
     <div class="carousel-inner">

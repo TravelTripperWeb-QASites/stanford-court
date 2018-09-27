@@ -12,7 +12,6 @@
     }
   }
 
-
   .room-image {
     @include make-col-ready();
     margin-bottom: 50px;
@@ -22,22 +21,54 @@
       @include make-col(4.3);
     }
 
+    &:hover {
+      figure {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+
     figure {
       min-height: 468px;
       margin: 0;
       padding-right: 15px;
       padding-left: 15px;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       @include media-breakpoint-up(md) {
         min-height: 540px;
       }
       @media only screen and (max-width: 460px) {
         min-height: 368px;
       }
-      &:hover {
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+      background: rgba($black, .4);
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      opacity: 0;
+      @include transition;
+
+      .primary-btn-inverse {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 127px;
+        height: 17px;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover {
+      .overlay {
+        opacity: 1;
       }
     }
   }
@@ -86,8 +117,8 @@
     }
   }
 }
-// Room Feature
 
+// Room Feature
 .room-features {
   margin: 0 auto;
   @include media-breakpoint-up(md) {
@@ -167,6 +198,7 @@
     }
   }
 }
+
 // Details scss
 .details-wrapper {
   @include make-row();
@@ -410,7 +442,6 @@
       //   content: '';
       //   background: $white;
       // }
-
       @include media-breakpoint-up(md) {
         max-width: 318px;
       }
