@@ -10,7 +10,7 @@ main:
     url: /offers/
   - title: Dining
     url: /dining/
-  - title: Meetings & Events
+  - title: Meetings
     url: /meetings/
     dropdown:
         - title: Corporate Preferred Program
