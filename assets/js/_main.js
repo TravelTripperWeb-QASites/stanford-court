@@ -8,10 +8,38 @@ navOnScroll(); //from function.js
 
 
 $(document).ready(function() {
+     // detail blackbar menu sticky
+if(document.querySelector(".fixed-menu")) {
+ // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {scrollSticky()};
+  var sticky, header, cl_width;
+  // Get the menu of sticky items
+  header = document.querySelector(".fixed-menu");
 
+  cl_width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+  // Get the offset position of the sticky menu
+  if (cl_width > 768) {
+    sticky = header.offsetTop - 70;
+  }else{
+    sticky = header.offsetTop - 50;
+  }
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function scrollSticky() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+}
+
+
+  //
   $('body').on('keyup', '.faq-seach input', function() {
     var searchQuery = $(".faq-seach input").val().toLowerCase();
-    //console.log(searchQuery);
     if (searchQuery.length > 2) {
       $(".container-for-search p").hide();
       $(".container-for-search p").each(function(key) {
@@ -174,7 +202,7 @@ $(window)
           window.location.href = link;
         });
     }
-    
+
   });
 
 function pinterestShare(img, desc) {

@@ -353,6 +353,13 @@
 
   }
 
+  &.sticky {
+      position: fixed !important;
+      top: 50px;
+      bottom: auto;
+      width: 100%; 
+    }
+
 }
 
 .bg-black {
