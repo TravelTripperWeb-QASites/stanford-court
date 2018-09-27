@@ -217,7 +217,7 @@
 
     .black-btn {
       position: absolute;
-      top: 42px;
+      top: 52px;
       right: 15px;
       background-image: url('/assets/images/white-arrow.png');
       background-repeat: no-repeat;
@@ -235,7 +235,6 @@
         @include media-breakpoint-down(md) {
           background-position: right 14px bottom 18px;
         }
-
       }
     }
   }
