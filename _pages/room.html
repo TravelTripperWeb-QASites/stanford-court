@@ -73,38 +73,6 @@ permalink: /room/
     </div>
   </div>
 
-
-  <!-- <section class="room-amenites">
-    <h2>DETAILS</h2>
-    <div class="wrapper">
-      <h4>unique Room Features</h4>
-      <div class="amenites-list">
-        <div class="force-overflow">
-          <ul>
-            <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
-            <li><span>Simmons pillow top mattress</span></li>
-            <li><span>100% cotton 300-thread count linens</span></li>
-            <li><span>Deluxe goose feather down comforter</span></li>
-            <li><span>Blackout shades</span></li>
-            <li><span>USB outlets</span></li>
-            <li><span>Bedside LCD Reading Lamps</span></li>
-            <li><span>Laptop-sized safe</span></li>
-            <li><span>49'' LG HDTV</span></li>
-            <li><span>Google Chromecast</span></li>
-            <li><span>Mini Refrigerator</span></li>
-            <li><span>The Coffee Bean Coffee</span></li>
-            <li><span>Granite bathroom vanity</span></li>
-            <li><span>Adjustable height Toto Aerojet Hand Shower</span></li>
-            <li><span>Towel Warmer</span></li>
-            <li><span>All natural plant based EO bath products</span></li>
-            <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
-            <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</section> -->
-
 <section class="room-amenites">
   <div class="room-amenites-inr">
     <h3>Unique Room Features</h3>
@@ -131,32 +99,36 @@ permalink: /room/
   </div>
 </section>
 
+{% assign rooms = site.data._models.rooms  | sort : "sort_order" %}
+
 <section class="more-rooms" rt3-special-rates="offers">
   <h3 class="text-center">Other Rooms</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo enim, auctor sit amet rhoncus non, varius ut est. </p>
   <div class="slick-controls" id="moreRooms">
-    <div class="item" ng-repeat="offer in offers.special_rates | limitTo: 4">
-      <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+    {% for room in rooms | limit:4 %}
+    <div class="item">
+      <h3>{{ room.title }}</h3>
       <div class="image">
-        <figure class="background-cover" ng-style="{'background-image':'url([[ offer.lead_photo_url.large ]])'}"></figure>
+        <figure class="background-cover"  style="background-image:url({{ room.roomimage.url }});"></figure>
       </div>
       <hr>
-      <span>[[ $index + 1 ]]</span>
-      <a class="primary-btn float-right" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="">Discover More</a>
+      <span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <a class="primary-btn float-right" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
     </div>
+    {% endfor %}
   </div>
-  <p class="text-center d-none d-sm-block">
-    <a class="black-btn" href="/offers/" title="">All Offers</a>
+  <p class="text-center d-none d-sm-block pt-0">
+    <a class="black-btn" href="/rooms/" title="">More rooms</a>
   </p>
 </section>
 
 
-</section>
-
-<div class="special-offers d-none d-md-block">
+<div class="special-offers d-none d-md-block pt-4">
   <h3 class="text-center">Special Offers</h3>
   <p>What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
   <p class="text-center">
     <a class="black-btn" href="/offers/" title="All Offers">All Offers</a>
   </p>
 </div>
+
+</section>
