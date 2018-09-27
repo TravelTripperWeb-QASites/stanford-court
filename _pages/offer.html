@@ -11,6 +11,7 @@ meta_tags:
 <section rt3-special-rates="offers" ng-controller="offerDetail">
   <div class="inner-banner full without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
     <div class="inner-nav fixed-menu">
+      <p class="select-room">Select Offer</p>
       <ul>
         <li>
           <a ng-class="{'active': offer.rate_plan_code == offers.sRdetail.rate_plan_code}" ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" title="[[ offer.rate_plan_name ]]" ng-repeat="offer in offers.special_rates">
@@ -19,9 +20,12 @@ meta_tags:
           </li>
         </ul>
       </div>
+      <div class="scroll-down">
+        <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
+      </div>
   </div>
 
-  <div class="offers-carousel-main">
+  <div class="offers-carousel-main" id="scroll-to">
     <div class="offers-inner-carousel">
       <div class="tag-line-text">
         <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>

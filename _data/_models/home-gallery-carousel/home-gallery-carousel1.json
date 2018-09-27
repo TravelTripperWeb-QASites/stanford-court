@@ -1,5 +1,5 @@
 {
-  "title": "Placeholder One",
+  "title": "Rooms",
   "image": {
     "name": "SC-Pres-Suite-5 (1)",
     "file_name": "SC-Pres-Suite-5 (1).jpg",
@@ -20,5 +20,6 @@
     "alt": "Presidential Suite",
     "caption": ""
   },
-  "sort_order": 1
+  "sort_order": 1,
+  "url_friendly_name": "/rooms/"
 }

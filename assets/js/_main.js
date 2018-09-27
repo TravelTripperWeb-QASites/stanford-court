@@ -8,10 +8,38 @@ navOnScroll(); //from function.js
 
 
 $(document).ready(function() {
+     // detail blackbar menu sticky
+if(document.querySelector(".fixed-menu")) {
+ // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {scrollSticky()};
+  var sticky, header, cl_width;
+  // Get the menu of sticky items
+  header = document.querySelector(".fixed-menu");
 
+  cl_width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+  // Get the offset position of the sticky menu
+  if (cl_width > 768) {
+    sticky = header.offsetTop - 70;
+  }else{
+    sticky = header.offsetTop - 50;
+  }
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function scrollSticky() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+}
+
+
+  //
   $('body').on('keyup', '.faq-seach input', function() {
     var searchQuery = $(".faq-seach input").val().toLowerCase();
-    console.log(searchQuery);
     if (searchQuery.length > 2) {
       $(".container-for-search p").hide();
       $(".container-for-search p").each(function(key) {
@@ -66,43 +94,61 @@ $(document).ready(function() {
 
 });
 // Instagram API script
-$(window).on("load", function(e) {
-  var ownerId = '6142505566';
-  var instaurl = 'https://igmedia.herokuapp.com/u/stanfordcourtsf/';
-  var instaFeedUrl = "https://www.instagram.com/p/";
-  $.ajax({
-    url: instaurl,
-    dataType: "json",
-    success: function(response) {
+$(window)
+      .on("load", function (e) {
+        var ownerId = '6142505566';
+        var instaurl = 'https://apinsta.herokuapp.com/u/stanfordcourtsf/';
+        var instaFeedUrl = "https://www.instagram.com/p/";
+        $.ajax({
+          url: instaurl,
+          dataType: "json",
+          success: function (response) {
 
-      var showInstaFeeds = [],
-        feedCount = 0;
-      setTimeout(function() {
-        $.each(response.medias, function(i, item) {
-          if ($(window)
-            .width() >= 767) {
-            if (i > 3) return false;
-          } else {
-            if (i > 3) return false;
+           console.log('ok insta', response);
+            var showInstaFeeds = [],
+              feedCount = 0;
+            var allFeeds = response.graphql.user.edge_owner_to_timeline_media.edges;
+            showInstaFeeds = $.grep(allFeeds, function (ele, i) {
+              return ele.node.owner.id == ownerId;
+            });
+            //console.log('testtt', showInstaFeeds);
+            if (showInstaFeeds.length < 6) {
+              for (var j = 0; j < allFeeds.length; j++) {
+                if (allFeeds[j].node.owner.id != ownerId) {
+                  showInstaFeeds.push(allFeeds[j]);
+                  feedCount++;
+                  if (feedCount > 7)
+                    break;
+                }
+              }
+            }
+
+
+            setTimeout(function () {
+              $.each(showInstaFeeds, function (i, item) {
+                if ($(window)
+                  .width() >= 767) {
+                  if (i > 3) return false;
+                } else {
+                  if (i > 3) return false;
+                }
+
+                $('<div class="feed background-cover" style="background-image:url(' + item.node.thumbnail_src + ');"><a href="' + instaFeedUrl + item.node.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.node.edge_liked_by.count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.node.edge_media_to_comment.count + '</p></a></div>')
+                  .appendTo('.instagram-feed');
+              });
+              var heightDIV = $('.instagram-feed div:first-child')
+                .innerWidth();
+              $('.instagram-feed div')
+                .each(function () {
+                  $(this)
+                    .css('height', heightDIV + 'px');
+                });
+              $('.instagram-feed')
+                .slideDown('slow');
+            }, 500);
           }
-
-          $('<div class="feed background-cover" style="background-image:url(' + item.thumbnail + ');"><a href="' + instaFeedUrl + item.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.like_count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.comment_count + '</p></a></div>')
-            .appendTo('.instagram-feed');
         });
-        var heightDIV = $('.instagram-feed div:first-child')
-          .innerWidth();
-        $('.instagram-feed div')
-          .each(function() {
-            $(this)
-              .css('height', heightDIV + 'px');
-          });
-        $('.instagram-feed')
-          .slideDown('slow');
-      }, 500);
-    }
-  });
-});
-
+      });
 
 $(window)
   .on("load", function() {
@@ -157,7 +203,6 @@ $(window)
         });
     }
 
-
   });
 
 function pinterestShare(img, desc) {
@@ -208,6 +253,33 @@ $(document).ready(function() {
         infinite: true,
         speed: 300,
         slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: false,
+        adaptiveHeight: true,
+        responsive: [{
+            breakpoint: 990,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+  }, 2500);
+
+  // more rooms slick
+  setTimeout(function() {
+    $('#moreRooms')
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
         slidesToScroll: 1,
         centerMode: false,
         adaptiveHeight: true,

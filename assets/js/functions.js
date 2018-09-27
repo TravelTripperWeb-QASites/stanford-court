@@ -7,8 +7,7 @@ function navOnScroll() {
       navigationClass.css('opacity', '1');
     },500);
 
-	$(window).on('load resize scroll', function() {
-       console.log($(window).width());
+	$(window).on('load resize scroll', function() { 
        if($(window).width() < 1201){
         	navigationClass.addClass('nav-active');
        }else{

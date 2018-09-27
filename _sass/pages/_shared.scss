@@ -96,6 +96,20 @@
     position: relative;
     height: 100vh;
   }
+  .scroll-down {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    z-index: 6;
+    max-width: 75px;
+    margin: 0 auto;
+    padding: 23px;
+    cursor: pointer;
+    &.bottom-up {
+      bottom: 120px;
+    }
+  }
 }
 
 .inner-intro {
@@ -159,9 +173,25 @@
         }
         a {
           display: inline-flex;
-          padding-bottom: 14px;
+          padding-bottom: 20px;
           &:hover {
             color: $white;
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+        h4 {
+          padding-bottom: 20px;
+          color: $white;
+        }
+        .directions {
+          a {
+            font-family: $global-font-bold;
+            font-size: $type-size-6;
+            letter-spacing: .3px;
           }
         }
       }
@@ -278,7 +308,7 @@
 
     ul {
       position: absolute;
-      top: 45px;
+      top: 69px;
       right: 0;
       left: 0;
       z-index: 9;
@@ -292,6 +322,7 @@
         padding: 0;
 
         a {
+          margin: 2px auto;
           padding: 8px 3px;
 
           &::after {
@@ -321,6 +352,13 @@
     z-index: 99;
     width: 100%;
 
+  }
+
+  &.sticky {
+    position: fixed !important;
+    top: 50px;
+    bottom: auto;
+    width: 100%;
   }
 
 }
@@ -382,7 +420,7 @@
   margin-top: -.5em;
   font-size: 10px;
   content: '';
-  border-radius: 0.5em;
+  border-radius: .5em;
   -webkit-animation: spinner 1500ms infinite linear;
   -moz-animation: spinner 1500ms infinite linear;
   -ms-animation: spinner 1500ms infinite linear;
@@ -398,6 +436,32 @@
   }
 }
 
-.brg-widget {
-  display: none;
+// .brg-widget {
+//   display: none;
+// }
+
+//Gradient Background cross-cell section
+.group-offerings {
+  padding: 43px 34px 50px;
+  @include background-gradient(to right, $gradient-1, $gradient-2 150%);
+  text-align: center;
+
+  h4 {
+    margin: 15px 0 35px;
+  }
+
+  ul {
+    margin: 25px 0;
+    padding: 0 15px;
+
+    li {
+      font-weight: 600;
+      list-style: none;
+    }
+  }
+
+  i {
+    font-size: $type-size-6;
+    opacity: .7;
+  }
 }

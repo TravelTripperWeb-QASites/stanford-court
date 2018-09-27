@@ -10,7 +10,7 @@ main:
     url: /offers/
   - title: Dining
     url: /dining/
-  - title: Meetings & Events
+  - title: Meetings
     url: /meetings/
     dropdown:
         - title: Corporate Preferred Program
@@ -18,8 +18,8 @@ main:
   - title: Neighborhood
     url: /neighborhood/
     dropdown:
-        - title: Events
-          url: /events/
+        - title: SF Events
+          url: /sf-events/
   - title: Gallery
     url: /gallery/
   - title: Blog
