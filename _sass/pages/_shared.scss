@@ -355,11 +355,11 @@
   }
 
   &.sticky {
-      position: fixed !important;
-      top: 50px;
-      bottom: auto;
-      width: 100%;
-    }
+    position: fixed !important;
+    top: 50px;
+    bottom: auto;
+    width: 100%;
+  }
 
 }
 
@@ -420,7 +420,7 @@
   margin-top: -.5em;
   font-size: 10px;
   content: '';
-  border-radius: 0.5em;
+  border-radius: .5em;
   -webkit-animation: spinner 1500ms infinite linear;
   -moz-animation: spinner 1500ms infinite linear;
   -ms-animation: spinner 1500ms infinite linear;

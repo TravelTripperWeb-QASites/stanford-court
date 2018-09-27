@@ -409,7 +409,7 @@
 .rooms-search {
   margin: 45px auto;
   padding: 80px 0 55px;
-  background: url("/assets/images/rooms/search_bg.jpg");
+  background: url('/assets/images/rooms/search_bg.jpg');
   @include media-breakpoint-down(sm) {
     display: none;
   }
@@ -469,7 +469,7 @@
       }
 
       &.date-pic {
-        background: url("/assets/images/rooms/angle-up.png");
+        background: url('/assets/images/rooms/angle-up.png');
         background-repeat: no-repeat;
         background-position: right 20px bottom 22px;
       }

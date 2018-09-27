@@ -31,7 +31,7 @@
         position: relative;
         min-height: 339px;
         margin-bottom: 47px;
-        transition: all 0.5s ease;
+        transition: all .5s ease;
         @include media-breakpoint-up(md) {
           min-height: 357px;
           margin-bottom: 20px;
@@ -208,7 +208,7 @@
     position: relative;
     margin: 0 0 35px;
     @include media-breakpoint-up(md) {
-      margin: 0 0 0;
+      margin: 0;
     }
 
     .tag-line-text {
