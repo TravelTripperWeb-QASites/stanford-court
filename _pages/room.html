@@ -11,7 +11,7 @@ permalink: /room/
     [[ rooms = ( browser.roomsList | filter:{'category':roomCat});"" ]] [[ room = ( rooms[roomIndex]);"" ]]
   </div>
   <div class="inner-banner full background-cover" ng-style="{'background-image':'url(' + room.photos[0].large + ')'}">
-    <div class="inner-nav fixed-menu fixed-menu">
+    <div class="inner-nav fixed-menu">
       <p class="select-room">Select Room</p>
       <ul>
         <li>
@@ -30,7 +30,7 @@ permalink: /room/
     </div>
     <div class="details d-flex align-items-center">
       <div class="room-info">
-        <a class="back-btn" href="/rooms/"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
+        <a class="back-btn" href="/rooms/#[[ room.category | formatNameForLink ]]"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
         <h4>tonight’s rate
           <span>
             <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
