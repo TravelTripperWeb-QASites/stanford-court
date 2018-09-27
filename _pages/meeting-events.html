@@ -6,11 +6,20 @@ permalink: /meetings/
 meta_tags:
   robots:
 ---
-
+<!-- Banner -->
 <div class="inner-banner background-cover" style="background-image: url('/assets/images/meetings/hero.jpg');">
+  <div class="inner-nav fixed-menu">
+    <p class="select-room">Select Category Link</p>
+    <ul class="banner-nav">
+      <li><a href="javascript:void(0);" data-rel="meetings">Meetings</a></li>
+      <li><a href="javascript:void(0);" data-rel="events">Events</a></li>
+      <li><a href="javascript:void(0);" data-rel="promotion">Special Promotion</a></li>
+    </ul>
+  </div>
 </div>
 
-<section class="seven-stills-dining ">
+<!-- Intro -->
+<section class="seven-stills-dining mt-8 mb-0" id="meetings">
   <div class="details d-flex align-items-center">
     <div class="seven-stills-info">
       {% regionblock meetings-header, type: header %}
@@ -24,38 +33,46 @@ meta_tags:
         <p>PLANNING AN OFFSITE?<br>Don’t wait. Book now.</p>
       {% endregionblock %}
       {% regionblock meetings-link, type: heatextder %}
-        <a href="" onclick="srfp_widget.show()" class="black-btn">Request for proposal</a>
+        <a href="/corporate-preferred-program/" class="black-btn mt-3">Request for proposal</a>
       {% endregionblock %}
     </div>
   </div>
-  <div class="image-slider background-cover" style="background-image:url('/assets/images/meetings/intro.jpg');">
+  <div class="image-slider background-cover" style="background-image:url('/assets/images/meetings/intro.jpg');"></div>
+</section>
+
+<!-- Social Events -->
+<section class="market-place mt-8 mb-8" id="events">
+  <div class="image-slider background-cover mnh-5" style="background-image:url('/assets/images/meetings/social.jpg'); "></div>
+  <div class="details d-flex align-items-center">
+    <div class="market-place-info">
+      {% regionblock social_title, type: header %}
+        <h3>Social Events</h3>
+      {% endregionblock %}
+      {% regionblock social_text, type: text %}
+        <p>
+          Stanford Court is an urban setting distinctly San Francisco ideal for wedding brunches, rehearsal dinners and all manner of celebration any time of day. Event Spaces can accommodate up to 60-70 guests. Our seasoned culinary team can create custom menus for any event. Stanford Court also provides preferred rates for guests planning to stay over to enjoy all the planned festivities, please contact our Sales team at <a href="mailto:sales@stanfordcourt.com">sales@stanfordcourt.com</a> for more information.
+        </p>
+      {% endregionblock %}
+    </div>
   </div>
 </section>
 
-<section class="amenities-wrap">
-  <div class="amenities-inner">
-    <div class="image-part background-cover" style="background-image: url('/assets/images/meetings/meeting-social.jpg');">
-    </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="scroll">
-          {% regionblock meetings_list_header, type: header %}
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing</h4>
-          {% endregionblock %}
-          {% regionblock meetings_list, type: text %}
-            <ul>
-              <li>Plug & Play Audio Visual Technology</li>
-              <li>Catering Services</li>
-              <li>Business Center</li>
-              <li>Lorem Ipsum Dolor</li>
-              <li>Lorem Ipsum Dolor</li>
-              <li>Lorem Ipsum Dolor</li>
-              <li>Lorem Ipsum Dolor</li>
-              <li>Lorem Ipsum Dolor</li>
-            </ul>
-          {% endregionblock %}
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Group Offerings -->
+<section class="group-offerings" id="promotion">
+  {% regionblock offerings_heading, type: header %}
+    <h3>Group Offerings</h3>
+  {% endregionblock %}
+  {% regionblock offerings_tagline, type: header %}
+    <h4>Try something new, for your next urban retreat</h4>
+  {% endregionblock %}
+  {% regionblock offerings_text, type: text %}
+    <p>Book a meeting valid from: Now - December 31, 2018<br>Pick 2 Special offers when you book 10 or more peak room nights</p>
+    <ul>
+      <li>50% our Refreshed Event Spaces</li>
+      <li>Complimentary welcome reception for up to 25 guests in our redesigned bar</li>
+      <li>Complimentary Meeting Amenities including: Wi-Fi, New 75 flat panel TV for projection, and Flip Chart</li>
+      <li>2 Suite upgrades in our new studio suites</li>
+    </ul>
+    <i>*Valid on new bookings only & cannot be combined with any other promotion. Blackout dates apply<br>*Get all 4 perks if you book any of our HOT DATES (11/15-11/30, 12/13-12/30)</i>
+  {% endregionblock %}
 </section>

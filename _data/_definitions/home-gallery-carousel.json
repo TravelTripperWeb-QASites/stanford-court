@@ -6,6 +6,9 @@
     "type": "image",
     "required": true
   },
+  "url_friendly_name": {
+    "label": "Url"
+  },
   "sort_order": {
     "type": "integer",
     "required": false

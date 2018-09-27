@@ -1,6 +1,6 @@
 {
   "sort_order": 2,
-  "title": "Placeholder Four",
+  "title": "Neighborhood",
   "image": {
     "name": "SC-Pres-Suite-7-Bedroom",
     "file_name": "SC-Pres-Suite-7-Bedroom.jpg",
@@ -20,5 +20,6 @@
     "path": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-180307/SC-Pres-Suite-7-Bedroom.jpg",
     "alt": "Presidential Suite Bedroom",
     "caption": ""
-  }
+  },
+    "url_friendly_name": "/neighborhood/"
 }

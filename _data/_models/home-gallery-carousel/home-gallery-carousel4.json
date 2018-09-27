@@ -1,6 +1,6 @@
 {
   "sort_order": 3,
-  "title": "Placeholder Two",
+  "title": "Dining",
   "image": {
     "name": "SC-Pres-Suite-6.",
     "file_name": "SC-Pres-Suite-6..jpg",
@@ -20,5 +20,6 @@
     "path": "//cdn.traveltripper.io/site-assets/192_901_18487/media/2018-08-23-180146/SC-Pres-Suite-6..jpg",
     "alt": "Presidential Suite",
     "caption": ""
-  }
+  },
+  "url_friendly_name": "/dining/"
 }
