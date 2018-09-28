@@ -6,7 +6,7 @@ label_localized:
 layout_localized:
   en: default
 meta_description_localized:
-  en: Blog.
+  en: San Francisco has endless attractions and things to do for any type of traveler. Here are our favorites for what our beautiful and adventure-filled city offers.
 meta_keywords_localized:
   en:
 published_localized:
@@ -16,6 +16,7 @@ include_in_nav_localized:
 
 ---
 
+<!-- Banner start here -->
 <div class="inner-banner without-text background-cover mb-80" style="background-image: url('/assets/images/blog/hero.jpg');">
   <div class="inner-nav fixed-menu ">
     <p class="select-room">Select Blog Category</p>
@@ -37,7 +38,7 @@ include_in_nav_localized:
 </div>
 
 
-
+<!-- Blog list start here -->
 <section class="blog-container" id="scroll-to">
   <div class="blog-row">
     <div class="blog-col">
@@ -50,6 +51,8 @@ include_in_nav_localized:
         </div>
         <hr>
       </div>
+
+      <!-- Posts start here -->
       {% for post in data_paginator.posts %}
         <div class="post">
           <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
@@ -85,6 +88,7 @@ include_in_nav_localized:
       <div class="clearfix"></div>
       {% endfor %}
 
+      <!-- Pagination start here -->
       {% if data_paginator.total_pages > 1 %}
 
         <div class="pagination">
@@ -114,6 +118,7 @@ include_in_nav_localized:
       {% endif %}
 
     </div>
+  
     <div class="blog-right-block">
       {% include blog-aside.html %}
     </div>

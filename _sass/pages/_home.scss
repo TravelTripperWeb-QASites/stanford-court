@@ -233,13 +233,13 @@
     }
     .room-titles {
       @include make-col-ready();
-      @include media-breakpoint-up(mg) {
+      @include media-breakpoint-up(md) {
         @include make-col(6);
       }
     }
     .room-description {
       @include make-col-ready();
-      @include media-breakpoint-up(mg) {
+      @include media-breakpoint-up(md) {
         @include make-col(6);
       }
     }

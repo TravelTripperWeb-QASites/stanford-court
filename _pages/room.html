@@ -3,13 +3,14 @@ layout: default
 title: Room Details
 permalink: /room/
 ---
-
 <div class="loading" style="display:block">Loading&#8230;</div>
-
+<!-- Room Details start here -->
 <section ng-controller="roomDetail">
   <div style="display:none">
     [[ rooms = ( browser.roomsList | filter:{'category':roomCat});"" ]] [[ room = ( rooms[roomIndex]);"" ]]
   </div>
+
+  <!-- Room banner image start here -->
   <div class="inner-banner full background-cover" ng-style="{'background-image':'url(' + room.photos[0].large + ')'}">
     <div class="inner-nav fixed-menu">
       <p class="select-room">Select Room</p>
@@ -22,113 +23,116 @@ permalink: /room/
     <div class="scroll-down">
       <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
     </div>
-  </div>
-
-  <div class="details-wrapper" id="scroll-to">
-    <div class="tag-line-text">
-      <p>[[ room.category ]]</p>
     </div>
-    <div class="details d-flex align-items-center">
-      <div class="room-info">
-        <a class="back-btn" href="/rooms/#[[ room.category | formatNameForLink ]]"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
-        <!-- <h4>tonight’s rate
-          <span>
-            <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
-            </a>
-          </span>
+
+    <!-- Room Details start here -->
+    <div class="details-wrapper" id="scroll-to">
+      <div class="tag-line-text">
+        <p>[[ room.category ]]</p>
+      </div>
+      <div class="details d-flex align-items-center">
+        <div class="room-info">
+          <a class="back-btn" href="/rooms/#[[ room.category | formatNameForLink ]]"><i class="fas fa-arrow-left"></i> Back to Rooms</a>
+          <!-- <h4>tonight’s rate
+        <span>
+          <a ng-href="[[room.todayRate == 'Check Availability' ? '{{site.reztripUrl}}' : '{{site.reztripUrl}}' + 'search?selected_room='+room.code ]]" target="_blank" ><span ng-show="room.todayRate != 'Check Availability'">[[ portalInfo.default_currency_symbol ]] </span>[[ room.todayRate ]]
+          </a>
+        </span>
         </h4> -->
-        <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
-        <div class="area">
-          <ul>
-            <li>
-              <img src="/assets/images/rooms/squire.png" alt="area" />
-              <span>[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span>
-            </li>
-            <li>
-              <img src="/assets/images/rooms/guest.png" alt="guest" />
-              <span>Max [[ room.max_number_of_guests ]] persons</span>
-            </li>
-          </ul>
-        </div>
-        <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
-        <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room=[[ room.code ]]">Book This Room</a>
-      </div>
-    </div>
-    <div class="image-slider">
-      <div class="carousel-nav white" ng-show="room.photos.length > 1">
-        <a class="carousel-control-prev" href="#roomsCarousel" data-slide="prev">
-          <i class="fas fa-caret-left"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#roomsCarousel" data-slide="next">
-          <i class="fas fa-caret-right"></i>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div id="roomsCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item background-cover" ng-class="{'active': $index ==0}" ng-style="{'background-image':'url(' + pic.large + ')'}" ng-repeat="pic in room.photos"></div>
+          <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
+          <div class="area">
+            <ul>
+              <li>
+                <img src="/assets/images/rooms/squire.png" alt="area" />
+                <span>[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span>
+              </li>
+              <li>
+                <img src="/assets/images/rooms/guest.png" alt="guest" />
+                <span>Max [[ room.max_number_of_guests ]] persons</span>
+              </li>
+            </ul>
+          </div>
+          <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+          <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room=[[ room.code ]]">Book This Room</a>
         </div>
       </div>
-    </div>
-  </div>
 
-<section class="room-amenites">
-  <div class="room-amenites-inr">
-    <h3>Unique Room Features</h3>
-    <ul>
-      <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
-      <li><span>Simmons pillow top mattress</span></li>
-      <li><span>100% cotton 300-thread count linens</span></li>
-      <li><span>Deluxe goose feather down comforter</span></li>
-      <li><span>Blackout shades</span></li>
-      <li><span>USB outlets</span></li>
-      <li><span>Bedside LCD Reading Lamps</span></li>
-      <li><span>Laptop-sized safe</span></li>
-      <li><span>49'' LG HDTV</span></li>
-      <li><span>Google Chromecast</span></li>
-      <li><span>Mini Refrigerator</span></li>
-      <li><span>The Coffee Bean Coffee</span></li>
-      <li><span>Granite bathroom vanity</span></li>
-      <li><span>Adjustable height Toto Aerojet Hand Shower</span></li>
-      <li><span>Towel Warmer</span></li>
-      <li><span>All natural plant based EO bath products</span></li>
-      <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
-      <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
-    </ul>
-  </div>
-</section>
-
-{% assign rooms = site.data._models.rooms  | sort : "sort_order" %}
-
-<section class="more-rooms" rt3-special-rates="offers">
-  <h3 class="text-center">Other Rooms</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo enim, auctor sit amet rhoncus non, varius ut est. </p>
-  <div class="slick-controls" id="moreRooms">
-    {% for room in rooms | limit:4 %}
-    <div class="item">
-      <h3>{{ room.title }}</h3>
-      <div class="image">
-        <figure class="background-cover"  style="background-image:url({{ room.roomimage.url }});"></figure>
+      <!-- Room images carousel start here -->
+      <div class="image-slider">
+        <div class="carousel-nav white" ng-show="room.photos.length > 1">
+          <a class="carousel-control-prev" href="#roomsCarousel" data-slide="prev">
+        <i class="fas fa-caret-left"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+          <a class="carousel-control-next" href="#roomsCarousel" data-slide="next">
+        <i class="fas fa-caret-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
+        </div>
+        <div id="roomsCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item background-cover" ng-class="{'active': $index ==0}" ng-style="{'background-image':'url(' + pic.large + ')'}" ng-repeat="pic in room.photos"></div>
+          </div>
+        </div>
       </div>
-      <hr>
-      <span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-      <a class="primary-btn float-right" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
     </div>
-    {% endfor %}
-  </div>
-  <p class="text-center d-none d-sm-block pt-0">
-    <a class="black-btn" href="/rooms/" title="">More rooms</a>
-  </p>
-</section>
 
+    <!-- Room Amenities start here -->
+    <section class="room-amenites">
+      <div class="room-amenites-inr">
+        <h3>Unique Room Features</h3>
+        <ul>
+          <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
+          <li><span>Simmons pillow top mattress</span></li>
+          <li><span>100% cotton 300-thread count linens</span></li>
+          <li><span>Deluxe goose feather down comforter</span></li>
+          <li><span>Blackout shades</span></li>
+          <li><span>USB outlets</span></li>
+          <li><span>Bedside LCD Reading Lamps</span></li>
+          <li><span>Laptop-sized safe</span></li>
+          <li><span>49'' LG HDTV</span></li>
+          <li><span>Google Chromecast</span></li>
+          <li><span>Mini Refrigerator</span></li>
+          <li><span>The Coffee Bean Coffee</span></li>
+          <li><span>Granite bathroom vanity</span></li>
+          <li><span>Adjustable height Toto Aerojet Hand Shower</span></li>
+          <li><span>Towel Warmer</span></li>
+          <li><span>All natural plant based EO bath products</span></li>
+          <li><span>Reusable water bottle with filling stations throughout the hotel-</span></li>
+          <li><span>Blazing fast Autobahn Wi-Fi throughout the hotel – unlimited device connections</span></li>
+        </ul>
+      </div>
+    </section>
 
-<div class="special-offers d-none d-md-block pt-4">
-  <h3 class="text-center">Special Offers</h3>
-  <p>What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
-  <p class="text-center">
-    <a class="black-btn" href="/offers/" title="All Offers">All Offers</a>
-  </p>
-</div>
+    <!-- Other rooms carousel start here -->
+    {% assign rooms = site.data._models.rooms | sort : "sort_order" %}
+    <section class="more-rooms" rt3-special-rates="offers">
+      <h3 class="text-center">Other Rooms</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo enim, auctor sit amet rhoncus non, varius ut est. </p>
+      <div class="slick-controls" id="moreRooms">
+        {% for room in rooms | limit:4 %}
+        <div class="item">
+          <h3>{{ room.title }}</h3>
+          <div class="image">
+            <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
+          </div>
+          <hr>
+          <span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+          <a class="primary-btn float-right" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="text-center d-none d-sm-block pt-0">
+        <a class="black-btn" href="/rooms/" title="">More rooms</a>
+      </p>
+    </section>
 
+    <!-- Special Offers promo start here -->
+    <div class="special-offers d-none d-md-block pt-4">
+      <h3 class="text-center">Special Offers</h3>
+      <p>What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
+      <p class="text-center">
+        <a class="black-btn" href="/offers/" title="All Offers">All Offers</a>
+      </p>
+    </div>
 </section>

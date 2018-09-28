@@ -7,9 +7,10 @@ meta_tags:
   robots:
 ---
 
+<!-- Hotel banner and Subnav start here -->
 <div class="inner-banner full background-cover" style="background-image: url('/assets/images/hotel/hero.jpg');">
   <div class="inner-nav fixed-menu">
-    <p class="select-room">Select Category Link</p>
+    <p class="select-room">Select Link</p>
     <ul class="banner-nav">
       <li><a href="#history" data-rel="history">History</a></li>
       <li><a href="#amenities" data-rel="amenities">Amenities</a></li>
@@ -21,6 +22,7 @@ meta_tags:
   </div>
 </div>
 
+<!-- Hotel Intro start here -->
 <section class="page-intro no-gap" id="about">
   <div class="page-intro-inner m-0 d-flex align-items-center">
     <div class="gradient-bg" id="scroll-to">
@@ -47,6 +49,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- History start here -->
 <section class="history background-cover">
 
   <div class="history-wrapper">
@@ -127,6 +130,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Amenites start here -->
 <section class="art-wrapper" id="amenities">
   <div class="art-wrapper-inner m-0 align-items-center flex-row-reverse">
     <div class="image down-full background-cover gradient-bg">
@@ -160,6 +164,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Art Carousel start here -->
 <section class="discover-sec content-wrapper pt-0" id="arts">
   <div id="local-art" class="carousel slide" data-ride="carousel">
     {% assign local-art-slide = site.data._models.local-art sort: 'order'%}
@@ -167,8 +172,7 @@ meta_tags:
       {% for art in local-art-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="carousel-block m-0">
-          <div class="image background-cover" style="background-image: url('{{ art.image.url_medium }}');">
-          </div>
+          <div class="image background-cover" style="background-image: url('{{ art.image.url_medium }}');"></div>
           <div class="carousel-caption">
             <h3>{{art.title}}</h3>
             {{art.description}}
