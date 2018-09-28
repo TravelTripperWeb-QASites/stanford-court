@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Gallery
-meta_description:
+title: Gallery | Stanford Court Hotel in San Francisco
+meta_description: Take a look around the boutique Stanford Court hotel in San Francisco before booking your stay. Take a look at the Stanford Court photo gallery here.
 permalink: /gallery/
 meta_tags:
   robots:
 ---
 
+<!-- Banner start here -->
 <div class="inner-banner full background-cover  mb-5" style="background-image: url('/assets/images/gallery/hero.jpg');">
   {% assign categories = site.data._galleries %}
+
+  <!-- gallery category start here -->
   <div class="inner-nav fixed-menu">
     <p class="select-room">Select Gallery Category</p>
     <ul>
@@ -24,61 +27,46 @@ meta_tags:
   <div class="scroll-down">
     <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
   </div>
-</div>
+  </div>
 
-<section class="gallery-bg" id="scroll-to">
-  <div class="gallery-listing mb-100" data-offergallery="true">
-    <div class="card-columns">
-      {% for category in categories %}
-      {% assign catname = category[0] %}
-      {% for photo in site.data._galleries[catname].photos %}
-      {% if catname != "video" %}
-        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" >
+  <!-- gallery list start here -->
+  <section class="gallery-bg" id="scroll-to">
+    <div class="gallery-listing mb-100" data-offergallery="true">
+      <div class="card-columns">
+        {% for category in categories %}
+        {% assign catname = category[0] %}
+        {% for photo in site.data._galleries[catname].photos %}
+
+        <!-- gallery images start here -->
+        {% if catname != "video" %}
+        <div class="card item fancybox" data-filter="{{catname}}" data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}">
           <img src="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url_medium }}{% endif %}" class="img-fluid" alt="{{ photo.alt }}">
           <div class="overlay">
             <h4>{{ photo.alt }}</h4>
           </div>
         </div>
         {% else %}
-        <div class="card item fancybox" data-filter="{{catname}}" data-html="#video{{forloop.index}}" >
+
+        <!-- gallery video start here -->
+        <div class="card item fancybox" data-filter="{{catname}}" data-html="#video{{forloop.index}}">
           <div style="display:none;" id="video{{forloop.index}}">
             <video class="lg-video-object lg-html5" autoplay muted controls >
               <source src="{{photo.url}}" type="video/mp4" >
             </video>
-            </div>
-              <img src="/assets/images/gallery/video.jpg" class="img-fluid" alt="{{ photo.alt }}">
-            <div class="overlay">
-              <h4>{{ photo.alt }}</h4>
-            </div>
-              <div class="play-icon"><i class="far fa-play-circle"></i></div>
+          </div>
+          <img src="/assets/images/gallery/video.jpg" class="img-fluid" alt="{{ photo.alt }}">
+          <div class="overlay">
+            <h4>{{ photo.alt }}</h4>
+          </div>
+          <div class="play-icon"><i class="far fa-play-circle"></i></div>
         </div>
-
-
         {% endif %}
         {% assign mod = forloop.index | modulo: 3 %}
         {% if mod == 2 %}
-        <div class="card item hidden fancybox rez-offer" data-filter="{{catname}}" data-sub-html="" data-src="">
-
-        </div>
+        <div class="card item hidden fancybox rez-offer" data-filter="{{catname}}" data-sub-html="" data-src=""> </div>
         {% endif %}
-      {% endfor %}
-      {% endfor %}
-      <!-- <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=FmiE9i-lI3k">
-        <img src="/assets/images/gallery/video1_thumb.jpg" alt="Stanford Court" />
-        <div class="play-icon"><i class="far fa-play-circle"></i></div>
+        {% endfor %}
+        {% endfor %}
       </div>
-      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=g_TXVVhpcOQ">
-        <img src="/assets/images/gallery/video2_thumb.jpg" alt="Stanford Court" />
-        <div class="play-icon"><i class="far fa-play-circle"></i></div>
-      </div>
-      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
-        <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
-        <div class="play-icon"><i class="far fa-play-circle"></i></div>
-      </div>
-      <div class="card item video-player-param fancybox" data-filter="videos" data-src="https://www.youtube.com/watch?v=cPyLQNtZ_ng">
-        <img src="/assets/images/gallery/video3_thumb.jpg" alt="Stanford Court" />
-        <div class="play-icon"><i class="far fa-play-circle"></i></div>
-      </div>-->
     </div>
-  </div>
-</section>
+  </section>

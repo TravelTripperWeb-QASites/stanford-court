@@ -9,7 +9,10 @@ meta_tags:
 
 <div class="loading" style="display:block">Loading&#8230;</div>
 <section rt3-special-rates="offers" ng-controller="offerDetail">
+  <!-- Offer banner image start here -->
   <div class="inner-banner full without-text background-cover" ng-style="{'background-image': 'url('+ offers.sRdetail.lead_photo_url.large + ')'}">
+
+    <!-- Offer sub navigation start here -->
     <div class="inner-nav fixed-menu">
       <p class="select-room">Select Offer</p>
       <ul>
@@ -25,6 +28,7 @@ meta_tags:
       </div>
   </div>
 
+  <!-- Offer details start here -->
   <div class="offers-carousel-main" id="scroll-to">
     <div class="offers-inner-carousel">
       <div class="tag-line-text">
@@ -41,6 +45,8 @@ meta_tags:
           <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
         </div>
       </div>
+
+      <!-- Offer images carousel start here -->
       <div class="image-slider">
         <div class="carousel-nav white" ng-hide="true">
           <a class="carousel-control-prev" href="#offersCarousel" data-slide="prev">
@@ -61,12 +67,12 @@ meta_tags:
     </div>
   </div>
 
+  <!-- Gallery cross sell start here -->
   <div class="gallery-sec">
     {% assign gallery-cross = site.data._models.gallery-cross-sell %}
     {% for gallery in gallery-cross %}
     <div class="gallery-sec-inner">
-      <div class="img-sec background-cover" style="background-image: url('{{gallery.image.url_large}}');">
-      </div>
+      <div class="img-sec background-cover" style="background-image: url('{{gallery.image.url_large}}');"></div>
       <div class="content">
           <h3>{{gallery.title}}</h3>
           <a href="/gallery/" class="primary-btn-inverse">See More</a>
@@ -75,7 +81,6 @@ meta_tags:
       <div class="tag-line-text">
           <p>{{gallery.tag-line}}</p>
       </div>
-
     </div>
     {% endfor %}
   </div>

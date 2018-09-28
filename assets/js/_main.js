@@ -30,8 +30,18 @@ if(document.querySelector(".fixed-menu")) {
   function scrollSticky() {
     if (window.pageYOffset > sticky) {
       header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
+    }
+    else {
+       header.classList.remove("sticky");
+
+       if(window.pageYOffset > (sticky/2)) {
+         header.classList.add("position-top");
+         header.classList.remove("position-bottom");
+       }else{
+         header.classList.remove("position-top");
+         header.classList.add("position-bottom");
+       }
+
     }
   }
 }

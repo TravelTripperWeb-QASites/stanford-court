@@ -351,7 +351,10 @@
     bottom: 0;
     z-index: 99;
     width: 100%;
-
+    ul {
+      top: auto;
+      bottom: 70px;
+    }
   }
 
   &.sticky {
@@ -360,6 +363,13 @@
     bottom: auto;
     width: 100%;
   }
+  &.position-top {
+    ul {
+      top: 70px;
+      bottom: auto;
+    }
+  }
+
 
 }
 
