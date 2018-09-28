@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Home
-meta_description:
+title: Stanford Court Hotel | Boutique Hotel in San Francisco
+meta_description: Stanford Court pushes the envelope for boutique hotels in San Francisco. Just a few steps from Union Square it offers top-tier rooms and the best in amenities!
 permalink:
 meta_tags:
   robots:
 ---
+
+<!-- Hero Carousel start here -->
 <div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
   {% assign hero-slide = site.data._models.home-hero-carousel %}
   <div class="carousel-inner" role="listbox">
@@ -27,6 +29,7 @@ meta_tags:
 </div>
 
 
+<!-- Intro and BRG  start here -->
 <section class="home-intro">
   <div class="home-intro-inner m-0 d-flex align-items-center">
     <div class="image">
@@ -43,8 +46,7 @@ meta_tags:
         <h3>Welcome to Stanford court</h3>
         {% endregionblock %}
         {% regionblock intro_text, type: text %}
-        <p>At the crest of Nob Hill it’s easy to see what makes San Francisco special. While the views are amazing, it’s the city’s energy, restless spirit of transformation and maverick innovation that quickens your heartbeat and gets your mind spinning.
-          Come play (stay) with us.
+        <p>At the crest of Nob Hill it’s easy to see what makes San Francisco special. While the views are amazing, it’s the city’s energy, restless spirit of transformation and maverick innovation that quickens your heartbeat and gets your mind spinning. Come play (stay) with us.
         </p>
         {% endregionblock %}
         {% regionblock intro_link, type: text %}
@@ -55,6 +57,7 @@ meta_tags:
   </div>
 </section>
 
+<!--Amenities start here -->
 <section class="home-amenities-wrap background-cover">
   <div class="home-amenities-inner">
     <div class="home-amenities-row m-0 d-flex align-items-center">
@@ -82,8 +85,7 @@ meta_tags:
         <h3 class="txt-white d-lg-none .d-xl-block">DO SF LIKE A DENIZEN </h3>
         {% endregionblock %}
         {% regionblock dosolike_text, type: text %}
-        <p>There’s no better place to un-lock the real San Francisco. Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do. We love to share and can’t wait to help
-          you explore.</p>
+        <p>There’s no better place to un-lock the real San Francisco. Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do. We love to share and can’t wait to help you explore.</p>
         {% endregionblock %}
         {% regionblock dosolike_link, type: text %}
         <a href="/" class="primary-btn-inverse">Discover More</a>
@@ -98,13 +100,13 @@ meta_tags:
   </div>
 </section>
 
+<!-- Rooms section start here -->
 <section class="rooms-wrapper">
   {% regionblock rooms-title, type: header %}
   <h2>Rooms</h2>
   {% endregionblock %}
   <div class="rooms-inner">
-    <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms-img.jpg');">
-    </div>
+    <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms-img.jpg');"></div>
     <div class="content">
       <div class="content-row">
         <div class="room-titles">
@@ -125,6 +127,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Discover start here -->
 <section class="discover-sec">
   <h2>
     {% regionblock discover, type: header %}
@@ -137,8 +140,7 @@ meta_tags:
       {% for amenitie in amenities-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <div class="carousel-block m-0">
-          <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
-          </div>
+          <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');"></div>
           <div class="carousel-caption">
             <h3>{{ amenitie.title }}</h3>
             {{ amenitie.description }}
@@ -162,6 +164,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Stay SFC start  here -->
 <section class="stay-sfc">
   <div class="stay-wrapper">
     <div class="stay-row m-0">
@@ -183,6 +186,7 @@ meta_tags:
 
 {% include special-offers.html %}
 
+<!-- Gallery Slider start  here -->
 <section class="gallery-carousel" id="gallerySuites">
   <div class="gallery-carousel-inner">
     <div class="carousel-nav white">
@@ -211,4 +215,5 @@ meta_tags:
   </div>
 </section>
 
+<!-- Blog Carousel start  here -->
 {% include blog-section.html %}

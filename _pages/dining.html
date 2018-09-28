@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Dining
-meta_description:
+title: Dining at Stanford Court Hotel in San Francisco
+meta_description: Join us for breakfast in Aurea Café, featuring an assortment of fresh baked pastries, Equator Organic Coffee, local juices and a delicious buffet breakfast.
 permalink: /dining/
 meta_tags:
   robots:
 ---
-
+<!-- Dining banner start here -->
 <section class="inner-banner background-cover" style="background-image: url('/assets/images/dining/hero.jpg');">
   <!-- <div class="banner-text">
     {% regionblock dine-title, type: header %}
@@ -18,6 +18,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Seven stills content start here -->
 <section class="seven-stills-dining" id="scroll-to">
   <div class="details align-items-center">
     <div class="seven-stills-info">
@@ -41,13 +42,13 @@ meta_tags:
   <div class="image-slider ">
     <div id="sevenStillsDining" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/seven-stills.jpg'); ">
-        </div>
+        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/seven-stills.jpg');"></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Dining gallery slide start here -->
 <section class="gallery-carousel">
   <div class="gallery-carousel-inner">
     <div class="carousel-nav white">
@@ -64,8 +65,7 @@ meta_tags:
     {% for gallery in gallery-item  | limit: 4 %}
     <div class="item {% if forloop.first == true %} active {% endif %}">
       <a href="{{gallery.url_friendly_name}}" target="_blank" class="img-block">
-        <div style="background-image:url('{{ gallery.image.url }}');">
-        </div>
+        <div style="background-image:url('{{ gallery.image.url }}');"></div>
       </a>
       <a href="{{gallery.url_friendly_name}}" target="_blank">
         <h3>{{ gallery.title }} </h3>
@@ -76,6 +76,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Market carousel start here -->
 <section class="market-place ">
   <div class="image-slider">
     <div class="carousel-nav white">
@@ -90,10 +91,10 @@ meta_tags:
     </div>
     <div id="marketPlace" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/marketplace-1.jpg'); "></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-2.jpg'); "></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-3.jpg'); "></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-4.jpg'); "></div>
+        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/marketplace-1.jpg');"></div>
+        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-2.jpg');"></div>
+        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-3.jpg');"></div>
+        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-4.jpg');"></div>
       </div>
     </div>
   </div>

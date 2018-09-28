@@ -18,9 +18,7 @@
     }
     padding: 50px;
     background-color: $white;
-    // @include media-breakpoint-up(lg) {
-    //   padding: 80px 60px;
-    // }
+
     @include media-breakpoint-up(xl) {
       padding: 60px 120px;
     }

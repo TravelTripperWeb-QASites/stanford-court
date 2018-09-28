@@ -1,18 +1,19 @@
 ---
 layout: default
-title: Neighborhood
-meta_description:
+title: Neighborhood | Hotels near Union Square | Stanford Court Location
+meta_description: Stanford Court is conveniently located atop historic Nob Hill, just steps from Union Square and within walking distance to many of San Francisco’s attractions.
 permalink: /neighborhood/
 meta_tags:
   robots:
 ---
-
+<!--Neighborhood banner start here -->
 <div class="inner-banner background-cover" style="background-image: url('/assets/images/neighborhood/hero.jpg');">
   <div class="scroll-down">
     <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
   </div>
 </div>
 
+<!--Intro start here -->
 <section class="inner-intro" id="scroll-to">
   <div class="inner-intro-row m-0">
     <div class="heading">
@@ -31,9 +32,10 @@ meta_tags:
   </div>
 </section>
 
-<div class="map d-none d-md-block" id="leaflet-map"  data-attractions="show">
-</div>
+<!--Location Map start here -->
+<div class="map d-none d-md-block" id="leaflet-map"  data-attractions="show"></div>
 
+<!--Local attractions start here -->
 <section class="local-attractions">
   {% assign neighborhood = site.data._models.map-locations | sort: 'order' %}
   <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
@@ -75,6 +77,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Intro start here -->
 <section class="inner-intro mt-5 mb-0">
   <div class="inner-intro-row m-0" id="attractions">
     <div class="heading">
@@ -90,6 +93,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Events start here -->
 <section class="events-carousel-wrapper mt-0">
   {% regionblock events_header, type: header %}
     <h2>Events</h2>
@@ -106,6 +110,7 @@ meta_tags:
   </div>
 </section>
 
+<!-- Attractions list start here -->
 <section class="attractions-listing">
   <div class="attractions-listing-row m-0">
     {% assign attractions = site.data._models.attractions | sort: 'sort_order' %}
