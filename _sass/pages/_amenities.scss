@@ -23,7 +23,7 @@
       padding: 60px 120px;
     }
     @media (min-width: 1440px) {
-      padding: 60px 200px;
+      padding: 60px 230px;
     }
 
     h3 {
@@ -175,9 +175,9 @@
       display: block;
       height: 550px;
     }
-    @media (min-width: 1440px) {
-      height: 737px;
-    }
+    // @media (min-width: 1440px) {
+    //   height: 737px;
+    // }
     min-height: 0;
     &.down {
       display: block;

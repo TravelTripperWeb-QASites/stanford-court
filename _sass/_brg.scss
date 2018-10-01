@@ -1,11 +1,17 @@
 .brg-widget {
   position: absolute;
-  top: 25%;
+  top: 30%;
   right: 0;
   left: 0;
-  max-width: 270px;
+  max-width: 275px;
   margin: auto;
-  transform: rotateY(-25%);
+  transform: rotateY(-30%);
+  @include media-breakpoint-down (sm) {
+    top: 20%;
+    max-width: 300px;
+    padding: 15px;
+    transform: rotateY(-20%);
+  }
 }
 
 .recentBookingsOuter {
@@ -80,9 +86,7 @@
           color: $white;
           text-align: center;
           text-transform: uppercase;
-          @media(max-width: 350px) {
-            display: none;
-          }
+          letter-spacing: 2px;
         }
 
         h4 {
@@ -93,6 +97,7 @@
           line-height: 30px;
           color: $white;
           text-align: center;
+          letter-spacing: 4px;
           @media(max-width: 350px) {
             line-height: 20px;
           }
@@ -128,7 +133,10 @@
             width: 50%;
             font-size: 12px;
             color: $white;
-
+            @include media-breakpoint-down (sm) {
+              width: 100%;
+              text-align: center;
+            }
             span {
               font-family: $global-font;
               text-decoration: line-through;

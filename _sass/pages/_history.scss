@@ -1,13 +1,13 @@
 .history {
   min-height: 600px;
   margin-bottom: 25px;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: $black;
   background-image: url('/assets/images/hotel/history.jpg');
   @include media-breakpoint-up(md) {
     min-height: 700px;
-    margin-bottom: 47px;
+    margin-bottom: 25px;
     padding-top: 4rem;
   }
 
@@ -197,6 +197,10 @@
           max-width: 445px;
           margin-right: 90px;
         }
+        @media (min-width: 1600px) {
+          max-width: 100%;
+          margin-right: 0;
+        }
       }
       @media (min-width: 1600px) {
         width: 1570px;
@@ -248,10 +252,17 @@
         @include media-breakpoint-up(md) {
           max-width: 275px;
           margin-top: 35px;
+          padding: 0 10px;
         }
-        @media (min-width: 1600px) {
+        @include media-breakpoint-up(lg) {
           max-width: 250px;
           margin-top: 35px;
+          padding: 0 10px;
+        }
+        @media (min-width: 1600px) {
+          max-width: 350px;
+          margin-top: 35px;
+          padding: s0 10px;
         }
 
         @media (min-width: 768px) and (max-width: 900px) {
