@@ -3,7 +3,7 @@
   top: 30%;
   right: 0;
   left: 0;
-  max-width: 275px;
+  max-width: 325px;
   margin: auto;
   transform: rotateY(-30%);
   @include media-breakpoint-down (sm) {
@@ -131,7 +131,7 @@
           li {
             display: inline-block;
             width: 50%;
-            font-size: 12px;
+            font-size: $font-size-base;
             color: $white;
             @include media-breakpoint-down (sm) {
               width: 100%;
