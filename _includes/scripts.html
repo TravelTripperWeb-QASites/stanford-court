@@ -15,7 +15,7 @@ options.uid = "5LBFZ";
 options.button = "none";
 var srfp_widget = new srfp.widget(options);
 </script>
-<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script>
 TTWeb.Config.configure({
@@ -72,7 +72,7 @@ $("[show-booking-widget]").bookingWidget({
         attrLabel        : true,
         markerLabelText  : true,
         showPopup        : true,
-        fitBounds        : false,
+        fitBounds        : true,
         markerClickAction: onAttractionMarkerClick,
         attractionsList  : attractions,
         TileStyle        : 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'

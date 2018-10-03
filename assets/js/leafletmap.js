@@ -73,12 +73,25 @@
       }).bindPopup('<h4>' + options.hotelTitle + '</h4>' + options.hotelAddress).addTo(map);
 
       if($(self).data("attractions") == 'show') {
+
+
         loadAttractionMarkers();
         setCategoriesFilter();
         showAttractionsHTMLList();
+
+        map.on('zoomend', function() {
+          if (map.getZoom() < 15) {
+              for (var i = 0; i < formattedAttractionsList.length; i++) {
+                map.removeLayer(formattedAttractionsList[i].marker);
+            }
+          }else{
+            loadAttractionMarkers();
+          }
+        });
+
+
       }
     }
-
     // Set attraction markers
     function attractionMarkersIcon($value, $category) {
       var attractionIcon;
