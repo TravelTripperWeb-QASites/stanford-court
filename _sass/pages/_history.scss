@@ -315,7 +315,7 @@
       left: 0;
     }
     @include media-breakpoint-up(lg) {
-      left: 81px;
+      left: 31px;
     }
     @media (min-width: 1600px) {
       left: 131px;
@@ -328,10 +328,10 @@
     background-image: url('../images/hotel/left-arrow.png');
     background-size: 30px;
     @include media-breakpoint-up(md) {
-      left: 20px;
+      left: 0;
     }
     @include media-breakpoint-up(lg) {
-      left: 50px;
+      left: 0;
     }
     @media (min-width: 1600px) {
       left: 100px;
