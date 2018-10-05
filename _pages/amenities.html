@@ -22,22 +22,15 @@ meta_tags:
 <!--Obsessed with  the best of SF start here -->
 <section class="content-wrapper mt-8" id="scroll-to">
   <div class="content-wrapper-inner m-0">
-    <div class="content">
+    <div class="content no-padding">
       <div class="text">
       {% regionblock amenities_title, type: header %}
         <h3>OBSESSED WITH THE BEST OF SF </h3>
       {% endregionblock %}
-      {% regionblock amenities_text, type: text %}
-        <p>We’re obsessed with giving you the sweetest experience possible, and for us, that means rounding up the best of SF and making it available to you. Influenced by the progressive tech culture on which San Francisco and Silicon Valley thrive, Stanford Court hotel amenitieswere thoughtfully developed to keep you efficient and feeling your best while on the road. </p>
-        <p>Connect with our front desk and concierge team. We’re happy to help around the clock. The lobby and business center are equipped with MacBooks, iPads, and iPad minis, all running on high speed WiFi. Wirelessly print from any of our devices or your own.</p>
-        <p>Designed to both invigorate and relax mind and body, our 24-hour fitness center, bike share, and wellness program provide a game-changing experience.</p>
-        <p>Stanford Court San Francisco is also home to Commons café and the Nob Hill outpost of Seven Stills, sourcing food, coffee, and spirits from local farms and vendors.</p>
-      {% endregionblock %}
+
       <div class="scroll">
         <div class="scroll-inner">
-          {% regionblock amenities_list_title, type: header %}
-            <h4>Our Urban Bundle: Offering you the best of everything</h4>
-          {% endregionblock %}
+
           {% regionblock amenities_list, type: text %}
             <ul>
               <li>Expanded, state of the art fitness center</li>
@@ -61,16 +54,21 @@ meta_tags:
           {% endregionblock %}
         </div>
       </div>
+      <div class="extr-text">
+        {% regionblock subject_tax, type: text %}
+          <p>A $25 nightly urban fee covers Stanford Court hotel’s extensive amenities. This fee is subject to San Francisco occupancy tax.<br><br>*Download app to enjoy.</p>
+        {% endregionblock %}
+    </div>
     </div>
   </div>
-    <div class="image background-cover" style="background-image: url('/assets/images/amenities/intro.jpg');"></div>
+    <div class="image full background-cover" style="background-image: url('/assets/images/amenities/intro.jpg');"></div>
   </div>
 </section>
 
 <!--Amenities Carousel start here -->
 <section class="discover-sec content-wrapper pt-0">
   <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
-    {% assign amenities-slide = site.data._models.amenities sort: 'order'%}
+    {% assign amenities-slide = site.data._models.amenities | sort: 'sort_order'%}
     <div class="carousel-inner">
       {% for amenitie in amenities-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
