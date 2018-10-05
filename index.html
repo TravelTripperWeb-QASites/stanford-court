@@ -135,7 +135,7 @@ meta_tags:
     {% endregionblock %}
   </h2>
   <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
-    {% assign amenities-slide = site.data._models.home-amenities sort: 'order'%}
+    {% assign amenities-slide = site.data._models.home-amenities | sort: 'sort_order'%}
     <div class="carousel-inner">
       {% for amenitie in amenities-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
