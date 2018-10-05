@@ -25,9 +25,15 @@
     @media (min-width: 1440px) {
       padding: 60px 0;
     }
+    &.no-padding {
+      padding: 0 35px;
+      @include media-breakpoint-up(lg) {
+        padding: 0 80px 60px 60px;
+      }
+    }
     .text {
       max-width: 100%;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         max-width: 475px;
         margin: auto;
       }
@@ -35,7 +41,10 @@
     h3 {
       padding-bottom: 20px;
     }
-
+    .extr-text {
+      font-style: italic;
+      opacity: .5;
+    }
     p {
       padding-bottom: 25px;
       a {
@@ -88,10 +97,11 @@
 
       .scroll-inner {
         height: 402px;
+        margin-bottom: 40px;
         padding-right: 20px;
         overflow-y: scroll;
         @include media-breakpoint-up(md) {
-          height: 314px;
+          height: 324px;
         }
         //custom scrollbar
         &::-webkit-scrollbar {
@@ -142,14 +152,15 @@
           margin-bottom: 20px;
         }
         ul {
-          margin: 0;
-          padding: 0 0 0 20px;
+          margin: 15px 0 0;
+          padding: 0;
           li {
             position: relative;
             display: inline-block;
             width: 100%;
-            padding-right: 20px;
+            padding-right: 10px;
             padding-bottom: 30px;
+            padding-left: 15px;
             @include media-breakpoint-up(md) {
               width: 46%;
             }
@@ -161,7 +172,7 @@
             &:before {
               position: absolute;
               top: 8px;
-              left: -18px;
+              left: 0;
               width: 5px;
               height: 5px;
               content: '';
@@ -196,6 +207,10 @@
       @include media-breakpoint-down(md) {
         height: 400px;
       }
+    }
+    &.full {
+      height: auto;
+
     }
   }
 }

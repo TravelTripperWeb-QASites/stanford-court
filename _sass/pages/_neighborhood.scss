@@ -361,12 +361,12 @@
     position: relative;
     bottom: -40px;
     z-index: 1;
-    margin-left: -18px;
+    //margin-left: -18px;
     color: $black;
     opacity: .9;
-    @include media-breakpoint-up(md) {
-      margin-left: -80px;
-    }
+    // @include media-breakpoint-up(md) {
+    //   margin-left: -80px;
+    // }
   }
 
   .events-carousel {

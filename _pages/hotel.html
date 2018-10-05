@@ -165,7 +165,7 @@ meta_tags:
 <!-- Art Carousel start here -->
 <section class="discover-sec content-wrapper pt-0" id="arts">
   <div id="local-art" class="carousel slide" data-ride="carousel">
-    {% assign local-art-slide = site.data._models.local-art sort: 'order'%}
+    {% assign local-art-slide = site.data._models.local-art | sort: 'sort_order' %}
     <div class="carousel-inner">
       {% for art in local-art-slide %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
