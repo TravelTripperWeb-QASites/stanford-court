@@ -467,16 +467,14 @@
 
   .stay-wrapper {
     @include container-fix-2;
-    position: relative;
-    min-height: 409px;
 
     .stay-row {
       @include make-row;
     }
 
     .header-title {
-      padding-top: 93px;
-      padding-bottom: 30px;
+      padding-top: 36px;
+      padding-bottom: 36px;
       @include media-breakpoint-up(md) {
         @include make-col(5);
       }
@@ -486,20 +484,14 @@
       }
 
       h3 {
-        padding-top: 18px;
-        padding-bottom: 53px;
+        padding-top: 29px;
+        padding-bottom: 42px;
       }
 
       .secondary-btn-inverse {
         padding-right: 60px;
         padding-left: 60px;
       }
-    }
-
-    .logo {
-      position: absolute;
-      right: 19px;
-      bottom: 72px;
     }
   }
 }
