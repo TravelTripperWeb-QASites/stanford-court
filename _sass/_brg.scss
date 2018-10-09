@@ -7,10 +7,9 @@
   margin: auto;
   transform: rotateY(-30%);
   @include media-breakpoint-down (sm) {
-    top: 20%;
+    position: inherit;
     max-width: 300px;
-    padding: 15px;
-    transform: rotateY(-20%);
+    padding: 30px 15px;
   }
 }
 
@@ -122,9 +121,10 @@
       }
 
       .ota-list {
-        min-height: 80px;
+        min-height: auto;
         ul {
           width: 100%;
+          margin-bottom: 0;
           padding: 0;
           list-style-type: none;
 

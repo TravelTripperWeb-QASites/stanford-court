@@ -33,7 +33,7 @@ meta_tags:
 <section class="home-intro">
   <div class="home-intro-inner m-0 d-flex align-items-center">
     <div class="image">
-      <div class="map-bg background-cover" style="background-image: url('/assets/images/home/rectangle.jpg');">
+      <div class="map-bg background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');">
         {% include brg-widget.html %}
       </div>
       {% regionblock intro_img_caption, type: text %}
@@ -175,7 +175,9 @@ meta_tags:
         {% regionblock stay-content, type: header %}
         <h3 class="text-white">Link to the best of<br>San Francisco.</h3>
         {% endregionblock %}
+        {% regionblock stay-link, type: text %}
         <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
