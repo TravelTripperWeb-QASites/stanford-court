@@ -4,6 +4,7 @@
   },
   "image": {
     "type": "image",
+    "instructions": "Image on Gallery (1400px x 800px)",
     "required": true
   },
   "url_friendly_name": {
