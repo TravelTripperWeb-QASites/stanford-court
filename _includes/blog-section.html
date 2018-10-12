@@ -23,12 +23,12 @@
     <div id="carousel-blog" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         {% for post in site.data._models.blog | limit: 5 | sort: 'date' | descending %}
-        <div class="carousel-item {% if forloop.index == 1 %} active {% endif %}">
+        <div class="carousel-item {% if forloop.index == 1 %} active {% endif %}" role="option">
           <div class="carouse-row align-items-end">
             <div class="carousel-text">
               <div class="info">
                 <h3>{{ post.title }}</h3>
-                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/"> {{ post.category.title }} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
+                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" title="Discover more"> {{ post.category.title }} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
                 {{ post.short_description }}
               </div>
             </div>

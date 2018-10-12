@@ -476,3 +476,14 @@
     opacity: .7;
   }
 }
+
+
+.tnc {
+  a {
+    color: $black;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

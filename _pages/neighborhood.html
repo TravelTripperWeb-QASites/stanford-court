@@ -41,7 +41,7 @@ meta_tags:
   <div id="attractionsCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       {% for attraction in neighborhood %}
-        <div data-mappable-item="{{ forloop.index0 }}" data-mappable-category ="{{ attraction.category }}"  class="carousel-item {% if forloop.first %}active{% endif %} background-cover">
+        <div data-mappable-item="{{ forloop.index0 }}" data-mappable-category ="{{ attraction.category }}"  class="carousel-item {% if forloop.first %}active{% endif %} background-cover" role="option">
           <div class="attractions-wrapper">
             <div class="details pt-5">
               <div class="attraction-info">

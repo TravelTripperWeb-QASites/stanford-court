@@ -42,7 +42,7 @@ meta_tags:
   <div class="image-slider ">
     <div id="sevenStillsDining" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/seven-stills.jpg');"></div>
+        <div class="carousel-item active background-cover" role="option" style="background-image:url('/assets/images/dining/seven-stills.jpg');"></div>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ meta_tags:
     {% assign gallery-item = site.data._models.dining-gallery-carousel %}
     {% for gallery in gallery-item  | limit: 4 %}
     <div class="item {% if forloop.first == true %} active {% endif %}">
-      <a href="{{gallery.url_friendly_name}}" target="_blank" class="img-block">
+      <a href="{{gallery.url_friendly_name}}" target="_blank" class="img-block" title="{{ gallery.title }}">
         <div style="background-image:url('{{ gallery.image.url }}');"></div>
       </a>
       <a href="{{gallery.url_friendly_name}}" target="_blank">
@@ -91,11 +91,11 @@ meta_tags:
     </div>
     <div id="marketPlace" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active background-cover" style="background-image:url('/assets/images/dining/marketplace-1.jpg');"></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-2.jpg');"></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-3.jpg');"></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/marketplace-4.jpg');"></div>
-        <div class="carousel-item background-cover" style="background-image:url('/assets/images/dining/sweet_brackfast.jpg');"></div>
+        <div class="carousel-item active background-cover" role="option" style="background-image:url('/assets/images/dining/marketplace-1.jpg');"></div>
+        <div class="carousel-item background-cover" role="option" style="background-image:url('/assets/images/dining/marketplace-2.jpg');"></div>
+        <div class="carousel-item background-cover" role="option" style="background-image:url('/assets/images/dining/marketplace-3.jpg');"></div>
+        <div class="carousel-item background-cover" role="option" style="background-image:url('/assets/images/dining/marketplace-4.jpg');"></div>
+        <div class="carousel-item background-cover" role="option" style="background-image:url('/assets/images/dining/sweet_brackfast.jpg');"></div>
       </div>
     </div>
   </div>

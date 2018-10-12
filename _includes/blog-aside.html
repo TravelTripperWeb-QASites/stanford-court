@@ -3,8 +3,8 @@
   <div class="widget-box">
     <h4>Search</h4>
     <form action="/blog/search/" method="get">
-      <input type="text" id="search-box" name="query" placeholder="Type Here...">
-      <button class="submit" type="submit" name="button"></button>
+      <input type="text" id="search-box" name="query" aria-label="Type Here" placeholder="Type Here...">
+      <button class="submit" type="submit" name="button" title="Search"></button>
     </form>
   </div>
   <!-- Recent post start here -->
@@ -13,7 +13,7 @@
     <ul class="recent-posts">
       {% for recentpost in site.data._models.blog | limit: 3%}
       <li>
-        <a href="/blog/{{recentpost.url_friendly_name }}/" class="thumb background-cover" style="background-image: url({{recentpost.blogimage.url}});"></a>
+        <a href="/blog/{{recentpost.url_friendly_name }}/" class="thumb background-cover" title="{{ recentpost.title}}" style="background-image: url({{recentpost.blogimage.url}});"></a>
         <h4 class="date">{% assign d = recentpost.date | date: "%-d" %}
           {{ recentpost.date | date: "%B" }}
           {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},

@@ -45,7 +45,7 @@ layout: default
       {% for post in site.data._models.blog %}
       {% if post.category.url_friendly_name == page.data.url_friendly_name %}
         <div class="post">
-          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image" title="{{ post.title }}">
             <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
             </figure>
           </a>

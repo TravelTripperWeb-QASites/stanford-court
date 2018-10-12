@@ -32,7 +32,7 @@ layout: default
     <div id="attractionCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         {% for image in page.gallery %}
-          <div class="carousel-item background-cover{% if forloop.first %} active {% endif %}" style="background-image: url('{{ image.url_medium }}');"></div>
+          <div class="carousel-item background-cover{% if forloop.first %} active {% endif %}" role="option" style="background-image: url('{{ image.url_medium }}');"></div>
         {% endfor %}
       </div>
     </div>

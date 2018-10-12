@@ -143,7 +143,7 @@ $(window)
               if (i > 3) return false;
             }
 
-            $('<div class="feed background-cover" style="background-image:url(' + item.node.thumbnail_src + ');"><a href="' + instaFeedUrl + item.node.shortcode + '" target="_blank"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.node.edge_liked_by.count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.node.edge_media_to_comment.count + '</p></a></div>')
+            $('<div class="feed background-cover" style="background-image:url(' + item.node.thumbnail_src + ');"><a href="' + instaFeedUrl + item.node.shortcode + '" target="_blank" title="Instagram"><i class="fab fa-instagram"></i><p class="insta-icons">@stanfordcourt <br><i class="far fa-heart" aria-hidden="true"></i>' + item.node.edge_liked_by.count + ' <i class="far fa-comment" aria-hidden="true"></i>' + item.node.edge_media_to_comment.count + '</p></a></div>')
               .appendTo('.instagram-feed');
           });
           var heightDIV = $('.instagram-feed div:first-child')
