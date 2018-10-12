@@ -12,7 +12,7 @@ meta_tags:
   {% assign hero-slide = site.data._models.home-hero-carousel %}
   <div class="carousel-inner" role="listbox">
     {% for banner in hero-slide | limit: 1 %}
-    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" data-resize style="background-image: url('{{ banner.image.url_large }}');">
+    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}"  role="option" data-resize style="background-image: url('{{ banner.image.url_large }}');">
       <div class="desktop-overlay">
         <div class="embed-responsive embed-responsive-16by9">
           <video class="embed-responsive-item" autoplay muted loop poster="/assets/images/transparent.png" id="stanfordVideo">
@@ -201,7 +201,7 @@ meta_tags:
     {% assign gallery-item = site.data._models.home-gallery-carousel %}
     {% for gallery in gallery-item | limit: 4 %}
     <div class="item {% if forloop.first == true %} active {% endif %}">
-      <a href="{{gallery.url_friendly_name}}" class="img-block">
+      <a href="{{gallery.url_friendly_name}}" class="img-block" title="{{ gallery.title }}">
         <div style="background-image:url('{{ gallery.image.url_large }}');">
         </div>
       </a>

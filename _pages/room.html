@@ -71,7 +71,7 @@ permalink: /room/
         </div>
         <div id="roomsCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item background-cover" ng-class="{'active': $index ==0}" ng-style="{'background-image':'url(' + pic.large + ')'}" ng-repeat="pic in room.photos"></div>
+            <div class="carousel-item background-cover" role="option" ng-class="{'active': $index ==0}" ng-style="{'background-image':'url(' + pic.large + ')'}" ng-repeat="pic in room.photos"></div>
           </div>
         </div>
       </div>

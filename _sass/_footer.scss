@@ -133,7 +133,7 @@
             bottom: 10px;
             z-index: 1;
             display: block;
-            padding: 10px 10px 0 10px;
+            padding: 10px 10px 0;
             color: $white;
             opacity: 1;
             .svg-inline--fa {
@@ -204,14 +204,14 @@
     .form-control {
       height: 53px;
       padding-left: 26px;
-      border-color: #ccc;
+      border-color: $grey-border;
       border-radius: 27px;
 
       &:focus {
         box-shadow: none;
       }
       @include placeholder {
-        font-size: .875rem;
+        color: $placeholder-clr;
       }
     }
 

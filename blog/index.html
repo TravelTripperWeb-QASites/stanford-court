@@ -55,7 +55,7 @@ include_in_nav_localized:
       <!-- Posts start here -->
       {% for post in data_paginator.posts %}
         <div class="post">
-          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image" title="{{ post.title }}">
             <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
           </figure>
 
@@ -118,7 +118,7 @@ include_in_nav_localized:
       {% endif %}
 
     </div>
-  
+
     <div class="blog-right-block">
       {% include blog-aside.html %}
     </div>
