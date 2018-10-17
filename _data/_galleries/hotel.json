@@ -569,6 +569,27 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172256/SC-Fitness-2-Web.jpg",
       "alt": "Fitness Center",
       "caption": "Fitness Center"
+    },
+    {
+      "name": "SC-Elevator-7",
+      "file_name": "SC-Elevator-7.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/SC-Elevator-7.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-17-172254",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 453826,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/large_SC-Elevator-7.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/medium_SC-Elevator-7.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/small_SC-Elevator-7.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/xsmall_SC-Elevator-7.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/thumb_SC-Elevator-7.jpg",
+      "git_file_name": "_assets/image_data/SC-Elevator-7.json",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/SC-Elevator-7.jpg",
+      "alt": "Elevator Landing Art",
+      "caption": "Elevator Landing Art"
     }
   ],
   "description": ""
