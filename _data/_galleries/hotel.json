@@ -204,6 +204,26 @@
       "caption": "Audio Room"
     },
     {
+      "name": "audio-room1",
+      "file_name": "audio-room1.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030615",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 253152,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/large_audio-room1.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/medium_audio-room1.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/small_audio-room1.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/xsmall_audio-room1.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/thumb_audio-room1.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
+      "alt": "Audio Room",
+      "caption": "Audio Room"
+    },
+    {
       "name": "music-room",
       "file_name": "music-room.jpg",
       "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030107/music-room.jpg",
@@ -383,26 +403,6 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030516/lounge-and-bar.jpg",
       "alt": "Lounge and Bar",
       "caption": "Lounge and Bar"
-    },
-    {
-      "name": "audio-room1",
-      "file_name": "audio-room1.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-31-030615",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 1080,
-      "file_size": 253152,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/large_audio-room1.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/medium_audio-room1.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/small_audio-room1.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/xsmall_audio-room1.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/thumb_audio-room1.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030615/audio-room1.jpg",
-      "alt": "Audio Room",
-      "caption": "Audio Room"
     },
     {
       "name": "SC-Courtyard",
