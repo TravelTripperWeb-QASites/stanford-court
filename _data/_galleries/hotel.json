@@ -399,8 +399,8 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172311/thumb_SC-Courtyard-Bikes-1.jpg",
       "git_file_name": "_assets/image_data/SC-Courtyard-Bikes-1.json",
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172311/SC-Courtyard-Bikes-1.jpg",
-      "alt": "Courtyard Bikes",
-      "caption": "Courtyard Bikes"
+      "alt": "New Albion Bikes",
+      "caption": "New Albion Bikes"
     },
     {
       "name": "SC-Door",
@@ -441,7 +441,8 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172308/thumb_SC-Courtyard.jpg",
       "git_file_name": "_assets/image_data/SC-Courtyard.json",
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172308/SC-Courtyard.jpg",
-      "alt": "Courtyard"
+      "alt": "Courtyard",
+      "caption": "Courtyard"
     }
   ],
   "description": ""
