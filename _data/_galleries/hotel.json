@@ -22,6 +22,26 @@
       "caption": "Discover the Hotel"
     },
     {
+      "name": "benny-bufano",
+      "file_name": "benny-bufano.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030239",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 2056,
+      "file_size": 827305,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/large_benny-bufano.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/medium_benny-bufano.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/small_benny-bufano.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/xsmall_benny-bufano.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/thumb_benny-bufano.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
+      "alt": "Benny Bufano",
+      "caption": "Benny Bufano"
+    },
+    {
       "name": "fitness-center",
       "file_name": "fitness-center.jpg",
       "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030048/fitness-center.jpg",
@@ -140,26 +160,6 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
       "alt": "Art Wall - Daylighted",
       "caption": "Art Wall - Daylighted"
-    },
-    {
-      "name": "benny-bufano",
-      "file_name": "benny-bufano.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-31-030239",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 2056,
-      "file_size": 827305,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/large_benny-bufano.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/medium_benny-bufano.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/small_benny-bufano.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/xsmall_benny-bufano.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/thumb_benny-bufano.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030239/benny-bufano.jpg",
-      "alt": "Benny Bufano",
-      "caption": "Benny Bufano"
     },
     {
       "name": "library",
