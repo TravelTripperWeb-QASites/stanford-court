@@ -506,6 +506,27 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172301/SC-Bar-1.jpg",
       "alt": "Seven Stills Nob Hill",
       "caption": "Seven Stills Nob Hill"
+    },
+    {
+      "name": "SC_Lobby-Dome",
+      "file_name": "SC_Lobby-Dome.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/SC_Lobby-Dome.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-17-172259",
+      "file_type": "image/jpeg",
+      "width": 2000,
+      "height": 1333,
+      "file_size": 726188,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/large_SC_Lobby-Dome.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/medium_SC_Lobby-Dome.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/small_SC_Lobby-Dome.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/xsmall_SC_Lobby-Dome.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/thumb_SC_Lobby-Dome.jpg",
+      "git_file_name": "_assets/image_data/SC-Lobby-Dome.json",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/SC_Lobby-Dome.jpg",
+      "alt": "Lobby Dome",
+      "caption": "Lobby Dome"
     }
   ],
   "description": ""
