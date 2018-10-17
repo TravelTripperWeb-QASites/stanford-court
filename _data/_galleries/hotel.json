@@ -527,6 +527,27 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172259/SC_Lobby-Dome.jpg",
       "alt": "Lobby Dome",
       "caption": "Lobby Dome"
+    },
+    {
+      "name": "SC-Fitness-1-Web",
+      "file_name": "SC-Fitness-1-Web.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/SC-Fitness-1-Web.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-17-172258",
+      "file_type": "image/jpeg",
+      "width": 2000,
+      "height": 1125,
+      "file_size": 632275,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/large_SC-Fitness-1-Web.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/medium_SC-Fitness-1-Web.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/small_SC-Fitness-1-Web.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/xsmall_SC-Fitness-1-Web.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/thumb_SC-Fitness-1-Web.jpg",
+      "git_file_name": "_assets/image_data/SC-Fitness-1-Web.json",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172258/SC-Fitness-1-Web.jpg",
+      "alt": "Fitness Center",
+      "caption": "Fitness Center"
     }
   ],
   "description": ""
