@@ -262,26 +262,6 @@
       "caption": "Fitness Center"
     },
     {
-      "name": "breakfast-buffet",
-      "file_name": "breakfast-buffet.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-31-030311",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 1080,
-      "file_size": 241103,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/large_breakfast-buffet.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/medium_breakfast-buffet.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/small_breakfast-buffet.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/xsmall_breakfast-buffet.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/thumb_breakfast-buffet.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
-      "alt": "Breakfast Buffet",
-      "caption": "Breakfast Buffet"
-    },
-    {
       "name": "bar-and-lounge",
       "file_name": "bar-and-lounge.jpg",
       "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030349/bar-and-lounge.jpg",
@@ -611,6 +591,26 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/SC-Elevator-8B.jpg",
       "alt": "Elevator Landing Art",
       "caption": "Elevator Landing Art"
+    },
+    {
+      "name": "breakfast-buffet",
+      "file_name": "breakfast-buffet.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030311",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 241103,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/large_breakfast-buffet.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/medium_breakfast-buffet.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/small_breakfast-buffet.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/xsmall_breakfast-buffet.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/thumb_breakfast-buffet.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030311/breakfast-buffet.jpg",
+      "alt": "Breakfast Buffet",
+      "caption": "Breakfast Buffet"
     }
   ],
   "description": ""
