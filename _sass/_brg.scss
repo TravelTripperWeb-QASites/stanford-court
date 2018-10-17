@@ -5,11 +5,14 @@
   left: 0;
   max-width: 325px;
   margin: auto;
+  padding: 30px 15px 50px;
   transform: translateY(-30%);
   @include media-breakpoint-down (sm) {
     position: inherit;
+    top: inherit;
     max-width: 300px;
-    padding: 30px 15px 50px;
+    padding: 30px 15px 80px;
+    transform: translateY(-0%);
   }
 
   .conde-logo {
