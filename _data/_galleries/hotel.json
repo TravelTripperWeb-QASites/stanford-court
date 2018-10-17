@@ -285,6 +285,26 @@
       "caption": "Music Room"
     },
     {
+      "name": "map-room",
+      "file_name": "map-room.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030558",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 569903,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/large_map-room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/medium_map-room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/small_map-room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/xsmall_map-room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/thumb_map-room.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
+      "alt": "Map Room",
+      "caption": "Map Room"
+    },
+    {
       "name": "SC-Bar-3 (1)",
       "file_name": "SC-Bar-3 (1).jpg",
       "url": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172306/SC-Bar-3__1_.jpg",
@@ -346,26 +366,6 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172304/SC-Bar-2.jpg",
       "alt": "Seven Stills Nob Hill",
       "caption": "Seven Stills Nob Hill"
-    },
-    {
-      "name": "map-room",
-      "file_name": "map-room.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-31-030558",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 1080,
-      "file_size": 569903,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/large_map-room.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/medium_map-room.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/small_map-room.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/xsmall_map-room.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/thumb_map-room.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030558/map-room.jpg",
-      "alt": "Map Room",
-      "caption": "Map Room"
     },
     {
       "name": "lounge-and-bar",
