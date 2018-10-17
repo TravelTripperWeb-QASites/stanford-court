@@ -30,7 +30,25 @@
       @include media-breakpoint-up(lg) {
         max-width: 525px;
       }
+      .conde {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: $black;
+        text-align: center;
+        background: $primary-color;
+        p {
+          padding: 8px;
+          line-height: 20px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          strong {
+            display: block;
+          }
+        }
+      }
     }
+
   }
   .content {
     @include make-col-ready();

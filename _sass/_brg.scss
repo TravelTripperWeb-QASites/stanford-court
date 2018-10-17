@@ -5,11 +5,20 @@
   left: 0;
   max-width: 325px;
   margin: auto;
-  transform: rotateY(-30%);
+  transform: translateY(-30%);
   @include media-breakpoint-down (sm) {
     position: inherit;
     max-width: 300px;
-    padding: 30px 15px;
+    padding: 30px 15px 50px;
+  }
+
+  .conde-logo {
+    height: 210px;
+    margin: auto;
+    text-align: center;
+    img {
+      width: 210px;
+    }
   }
 }
 
