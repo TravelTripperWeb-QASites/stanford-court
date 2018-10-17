@@ -590,6 +590,27 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172254/SC-Elevator-7.jpg",
       "alt": "Elevator Landing Art",
       "caption": "Elevator Landing Art"
+    },
+    {
+      "name": "SC-Elevator-8B",
+      "file_name": "SC-Elevator-8B.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/SC-Elevator-8B.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-10-17-172252",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 559218,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/large_SC-Elevator-8B.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/medium_SC-Elevator-8B.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/small_SC-Elevator-8B.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/xsmall_SC-Elevator-8B.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/thumb_SC-Elevator-8B.jpg",
+      "git_file_name": "_assets/image_data/SC-Elevator-8B.json",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_20090/media/2018-10-17-172252/SC-Elevator-8B.jpg",
+      "alt": "Elevator Landing Art",
+      "caption": "Elevator Landing Art"
     }
   ],
   "description": ""
