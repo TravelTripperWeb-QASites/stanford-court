@@ -122,6 +122,26 @@
       "caption": "Lobby Art"
     },
     {
+      "name": "art wall - daylighted",
+      "file_name": "art wall - daylighted.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-31-030213",
+      "file_type": "image/jpeg",
+      "width": 1600,
+      "height": 1080,
+      "file_size": 231129,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/large_art_wall_-_daylighted.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/medium_art_wall_-_daylighted.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/small_art_wall_-_daylighted.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/xsmall_art_wall_-_daylighted.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/thumb_art_wall_-_daylighted.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
+      "alt": "Art Wall - Daylighted",
+      "caption": "Art Wall - Daylighted"
+    },
+    {
       "name": "audio-room",
       "file_name": "audio-room.jpg",
       "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030129/audio-room.jpg",
@@ -220,26 +240,6 @@
       "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030158/fitness-center1.jpg",
       "alt": "Fitness Center",
       "caption": "Fitness Center"
-    },
-    {
-      "name": "art wall - daylighted",
-      "file_name": "art wall - daylighted.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-31-030213",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 1080,
-      "file_size": 231129,
-      "url_large": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/large_art_wall_-_daylighted.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/medium_art_wall_-_daylighted.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/small_art_wall_-_daylighted.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/xsmall_art_wall_-_daylighted.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/thumb_art_wall_-_daylighted.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/192_901_16275/media/2018-05-31-030213/art_wall_-_daylighted.jpg",
-      "alt": "Art Wall - Daylighted",
-      "caption": "Art Wall - Daylighted"
     },
     {
       "name": "breakfast-buffet",
