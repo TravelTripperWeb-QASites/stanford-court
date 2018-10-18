@@ -1,0 +1,22 @@
+---
+- amenities/green-hotel/: amenities/
+- amenities/pet-friendly/: amenities/
+- amenities/urban-bundle/: amenities/
+- attractions/: neighborhood/
+- attractions/culinary/: neighborhood/
+- attractions/culture/: neighborhood/
+- attractions/fitness/: neighborhood/
+- attractions/retail/: neighborhood/
+- business-travel/: corporate-preferred-program/
+- contact-us-business/: business-contact/
+- contact-us/: contact/
+- discover-the-hotel/: hotel/
+- events/: sf-events/
+- explore/: neighborhood/
+- group-special-offer/: offers/
+- index.html: ''
+- meetings-delivery/: meetings/
+- special/: offers/
+- specials/: offers/
+- terms-of-use/: terms/
+- web-exclusive-offer/: offers/
