@@ -8,6 +8,9 @@
   @include media-breakpoint-up(md) {
     margin: 0 0 45px;
   }
+  @include media-breakpoint-down(sm) {
+    margin-top: 0px !important;
+  }
 
   .details {
     order: 2;
