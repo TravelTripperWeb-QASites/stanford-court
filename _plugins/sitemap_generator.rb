@@ -61,15 +61,12 @@ class SitemapGenerator
           sitemap[*page_path] ||= []
           pageorder_lookup = (path[1..-1].join('/'))
           order = page_orders["/#{pageorder_lookup}/"] || default_order 
-          sitemap[*page_path][0] = {order: order}
+          sitemap[*page_path] ||= []
         end      
       end
 
       path += ['__PAGES__']
       source_path = page.is_a?(Jekyll::DataPage) ? page.source_path : page.path
-
-      puts url
-      puts path
 
       sitemap[*path] ||= []
       order = page_orders[page.url] || default_order 
