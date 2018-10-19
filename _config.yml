@@ -89,7 +89,7 @@ page_gen: #
   - data: 'blog'
     template: 'blog-details'
     dir: 'blog'
-  - data: 'category'
+  - data: 'blog_categories'
     template: 'category-list'
     dir: 'blog/category'
   - data: 'promos'

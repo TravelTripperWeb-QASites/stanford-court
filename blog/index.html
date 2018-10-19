@@ -23,7 +23,7 @@ include_in_nav_localized:
     <ul>
       <li>
         <a href="/blog/" class="active">All</a>
-        {% assign categories = site.data._models.category | sort: 'order' | descending %}
+        {% assign categories = site.data._models.blog_categories | sort: 'order' | descending %}
         {% for categorylist in categories %}
         <a href="/blog/category/{{ categorylist.url_friendly_name }}/" title="{{ categorylist.title }}">
           {{ categorylist.title }}
@@ -72,7 +72,6 @@ include_in_nav_localized:
             <a href="/blog/{{ post.url_friendly_name }}/" class="blog-title">
               <h3> {{ post.title }} </h3>
             </a>
-
             <p class="extra-links">
               {% if post.category.url_friendly_name %}
               <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" > {{ post.category.title }} </a>

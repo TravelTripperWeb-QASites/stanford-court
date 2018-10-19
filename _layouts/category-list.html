@@ -3,13 +3,14 @@ layout: default
 ---
 
 {% assign seo_title = page.data.title %}
+
 <div class="inner-banner full without-text background-cover  mb-80" style="background-image: url('/assets/images/blog/hero.jpg');">
   <div class="inner-nav fixed-menu">
     <p class="select-room">Select Blog Category</p>
     <ul>
       <li>
         <a href="/blog/">All</a>
-        {% assign categories = site.data._models.category | sort: 'order' | descending %}
+        {% assign categories = site.data._models.blog_categories | sort: 'order' | descending %}
         {% for categorylist in categories %}
         <a href="/blog/category/{{ categorylist.url_friendly_name }}/" title="{{ categorylist.title }}" class="{% if categorylist.url_friendly_name == page.data.url_friendly_name %} active {% endif %}">{{ categorylist.title }}
         </a>
@@ -26,7 +27,7 @@ layout: default
   <div class="blog-row">
     <div class="blog-col">
       <div class="category-info">
-        {% assign categories = site.data._models.category | sort: 'order' | descending %}
+        {% assign categories = site.data._models.blog_categories | sort: 'order' | descending %}
         {% for categorylist in categories %}
         {% if categorylist.url_friendly_name == page.data.url_friendly_name %}
         <div class="category-title ">
