@@ -28,7 +28,8 @@
             <div class="carousel-text">
               <div class="info">
                 <h3>{{ post.title }}</h3>
-                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" title="Discover more"> {{ post.category.title }} </a> | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
+                {% if post.category.url_friendly_name %}
+                <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" title="post.category.title"> {{ post.category.title }} </a>{% endif %}  | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
                 {{ post.short_description }}
               </div>
             </div>

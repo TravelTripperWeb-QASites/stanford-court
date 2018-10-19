@@ -27,10 +27,11 @@ layout: default
     <p class="select-room">Select Blog Category</p>
     <ul>
       <li>
-        <a href="/blog/" class="active">All</a> {% assign categories = site.data._models.category | sort: 'order' | descending %} {% for categorylist in categories %}
+        <a href="/blog/" class="active">All</a> {% assign categories = site.data._models.blog_categories | sort: 'order' | descending %}
+        {% for categorylist in categories %}
         <a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}">{{categorylist.title}}</a> {% endfor %}
-      <li>
-    <ul>
+      </li>
+    </ul>
   </div>
   <div class="scroll-down">
     <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
