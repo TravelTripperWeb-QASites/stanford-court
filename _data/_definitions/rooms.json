@@ -4,13 +4,15 @@
   },
   "roomtype": {
     "required": true
-  }, 
+  },
   "roomimage": {
     "type": "image",
+    "instructions": "Image on Gallery (800px x 800px)",
     "required": true
   },
   "roombackgroundimage": {
     "type": "image",
+    "instructions": "Image on Gallery (1400px x 800px)",
     "required": true
   },
   "long_description": {
