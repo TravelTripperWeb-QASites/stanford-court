@@ -18,12 +18,6 @@
     "type": "image",
     "required": true
   },
-  "banner_image": {
-    "label": "Banner Image",
-    "instructions": "Image at the top of single attraction page (1200px up)",
-    "type": "image",
-    "required": true
-  },
   "description": {
     "label": "Short Description of Attraction",
     "type": "text",
@@ -43,12 +37,6 @@
     "label": "Attraction Website",
     "type": "text",
     "required": false
-  },
-  "gallery": {
-    "label": "Photo Gallery",
-    "instructions": "These photos should be the same dimensions.",
-    "type": "image",
-    "multiple": true
   },
   "sort_order":
     {
