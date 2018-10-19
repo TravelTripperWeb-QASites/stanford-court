@@ -8,6 +8,13 @@
   visibility: hidden;
 }
 
+.hidden-mobile {
+  @include media-breakpoint-down(sm) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 // For expiring content
 
 .expired {
