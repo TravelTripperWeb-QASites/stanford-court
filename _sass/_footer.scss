@@ -203,9 +203,14 @@
 
     .form-control {
       height: 53px;
+      padding-right: 36px;
       padding-left: 26px;
-      border-color: $grey-border;
-      border-radius: 27px;
+      border-top: 1px solid $grey-border;
+      border-right: 0 transparent;
+      border-bottom: 1px solid $grey-border;
+      border-left: 1px solid $grey-border;
+      border-top-left-radius: 27px;
+      border-bottom-left-radius: 27px;
 
       &:focus {
         box-shadow: none;
@@ -216,9 +221,11 @@
     }
 
     .black-btn {
-      position: absolute;
-      top: 52px;
-      right: 15px;
+      // position: absolute;
+      // top: 52px;
+      // right: 15px;
+      height: 53px;
+      margin: 10px 0 0 -21px;
       background-image: url('/assets/images/white-arrow.png');
       background-repeat: no-repeat;
       background-position: right 30px bottom 18px;

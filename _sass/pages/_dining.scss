@@ -55,8 +55,10 @@
       }
 
       .primary-btn {
+        margin-right: 15px;
         margin-bottom: 20px;
         @include media-breakpoint-up(md) {
+          margin-right: 20px;
           margin-bottom: 35px;
         }
       }

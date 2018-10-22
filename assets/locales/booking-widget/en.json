@@ -1,0 +1,27 @@
+booking_widget_en({
+	"labels": {
+		"your_booking": "Your Booking",
+		"close_your_booking": "Close Booking Widget",
+		"skip_to_booking_engine": "Skip to Booking Engine",
+		"flexible_date": "Flexible Date",
+		"through": "through",
+		"not_applicable": "NA",
+		"arrival": "Arrival",
+		"departure": "Departure",
+		"adult": "Adult",
+		"adults": "Adults",
+		"children": "Children",
+		"child": "Child",
+		"under_age": "under the age of 18",
+		"offer_code": "Offer Code",
+		"best_price_per_night": "Best Price Per Night",
+		"view_special_rates": "View Special Rates",
+		"book_now": "Book Now",
+		"powered_by": "powered by",
+		"no_thanks": "No Thanks"
+	},
+	"errors": {
+		"date_not_available": "That date is not available, please select another.",
+		"date_range_not_available": "That range includes a date that is not available, please select another."
+	}
+})

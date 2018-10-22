@@ -10,7 +10,6 @@
   @include media-breakpoint-down (sm) {
     position: inherit;
     top: inherit;
-    max-width: 300px;
     padding: 30px 15px 80px;
     transform: translateY(-0%);
   }
@@ -19,8 +18,11 @@
     height: 210px;
     margin: auto;
     text-align: center;
+    @include media-breakpoint-down (md) {
+      height: 198px;
+    }
     img {
-      width: 210px;
+      width: 180px;
     }
   }
 }
