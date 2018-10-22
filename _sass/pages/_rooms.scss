@@ -392,12 +392,12 @@
       margin-bottom: 0;
       @include make-row;
       li {
-        width: auto;
-        padding-right: 50px;
+        width: 100%;
         padding-bottom: 16px;
-        // @include media-breakpoint-up(md) {
-        //   @include make-col(4);
-        // }
+        padding-left: 50px;
+        @include media-breakpoint-up(md) {
+          width: 33%;
+        }
       }
     }
   }

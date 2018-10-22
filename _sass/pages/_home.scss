@@ -14,7 +14,7 @@
     @include make-col-ready();
     min-height: auto;
     margin-top: -170px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     @include media-breakpoint-up(md) {
       @include make-col(6);
       height: 300px;
@@ -42,6 +42,9 @@
           line-height: 20px;
           text-transform: uppercase;
           letter-spacing: 2px;
+          @include media-breakpoint-down(md) {
+            font-size: $type-size-4;
+          }
           strong {
             display: block;
           }
