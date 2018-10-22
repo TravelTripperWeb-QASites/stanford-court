@@ -199,7 +199,7 @@ angular.module('rezTrip')
 
                     }
 
-                    if(room.category == 'Suites' && room.code != 'PR1K') {
+                    if(room.category == 'Suites' && room.code != 'PRES') {
                       self.roomsList[key].category = 'Skyline';
                     }
                     angular.extend(self.roomsList[key] , todayRate);
