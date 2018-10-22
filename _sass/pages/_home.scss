@@ -294,7 +294,7 @@
     z-index: 1;
     width: 100%;
     @media (min-width: 480px) {
-      left: -28px;
+      left: inherit;
       width: auto;
     }
     @include media-breakpoint-up(md) {
