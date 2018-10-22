@@ -392,11 +392,24 @@
       margin-bottom: 0;
       @include make-row;
       li {
+        position: relative;
         width: 100%;
         padding-bottom: 16px;
         padding-left: 50px;
+        list-style: none;
         @include media-breakpoint-up(md) {
           width: 33%;
+        }
+        &:after {
+          position: absolute;
+          top: 10px;
+          left: 33px;
+          width: 5px;
+          height: 5px;
+          content: '';
+          background: $black;
+          border-radius: 50%;
+
         }
       }
     }
