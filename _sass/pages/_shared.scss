@@ -42,13 +42,13 @@
       display: none;
     }
   }
+
   .carousel-inner {
     .carousel-item {
       min-height: auto !important;
       @include media-breakpoint-down(sm) {
         height: 50vh !important;
       }
-
     }
   }
 }
@@ -91,7 +91,6 @@
     }
   }
 
-
   &.full {
     position: relative;
     height: 100vh;
@@ -99,6 +98,7 @@
       height: 50vh;
     }
   }
+
   .scroll-down {
     position: absolute;
     right: 0;
@@ -109,6 +109,7 @@
     margin: 0 auto;
     padding: 23px;
     cursor: pointer;
+
     &.bottom-up {
       bottom: 120px;
     }
@@ -169,6 +170,7 @@
           margin-top: 14px;
         }
       }
+
       &.address {
         .svg-inline--fa {
           margin-top: 6px;
@@ -180,9 +182,11 @@
             transform: rotate(140deg);
           }
         }
+
         a {
           display: inline-flex;
           padding-bottom: 20px;
+
           &:hover {
             color: $white;
             text-decoration: underline;
@@ -192,10 +196,12 @@
         p {
           margin-bottom: 0;
         }
+
         h4 {
           padding-bottom: 10px;
           color: $white;
         }
+
         .directions {
           a {
             padding-bottom: 10px;
@@ -205,6 +211,7 @@
           }
         }
       }
+
       a {
         color: $white;
       }
@@ -221,13 +228,12 @@
     }
   }
 }
-
 // inner-nav
-
 .inner-nav {
   padding: 15px 0 0;
   text-align: center;
   background: $black;
+
   .select-room {
     display: block;
     font-family: $global-font-bold;
@@ -238,6 +244,7 @@
       display: none;
     }
   }
+
   ul {
     display: inline-block;
     margin: 0;
@@ -333,6 +340,7 @@
 
         a {
           padding: 4px 3px;
+
           &::after {
             bottom: 0;
             height: 2px;
@@ -353,12 +361,12 @@
     }
   }
 
-
   &.fixed-menu {
     position: absolute;
     bottom: 0;
     z-index: 99;
     width: 100%;
+
     ul {
       top: auto;
       //bottom: 70px;
@@ -371,22 +379,23 @@
     bottom: auto;
     width: 100%;
   }
+
   &.position-top {
     ul {
       top: 70px;
       bottom: auto;
     }
   }
-
-
 }
 
 .bg-black {
   background-color: $black;
 }
+
 .text-black {
   color: $black;
 }
+
 .h-100 {
   height: 100%;
 }
@@ -404,10 +413,7 @@
   margin: auto;
   overflow: show;
 }
-
-
 // Transparent Overlay //
-
 .loading:before {
   position: fixed;
   top: 0;
@@ -418,10 +424,7 @@
   content: '';
   background-color: rgba(0, 0, 0, .8);
 }
-
-
 //:not(:required) hides these rules from IE9 and below
-
 .loading:not(:required) {
   // hide "loading..." text
   font: 0/0 a;
@@ -447,17 +450,16 @@
   -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.5) -1.5em 0 0 0, rgba(255, 255, 255, 0.5) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
   box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
 }
+
 .cn-icon {
   img {
     width: 16px;
     margin-top: -3px;
   }
 }
-
 // .brg-widget {
 //   display: none;
 // }
-
 //Gradient Background cross-cell section
 .group-offerings {
   padding: 43px 34px 50px;
@@ -484,13 +486,151 @@
   }
 }
 
-
 .tnc {
   a {
     color: $black;
     text-decoration: underline;
+
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+// carousel-control and indicators
+.carousel-indicators {
+  bottom: -60px;
+  left: 70px;
+  justify-content: left;
+  width: 200px;
+  margin: 0;
+  @include media-breakpoint-down(sm) {
+    left: 0;
+  }
+
+  li {
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+    line-height: 6px;
+    background-color: $gray;
+    border: 0;
+    border-radius: 100%;
+    @include global-transition(.3s);
+
+    &.active,
+    &:hover {
+      width: 6px;
+      height: 6px;
+      margin-right: 12px;
+      cursor: pointer;
+      background-color: $secondary-light;
+    }
+  }
+}
+
+.carousel-nav {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  width: 131px;
+  height: 60px;
+  background: $black;
+
+  .carousel-control-prev {
+    &:after {
+      position: absolute;
+      right: -2px;
+      width: 1px;
+      height: 20px;
+      content: '';
+      background: $white;
+    }
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    padding: 30px 32px;
+    opacity: inherit;
+  }
+
+  .carousel-control-next:focus,
+  .carousel-control-next:hover,
+  .carousel-control-prev:focus,
+  .carousel-control-prev:hover {
+    color: $primary-color;
+  }
+
+  &.white {
+    background: $white;
+
+    .carousel-control-prev {
+      &:after {
+        background: $black;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      color: $black;
+      opacity: inherit;
+    }
+
+    .carousel-control-next:focus,
+    .carousel-control-next:hover,
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover {
+      color: $primary-color;
+    }
+  }
+}
+// slick arrows
+
+.slick-controls {
+  .slick-arrow {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    bottom: auto;
+    left: auto;
+    z-index: 9;
+    padding: 30px 32px;
+    opacity: 1;
+
+    &:before {
+      content: none;
+      opacity: 1;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $white;
+    }
+
+    &.slick-prev {
+      right: 74px;
+      background: $white url('/assets/images/neighborhood/slick-prev.png') no-repeat center center;
+
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-prev.png');
+      }
+
+      &:after {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 1px;
+        height: 20px;
+        content: '';
+        background: $black;
+      }
+    }
+
+    &.slick-next {
+      background: $white url('/assets/images/neighborhood/slick-next.png') no-repeat center center;
+
+      &:hover {
+        background-image: url('/assets/images/neighborhood/slick-next.png');
+      }
     }
   }
 }

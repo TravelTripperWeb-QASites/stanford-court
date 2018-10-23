@@ -18,6 +18,9 @@
     height: 210px;
     margin: auto;
     text-align: center;
+    img {
+      width: 100px;
+    }
     @include media-breakpoint-down (md) {
       height: 198px;
     }
@@ -111,8 +114,9 @@
           color: $white;
           text-align: center;
           letter-spacing: 4px;
-          @media(max-width: 350px) {
-            line-height: 20px;
+          @include media-breakpoint-down (sm) {
+            font-size: $type-size-3;
+            line-height: 16px;
           }
 
           a {
@@ -141,6 +145,9 @@
           margin-bottom: 0;
           padding: 0;
           list-style-type: none;
+          @include media-breakpoint-down (sm) {
+            margin-bottom: 10px;
+          }
 
           li {
             display: inline-block;
@@ -149,6 +156,7 @@
             color: $white;
             @include media-breakpoint-down (sm) {
               width: 100%;
+              font-size: .85rem;
               text-align: center;
             }
             span {
