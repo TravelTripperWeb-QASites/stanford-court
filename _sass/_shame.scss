@@ -1,9 +1,11 @@
 // Temporary Styles
 // ==========================================================================
 
-[ng-cloak] {
+
+[ng\:cloak], [ng-cloak] {
   display: block !important;
 }
+
 #speedrfp_container iframe {
   display: block !important;
 }
