@@ -23,6 +23,14 @@ $("[show-booking-widget]").bookingWidget({
   showRateCalendar: true,
   showOfferCode: true
 });
+$(document).ready(function() {
+  setTimeout(function() {
+   var childNote = $(".ttweb-booking-widget__body__people__selector__description");
+   var note = childNote.html();
+   note = note.replace('*','');
+   childNote.html(note);
+  }, 2000)
+})
 </script>
 
 
@@ -93,7 +101,7 @@ $("[show-booking-widget]").bookingWidget({
 </script>
 
 
-<script src="https://s3-us-west-1.amazonaws.com/assets.speedrfp.com/widget/js/v1.18.js"></script> 
+<script src="https://s3-us-west-1.amazonaws.com/assets.speedrfp.com/widget/js/v1.18.js"></script>
 <script type="text/javascript" charset="utf-8">
   var options = {};
   options.display = "overlay";
