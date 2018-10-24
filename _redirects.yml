@@ -1,4 +1,5 @@
 ---
+- location/: neighborhood/
 - specials/group-promotions/: offers/
 - specials/parking-package/: offers/
 - amenities/green-hotel/: amenities/
