@@ -1,4 +1,8 @@
 ---
+- specials/california-resident-rate/: offers/
+- location/: neighborhood/
+- specials/group-promotions/: offers/
+- specials/parking-package/: offers/
 - amenities/green-hotel/: amenities/
 - amenities/pet-friendly/: amenities/
 - amenities/urban-bundle/: amenities/
