@@ -295,12 +295,19 @@
     width: 100%;
     @media (min-width: 480px) {
       left: inherit;
-      width: auto;
+      //width: auto;
     }
     @include media-breakpoint-up(md) {
       top: 0;
       right: 0;
       left: auto;
+      font-size: 8rem;
+      text-align: left;
+
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      text-align: right;
     }
   }
 
