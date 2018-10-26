@@ -297,20 +297,19 @@
       left: inherit;
 
     }
+
+
     @include media-breakpoint-down(sm) {
       top: 0;
       right: 0;
       left: auto;
-      font-size: 6rem;
+      width: 100%;
+      font-size: 8rem;
       text-align: left;
     }
-    @include media-breakpoint-down(md) {
-      top: 0;
-      right: 0;
-      left: auto;
-      font-size: 6rem;
-      text-align: left;
-
+    @media (max-width: 500px) {
+      left: inherit;
+      font-size: 6rem !important;
     }
     @include media-breakpoint-up(lg) {
       //width: 100%;
