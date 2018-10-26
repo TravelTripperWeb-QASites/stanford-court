@@ -211,12 +211,18 @@
       border-left: 1px solid $grey-border;
       border-top-left-radius: 27px;
       border-bottom-left-radius: 27px;
-
+      @include media-breakpoint-down(sm) {
+        font-size: $type-size-6;
+      }
       &:focus {
         box-shadow: none;
       }
       @include placeholder {
         color: $placeholder-clr;
+        opacity: .9;
+        @include media-breakpoint-down(md) {
+          opacity: 0;
+        }
       }
     }
 
