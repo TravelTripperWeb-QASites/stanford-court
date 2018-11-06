@@ -111,7 +111,10 @@
     cursor: pointer;
 
     &.bottom-up {
-      bottom: 120px;
+      bottom: 160px;
+      @include media-breakpoint-down(sm) {
+        bottom: 80px;
+      }
     }
   }
 
@@ -120,6 +123,8 @@
       height: 70vh;
     }
   }
+
+
 }
 
 .inner-intro {
