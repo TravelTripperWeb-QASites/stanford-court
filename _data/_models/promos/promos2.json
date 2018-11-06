@@ -1,6 +1,7 @@
 {
   "subtitle": "#BookDirect",
-  "title": "Spectacular Savings! Up to 20%!",
+  "title": "Spectacular Savings &amp; Views!",
+  "tagline": "Spectacular Savings! Up to 20%!",
   "bannerimage": {
     "url": "https://cdn.traveltripper.io/site-assets/192_617_5781/media/2017-08-01-173231/GG-Bridge-unsp-RzTsized.jpg",
     "name": "GG Bridge unsp RzTsized",
@@ -25,7 +26,7 @@
   "meta_description": "Spectacular Savings up to 20%! Discover San Francisco!",
   "promolink": "https://stanfordcourt.reztrip.com/ext/promoRate?property=321&mode=b&pm=true&sr=266803&vr=3",
   "url_friendly_name": "spectacular-savings",
-  "promocontent": "<h3>Spectacular Savings &amp; Views!</h3>\n<p>Stanford Court provides a delightful blend of escape &amp; access, our location atop the prized Nob Hill offers spectacular views, the city's three cable car lines, and is conveniently just blocks from Union Square &amp; Chinatown. The city's three cable car lines are at our doorstop, making our location perfect for discovering San Francisco!&nbsp;</p>\n",
+  "promocontent": "<p>Stanford Court provides a delightful blend of escape &amp; access, our location atop the prized Nob Hill offers spectacular views, the city's three cable car lines, and is conveniently just blocks from Union Square &amp; Chinatown. The city's three cable car lines are at our doorstop, making our location perfect for discovering San Francisco!&nbsp;</p>\n",
   "promoimage": {
     "url": "https://cdn.traveltripper.io/site-assets/192_617_6911/media/2017-09-05-143904/nobhill-trolleysized.jpg",
     "name": "nobhill trolleysized",
