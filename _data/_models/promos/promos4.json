@@ -2,7 +2,7 @@
   "button_label1": "Stay 3, save 21%",
   "second_promolink": "\nhttps://stanfordcourt.reztrip.com/ext/promoRate?property=321&mode=b&pm=true&sr=34650&vr=3&accessCode=25off",
   "promolink": "https://stanfordcourt.reztrip.com/ext/promoRate?property=321&mode=b&pm=true&sr=34636&vr=3&accessCode=SAVE20",
-  "promocontent": "<h3>All in the Details</h3>\n<p><strong>Exclusive International Offer</strong></p>\n<ul>\n<li>Stay 3 nights and save up to 21%&nbsp;</li>\n<li>Stay 4 nights and save up to 26%</li>\n<li>Save an additional 5% by booking more than 60 days in advance</li>\n</ul>\n<p><strong>Flexible cancellation</strong></p>\n<p>Promotion cannot be used in conjunction with any other promotions</p>",
+  "promocontent": "<p><strong>Exclusive International Offer</strong></p>\n<ul>\n<li>Stay 3 nights and save up to 21%&nbsp;</li>\n<li>Stay 4 nights and save up to 26%</li>\n<li>Save an additional 5% by booking more than 60 days in advance</li>\n</ul>\n<p><strong>Flexible cancellation</strong></p>\n<p>Promotion cannot be used in conjunction with any other promotions</p>",
   "bannerimage": {
     "name": "special-plan",
     "file_name": "special-plan.jpg",
@@ -24,7 +24,8 @@
     "caption": ""
   },
   "button_label2": "Stay 4, save 26%",
-  "title": "Exclusive International Offer",
+  "title": "All in the Details",
+  "tagline": "Exclusive International Offer",
   "subtitle": "For Our International Guests",
   "seo_title": "Exclusive International Offer",
   "meta_description": "Exclusive International Offer",

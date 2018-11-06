@@ -3,6 +3,7 @@
 	{"required":true},
 "title":
 	{"required":true},
+"tagline":{"require":true},  
 "bannerimage":
 	{"type":"image","required":true},
 "seo_title":
