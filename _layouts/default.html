@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ site.active_lang | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
-    <div class="loading" style="display:block">Loading&#8230;</div>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
   <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-portal-info="portalInfo" rt3-rooms-browser="browser" ng-cloak>
+
+    <div class="loading" style="display:block">Loading&#8230;</div>
+
     {% if site.data.tracking.analytics.provider and page.analytics != false %}
       {% case site.data.tracking.analytics.provider %}
       {% when "gtm" %}
