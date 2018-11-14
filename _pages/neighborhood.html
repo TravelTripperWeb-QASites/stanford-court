@@ -29,13 +29,13 @@ permalink_localized:
   <div class="inner-intro-row m-0">
     <div class="heading">
       {% regionblock intro_section_sub_title, type: header %}
-        <h4>San Fransisco</h4>
+        <h4 tabindex="0">San Fransisco</h4>
       {% endregionblock %}
       {% regionblock intro_section_title, type: header %}
-        <h3>The Perfect Location</h3>
+        <h3 tabindex="0">The Perfect Location</h3>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock intro_section_text, type: text %}
         <p>It’s cool. We’ll point you in the right direction. Stanford Court overlooks the city from Nob Hill, one of San Francisco’s most sought-after neighborhoods. It’s a great spot with some spectacular views, all just blocks away from Union Square. Whether you’re headed to the Financial District, looking for the best dim sum in Chinatown, or meeting up at the Moscone center, everything you need is easily within walking distance.</p>
       {% endregionblock %}
@@ -56,11 +56,11 @@ permalink_localized:
           <div class="attractions-wrapper">
             <div class="details pt-5">
               <div class="attraction-info">
-                <h4 class="d-block d-md-none">Local attractions</h4>
-                <h3>{{ attraction.title }}</h3>
-                <h4>{{ attraction.address }}
-                  <span>{{ attraction.distance }}</span>
-                </h4> {{ attraction.details }}
+                <h4 class="d-block d-md-none" tabindex="0">Local attractions</h4>
+                <h3  tabindex="0">{{ attraction.title }}</h3>
+                <h4  tabindex="0">{{ attraction.address }}
+                <span tabindex="0">{{ attraction.distance }}</span>
+                </h4 tabindex="0"> {{ attraction.details }}
                 <div>
                   <a class="primary-btn" href="{{attraction.url}}" target="_blank">Website</a>
                 </div>
@@ -96,7 +96,7 @@ permalink_localized:
         <h3>Attractions</h3>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock attractions_text, type: text %}
         <p>The stunning Grace Cathedral—most notable for its front doors, which are replicas of the Baptistry of Florence Cathedral’s "Gates of Paradise” by master artist Lorenzo Ghiberti—and Dragon’s Gate, the entrance to Chinatown, are just a couple blocks away. Head towards Union Square, and you’ll find the recently expanded Museum of Modern Art (SFMoMA), and the cable cars (Insider’s tip: board in Fisherman’s Wharf instead of downtown for shorter waits). Some other local favorites: lunch at the Ferry building, packing for a picnic at Mission Dolores Park, shopping on Fillmore Street, and long walks in the lush Presidio.</p>
       {% endregionblock %}
@@ -114,9 +114,9 @@ permalink_localized:
         <div class="image background-cover d-flex justify-content-center" style="background-image: url('{{ attraction.featured_image.url_medium }}');">
         </div>
       <div class="content">
-        <h3>{{ attraction.title }}</h3>
-        <h4>{{attraction.address }} <span>{{ attraction.time }}</span></h4>
-        <p>{{ attraction.description | truncatewords: 20 }}</p>
+        <h3 tabindex="0">{{ attraction.title }}</h3>
+        <h4 tabindex="0">{{attraction.address }} <span>{{ attraction.time }}</span></h4>
+        <p tabindex="0">{{ attraction.description | truncatewords: 20 }}</p>
         <a href="{{ attraction.website}}" target="_blank" class="primary-btn">Visit Website</a>
       </div>
     </div>

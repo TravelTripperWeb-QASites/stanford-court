@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<h3>Amenities</h3>"
+    "content": "<h3 tabindex=\"0\">Amenities</h3>"
   }
 ]

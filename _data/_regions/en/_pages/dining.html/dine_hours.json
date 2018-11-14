@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<h4>Hours of Operation</h4>"
+    "content": "<h4 tabindex=\"0\">Hours of Operation</h4>"
   }
 ]

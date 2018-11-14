@@ -16,13 +16,12 @@ permalink_localized:
   en: "/"
 
 ---
-
 <!-- Hero Carousel start here -->
 <div id="herocarousel" class="carousel slide hero-banner" data-ride="carousel">
   {% assign hero-slide = site.data._models.home-hero-carousel %}
   <div class="carousel-inner" role="listbox">
     {% for banner in hero-slide | limit: 1 %}
-    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}"  role="option" data-resize style="background-image: url('{{ banner.image.url_large }}');">
+    <div class="carousel-item background-cover {% if forloop.first %} active {% endif %}" role="option" data-resize style="background-image: url('{{ banner.image.url_large }}');">
       <div class="desktop-overlay">
         <div class="embed-responsive embed-responsive-16by9">
           <video class="embed-responsive-item" autoplay muted loop poster="/assets/images/transparent.png" id="stanfordVideo">
@@ -31,203 +30,206 @@ permalink_localized:
           <div class="scroll-down down-to-up">
             <img src="/assets/images/scroll-down.png" class="img-fluid" alt="Scroll Down">
           </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-
-<!-- Intro and BRG  start here -->
-<section class="home-intro">
-  <div class="home-intro-inner m-0 d-flex align-items-center">
-    <div class="image">
-      <div class="map-bg background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');">
-        {% include brg-widget.html %}
-        <div class="conde">
-          <p>Conde Nast Traveler 2018 Readers’ Choice Awards:<strong>#2 San Francisco Hotel</strong></p>
-        </div>
-      </div>
-
-      {% regionblock intro_img_caption, type: text %}
-      <p>Caption goes here</p>
-      {% endregionblock %}
-    </div>
-
-    <div class="content">
-      <div class="info" id="scroll-to">
-        {% regionblock intro_header, type: header %}
-        <h3>Welcome to Stanford court</h3>
-        {% endregionblock %}
-        {% regionblock intro_text, type: text %}
-        <p>At the crest of Nob Hill it’s easy to see what makes San Francisco special. While the views are amazing, it’s the city’s energy, restless spirit of transformation and maverick innovation that quickens your heartbeat and gets your mind spinning. Come play (stay) with us.
-        </p>
-        {% endregionblock %}
-        {% regionblock intro_link, type: text %}
-        <a href="/hotel/" class="primary-btn">Discover More</a>
-        {% endregionblock %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--Amenities start here -->
-<section class="home-amenities-wrap background-cover">
-  <div class="home-amenities-inner">
-    <div class="home-amenities-row m-0 d-flex align-items-center">
-      <div class="text d-none d-lg-block">
-        {% regionblock do-so-like_header, type: header %}
-        <h3 class="txt-white">DO SF LIKE <br>A DENIZEN </h3>
-        {% endregionblock %}
-      </div>
-      <div class="images p-0 d-none d-lg-block">
-        <div class="images-inner m-0">
-          <div class="one background-cover" style="background-image: url('/assets/images/home/car.jpg');"></div>
-          <div class="two background-cover" style="background-image: url('/assets/images/home/lady.jpg');"></div>
-        </div>
-      </div>
-    </div>
-    <div class="home-amenities-row m-0 d-flex align-items-center">
-      <div class="images p-0">
-        <div class="images-inner m-0">
-          <div class="one background-cover" style="background-image: url('/assets/images/home/meditation.jpg');"></div>
-          <div class="two background-cover" style="background-image: url('/assets/images/home/tower.jpg');"></div>
-        </div>
-      </div>
-      <div class="text">
-        {% regionblock mobile_dosolike_header, type: header %}
-        <h3 class="txt-white d-lg-none .d-xl-block">DO SF LIKE A DENIZEN </h3>
-        {% endregionblock %}
-        {% regionblock dosolike_text, type: text %}
-        <p>There’s no better place to un-lock the real San Francisco. Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do. We love to share and can’t wait to help you explore.</p>
-        {% endregionblock %}
-        {% regionblock dosolike_link, type: text %}
-        <a href="/" class="primary-btn-inverse">Discover More</a>
-        {% endregionblock %}
-      </div>
-    </div>
-    <div class="tag-line-text d-none d-lg-block">
-      {% regionblock vline_link, type: text %}
-      <p>A city that honors independence, innovation, and inclusion. innovation, and inclusion.</p>
-      {% endregionblock %}
-    </div>
-  </div>
-</section>
-
-<!-- Rooms section start here -->
-<section class="rooms-wrapper">
-  {% regionblock rooms-title, type: header %}
-  <h2>Rooms</h2>
-  {% endregionblock %}
-  <div class="rooms-inner">
-    <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms.jpg');"></div>
-    <div class="content">
-      <div class="content-row">
-        <div class="room-titles">
-      {% regionblock rooms-header, type: header %}
-      <h3>COMFY DOESN’T MEAN CONFINING</h3>
-      {% endregionblock %}
-      {% regionblock rooms-link, type: text %}
-        <a href="/rooms/" class="secondary-btn-inverse">View Rooms</a>
-      {% endregionblock %}
-    </div>
-    <div class="room-description">
-      {% regionblock rooms-text, type: text %}
-      <p class="txt-white">Our newly redesigned rooms are the perfect blend of edgy expression and creature comforts. The views inspire, the art intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
-      {% endregionblock %}
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- Discover start here -->
-<section class="discover-sec">
-  <h2>
-    {% regionblock discover, type: header %}
-    Discover
-    {% endregionblock %}
-  </h2>
-  <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
-    {% assign amenities-slide = site.data._models.home-amenities | sort: 'sort_order'%}
-    <div class="carousel-inner">
-      {% for amenitie in amenities-slide %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
-        <div class="carousel-block m-0">
-          <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');"></div>
-          <div class="carousel-caption">
-            <h3>{{ amenitie.title }}</h3>
-            {{ amenitie.description }}
           </div>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="carousel-inner indicators ">
-      <div class="carousel-block m-0">
-        <div class="image"></div>
-        <div class="carousel-caption">
-          <ol class="carousel-indicators">
-            {% for amenitie in amenities-slide %}
-            <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
-            {% endfor %}
-          </ol>
+  </div>
+
+
+  <!-- Intro and BRG  start here -->
+  <section class="home-intro">
+    <div class="home-intro-inner m-0 d-flex align-items-center">
+      <div class="image">
+        <div class="map-bg background-cover h-100" style="background-image: url('/assets/images/home/rectangle.jpg');">
+          {% include brg-widget.html %}
+          <div class="conde" tabindex="0">
+            <p>Conde Nast Traveler 2018 Readers’ Choice Awards:<strong>#2 San Francisco Hotel</strong></p>
+          </div>
+        </div>
+
+        {% regionblock intro_img_caption, type: text %}
+        <p>Caption goes here</p>
+        {% endregionblock %}
+      </div>
+
+      <div class="content">
+        <div class="info" id="scroll-to">
+          {% regionblock intro_header, type: header %}
+          <h3 tabindex="0">Welcome to Stanford court</h3>
+          {% endregionblock %}
+          <div tabindex="0">
+            {% regionblock intro_text, type: text %}
+            <p>At the crest of Nob Hill it’s easy to see what makes San Francisco special. While the views are amazing, it’s the city’s energy, restless spirit of transformation and maverick innovation that quickens your heartbeat and gets your mind
+              spinning. Come play (stay) with us.
+            </p>
+            {% endregionblock %}
+          </div>
+          {% regionblock intro_link, type: text %}
+          <a href="/hotel/" class="primary-btn">Discover More</a>
+          {% endregionblock %}
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Stay SFC start  here -->
-<section class="stay-sfc">
-  <div class="stay-wrapper">
-    <div class="stay-row m-0">
-      <div class="header-title text-center">
-        {% regionblock stay-title, type: header %}
-        <h4>Stay at stanford Court</h4>
-        {% endregionblock %}
-        {% regionblock stay-content, type: header %}
-        <h3 class="text-white">Link to the best of<br>San Francisco.</h3>
-        {% endregionblock %}
-        {% regionblock stay-link, type: text %}
-        <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+  <!--Amenities start here -->
+  <section class="home-amenities-wrap background-cover">
+    <div class="home-amenities-inner">
+      <div class="home-amenities-row m-0 d-flex align-items-center">
+        <div class="text d-none d-lg-block" tabindex="0">
+          {% regionblock do-so-like_header, type: header %}
+          <h3 class="txt-white">DO SF LIKE <br>A DENIZEN </h3>
+          {% endregionblock %}
+        </div>
+        <div class="images p-0 d-none d-lg-block">
+          <div class="images-inner m-0">
+            <div class="one background-cover" style="background-image: url('/assets/images/home/car.jpg');"></div>
+            <div class="two background-cover" style="background-image: url('/assets/images/home/lady.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-amenities-row m-0 d-flex align-items-center">
+        <div class="images p-0">
+          <div class="images-inner m-0">
+            <div class="one background-cover" style="background-image: url('/assets/images/home/meditation.jpg');"></div>
+            <div class="two background-cover" style="background-image: url('/assets/images/home/tower.jpg');"></div>
+          </div>
+        </div>
+        <div class="text">
+          {% regionblock mobile_dosolike_header, type: header %}
+          <h3 class="txt-white d-lg-none" tabindex="0">DO SF LIKE A DENIZEN </h3>
+          {% endregionblock %}
+          <div tabindex="0">
+          {% regionblock dosolike_text, type: text %}
+          <p>There’s no better place to un-lock the real San Francisco. Our unique location is the perfect launch pad to experience the real city and all the things that locals like us love to eat, drink, dance and do. We love to share and can’t wait to help you explore.</p>
+          {% endregionblock %}
+          </div>
+          {% regionblock dosolike_link, type: text %}
+          <a href="/" class="primary-btn-inverse">Discover More</a>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="tag-line-text d-none d-lg-block" tabindex="0">
+        {% regionblock vline_link, type: text %}
+        <p>A city that honors independence, innovation, and inclusion. innovation, and inclusion.</p>
         {% endregionblock %}
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-{% include special-offers.html %}
+  <!-- Rooms section start here -->
+  <section class="rooms-wrapper">
+    {% regionblock rooms-title, type: header %}
+    <h2 tabindex="0">Rooms</h2>
+    {% endregionblock %}
+    <div class="rooms-inner">
+      <div class="image-part background-cover" style="background-image: url('/assets/images/home/rooms.jpg');"></div>
+      <div class="content">
+        <div class="content-row">
+          <div class="room-titles">
+            {% regionblock rooms-header, type: header %}
+            <h3 tabindex="0">COMFY DOESN’T MEAN CONFINING</h3>
+            {% endregionblock %}
+            {% regionblock rooms-link, type: text %}
+            <a href="/rooms/" class="secondary-btn-inverse">View Rooms</a>
+            {% endregionblock %}
+          </div>
+          <div class="room-description" tabindex="0">
+            {% regionblock rooms-text, type: text %}
+            <p class="txt-white">Our newly redesigned rooms are the perfect blend of edgy expression and creature comforts. The views inspire, the art intrigues and the custom furnishings and finishes never let you forget that you’re staying
+              somewhere special.</p>
+            {% endregionblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Gallery Slider start  here -->
-<section class="gallery-carousel" id="gallerySuites">
-  <div class="gallery-carousel-inner">
-    <div class="carousel-nav white">
-      <a class="carousel-control-prev" href="javascript:void(0);" data-slide="prev" title="prev">
+  <!-- Discover start here -->
+  <section class="discover-sec">
+    <h2 tabindex="0">
+    {% regionblock discover, type: header %}
+    Discover
+    {% endregionblock %}
+  </h2>
+    <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
+      {% assign amenities-slide = site.data._models.home-amenities | sort: 'sort_order'%}
+      <div class="carousel-inner" role="listbox">
+        {% for amenitie in amenities-slide %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}" role="option">
+          <div class="carousel-block m-0">
+            <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');"></div>
+            <div class="carousel-caption">
+              <h3 tabindex="0">{{ amenitie.title }}</h3>
+              <div tabindex="0">{{ amenitie.description }}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="carousel-inner indicators ">
+        <div class="carousel-block m-0">
+          <div class="image"></div>
+          <div class="carousel-caption">
+            <ol class="carousel-indicators">
+              {% for amenitie in amenities-slide %}
+              <li data-target="#discoverCarousel" data-slide-to="{{forloop.index0}}" class="{% if forloop.first %}active{% endif %}"></li>
+              {% endfor %}
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay SFC start  here -->
+  <section class="stay-sfc">
+    <div class="stay-wrapper">
+      <div class="stay-row m-0">
+        <div class="header-title text-center">
+          {% regionblock stay-title, type: header %}
+          <h4 tabindex="0">Stay at stanford Court</h4>
+          {% endregionblock %}
+          {% regionblock stay-content, type: header %}
+          <h3 class="text-white">Link to the best of<br>San Francisco.</h3>
+          {% endregionblock %}
+          {% regionblock stay-link, type: text %}
+          <a class="secondary-btn-inverse" href="{{ site.reztripUrl }}" title="Book Now">Book Now</a>
+          {% endregionblock %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include special-offers.html %}
+
+  <!-- Gallery Slider start  here -->
+  <section class="gallery-carousel" id="gallerySuites">
+    <div class="gallery-carousel-inner">
+      <div class="carousel-nav white">
+        <a class="carousel-control-prev" href="javascript:void(0);" data-slide="prev" title="prev">
         <i class="fas fa-caret-left"></i>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="javascript:void(0);" data-slide="next" title="next">
+        </a>
+        <a class="carousel-control-next" href="javascript:void(0);" data-slide="next" title="next">
         <i class="fas fa-caret-right"></i>
         <span class="sr-only">Next</span>
       </a>
+      </div>
+      {% assign gallery-item = site.data._models.home-gallery-carousel %}
+      {% for gallery in gallery-item | limit: 4 %}
+      <div class="item {% if forloop.first == true %} active {% endif %}">
+        <a href="{{gallery.url_friendly_name}}" class="img-block" title="{{ gallery.title }}">
+        <div style="background-image:url('{{ gallery.image.url_large }}');"></div>
+        </a>
+        <a href="{{gallery.url_friendly_name}}"><h3>{{ gallery.title }} </h3></a>
+      </div>
+      {% endfor %}
+      <div style="clear: both;"></div>
     </div>
-    {% assign gallery-item = site.data._models.home-gallery-carousel %}
-    {% for gallery in gallery-item | limit: 4 %}
-    <div class="item {% if forloop.first == true %} active {% endif %}">
-      <a href="{{gallery.url_friendly_name}}" class="img-block" title="{{ gallery.title }}">
-        <div style="background-image:url('{{ gallery.image.url_large }}');">
-        </div>
-      </a>
-      <a href="{{gallery.url_friendly_name}}">
-        <h3>{{ gallery.title }} </h3>
-      </a>
-    </div>
-    {% endfor %}
-    <div style="clear: both;"></div>
-  </div>
-</section>
+  </section>
 
-<!-- Blog Carousel start  here -->
-{% include blog-section.html %}
+  <!-- Blog Carousel start  here -->
+  {% include blog-section.html %}

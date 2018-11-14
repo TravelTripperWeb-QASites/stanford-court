@@ -19,7 +19,7 @@ permalink_localized:
 
 <!-- Rooms banner start here -->
 <section class="inner-banner background-cover listing" style="background-image: url('/assets/images/rooms/hero.jpg');">
-  <div class="banner-text">
+  <div class="banner-text" tabindex="0">
     {% regionblock rooms_title, type: header %}
     <h1>Comfort</h1>
     {% endregionblock %}
@@ -31,16 +31,16 @@ permalink_localized:
   <div class="inner-intro-row m-0">
     <div class="heading">
       {% regionblock rooms_section_sub_title, type: header %}
-      <h4>ROOMS & SUITES</h4>
+      <h4 tabindex="0">ROOMS & SUITES</h4>
       {% endregionblock %}
       {% regionblock rooms_section_title, type: header %}
-      <h3>Hilltop Haven</h3>
+      <h3 tabindex="0">Hilltop Haven</h3>
       {% endregionblock %}
       {% regionblock rooms_section_link, type: text %}
       <a class="primary-btn-inverse mt-3 mb-3" href="#room-amenities" title="View Hotel Amenities">View Hotel Amenities</a>
       {% endregionblock %}
     </div>
-    <div class="content">
+    <div class="content" tabindex="0">
       {% regionblock rooms_section_text, type: text %}
       <p>Power down. The perfect spot for modern mavericks and mavens, our stylish accommodations offer residential respite from the supercharged neighborhoods of the city. We’re minimalists—we keep things simple with clean lines and custom-designed
         furniture. Let our elevated vantage point atop Nob Hill serve as the point of view for your next bright idea. Reliable high-speed WiFi and amenities inspired by San Francisco’s progressive tech culture support work and play, Silicon
@@ -57,7 +57,7 @@ permalink_localized:
     <div class="room-row align-items-center">
 
       <div class="room-image">
-        <a href="/room/#{{ room.roomtype | downcase }}" title="{{ room.title }}">
+        <a href="/room/#{{ room.roomtype | downcase }}" title="{{ room.title }}" tabindex="-1">
             <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
           </a>
         <div class="overlay">
@@ -72,7 +72,7 @@ permalink_localized:
             <h3>{{ room.title }}</h3>
           </a>
           <a class="primary-btn-inverse" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
-          <p>{{ room.long_description }}</p>
+          <div tabindex="0" class="pt-3">{{ room.long_description }}</div>
           <a class="secondary-btn-inverse" href="{{ room.book_this_room }}" target="_blank">Book Room</a>
         </div>
       </div>
@@ -87,10 +87,10 @@ permalink_localized:
     <div class="feature-list d-flex justify-content-sm-end">
       <div class="list" id="room-amenities">
         {% regionblock room_features_header, type: header %}
-        <h4 class="text-center">unique Room Features</h4>
+        <h4 class="text-center" tabindex="0">unique Room Features</h4>
         {% endregionblock %}
         <ul>
-          <li ng-repeat="amenity in hotelInfo.common_room_amenities">[[ amenity ]]</li>
+          <li ng-repeat="amenity in hotelInfo.common_room_amenities" tabindex="0">[[ amenity ]]</li>
         </ul>
         <div class="clearfix"></div>
       </div>

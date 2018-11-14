@@ -193,6 +193,14 @@ $(window)
     }
 
   });
+  // For Tab Ordering / Accessibility in Navigation
+	$(document).on("focus", '.navbar-nav .nav-item > a', function() {
+		$('.dropdown-menu').hide();
+		var parentListItem = $(this).closest("li");
+		if (parentListItem.hasClass("dropdown")) {
+			$(this).closest(".dropdown").find('.dropdown-menu').show();
+		}
+	});
 
 function pinterestShare(img, desc) {
   window.open("//www.pinterest.com/pin/create/button/" +
@@ -692,3 +700,14 @@ $(document)
       // immediately fire it to initialize buttons state
       .keyup();
   });
+
+
+  // ADA Iframe title
+  var iframeFound = setInterval(function() {
+    console.log("not found");
+    if ($(".wyndow-app").length > 0) {
+      $(".wyndow-app").attr("title", "wyndow-app");
+      clearInterval(iframeFound);
+      console.log("found");
+    }
+  }, 60);

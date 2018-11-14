@@ -39,7 +39,7 @@ permalink_localized:
       {% endregionblock %}
 
       <div class="scroll">
-        <div class="scroll-inner">
+        <div class="scroll-inner" tabindex="0">
 
           {% regionblock amenities_list, type: text %}
             <ul>
@@ -64,7 +64,7 @@ permalink_localized:
           {% endregionblock %}
         </div>
       </div>
-      <div class="extr-text">
+      <div class="extr-text" tabindex="0">
         {% regionblock subject_tax, type: text %}
           <p>A $25 nightly urban fee covers Stanford Court hotel’s extensive amenities. This fee is subject to San Francisco occupancy tax.<br><br>*Download app to enjoy.</p>
         {% endregionblock %}
@@ -79,15 +79,15 @@ permalink_localized:
 <section class="discover-sec content-wrapper pt-0">
   <div id="discoverCarousel" class="carousel slide" data-ride="carousel">
     {% assign amenities-slide = site.data._models.amenities | sort: 'sort_order'%}
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
       {% for amenitie in amenities-slide %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="carousel-item {% if forloop.first %}active{% endif %}" role="option">
         <div class="carousel-block m-0">
           <div class="image background-cover" style="background-image: url('{{ amenitie.image.url_medium }}');">
           </div>
           <div class="carousel-caption">
-            <h3>{{amenitie.title}}</h3>
-            {{amenitie.description}}
+            <h3 tabindex="0">{{amenitie.title}}</h3>
+            <div tabindex="0">{{amenitie.description}}</div>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ permalink_localized:
     <div class="hotel-amenities-row m-0 d-flex align-items-center">
       <div class="text d-none d-lg-block">
         {% regionblock hotel_amenities_head_01, type: header %}
-          <h3 class="txt-white">Perfect Place To<br> Enjoy A Stay <br> With Your Pet </h3>
+          <h3 class="txt-white" tabindex="0">Perfect Place To<br> Enjoy A Stay <br> With Your Pet </h3>
         {% endregionblock %}
       </div>
       <div class="images p-0">
@@ -132,14 +132,16 @@ permalink_localized:
       </div>
       <div class="text">
         {% regionblock hotel_amenities_head, type: header %}
-          <h3 class="txt-white d-lg-none d-block">Perfect Place To Enjoy A Stay With Your Pet </h3>
+          <h3 class="txt-white d-lg-none d-block" tabindex="0">Perfect Place To Enjoy A Stay With Your Pet </h3>
         {% endregionblock %}
+        <div tabindex="0">
         {% regionblock hotel_amenities_text, type: text %}
           <p>Intuitive and thought provoking, our SmArtGallery technology delivers an interactive user experience. Swipe to learn more about the pieces that resonate with you most, or take control of the screen via our tablet kiosks. You don’t even have to leave your he(art) in San Francisco. Simply select, order, and send artwork home with a couple clicks.</p>
         {% endregionblock %}
+        </div>
       </div>
     </div>
-    <div class="tag-line-text d-none d-lg-block">
+    <div class="tag-line-text d-none d-lg-block" tabindex="0">
       {% regionblock v_line_text, type: text %}
         <p>SF Pet Frendly Hotel</p>
       {% endregionblock %}

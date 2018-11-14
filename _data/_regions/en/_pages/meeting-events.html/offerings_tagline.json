@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h3>Try something new for your next urban retreat</h3>",
+    "content": "<h3 tabindex=\"0\">Try something new for your next urban retreat</h3>",
     "_template": "header"
   }
 ]

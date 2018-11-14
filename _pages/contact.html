@@ -27,7 +27,7 @@ permalink_localized:
 <!-- Contact intro start here -->
 <section class="inner-intro bottom" id="scroll-to">
   <div class="inner-intro-row m-0">
-    <div class="heading">
+    <div class="heading" tabindex="0">
       {% regionblock Contact_title, type: header %}
       <h3>Contact Us</h3>
       {% endregionblock %}
@@ -43,7 +43,7 @@ permalink_localized:
       {% endregionblock %}
 
       {% regionblock getting_header, type: header %}
-      <h4 class="mb">Getting here</h4>
+      <h4 class="mb" tabindex="0">Getting here</h4>
       {% endregionblock %}
       <div class="directions">
       {% regionblock directions, type: html %}
@@ -61,8 +61,10 @@ permalink_localized:
 
 <!-- Contact content & form start here -->
 <section class="contact">
+  <div tabindex="0">
   {% regionblock text %}
     <p>Stanford Court San Francisco is always happy to respond to inquiries. Simply fill out the form and click Submit when you are done, or call us at: <br><a href="tel:415-989-3500">415-989-3500</a>.</p>
   {% endregionblock %}
+  </div>
   {% include /forms/jotform/contact.html %}
 </section>
