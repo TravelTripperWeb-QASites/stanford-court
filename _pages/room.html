@@ -27,8 +27,8 @@ permalink: /room/
 
     <!-- Room Details start here -->
     <div class="details-wrapper" id="scroll-to">
-      <div class="tag-line-text">
-        <p>[[ room.category ]]</p>
+      <div class="tag-line-text" tabindex="0">
+        <p >[[ room.category ]]</p>
       </div>
       <div class="details d-flex align-items-center">
         <div class="room-info">
@@ -39,20 +39,20 @@ permalink: /room/
           </a>
         </span>
         </h4> -->
-          <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
+          <h3 ng-bind-html="room.name | renderHTMLCorrectly" tabindex="0"></h3>
           <div class="area">
             <ul>
               <li>
                 <img src="/assets/images/rooms/squire.png" alt="area" />
-                <span>[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span>
+                <span tabindex="0">[[ room.room_size ]] &nbsp;<a ng-bind-html="room.room_size_units | renderHTMLCorrectly"></a></span>
               </li>
               <li>
                 <img src="/assets/images/rooms/guest.png" alt="guest" />
-                <span>Max [[ room.max_number_of_guests ]] persons</span>
+                <span tabindex="0">Max [[ room.max_number_of_guests ]] persons</span>
               </li>
             </ul>
           </div>
-          <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+          <p ng-bind-html="room.description | renderHTMLCorrectly" tabindex="0"></p>
           <a class="secondary-btn" ng-href="{{site.reztripUrl}}search?selected_room=[[ room.code ]]">Book This Room</a>
         </div>
       </div>
@@ -80,9 +80,9 @@ permalink: /room/
     <!-- Room Amenities start here -->
     <section class="room-amenites">
       <div class="room-amenites-inr">
-        <h3>Room Features</h3>
+        <h3 tabindex="0">Room Features</h3>
         <ul>
-          <li ng-repeat="feature in room.amenities"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
+          <li ng-repeat="feature in room.amenities" tabindex="0"><span ng-bind-html="feature | renderHTMLCorrectly"></span></li>
           <!-- <li><span>Simmons pillow top mattress</span></li>
           <li><span>100% cotton 300-thread count linens</span></li>
           <li><span>Deluxe goose feather down comforter</span></li>
@@ -107,18 +107,18 @@ permalink: /room/
     <!-- Other rooms carousel start here -->
     {% assign rooms = site.data._models.rooms | sort : "sort_order" %}
     <section class="more-rooms" rt3-special-rates="offers">
-      <h3 class="text-center">Other Rooms</h3>
-      <p>Explore more of our newly redesigned rooms. The views inspire, the art intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
+      <h3 class="text-center" tabindex="0">Other Rooms</h3>
+      <p tabindex="0">Explore more of our newly redesigned rooms. The views inspire, the art intrigues and the custom furnishings and finishes never let you forget that you’re staying somewhere special.</p>
       <div class="slick-controls" id="moreRooms">
         {% for room in rooms | limit:4 %}
         <div class="item">
-          <h3>{{ room.title }}</h3>
+          <h3 tabindex="0">{{ room.title }}</h3>
           <div class="image">
             <figure class="background-cover" style="background-image:url({{ room.roomimage.url }});"></figure>
           </div>
           <hr>
           <span>{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-          <a class="primary-btn float-right" href="/room/#{{ room.roomtype | replace: " ","-" | downcase  }}">Discover More</a>
+          <a class="primary-btn float-right" href="/room/#{{ room.roomtype | replace: " ","-" | downcase }}">Discover More</a>
         </div>
         {% endfor %}
       </div>
@@ -129,8 +129,8 @@ permalink: /room/
 
     <!-- Special Offers promo start here -->
     <div class="special-offers d-none d-md-block pt-4">
-      <h3 class="text-center">Special Offers</h3>
-      <p>What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
+      <h3 class="text-center" tabindex="0">Special Offers</h3>
+      <p tabindex="0">What makes a stay at the Stanford Court even better? A sweet deal and some amazing extras to make your next city sojourn even more rewarding. </p>
       <p class="text-center">
         <a class="black-btn" href="/offers/" title="All Offers">All Offers</a>
       </p>

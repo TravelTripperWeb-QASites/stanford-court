@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h4>our neighborhooD</h4>",
+    "content": "<h4 tabindex=\"0\">our neighborhooD</h4>",
     "_template": "header"
   }
 ]

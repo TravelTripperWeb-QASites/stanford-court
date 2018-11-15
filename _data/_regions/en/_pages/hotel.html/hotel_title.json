@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<h3>A PROGRESSIVE <br />OUTLOOK</h3>"
+    "content": "<h3 tabindex=\"0\">A PROGRESSIVE <br />OUTLOOK</h3>"
   }
 ]

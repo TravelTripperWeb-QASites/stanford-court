@@ -30,8 +30,8 @@
   function pressTemplate(data) {
       var html = '';
       $.each(data, function(index, item){
-          html += '<div class="content"><h3>'+ item.title +'</h3>'+ item.description+
-          '<div><a class="primary-btn" href="'+item.linkurl+'" target="_blank">READ MORE</a></div>'+
+          html += '<div class="content"><h3 tabindex="0">'+ item.title +'</h3><div tabindex="0">'+item.description+
+          '</div><div><a class="primary-btn" href="'+item.linkurl+'" target="_blank">READ MORE</a></div>'+
           '<hr></div>';
       });
       return html;

@@ -2,7 +2,7 @@
 layout: default
 permalink: "/faq/"
 meta_tags:
-  robots: 
+  robots:
 published_localized:
   en: true
 title_localized:
@@ -30,15 +30,15 @@ permalink_localized:
 <section class="static-content" id="scroll-to">
 
   {% regionblock faq-header, type: header %}
-    <h3 class="mt-5 text-center">Frequently Asked Questions</h3>
+    <h3 class="mt-5 text-center" tabindex="0">Frequently Asked Questions</h3>
   {% endregionblock %}
   <div class="form-group faq-seach">
-    <input type="text" class="form-control" name="" value="" placeholder="Search FAQs">
+    <input type="text" class="form-control" name="" value="" aria-label="Search FAQs" placeholder="Search FAQs">
   </div>
   <div class="no-results">
     <p>No Results Found</p>
   </div>
-  <div class="container-for-search">
+  <div class="container-for-search"  tabindex="0">
     {% regionblock faq-content-1, type: text %}
       <p>Check in: 4pm, Check out: 12pm Noon</p>
       <p><strong>Is Late Check out available?</strong></p>
