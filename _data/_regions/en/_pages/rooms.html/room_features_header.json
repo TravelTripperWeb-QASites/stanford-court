@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h4 class=\"text-center\">Room Features &amp; Amenities</h4>",
+    "content": "<h4 class=\"text-center\" tabindex=\"0\">Room Features &amp; Amenities</h4>",
     "_template": "header"
   }
 ]

@@ -193,6 +193,14 @@ $(window)
 		}
 
 	});
+// For Tab Ordering / Accessibility in Navigation
+$(document).on("focus", '.navbar-nav .nav-item > a', function() {
+	$('.dropdown-menu').hide();
+	var parentListItem = $(this).closest("li");
+	if (parentListItem.hasClass("dropdown")) {
+		$(this).closest(".dropdown").find('.dropdown-menu').show();
+	}
+});
 
 function pinterestShare(img, desc) {
 	window.open("//www.pinterest.com/pin/create/button/" +
@@ -691,28 +699,35 @@ $(document)
 			.on('change', checkForm)
 			// immediately fire it to initialize buttons state
 			.keyup();
-
-
-		// Change Tab Index Order for Newsletter Signup form in Footer (Acceibility from Keyboard)
-		var $newsletterform = $(".newsletter form");
-		$newsletterform.find("input[type='email']").on('blur', function() {
-			$(document).on('keyup', function(e) {
-				if (e.keyCode == 9) {
-					// Focus checkbox after email input
-					$newsletterform.find("input[type='checkbox']").focus();
-				}
-				$(document).off('keyup');
-			});
-		});
-		$newsletterform.find("a:last-child").on('blur', function() {
-			$(document).on('keyup', function(e) {
-				if (e.keyCode == 9) {
-					// Focus submit button after last link (mostly privacy-policy link )
-					$newsletterform.find("button[type='submit']").focus();
-				}
-				$(document).off('keyup');
-			});
-		});
-
-
 	});
+
+// Change Tab Index Order for Newsletter Signup form in Footer (Acceibility from Keyboard)
+var $newsletterform = $(".newsletter form");
+$newsletterform.find("input[type='email']").on('blur', function() {
+	$(document).on('keyup', function(e) {
+		if (e.keyCode == 9) {
+			// Focus checkbox after email input
+			$newsletterform.find("input[type='checkbox']").focus();
+		}
+		$(document).off('keyup');
+	});
+});
+$newsletterform.find("a:last-child").on('blur', function() {
+	$(document).on('keyup', function(e) {
+		if (e.keyCode == 9) {
+			// Focus submit button after last link (mostly privacy-policy link )
+			$newsletterform.find("button[type='submit']").focus();
+		}
+		$(document).off('keyup');
+	});
+});
+
+// ADA Iframe title
+var iframeFound = setInterval(function() {
+	console.log("not found");
+	if ($(".wyndow-app").length > 0) {
+		$(".wyndow-app").attr("title", "wyndow-app");
+		clearInterval(iframeFound);
+		console.log("found");
+	}
+}, 60);

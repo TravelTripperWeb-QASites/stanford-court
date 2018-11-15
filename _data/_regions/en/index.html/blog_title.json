@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h3 class=\"txt-white\">The 411 <br />on the 415</h3>",
+    "content": "<h3 class=\"txt-white\" tabindex=\"0\">The 411 <br />on the 415</h3>",
     "_template": "header"
   }
 ]
