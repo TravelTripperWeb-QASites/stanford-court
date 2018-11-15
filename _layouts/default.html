@@ -14,9 +14,12 @@
         {% include analytics/gtm-body.html %}
       {% endcase %}
     {% endif %}
+    <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
     <!-- Navigation start here -->
     {% include nav-main.html %}
+    <div id="main">
     {{ content }}
+    </div>
     {% include instagram.html %}
     {% include newsletter.html %}
     <!-- footer start here -->

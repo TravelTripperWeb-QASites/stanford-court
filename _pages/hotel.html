@@ -37,8 +37,7 @@ permalink_localized:
   <div class="page-intro-inner m-0 d-flex align-items-center">
     <div class="gradient-bg" id="scroll-to">
       <div class="gradient-bg-inner">
-        <div class="text-inner">
-
+        <div class="text-inner" tabindex="0">
           {% regionblock hotel_text, type: text %}
             <p class="d-block d-lg-none">From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
             <p class="d-block d-lg-none">Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
@@ -51,10 +50,11 @@ permalink_localized:
       {% regionblock hotel_title, type: header %}
         <h3>PROGRESSIVE <br>OUTLOOK</h3>
       {% endregionblock %}
-      {% regionblock hotel_text, type: text %}
-        <p>From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco—where you can see what’s on the horizon of a city on the edge of innovation.</p>
-        <p>Stanford Court is a contemporary conductor, linking modern mavericks with the best of San Francisco. Those who first headed west inspire us, and each of our 400 rooms and suites reflects their renegade spirit. Views of the skyline extend as far as Alcatraz and the Golden Gate Bridge, while streamlined design meets cutting-edge technologies for contemporary trailblazers. Our ideal location lets you explore all San Francisco has to offer. Union Square. Chinatown. The Financial District. Everything just minutes away.</p>
+      <div tabindex="0">
+      {% regionblock hotel_text_copy, type: text %}
+        <p>From up here, look ahead. Historically, Nob Hill was a lookout point where merchants and sailors could spot an incoming ship before it arrived at port. More than a century later, our privileged perch is still the place to be in San Francisco&mdash;where you can see what&rsquo;s on the horizon of a city on the edge of innovation. Stanford Court Hotel was aptly named after a forward-thinking railroad tycoon who helped lay the tracks for the first transcontinental railroad. Not coincidentally, the hotel sits at the only intersection of San Francisco&rsquo;s legendary cable car lines.</p>
       {% endregionblock %}
+      </div>
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@ permalink_localized:
       {% regionblock history_heading, type: header %}
       <h3>TRUE TO OUR ROOTS</h3>
       {% endregionblock %}
-
+      <div tabindex="0">
       {% regionblock history_text, type: text %}
       <p>Like our predecessors, we dare to dream big and connect people.</p>
 
@@ -78,41 +78,42 @@ permalink_localized:
 
       <p>Marrying maverick discovery with artistic expression, the art embodies the singular ethos that has come to define our city. We continue to champion San Francisco’s “boom town” spirit—the tenacity instilled by the risk takers and visionaries of the California Gold (and Silicon) Rush. Stanford Court offers the perfect mix of character, culture, tech, and style, with all the comforts of a great boutique hotel.</p>
       {% endregionblock %}
+      </div>
     </div>
   </div>
     <div id="timeline">
       <ul id="issues">
         <li id="1863">
-          <div class="history-info">
-            <p>“The Big Four” including Leland Stanford lay first rails of the Central Pacific Railroad</p>
+          <div class="history-info" tabindex="0">
+            <p >“The Big Four” including Leland Stanford lay first rails of the Central Pacific Railroad</p>
           </div>
         </li>
         <li id="1869">
-          <div class="history-info">
+          <div class="history-info" tabindex="0">
             <p>Ceremonial Driving of the “Last Spike”</p>
           </div>
           <li id="1876">
-            <div class="history-info">
+            <div class="history-info" tabindex="0">
               <p>Stanford Mansion completed atop Nob Hill</p>
             </div>
           </li>
           <li id="1906">
-            <div class="history-info">
+            <div class="history-info" tabindex="0">
               <p>The Great San Francisco Earthquake</p>
             </div>
           </li>
           <li id="1912">
-            <div class="history-info">
+            <div class="history-info" tabindex="0">
               <p>Mansion restored as one of SF’s most fashionable residences</p>
             </div>
           </li>
           <li id="1972">
-            <div class="history-info">
+            <div class="history-info" tabindex="0">
               <p>Stanford Court Hotel opens following dramatic remodel</p>
             </div>
           </li>
           <li id="2018">
-            <div class="history-info">
+            <div class="history-info" tabindex="0">
               <p>Newly Redesigned Stanford Court debuts</p>
             </div>
           </li>
@@ -146,7 +147,7 @@ permalink_localized:
         {% regionblock hotel_amenities_section_header, type: header %}
           <h3>The Best of the Bay</h3>
         {% endregionblock %}
-        <div class="d-blank d-md-none">
+        <div class="d-blank d-md-none" tabindex="0">
           {% regionblock hotel_amenities_section_text, type: text %}
             <p class="mb-3">Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p>
             <p class="mb-3">The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
@@ -160,12 +161,12 @@ permalink_localized:
         <img class="frame-middle" src="/assets/images/hotel/amenities.jpg" alt="amenities">
       {% endregionblock %}
     </div>
-    <div class="content down  d-md-block d-none">
-      {% regionblock hotel_amenities_section_text, type: text %}
+    <div class="content down  d-md-block d-none" tabindex="0">
+      {% regionblock hotel_amenities_section_text_copy, type: text %}
         <p>Enjoy the very latest in state-of-the-art amenities and unparalleled service during your stay with us in San Francisco’s Nob Hill.</p>
         <p>The locally progressive tech culture that San Francisco and Silicon Valley thrives on inspires many Stanford Court amenities.</p>
       {% endregionblock %}
-      {% regionblock hotel_amenities_section_link, type: text %}
+      {% regionblock hotel_amenities_section_link_copy, type: text %}
         <a class="primary-btn" href="/amenities/" title="Amenities">Learn More</a>
       {% endregionblock %}
     </div>
@@ -176,14 +177,14 @@ permalink_localized:
 <section class="discover-sec content-wrapper pt-0" id="arts">
   <div id="local-art" class="carousel slide" data-ride="carousel">
     {% assign local-art-slide = site.data._models.local-art | sort: 'sort_order' %}
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
       {% for art in local-art-slide %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="carousel-item {% if forloop.first %}active{% endif %}" role="option">
         <div class="carousel-block m-0">
           <div class="image background-cover" style="background-image: url('{{ art.image.url_medium }}');"></div>
           <div class="carousel-caption">
-            <h3>{{art.title}}</h3>
-            {{art.description}}
+            <h3 tabindex="0">{{art.title}}</h3>
+            <div tabindex="0">{{art.description}}</div>
           </div>
         </div>
       </div>

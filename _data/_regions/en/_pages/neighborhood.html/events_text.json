@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h3>There&rsquo;s no better place to unlock <br />the real SF. We love to share <br />and can&rsquo;t wait to help you explore.</h3>",
+    "content": "<h3 tabindex=\"0\">There&rsquo;s no better place to unlock <br />the real SF. We love to share <br />and can&rsquo;t wait to help you explore.</h3>",
     "_template": "header"
   }
 ]

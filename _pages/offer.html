@@ -32,7 +32,7 @@ meta_tags:
   <div class="offers-carousel-main" id="scroll-to">
     <div class="offers-inner-carousel">
       <div class="tag-line-text">
-        <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></p>
+        <p ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly" tabindex="0"></p>
       </div>
       <div class="details d-flex align-items-center">
         <div class="offer-info">
@@ -40,8 +40,8 @@ meta_tags:
             <i class="fas fa-arrow-left"></i>
             Back To Offers
           </a>
-          <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
-          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+          <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly" tabindex="0"></h3>
+          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly" tabindex="0"></p>
           <a class="secondary-btn" ng-href="[[ offers.sRdetail.promo_url ]]">Book This Offer</a>
         </div>
       </div>
@@ -74,12 +74,12 @@ meta_tags:
     <div class="gallery-sec-inner">
       <div class="img-sec background-cover" style="background-image: url('{{gallery.image.url_large}}');"></div>
       <div class="content">
-          <h3>{{gallery.title}}</h3>
+          <h3 tabindex="0">{{gallery.title}}</h3>
           <a href="/gallery/" class="primary-btn-inverse">See More</a>
-          {{gallery.description}}
+          <div tabindex="0">{{gallery.description}}</div>
       </div>
       <div class="tag-line-text">
-          <p>{{gallery.tag-line}}</p>
+          <p tabindex="0">{{gallery.tag-line}}</p>
       </div>
     </div>
     {% endfor %}

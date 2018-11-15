@@ -32,10 +32,10 @@ layout: default
         {% if categorylist.url_friendly_name == page.data.url_friendly_name %}
         <div class="category-title ">
 
-            <h4>{{ categorylist.title }}
+            <h4 tabindex="0">{{ categorylist.title }}
             </h4>
         </div>
-        <div class="category-description">
+        <div class="category-description" tabindex="0">
           <p>{{ categorylist.description }}<p>
         </div>
         {% endif %}
@@ -46,12 +46,12 @@ layout: default
       {% for post in site.data._models.blog %}
       {% if post.category.url_friendly_name == page.data.url_friendly_name %}
         <div class="post">
-          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image" title="{{ post.title }}">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="blog-image" title="{{ post.title }}" tabindex="-1">
             <figure class="background-cover" style="background-image:url('{{post.blogimage.url}}');" title="{{post.img_alt_txt}}">
             </figure>
           </a>
           <div class="blog-item-text">
-            <h4 class="date">
+            <h4 class="date" tabindex="0">
               {% assign d = post.date | date: "%-d" %}
               {{ post.date | date: "%B" }}
               {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
@@ -67,7 +67,7 @@ layout: default
               {% endif %} |
               <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
             </p>
-            <div class="short-description">
+            <div class="short-description" tabindex="0">
               {{ post.short_description }}
             </div>
           </div>

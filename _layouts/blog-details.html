@@ -86,7 +86,7 @@ layout: default
             <a href="/blog/category/{{blog.category.url_friendly_name}}/"> {{blog.category.title}} </a>
           {% endif %}
         </h4>
-        <div class="blog-description">
+        <div class="blog-description" tabindex="0">
           <!-- Append Native Ads into Blog content -->
           {% assign content = blog.long_description | split: '</p>' %}
           {% assign halfpost = content.size | divided_by: 2 %}

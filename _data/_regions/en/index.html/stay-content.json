@@ -1,6 +1,6 @@
 [
   {
-    "content": "<h3 class=\"text-white\">WEB EXCLUSIVE OFFER</h3>",
+    "content": "<h3 class=\"text-white\" tabindex=\"0\">WEB EXCLUSIVE OFFER</h3>",
     "_template": "header"
   }
 ]

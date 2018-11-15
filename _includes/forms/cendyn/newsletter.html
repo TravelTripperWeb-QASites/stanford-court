@@ -1,0 +1,12 @@
+<form action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="signupForm" accept-charset="utf-8" class="eclubCheck" novalidate>
+  <input type="hidden" name="formID" value="{{ site.data.forms.cendyn.newsletter-id }}">
+  <div class="d-flex">
+    <input class="form-control" type="email" aria-label="Email" title="Email" id="emailaddress2" aria-checkrequired="true" data-sign="false" name="emailAddress" placeholder="Enter your email address here*" required>
+    <!-- <div class="error-msg" id="emailaddress2Err"></div> -->
+    <button class="black-btn" type="submit" id="subscribe" disabled>submit</button>
+  </div>
+  <div class="tnc pl-5 pt-2">
+    <input type="checkbox" class="form-check-input" id="agreed" name="q12_iAgree" aria-label="agree" value="agree" required>
+  <label class="form-check-label" for="agreed">I agree to the <a href="/privacy-policy/" title="Terms of Service" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank"  title="Privacy Policy">Privacy Policy</a>.</label>
+  </div>
+</form>

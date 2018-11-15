@@ -4,16 +4,18 @@
       <div class="home-blog-row">
         <div class="info">
           {% regionblock blog_title, type: header %}
-            <h3 class="txt-white">The 411<br>on the 415 </h3>
+            <h3 class="txt-white" tabindex="0">The 411<br>on the 415 </h3>
           {% endregionblock %}
+          <div tabindex="0">
           {% regionblock blog_text type: text %}
-            <p>Looking for the best new place to eat in SoMa? The hottest little hole-in-the-wall for cocktails in the Mission? Maybe you’ve got a yen for some authentic outer sunset korean barbecue? Let this be your first stop in your San Francisco journey
+          <p>Looking for the best new place to eat in SoMa? The hottest little hole-in-the-wall for cocktails in the Mission? Maybe you’ve got a yen for some authentic outer sunset korean barbecue? Let this be your first stop in your San Francisco journey
             of discovery. </p>
           {% endregionblock %}
+          </div>
         </div>
         <div class="link">
           {% regionblock blog_link type: text %}
-            <a class="secondary-btn-inverse" href="/blog/">Dscover More</a>
+          <a class="secondary-btn-inverse" href="/blog/">Dscover More</a>
           {% endregionblock %}
         </div>
       </div>
@@ -27,7 +29,7 @@
           <div class="carouse-row align-items-end">
             <div class="carousel-text">
               <div class="info">
-                <h3>{{ post.title }}</h3>
+                <h3 tabindex="0">{{ post.title }}</h3>
                 {% if post.category.url_friendly_name %}
                 <a class="link-button" href="/blog/category/{{post.category.url_friendly_name}}/" title="post.category.title"> {{ post.category.title }} </a>{% endif %}  | <a class="primary-btn" href="/blog/{{ post.url_friendly_name }}/"> Discover more </a>
                 {{ post.short_description }}
