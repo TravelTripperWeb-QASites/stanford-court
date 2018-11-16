@@ -9,3 +9,32 @@
 #speedrfp_container iframe {
   display: block !important;
 }
+
+
+//top-banner
+
+.top-banner {
+  position: absolute;
+  top: 151px;
+  z-index: 99;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: rgba($black, .6);
+  @include media-breakpoint-down(sm) {
+    top: 57px;
+  }
+  h5 {
+    display: inline-block;
+    color: $white;
+    @include media-breakpoint-down(md) {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .secondary-btn-inverse {
+    margin: 0 10px;
+    padding: 14px 20px;
+  }
+}
