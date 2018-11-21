@@ -212,12 +212,14 @@
     }
 
     .tag-line-text {
-      display: none;
+      
+      z-index:9;
       @include media-breakpoint-up(xl) {
         position: absolute;
         bottom: 250px;
         left: 50px;
         display: block;
+        
       }
       @media screen and (min-width: 1330px) {
         left: 120px;
@@ -245,6 +247,7 @@
     }
 
     .details {
+      background-color:white;
       @include make-col-ready();
       @include media-breakpoint-up(md) {
         @include make-col(6);
