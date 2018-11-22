@@ -1,27 +1,46 @@
 {
-"subtitle":
-	{"required":true},
-"title":
-	{"required":true},
-"tagline":{"require":true},  
-"bannerimage":
-	{"type":"image","required":true},
-"seo_title":
-	{"type":"text"},
-"meta_description":
-	{"type":"text"},
-"url_friendly_name":
-	{"type":"url_slug"},
-"button_label1":
-	{"type":"text"},
-"button_label2":
-	{"type":"text"},
-"promolink":
-	{"type":"text"},
-"second_promolink":
-	{"type":"text"},
-"promocontent":
-	{"required":true,"type":"richtext"},
-"promoimage":
-	{"type":"image","required":true}
+	"subtitle":	{
+		"required":true
+	},
+	"title": {
+		"required":true
+	},
+	"tagline": {
+		"require":true
+	},
+	"bannerimage": {
+		"instructions": "Image Size 1400 wide x 700 high",
+		"type":"image",
+		"required":true
+	},
+	"seo_title": {
+		"type":"text"
+	},
+	"meta_description":	{
+		"type":"text"
+	},
+	"url_friendly_name": {
+		"type":"url_slug"
+	},
+	"button_label1": {
+		"type":"text"
+	},
+	"button_label2": {
+		"type":"text"
+	},
+	"promolink": {
+		"type":"text"
+	},
+	"second_promolink":	{
+		"type":"text"
+	},
+	"promocontent":	{
+		"required":true,
+		"type":"richtext"
+	},
+	"promoimage": {
+		"instructions": "Image Size 700 wide x 680 high",
+		"type":"image",
+		"required":true
+	}
 }

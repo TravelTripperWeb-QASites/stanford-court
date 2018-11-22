@@ -14,7 +14,7 @@
   },
   "featured_image": {
     "label": "Featured Image",
-    "instructions": "Image on attractions listings page (600px x 400px)",
+    "instructions": "Image on attractions listings page (400px x 400px)",
     "type": "image",
     "required": true
   },
