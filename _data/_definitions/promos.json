@@ -39,7 +39,7 @@
 		"type":"richtext"
 	},
 	"promoimage": {
-		"instructions": "Image Size 700 wide x 680 high",
+		"instructions": "Image Size 638 wide x 768 high",
 		"type":"image",
 		"required":true
 	}
